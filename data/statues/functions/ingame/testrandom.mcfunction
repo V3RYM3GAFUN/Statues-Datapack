@@ -1,0 +1,1 @@
+execute at @e[tag=test,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot

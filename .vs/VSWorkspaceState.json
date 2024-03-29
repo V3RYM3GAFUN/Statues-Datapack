@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\data",
+    "\\data\\minecraft",
+    "\\data\\statues",
+    "\\data\\statues\\functions",
+    "\\data\\statues\\functions\\ingame",
+    "\\data\\statues\\functions\\ingame\\mechanics",
+    "\\data\\statues\\functions\\ingame\\mechanics\\vents"
+  ],
+  "SelectedNode": "\\data\\statues\\functions\\ingame\\mechanics\\vents\\integrity.mcfunction",
+  "PreviewInSolutionExplorer": false
+}

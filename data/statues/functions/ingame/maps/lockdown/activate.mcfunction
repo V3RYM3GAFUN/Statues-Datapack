@@ -1,0 +1,9 @@
+function statues:ingame/maps/lockdown/classes/cloaker/abilities
+function statues:ingame/maps/lockdown/classes/blinder/abilities
+function statues:ingame/maps/lockdown/classes/juggernaut/abilities
+function statues:ingame/maps/lockdown/classes/gunner/abilities
+function statues:ingame/maps/lockdown/classes/medic/abilities
+function statues:ingame/maps/lockdown/classes/rusher/abilities
+function statues:ingame/maps/lockdown/classes/shotgunner/abilities
+function statues:ingame/maps/lockdown/classes/marksman/abilities
+function statues:ingame/maps/lockdown/classes/pusher/abilities

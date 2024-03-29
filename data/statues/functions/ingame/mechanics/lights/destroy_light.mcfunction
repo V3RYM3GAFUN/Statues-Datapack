@@ -1,0 +1,1 @@
+kill @e[tag=game_lamp,sort=nearest,limit=1,distance=..5]

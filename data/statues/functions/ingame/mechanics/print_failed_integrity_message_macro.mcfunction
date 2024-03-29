@@ -1,0 +1,1 @@
+$tellraw @a[team=Dev] [{"color":"red","text":"Integrity failed at "},{"color":"gold","text":"["},{"color":"aqua","text":"$(pos_x)"},{"color":"gold","text":","},{"color":"aqua","text":"$(pos_y)"},{"color":"gold","text":","},{"color":"aqua","text":"$(pos_z)"},{"color":"gold","text":"]"},{"color":"red","text":", $(message)"}]

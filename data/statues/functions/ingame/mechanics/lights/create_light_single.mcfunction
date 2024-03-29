@@ -1,0 +1,1 @@
+execute align xyz run summon minecraft:block_display ~ ~2.8 ~ {Tags:["tlamp","game_lamp"],block_state:{Name:"minecraft:redstone_lamp",Properties:{lit:"true"}}}
