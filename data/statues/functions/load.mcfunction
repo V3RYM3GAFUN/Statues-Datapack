@@ -66,5 +66,3 @@ gamerule doWeatherCycle false
 gamerule keepInventory true
 gamerule mobGriefing false
 gamerule naturalRegeneration false
-
-# test change
