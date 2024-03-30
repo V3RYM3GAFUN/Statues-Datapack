@@ -20,6 +20,7 @@ execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run func
 
 #> Detect when a player leaves
 execute as @a[team=!Dev] if score @s Player.Leave matches 1.. run function statues:lobby/leaving
+#> Exception for Devs. Don't detect when they leave
 scoreboard players set @a[team=Dev] Player.Leave 0
 
 function statues:ingame/mechanics/survivors/hiding
