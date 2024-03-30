@@ -1,4 +1,7 @@
-#> Loop song
+#> CHANGES NEEDED: This dumb wolf forgot sounds can be stacked, even if it's music :'3
+#> So this whole thing kinda needs to be recoded
+
+#> Loop ambient song
 execute as @a[team=Survivor] at @s if score @s Statues.Data matches 0 run playsound minecraft:music_disc.13 music @s ~ ~ ~ 1.5 0.5
 # execute if score $Song Statues.Data matches 2 if score $SongTime Statues.Data matches ..-1 run scoreboard players set $SongTime Statues.Data 5160
 

@@ -55,7 +55,7 @@ execute at @e[tag=ObjectiveSpawn] if block ~ ~ ~ warped_button[facing=west,face=
 execute at @e[tag=ObjectiveSpawn] if block ~ ~ ~ warped_button[facing=south,face=wall] run setblock ~ ~ ~ crimson_button[facing=south,face=wall]
 execute at @e[tag=ObjectiveSpawn] if block ~ ~ ~ warped_button[facing=north,face=wall] run setblock ~ ~ ~ crimson_button[facing=north,face=wall]
 
-## Old way
+## Old way for containers
 # execute at @e[tag=test] run item replace block ~ ~ ~ container.1 with air
 # execute at @e[tag=test] run item replace block ~ ~ ~ container.2 with air
 # execute at @e[tag=test] run item replace block ~ ~ ~ container.3 with air

@@ -1,5 +1,6 @@
 # Choose next song when time reaches 0
 execute if score $SongTime Statues.Data matches 0 run scoreboard players add $Song Statues.Data 1
+# Go back to first song after last song
 execute if score $Song Statues.Data matches 4 run scoreboard players set $Song Statues.Data 1
 # Make timer go down
 execute if score $SongTime Statues.Data matches 0.. run scoreboard players remove $SongTime Statues.Data 1
