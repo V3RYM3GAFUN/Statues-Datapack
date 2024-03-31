@@ -27,9 +27,9 @@ team join Lobby @e[team=!Dev]
 
 scoreboard players set $Status Statues.Data 0
 scoreboard players set $Timer.Ticks Statues.Data 0
-scoreboard players reset @e Statues.Monsters
-scoreboard players reset @e Statues.Survivors
-scoreboard players set @a Statues.Dead 0
+scoreboard players set * Statues.Dead 0
+scoreboard players reset * Statues.Monsters
+scoreboard players reset * Statues.Survivors
 scoreboard players reset * Statues.Players
 scoreboard players reset * Statues.abilities
 scoreboard players reset * Statues.Objective
