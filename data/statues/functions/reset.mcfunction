@@ -38,7 +38,10 @@ scoreboard players reset @a Statues.Data
 
 #> Brings back the text for Power objective, as well closes the doors related to it
 execute as @e[tag=objective_power] run data modify entity @s text set value "{'text':'Main Power','color':'dark_red'}"
-function statues:ingame/mechanics/power_doors/door
+function statues:ingame/mechanics/power_doors/close
+
+#> Turn off power
+function statues:ingame/mechanics/lights/lights_off
 
 #> Clears every container that had an item in it
 execute at @e[tag=objective_reset] run data merge block ~ ~ ~ {Items:[]}

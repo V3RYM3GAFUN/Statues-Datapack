@@ -24,3 +24,4 @@ execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[facing=south,fa
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[facing=north,face=wall] run setblock ~ ~ ~ warped_button[facing=north,face=wall]
 
 function statues:ingame/mechanics/power_doors/open
+function statues:ingame/mechanics/lights/lights_on
