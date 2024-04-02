@@ -1,6 +1,6 @@
 execute as @e[tag=vent] at @s on target if entity @s[team=Survivor] run tp @s ~ ~.95 ~
 execute as @e[tag=vent] at @s on target if entity @s[tag=002] run tp @s ~ ~.95 ~
-execute as @e[tag=vent] at @s on target if entity @s[tag=Statues.IgnoreVentRequirement] run tp @s ~ ~.95 ~
+execute as @e[tag=vent] at @s on target if entity @s[tag=dev_ignore_vent_requirement] run tp @s ~ ~.95 ~
 execute as @e[type=minecraft:interaction,tag=vent] run data remove entity @s interaction
 
 scoreboard players enable @e[team=Dev] check_integrity_vents

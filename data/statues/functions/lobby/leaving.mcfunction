@@ -21,9 +21,9 @@ tag @s remove juggernaut
 tag @s remove medic
 
 #> To avoid adding a vote from the previous game to be carried on
-tag @s remove Vote.Facade
-tag @s remove Vote.Lockdown
-tag @s remove Vote.Origins
+tag @s remove vote_facade
+tag @s remove vote_lockdown
+tag @s remove vote_origins
 
 team join Lobby @s
 
