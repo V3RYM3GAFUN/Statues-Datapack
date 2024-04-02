@@ -11,3 +11,6 @@ execute as @a[tag=Hiding] at @s run scoreboard players remove @s Statues.Heartbe
 execute as @e[type=minecraft:interaction,tag=Exit] at @s on target run tp @s[tag=Hiding] ~ ~2.15 ~
 execute as @e[type=minecraft:interaction,tag=Exit] at @s on target run tag @s[tag=Hiding] remove Hiding
 execute as @e[type=minecraft:interaction,tag=Exit] run data remove entity @s interaction
+
+
+#> tags : [Tutorial_Step2] [Tutorial_Step3] [Tutorial_Step4]

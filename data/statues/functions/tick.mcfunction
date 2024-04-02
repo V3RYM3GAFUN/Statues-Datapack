@@ -23,7 +23,7 @@ execute as @a[team=!Dev] if score @s Player.Leave matches 1.. run function statu
 #> Exception for Devs. Don't detect when they leave
 scoreboard players set @a[team=Dev] Player.Leave 0
 
-function statues:ingame/mechanics/survivors/hiding
+execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/hiding
 
 
 #> Allows displaying the health of every survivor in a scoreboard
@@ -44,7 +44,7 @@ function statues:ingame/mechanics/survivors/survivormusic
 #> Make it so people who aren't survivors immediately get their death count reset
 scoreboard players set @a[team=!Survivor] Statues.Dead 0
 
-execute as @a[tag=tutorial] run function statues:lobby/tutorial-info/hiding
+execute as @a[tag=Tutorial] run function statues:lobby/tutorial-info/hiding
 
 
 

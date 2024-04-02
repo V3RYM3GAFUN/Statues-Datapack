@@ -1,5 +1,5 @@
 
-## Hiding mechanic using intereaction entity
+## Hiding mechanic using interaction entity
 
 execute as @a[tag=!Hiding] at @s run scoreboard players set @s Statues.Heartbeat 25
 execute as @a[tag=Hiding] at @s run effect give @s blindness 2 0 true
