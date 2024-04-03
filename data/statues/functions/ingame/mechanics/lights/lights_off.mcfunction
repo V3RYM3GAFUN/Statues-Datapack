@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_lights_flags run return fail
 execute as @e[tag=tlamp] at @s run setblock ~ ~ ~ light[level=0]
 execute as @e[tag=tlamp_wall] at @s run setblock ~ ~ ~ light[level=0]
 

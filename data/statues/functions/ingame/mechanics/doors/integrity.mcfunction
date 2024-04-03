@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_doors_flags run return fail
 scoreboard players set $IntegrityCheckCount Statues.DoorData 0
 scoreboard players set $IntegrityCheckECount Statues.DoorData 0
 execute as @e[tag=door] at @s run function statues:ingame/mechanics/doors/integrity_self

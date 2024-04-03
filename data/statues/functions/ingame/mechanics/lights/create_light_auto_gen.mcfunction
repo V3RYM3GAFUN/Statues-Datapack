@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_lights_flags run return fail
 execute align xyz if block ~ ~ ~ pink_concrete if block ~-1 ~ ~ pink_concrete if block ~ ~ ~-1 pink_concrete if block ~-1 ~ ~-1 pink_concrete run summon block_display ~-0.5 ~0.8 ~-0.5 {Tags:["tlampc","game_lamp"],block_state:{Name:"minecraft:redstone_lamp",Properties:{lit:"true"}}}
 execute align xyz if block ~ ~ ~ pink_concrete if block ~-1 ~ ~ pink_concrete if block ~ ~ ~-1 pink_concrete if block ~-1 ~ ~-1 pink_concrete run fill ~ ~ ~ ~-1 ~ ~-1 air
 execute align xyz if block ~ ~ ~ pink_concrete if block ~-1 ~ ~ pink_concrete if block ~ ~ ~1 pink_concrete if block ~-1 ~ ~1 pink_concrete run summon block_display ~-0.5 ~0.8 ~0.5 {Tags:["tlampc","game_lamp"],block_state:{Name:"minecraft:redstone_lamp",Properties:{lit:"true"}}}

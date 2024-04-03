@@ -1,3 +1,5 @@
+function statues:feature_flags/tick_scoreboard
+
 execute as @a[tag=!first_join] at @s run function statues:lobby/firstjoin
 
 function statues:ingame/mechanics/nodrop
@@ -44,9 +46,9 @@ scoreboard players set @a[team=!Survivor] Statues.Dead 0
 execute as @a[tag=Tutorial] run function statues:lobby/tutorial-info/hiding
 
 #> Door handling
-execute as @e[tag=door] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.Data 1
+execute if score doors Statues.FeatureFlags matches 1 as @e[tag=door] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.Data 1
 execute if score $rundoors Statues.Data matches 1 run function statues:ingame/mechanics/doors/tick
-scoreboard players set $rundoor Statues.Data 0
+scoreboard players set $rundoors Statues.Data 0
 ## execute at @e[tag=door] if entity @a[distance=..5,gamemode=!spectator] run function statues:ingame/mechanics/doors/tick
 
 

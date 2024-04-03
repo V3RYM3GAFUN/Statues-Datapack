@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_doors_flags run return fail
 tag @e[tag=door_conv_selected] remove door_conv_selected
 tag @e[tag=door_conv_new] remove door_conv_new
 
