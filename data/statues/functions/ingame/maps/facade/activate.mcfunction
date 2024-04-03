@@ -16,3 +16,10 @@ scoreboard players set $Objective Statues.Data 0
 
 time set 8000
 weather clear
+
+tp @a[team=Monster] -29.5 -56 324.5
+
+scoreboard players set $MonsterSpawnDelay Statues.Data 1800
+tellraw @a {"text": "90 grace periods for survivors.","bold": true,"color": "aqua"}
+
+tp @a[team=Survivor] 44.5 -56 322
