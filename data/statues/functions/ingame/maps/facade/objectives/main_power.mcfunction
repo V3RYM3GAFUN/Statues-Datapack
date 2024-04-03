@@ -23,7 +23,7 @@ execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[facing=west,fac
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[facing=south,face=wall] run setblock ~ ~ ~ warped_button[facing=south,face=wall]
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[facing=north,face=wall] run setblock ~ ~ ~ warped_button[facing=north,face=wall]
 
-scoreboard players add $Objective Statues.Data 1
+scoreboard players set $Objective Statues.Data 4
 
 function statues:ingame/mechanics/power_doors/open
 function statues:ingame/mechanics/lights/lights_on

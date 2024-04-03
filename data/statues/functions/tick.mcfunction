@@ -1,4 +1,4 @@
-execute as @a[tag=!FirstJoin] at @s run function statues:lobby/firstjoin
+execute as @a[tag=!first_join] at @s run function statues:lobby/firstjoin
 
 function statues:ingame/mechanics/nodrop
 
@@ -7,14 +7,14 @@ execute if score $Status Statues.Data matches ..1 run function statues:lobby/que
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/lobbymusic
 
 #> Map voting
-execute if entity @a[team=Lobby] run function statues:lobby/mapvoting/vote_base
+execute as @a[team=Lobby] run function statues:lobby/mapvoting/vote_base
 
 #> Countdown timers
 execute if score $Status Statues.Data matches 1..2 run function statues:lobby/pregame/countdown
 
 execute if score $Status Statues.Data matches 3 run function statues:ingame/gametimer
-execute if score $Status Statues.Data matches 3 run function statues:ingame/mechanics/survivors/survivormusic
 execute if score $Status Statues.Data matches 3 run function statues:ingame/mechanics/misc
+execute if score $Status Statues.Data matches 3 run function statues:ingame/mechanics/survivors/survivormusic
 
 execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run function statues:ingame/mechanics/survivors/survivors
 
@@ -31,7 +31,10 @@ execute if score $Timer.Ticks Statues.Data matches 1 run scoreboard players rese
 execute as @a[team=Survivor] run scoreboard players operation @s Statues.Survivors = @s Statues.Health
 
 #> Door handling
-function statues:ingame/mechanics/doors/tick
+## execute at @e[tag=door] if entity @a[distance=..5,gamemode=!spectator] run function statues:ingame/mechanics/doors/tick
+execute as @e[tag=door] at @s if entity @a[limit=1,distance=..5] run scoreboard players set $rundoors objective 1
+execute if score $rundoors objective matches 1 run function statues:ingame/mechanics/door/tick
+scoreboard players set $rundoor objective 0
 
 #> Floors
 execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/tick
@@ -39,7 +42,7 @@ execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/
 #> For testing
 function statues:ingame/mechanics/vents/tick
 function statues:ingame/mechanics/misc
-function statues:ingame/mechanics/survivors/survivormusic
+# function statues:ingame/mechanics/survivors/survivormusic
 
 #> Make it so people who aren't survivors immediately get their death count reset
 scoreboard players set @a[team=!Survivor] Statues.Dead 0

@@ -1,19 +1,13 @@
-Statues. - V3RYM3GAFUN Studios
+# Statues.
+A Minecraft minigame by V3RYM3GAFUN Studios
 
-V3RYM3GAFUN - Creator, Producer, Coder, Builder, SFX specialist
-
-RedstoneYay - Coder
-
-Syxal - Coder, Animator
-
-Evtema3 - Coder
-
-TheAtlas29 - Builder
-
-NoodlePandarian - Builder
-
-gosh5557 - Builder
-
-Delkom - Builder
-
-Brownie1111 - Modeler/Graphics designer
+## Credits
+- **V3RYM3GAFUN** - Creator, Producer, Coder, Builder, SFX Specialist
+- **Java_chan** - Coder, Animator
+- **RedstoneYay** - Coder
+- **Evtema3** - Coder
+- **TheAtlas29** - Builder
+- **NoodlePandarian** - Builder
+- **gosh5557** - Builder
+- **Delkom** - Builder
+- **Brownie1111** - Modeler/Graphic Designer

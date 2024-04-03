@@ -67,6 +67,11 @@ execute at @e[tag=pressure_plates] run setblock ~ ~ ~ minecraft:light_weighted_p
 time set 6000
 weather clear
 
+#> Force the doors to tick a few times to close those that got stuck open
+function statues:ingame/mechanics/doors/tick
+function statues:ingame/mechanics/doors/tick
+function statues:ingame/mechanics/doors/tick
+
 ## Old way for containers
 # execute at @e[tag=test] run item replace block ~ ~ ~ container.1 with air
 # execute at @e[tag=test] run item replace block ~ ~ ~ container.2 with air
