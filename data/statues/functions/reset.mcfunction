@@ -35,16 +35,16 @@ scoreboard players reset * Statues.abilities
 scoreboard players reset * Statues.Objective
 scoreboard players reset @a Statues.Data
 
-
-#> Brings back the text for Power objective, as well closes the doors related to it
-execute as @e[tag=objective_power] run data modify entity @s text set value "{'text':'Main Power','color':'dark_red'}"
-function statues:ingame/mechanics/power_doors/close
+function statues:ingame/maps/facade/objectives/reset
 
 #> Turn off power
 function statues:ingame/mechanics/lights/lights_off
 
 #> Clears every container that had an item in it
 execute at @e[tag=objective_reset] run data merge block ~ ~ ~ {Items:[]}
+
+#> Resets interaction entities
+execute as @e[type=interaction,tag=objective_reset] run data merge entity @s {height:2}
 
 #> Resets every objective button 
 execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=east,face=ceiling] run setblock ~ ~ ~ crimson_button[facing=east,face=ceiling]

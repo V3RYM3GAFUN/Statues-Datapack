@@ -1,7 +1,7 @@
 #> List of tags for generating objective items:
 
 #facade_genkey
-execute at @e[tag=facade_genkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:1,display:{Name:'{"text":"Emergency Generator Key","italic": false}'}}
+execute at @e[tag=facade_genkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:1,display:{Name:'{"text":"Emergency Generator Key","italic": false}'},Tags:["facade_genkey_item"]}
 
 #facade_labkey
 execute at @e[tag=facade_labkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:2,display:{Name:'{"text":"Lab access keycard","italic": false}'}}

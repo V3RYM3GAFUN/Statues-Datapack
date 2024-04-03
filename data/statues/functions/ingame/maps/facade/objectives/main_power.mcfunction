@@ -4,7 +4,7 @@ execute as @e[tag=objective_power] run data modify entity @s text set value "{te
 
 #> Announce objective completion
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[powered=true] run title @a title ""
-execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[powered=true] run title @a subtitle {"text": "You did it!","color": "green"}
+execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[powered=true] run title @a subtitle {"text": "Main power restored!","color": "aqua"}
 
 #> Detect objective buttons being triggered
 
@@ -22,6 +22,8 @@ execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[facing=east,fac
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[facing=west,face=wall] run setblock ~ ~ ~ warped_button[facing=west,face=wall]
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[facing=south,face=wall] run setblock ~ ~ ~ warped_button[facing=south,face=wall]
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[facing=north,face=wall] run setblock ~ ~ ~ warped_button[facing=north,face=wall]
+
+scoreboard players add $Objective Statues.Data 1
 
 function statues:ingame/mechanics/power_doors/open
 function statues:ingame/mechanics/lights/lights_on
