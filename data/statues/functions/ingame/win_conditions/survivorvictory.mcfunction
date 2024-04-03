@@ -1,4 +1,4 @@
-execute if score $Ingame.Alive Statues.Data matches 0 run title @a title {"text": "Survivors win!","color": "aqua"}
+title @a title {"text": "Survivors win!","color": "aqua"}
 
 function statues:reset
 
