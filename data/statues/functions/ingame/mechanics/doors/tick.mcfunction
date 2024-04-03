@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_doors_flags run return fail
 #> Tick Block Displays
 
 execute as @e[tag=doord_init_open_up] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{translation:[0f,0.97f,0f]}}

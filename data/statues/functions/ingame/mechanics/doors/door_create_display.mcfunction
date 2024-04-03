@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_doors_flags run return fail
 execute if entity @s[y_rotation=0] align xyz run summon block_display ~ ~ ~0.40625 {block_state:{Properties:{facing:"south",half:"top",open:"true",powered:"false",waterlogged:"false"},Name:"minecraft:cherry_trapdoor"},Tags:["doord", "doord_init_display"]}
 execute if entity @s[y_rotation=0] align xyz run summon block_display ~1 ~ ~0.40625 {block_state:{Properties:{facing:"south",half:"top",open:"true",powered:"false",waterlogged:"false"},Name:"minecraft:cherry_trapdoor"},Tags:["doord", "doord_init_display"]}
 execute if entity @s[y_rotation=0] align xyz run summon block_display ~ ~1 ~0.40625 {block_state:{Properties:{facing:"south",half:"bottom",open:"true",powered:"false",waterlogged:"false"},Name:"minecraft:cherry_trapdoor"},Tags:["doord", "doord_init_display"]}
