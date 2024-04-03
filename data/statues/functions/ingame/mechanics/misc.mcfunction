@@ -5,7 +5,7 @@ execute as @a if entity @s[nbt={AbsorptionAmount:0f}] run effect clear @s minecr
 effect give @a[team=Survivor] weakness infinite 0 true
 
 #> Prevent dropping non-objective items 
-execute as @e[type=item,nbt={Item:{tag:{objective:1b}}}] run function statues:ingame/mechanics/nodrop
+execute as @e[type=item,nbt=!{Item:{tag:{objective:1b}}}] run function statues:ingame/mechanics/nodrop
 
 #> Prevents items from despawning, notably the key item
 execute as @e[type=item] run data modify entity @s Age set value -32768s

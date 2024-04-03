@@ -30,12 +30,6 @@ execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/hid
 execute if score $Timer.Ticks Statues.Data matches 1 run scoreboard players reset * Statues.Survivors
 execute as @a[team=Survivor] run scoreboard players operation @s Statues.Survivors = @s Statues.Health
 
-#> Door handling
-## execute at @e[tag=door] if entity @a[distance=..5,gamemode=!spectator] run function statues:ingame/mechanics/doors/tick
-execute as @e[tag=door] at @s if entity @a[limit=1,distance=..5] run return run scoreboard players set $rundoors Statues.Data 1
-execute if score $rundoors Statues.Data matches 1 run function statues:ingame/mechanics/doors/tick
-scoreboard players set $rundoor Statues.Data 0
-
 #> Floors
 execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/tick
 
@@ -49,7 +43,11 @@ scoreboard players set @a[team=!Survivor] Statues.Dead 0
 
 execute as @a[tag=Tutorial] run function statues:lobby/tutorial-info/hiding
 
-
+#> Door handling
+execute as @e[tag=door] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.Data 1
+execute if score $rundoors Statues.Data matches 1 run function statues:ingame/mechanics/doors/tick
+scoreboard players set $rundoor Statues.Data 0
+## execute at @e[tag=door] if entity @a[distance=..5,gamemode=!spectator] run function statues:ingame/mechanics/doors/tick
 
 
 

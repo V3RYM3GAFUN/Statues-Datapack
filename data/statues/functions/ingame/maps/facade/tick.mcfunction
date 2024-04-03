@@ -1,4 +1,4 @@
-execute as @a[tag=blinder] at @s run function statues:ingame/maps/facade/classes/trapper/abilities
+execute as @a[tag=trapper] at @s run function statues:ingame/maps/facade/classes/trapper/abilities
 execute as @a[tag=cloaker] at @s run function statues:ingame/maps/facade/classes/cloaker/abilities
 execute as @a[tag=medic] at @s run function statues:ingame/maps/facade/classes/medic/abilities
 execute as @a[tag=rusher] at @s run function statues:ingame/maps/facade/classes/rusher/abilities
@@ -6,6 +6,7 @@ execute as @a[tag=soldier] at @s run function statues:ingame/maps/facade/classes
 execute as @a[tag=tank] at @s run function statues:ingame/maps/facade/classes/tank/abilities
 execute as @a[tag=pusher] at @s run function statues:ingame/maps/facade/classes/pusher/abilities
 execute as @a[tag=recon] at @s run function statues:ingame/maps/facade/classes/recon/abilities
+execute as @a[tag=shotgunner] at @s run function statues:ingame/maps/facade/classes/shotgunner/abilities
 
 #> Objective tracking
 execute if score $Objective Statues.Data matches 0 run data modify storage statues:data objective_text set value '{"text":"Find backup generator key and unlock the door","color":"aqua"}'
