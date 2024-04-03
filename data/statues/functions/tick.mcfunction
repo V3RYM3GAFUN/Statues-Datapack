@@ -32,9 +32,9 @@ execute as @a[team=Survivor] run scoreboard players operation @s Statues.Survivo
 
 #> Door handling
 ## execute at @e[tag=door] if entity @a[distance=..5,gamemode=!spectator] run function statues:ingame/mechanics/doors/tick
-execute as @e[tag=door] at @s if entity @a[limit=1,distance=..5] run scoreboard players set $rundoors objective 1
-execute if score $rundoors objective matches 1 run function statues:ingame/mechanics/door/tick
-scoreboard players set $rundoor objective 0
+execute as @e[tag=door] at @s if entity @a[limit=1,distance=..5] run return run scoreboard players set $rundoors Statues.Data 1
+execute if score $rundoors Statues.Data matches 1 run function statues:ingame/mechanics/doors/tick
+scoreboard players set $rundoor Statues.Data 0
 
 #> Floors
 execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/tick
