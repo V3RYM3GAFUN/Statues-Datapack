@@ -33,7 +33,7 @@ execute if score $Timer.Ticks Statues.Data matches 1 run scoreboard players rese
 execute as @a[team=Survivor] run scoreboard players operation @s Statues.Survivors = @s Statues.Health
 
 #> Floors
-execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/tick
+execute if score floors Statues.FeatureFlags matches 1 run execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/tick
 
 #> For testing
 execute if score vents Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/vents/tick

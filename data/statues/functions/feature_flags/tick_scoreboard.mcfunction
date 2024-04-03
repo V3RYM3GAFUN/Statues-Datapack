@@ -13,3 +13,7 @@ scoreboard players display name power_doors Statues.FeatureFlags {"text":"Power 
 execute if score vents Statues.FeatureFlags matches 0 run scoreboard players display numberformat vents Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score vents Statues.FeatureFlags matches 0 run scoreboard players display numberformat vents Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name vents Statues.FeatureFlags {"text":"Vents Feature"}
+
+execute if score floors Statues.FeatureFlags matches 0 run scoreboard players display numberformat floors Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score floors Statues.FeatureFlags matches 0 run scoreboard players display numberformat floors Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name floors Statues.FeatureFlags {"text":"Floors Feature"}
