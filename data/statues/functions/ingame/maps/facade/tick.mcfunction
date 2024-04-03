@@ -27,6 +27,11 @@ execute as @e[type=minecraft:interaction,tag=objective_facade_genkey] on target 
 execute as @e[type=minecraft:interaction,tag=objective_facade_genkey] on target if predicate statues:holding_facade_genkey run function statues:ingame/maps/facade/objectives/genkey
 execute as @e[type=minecraft:interaction,tag=objective_facade_genkey] run data remove entity @s interaction
 
+#> Lab access room unlock
+execute as @e[type=minecraft:interaction,tag=objective_facade_labkey] on target if predicate statues:holding_facade_labkey run tellraw @a[team=!Monster] ["",{"bold":true,"selector":"@s"},{"text":" has unlocked the access to the labs!","color":"aqua"}]
+execute as @e[type=minecraft:interaction,tag=objective_facade_labkey] on target if predicate statues:holding_facade_labkey run function statues:ingame/maps/facade/objectives/genkey
+execute as @e[type=minecraft:interaction,tag=objective_facade_labkey] run data remove entity @s interaction
+
 #> Power on detection
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
 
