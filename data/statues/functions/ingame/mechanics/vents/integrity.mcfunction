@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_vents_flags run return fail
 scoreboard players set $IntegrityCheckCount Statues.VentData 0
 scoreboard players set $IntegrityCheckECount Statues.VentData 0
 execute as @e[tag=vent] at @s run function statues:ingame/mechanics/vents/integrity_self with entity @s

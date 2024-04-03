@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_power_doors_flags run return fail
 execute store result score $Rotation Statues.DoorData run data get entity @s Rotation[0]
 scoreboard players operation $Rotation Statues.DoorData += $45 Statues.Data
 scoreboard players operation $Rotation Statues.DoorData /= $90 Statues.Data

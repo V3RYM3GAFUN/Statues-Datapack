@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_power_doors_flags run return fail
 execute as @e[tag=power_door_dx,tag=power_door_opened] at @s align xyz if block ~-1 ~-1 ~ air run summon block_display ~-1 ~-1 ~0.40625 {block_state:{Properties:{facing:"south",half:"bottom",open:"true",powered:"false",waterlogged:"false"},Name:"minecraft:bamboo_trapdoor"},Tags:["power_doord"]}
 execute as @e[tag=power_door_dx,tag=power_door_opened] at @s align xyz if block ~0 ~-1 ~ air run summon block_display ~0 ~-1 ~0.40625 {block_state:{Properties:{facing:"south",half:"bottom",open:"true",powered:"false",waterlogged:"false"},Name:"minecraft:bamboo_trapdoor"},Tags:["power_doord"]}
 execute as @e[tag=power_door_dx,tag=power_door_opened] at @s align xyz if block ~1 ~-1 ~ air run summon block_display ~1 ~-1 ~0.40625 {block_state:{Properties:{facing:"south",half:"bottom",open:"true",powered:"false",waterlogged:"false"},Name:"minecraft:bamboo_trapdoor"},Tags:["power_doord"]}

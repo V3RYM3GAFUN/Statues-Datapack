@@ -36,7 +36,7 @@ execute as @a[team=Survivor] run scoreboard players operation @s Statues.Survivo
 execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/tick
 
 #> For testing
-function statues:ingame/mechanics/vents/tick
+execute if score vents Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/vents/tick
 function statues:ingame/mechanics/misc
 # function statues:ingame/mechanics/survivors/survivormusic
 

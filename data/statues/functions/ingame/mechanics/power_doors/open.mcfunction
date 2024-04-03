@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_power_doors_flags run return fail
 kill @e[tag=power_doord]
 
 execute as @e[tag=power_door_dx,tag=!power_door_opened] at @s run fill ~-1 ~-1 ~ ~1 ~1 ~ air replace red_wool

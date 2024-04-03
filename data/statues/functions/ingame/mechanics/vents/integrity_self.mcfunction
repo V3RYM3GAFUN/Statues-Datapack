@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_vents_flags run return fail
 scoreboard players add $IntegrityCheckECount Statues.VentData 1
 scoreboard players set $IntegrityCheckStairs Statues.VentData 0
 

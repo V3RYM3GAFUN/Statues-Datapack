@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_vents_flags run return fail
 execute as @e[tag=vent] at @s on target if entity @s[team=Survivor] run tp @s ~ ~.95 ~
 execute as @e[tag=vent] at @s on target if entity @s[tag=002] run tp @s ~ ~.95 ~
 execute as @e[tag=vent] at @s on target if entity @s[tag=dev_ignore_vent_requirement] run tp @s ~ ~.95 ~
