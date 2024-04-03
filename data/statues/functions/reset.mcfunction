@@ -64,6 +64,8 @@ execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=north,fac
 
 execute at @e[tag=pressure_plates] run setblock ~ ~ ~ minecraft:light_weighted_pressure_plate
 
+time set 6000
+weather clear
 
 ## Old way for containers
 # execute at @e[tag=test] run item replace block ~ ~ ~ container.1 with air

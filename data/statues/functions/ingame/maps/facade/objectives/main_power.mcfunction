@@ -27,3 +27,6 @@ scoreboard players add $Objective Statues.Data 1
 
 function statues:ingame/mechanics/power_doors/open
 function statues:ingame/mechanics/lights/lights_on
+
+time set 18000
+weather rain

@@ -20,4 +20,9 @@ execute as @e[type=minecraft:interaction,tag=objective_facade_genkey] run data r
 #> Power on detection
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
 
+#> High class office unlock
+execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] on target if data entity @s SelectedItem{tag:{Tags:["facade_highclass_item"]}} run tellraw @a[team=!Monster] ["",{"bold":true,"selector":"@s"},{"text":" has unlocked the high class offices!","color":"aqua"}]
+execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] on target if data entity @s SelectedItem{tag:{Tags:["facade_highclass_item"]}} run function statues:ingame/maps/facade/objectives/highclasskey
+execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run data remove entity @s interaction
+
 # tag @e[tag=objective_triggered] remove objective_triggered

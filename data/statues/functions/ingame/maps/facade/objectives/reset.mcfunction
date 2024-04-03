@@ -2,4 +2,11 @@
 execute as @e[tag=objective_power] run data modify entity @s text set value "{'text':'Main Power','color':'dark_red'}"
 function statues:ingame/mechanics/power_doors/close
 
+#> Backup generator door
 execute as @e[tag=objective_facade_genkey,type=text_display] run data modify entity @s text set value "{'text':'Generator key','color':'dark_red'}"
+
+#> High class office doors
+execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value "{'text':'High class key','color':'dark_red'}"
+execute at @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run fill ~ ~ ~ ~ ~1 ~ glass_pane
+fill -20 135 345 -20 136 345 air
+fill 22 135 345 22 136 345 air
