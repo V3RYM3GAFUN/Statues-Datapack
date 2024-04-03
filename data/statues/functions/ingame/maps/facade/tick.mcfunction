@@ -10,17 +10,17 @@ execute as @a[tag=shotgunner] at @s run function statues:ingame/maps/facade/clas
 
 #> Objective tracking
 execute if score $Objective Statues.Data matches 0 run data modify storage statues:data objective_text set value '{"text":"Find backup generator key and unlock the door","color":"aqua"}'
-execute if score $Objective Statues.Data matches 0 run data modify storage statues:data objective_floor set value 0
+execute if score $Objective Statues.Data matches 0 run data modify storage statues:data objective_floor set value -1
 execute if score $Objective Statues.Data matches 1 run data modify storage statues:data objective_text set value '{"text":"Turn on the generator","color":"gold"}'
-execute if score $Objective Statues.Data matches 1 run data modify storage statues:data objective_floor set value 0
-execute if score $Objective Statues.Data matches 2 run data modify storage statues:data objective_text set value '{"text":"Find lab access keycard in x room","color":"green"}'
-execute if score $Objective Statues.Data matches 2 run data modify storage statues:data objective_floor set value 0
+execute if score $Objective Statues.Data matches 1 run data modify storage statues:data objective_floor set value -1
+execute if score $Objective Statues.Data matches 2 run data modify storage statues:data objective_text set value '{"text":"Find lab access keycard in Archive room","color":"green"}'
+execute if score $Objective Statues.Data matches 2 run data modify storage statues:data objective_floor set value -1
 execute if score $Objective Statues.Data matches 3 run data modify storage statues:data objective_text set value '{"text":"Head down the labs and turn on the main power","color":"yellow"}'
-execute if score $Objective Statues.Data matches 3 run data modify storage statues:data objective_floor set value 0
+execute if score $Objective Statues.Data matches 3 run data modify storage statues:data objective_floor set value -2
 execute if score $Objective Statues.Data matches 4 run data modify storage statues:data objective_text set value '{"text":"Search labs for keycard and unlock door (top floor)","color":"white","bold":true}'
-execute if score $Objective Statues.Data matches 4 run data modify storage statues:data objective_floor set value 0
+execute if score $Objective Statues.Data matches 4 run data modify storage statues:data objective_floor set value -3
 execute if score $Objective Statues.Data matches 5 run data modify storage statues:data objective_text set value '{"text":"Find the confidential book and escape!","color":"red","bold":true}'
-execute if score $Objective Statues.Data matches 5 run data modify storage statues:data objective_floor set value 0
+execute if score $Objective Statues.Data matches 5 run data modify storage statues:data objective_floor set value 1
 
 #> Generator room unlock
 execute as @e[type=minecraft:interaction,tag=objective_facade_genkey] on target if predicate statues:holding_facade_genkey run tellraw @a[team=!Monster] ["",{"bold":true,"selector":"@s"},{"text":" has unlocked the backup generator door!","color":"aqua"}]
