@@ -15,4 +15,4 @@
 
 
 ### Enabling/Disabling
-To enable a feature flag run `/scoreboard players set <featureflag> Statues.Data 1`, and to turn it off `/scoreboard players set <featureflag> Statues.Data 0`. Replace `<featureflag>` with the feature you want to enable/disable.
+To enable a feature flag run `/scoreboard players set <featureflag> Statues.FeatureFlags 1`, and to turn it off `/scoreboard players set <featureflag> Statues.FeatureFlags 0`. Replace `<featureflag>` with the feature you want to enable/disable.
