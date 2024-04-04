@@ -1,16 +1,3 @@
-## hidden mechanic using intereaction entity
+execute at @e[tag=tutorial_step1] run tp @s ~ ~ ~
 
-execute as @a[tag=!hidden] at @s run scoreboard players set @s Statues.Heartbeat 25
-execute as @a[tag=hidden] at @s run effect give @s blindness 2 0 true
-
-execute as @e[type=minecraft:interaction,tag=hide] at @s on target run tp @s[tag=!hidden,tag=Tutorial] ~ ~.75 ~
-execute as @e[type=minecraft:interaction,tag=hide] at @s on target run tag @s[tag=Tutorial,tag=!hidden] add hidden
-execute as @e[type=minecraft:interaction,tag=hide] run data remove entity @s interaction
-execute as @a[tag=hidden] at @s run scoreboard players remove @s Statues.Heartbeat 1
-
-execute as @e[type=minecraft:interaction,tag=exit] at @s on target run tp @s[tag=hidden] ~ ~2.15 ~
-execute as @e[type=minecraft:interaction,tag=exit] at @s on target run tag @s[tag=hidden] remove hidden
-execute as @e[type=minecraft:interaction,tag=exit] run data remove entity @s interaction
-
-
-#> tags : [tutorial_step2] [tutorial_step3] [tutorial_step4]
+tellraw @s  ["",{"text":"[Tutorial]","bold":true,"color":"aqua"},"\nWhen you're exploring, you might find yourself being chased by a monster. Luckily, you don't have to run away and hope to lose the monster! you can also try to hide under tables.\nClick on the ",{"text":"blue ","color":"dark_blue"},"concrete block to hide. Then click on the ",{"text":"red ","color":"dark_red"},"concrete block to get out\n",{"text":"[Press me to continue]","clickEvent":{"action":"run_command","value":"/function statues:lobby/tutorial-info/vent-info"},"color":"green"}]
