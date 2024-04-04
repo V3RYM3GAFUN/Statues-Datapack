@@ -6,6 +6,6 @@ scoreboard players add $Objective Statues.Data 1
 
 execute as @a at @s run playsound minecraft:block.vault.insert_item ambient @a ~ ~ ~ 1 1.5
 
-clear @a[nbt={SelectedItem:{tag:{Tags:["facade_genkey_item"]}}}] iron_ingot{Tags:["facade_genkey_item"]}
+clear @a iron_ingot{facade_labkey_item:1b} 1
 
 time set 10000

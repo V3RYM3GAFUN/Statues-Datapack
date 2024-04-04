@@ -10,6 +10,6 @@ scoreboard players add $Objective Statues.Data 1
 
 execute as @a at @s run playsound minecraft:block.vault.insert_item ambient @a ~ ~ ~ 1 1.5
 
-clear @a[nbt={SelectedItem:{tag:{Tags:["facade_highclass_item"]}}}] iron_ingot{Tags:["facade_highclass_item"]}
+clear @a iron_ingot{facade_highclass_item:1b} 1
 
 weather thunder
