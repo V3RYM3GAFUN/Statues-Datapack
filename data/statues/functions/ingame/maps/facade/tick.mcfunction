@@ -15,6 +15,8 @@ execute if score $Objective Statues.Data matches 1 run data modify storage statu
 execute if score $Objective Statues.Data matches 1 run data modify storage statues:data objective_floor set value -1
 execute if score $Objective Statues.Data matches 2 run data modify storage statues:data objective_text set value '{"text":"Find lab access keycard in Archive room","color":"green"}'
 execute if score $Objective Statues.Data matches 2 run data modify storage statues:data objective_floor set value -1
+execute if score $Objective Statues.Data matches 2 run data modify storage statues:data objective_text set value '{"text":"Press the button ","color":"green"}'
+execute if score $Objective Statues.Data matches 2 run data modify storage statues:data objective_floor set value -1
 execute if score $Objective Statues.Data matches 3 run data modify storage statues:data objective_text set value '{"text":"Head down the labs and turn on the main power","color":"yellow"}'
 execute if score $Objective Statues.Data matches 3 run data modify storage statues:data objective_floor set value -2
 execute if score $Objective Statues.Data matches 4 run data modify storage statues:data objective_text set value '{"text":"Search labs for keycard and unlock door (top floor)","color":"white","bold":true}'

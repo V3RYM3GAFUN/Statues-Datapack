@@ -4,7 +4,7 @@ execute as @e[type=text_display,tag=objective_facade_labkey] run data modify ent
 
 scoreboard players add $Objective Statues.Data 1
 
-execute as @a at @s run playsound minecraft:block.vault.insert_item ambient @a ~ ~ ~ 1 1.5
+execute as @a[team=!Monster] at @s run playsound minecraft:block.vault.insert_item ambient @a ~ ~ ~ 1 1.5
 
 clear @a iron_ingot{facade_labkey_item:1b} 1
 

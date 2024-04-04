@@ -6,7 +6,7 @@ function statues:ingame/mechanics/power_doors/close
 execute as @e[tag=objective_facade_genkey,type=text_display] run data modify entity @s text set value "{'text':'Generator key','color':'dark_red'}"
 
 #> Archive Room door
-execute as @e[tag=objective_facade_genkey,type=text_display] run data modify entity @s text set value "{'text':'Generator power','color':'dark_red'}"
+execute as @e[tag=objective_facade_genpower,type=text_display] run data modify entity @s text set value "{'text':'Generator power','color':'dark_red'}"
 
 #> High class office doors
 execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value "{'text':'High class key','color':'dark_red'}"

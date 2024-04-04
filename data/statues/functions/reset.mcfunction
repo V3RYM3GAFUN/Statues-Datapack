@@ -35,7 +35,6 @@ scoreboard players reset * Statues.abilities
 scoreboard players reset * Statues.Objective
 scoreboard players reset @a Statues.Data
 
-function statues:ingame/maps/facade/objectives/reset
 
 #> Turn off power
 function statues:ingame/mechanics/lights/lights_off
@@ -62,7 +61,13 @@ execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=west,face
 execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=south,face=wall] run setblock ~ ~ ~ crimson_button[facing=south,face=wall]
 execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=north,face=wall] run setblock ~ ~ ~ crimson_button[facing=north,face=wall]
 
+#> Resets the pressure plates for class selection
 execute at @e[tag=pressure_plates] run setblock ~ ~ ~ minecraft:light_weighted_pressure_plate
+
+#> Resets the current objective
+scoreboard players set $Objective Statues.Data 0 
+
+function statues:ingame/maps/facade/objectives/reset
 
 time set 6000
 weather clear
