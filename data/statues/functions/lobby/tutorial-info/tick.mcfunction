@@ -17,11 +17,10 @@ execute as @e[tag=vent] at @s on target if entity @s[tag=tutorial] run tp @s ~ ~
 execute as @e[tag=vent] at @s on target if entity @s[tag=dev_ignore_vent_requirement] run tp @s ~ ~.95 ~
 execute as @e[type=minecraft:interaction,tag=vent] run data remove entity @s interaction
 
-execute as @e[tag=tutorial_button] on target at @s run tp ~-8 ~ ~
+execute as @e[tag=tutorial_button] on target at @s run function statues:lobby/tutorial-info/buttontp
 execute as @e[tag=tutorial_button] run data remove entity @s interaction
 
-execute as @e[tag=tutorial_door] on target if predicate statues:holding_tutorial_key at @s run tp ~-8 ~ ~
-execute as @e[tag=tutorial_door] on target at @s run playsound minecraft:block.vault.insert_item master @a ~ ~ ~ 1 1.5
+execute as @e[tag=tutorial_door] on target if predicate statues:holding_tutorial_key at @s run function statues:lobby/tutorial-info/doortp
 execute as @e[tag=tutorial_door] run data remove entity @s interaction
 
 #> Prevent duplicates

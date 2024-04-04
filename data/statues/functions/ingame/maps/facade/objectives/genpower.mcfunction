@@ -4,4 +4,4 @@ execute as @e[type=text_display,tag=objective_facade_genpower] run data modify e
 
 scoreboard players set $Objective Statues.Data 2
 
-execute as @a[team=!Monster] at @s run playsound minecraft:ui.loom.take_result ambient @a ~ ~ ~ 1 0
+execute as @a[team=!Monster] at @s run playsound minecraft:ui.loom.take_result master @a ~ ~ ~ 1 0

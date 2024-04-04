@@ -1,6 +1,5 @@
 execute at @e[tag=tutorial_step3] run tp @s ~ ~ ~
 
-give @s iron_ingot{tutorial:1b}
+tellraw @s ["",{"text":"[Tutorial]","bold":true,"color":"aqua"},"\nSome of the objectives to complete are represented by ",{"text":"crimson","color":"red"},{"text":" buttons. When you press the button, it'll become a ","color":"white"},{"text":"warped","color":"dark_aqua"},{"text":" button, signaling that this objective has been accomplished","color":"white"},"\n",{"text":"[Press me to continue]","clickEvent":{"action":"run_command","value":"/function statues:lobby/tutorial-info/doors"},"color":"green"}]
 
-tellraw @s ["",{"text":"[Tutorial]","bold":true,"color":"aqua"},"\nSome of the objectives to complete are represented by ",{"text":"crimson","color":"red"},{"text":" buttons. When you press the button, it'll become a ","color":"white"},{"text":"warped","color":"dark_aqua"},{"text":" button, signaling that this objective has been accomplished","color":"white"},"\n",{"text":"[Press me to continue]","clickEvent":{"action":"run_command","value":"/function statues:lobby/tutorial-info/finish"},"color":"green"}]
-
+execute at @s run playsound block.note_block.pling master @s ~ ~ ~ 1 1
