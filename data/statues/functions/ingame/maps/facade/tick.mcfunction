@@ -43,6 +43,6 @@ execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run 
 # tag @e[tag=objective_triggered] remove objective_triggered
 
 #> Countdown for monster spawn delay (before they can actually chase survivors)
-execute if score $MonsterSpawnDelay Statues.Data matches 1.. run scoreboard players remove $MonsterSpawnDelay Statues.Data 1
+execute if score $MonsterSpawnDelay Statues.Data matches 0.. run scoreboard players remove $MonsterSpawnDelay Statues.Data 1
 execute if score $MonsterSpawnDelay Statues.Data matches ..0 run tellraw @a {"text": "The survivors are no longer safe...","bold": true,"color": "red"}
 execute if score $MonsterSpawnDelay Statues.Data matches ..0 as @a at @s run playsound minecraft:entity.enderman.stare master @s ~ ~ ~ 1 .75
