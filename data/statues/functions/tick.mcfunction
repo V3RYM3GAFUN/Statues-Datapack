@@ -3,8 +3,6 @@ function statues:debug/show_entities
 
 execute as @a[tag=!first_join] at @s run function statues:lobby/firstjoin
 
-function statues:ingame/mechanics/nodrop
-
 #> Queuing system
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/queuing/queuing_base
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/lobbymusic

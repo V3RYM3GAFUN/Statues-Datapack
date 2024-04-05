@@ -16,6 +16,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 ## Developer Player Tags
 | Tag                               | Description                                                          |
 |-----------------------------------|----------------------------------------------------------------------|
+| `dev_allow_item_drop            ` | Allows player to drop items out of inventory                         |
 | `dev_always_show_floor_objective` | Shows the current objective and floor when you're not a survivor     |
 | `dev_ignore_vent_requirement`     | Ignores the requirement to go in a vent (normally 002 and survivors) |
 
