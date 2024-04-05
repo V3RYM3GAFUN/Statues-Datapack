@@ -1,3 +1,18 @@
+# Statues.
+A Minecraft minigame by V3RYM3GAFUN Studios
+
+## Credits
+- **V3RYM3GAFUN** - Creator, Producer, Coder, Builder, SFX Specialist
+- **Java_chan** - Coder, Animator
+- **RedstoneYay** - Coder
+- **Evtema3** - Coder
+- **TheAtlas29** - Builder
+- **NoodlePandarian** - Builder
+- **gosh5557** - Builder
+- **Delkom** - Builder
+- **Brownie1111** - Modeler/Graphic Designer
+
+
 ## Developer Player Tags
 | Tag                               | Description                                                          |
 |-----------------------------------|----------------------------------------------------------------------|
@@ -18,18 +33,12 @@
 To enable a feature flag run `/scoreboard players set <featureflag> Statues.FeatureFlags 1`, and to turn it off `/scoreboard players set <featureflag> Statues.FeatureFlags 0`. Replace `<featureflag>` with the feature you want to enable/disable.
 
 ## Entity tags 
-
-map_* | marker inside barrels for item spawning (ex: facade_genkey)
-
-objective_map_* | interaction or text display or objective that can be completed (ex: objective_facade_genkey)
-
-objective_power | self explanotary. Might rename
-
-objective_reset | for all objectives that can be reset. (text displays, barrels, interactions)
-
-map_team_tp | marker that will teleport the player from corresponding team to it (ex: facade_monster_tp) 
-
-pressure_plates | marker inside gold pressure plates (in class selection room)
-
-queued | used in lobby
-
+| Tag               | Description                                                                                   |
+|-------------------|-----------------------------------------------------------------------------------------------|
+| `map_*`           | marker inside barrels for item spawning (ex: facade_genkey)                                   |
+| `objective_map_*` | interaction or text display or objective that can be completed (ex: objective_facade_genkey)  |
+| `objective_power` | self explanotary. Might rename                                                                |
+| `objective_reset` | for all objectives that can be reset. (text displays, barrels, interactions)                  |
+| `map_team_tp`     | marker that will teleport the player from corresponding team to it (ex: facade_monster_tp)    |
+| `pressure_plates` | marker inside gold pressure plates (in class selection room)                                  |
+| `queued`          | used in lobby                                                                                 |
