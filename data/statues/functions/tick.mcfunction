@@ -37,6 +37,7 @@ execute if score floors Statues.FeatureFlags matches 1 run execute as @a[tag=dev
 
 #> For testing
 execute if score vents Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/vents/tick
+execute if score dev_auto_convert_lights Statues.FeatureFlags matches 1 as @a[team=Dev] at @s run function statues:ingame/mechanics/lights/create_light_auto
 function statues:ingame/mechanics/misc
 # function statues:ingame/mechanics/survivors/survivormusic
 

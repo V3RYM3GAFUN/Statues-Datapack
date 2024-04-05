@@ -1,3 +1,5 @@
+execute if score lights Statues.FeatureFlags matches 0 run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+
 execute if score doors Statues.FeatureFlags matches 0 run scoreboard players display numberformat doors Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score doors Statues.FeatureFlags matches 0 run scoreboard players display numberformat doors Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name doors Statues.FeatureFlags {"text":"Doors Feature"}
@@ -25,3 +27,7 @@ scoreboard players display name dev_show_markers Statues.FeatureFlags [{"text":"
 execute if score dev_show_interactions Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_interactions Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_show_interactions Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_interactions Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name dev_show_interactions Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Show Interactions","color":"white"}]
+
+execute if score dev_auto_convert_lights Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_auto_convert_lights Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score dev_auto_convert_lights Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_auto_convert_lights Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name dev_auto_convert_lights Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Auto Convert Lights","color":"white"}]
