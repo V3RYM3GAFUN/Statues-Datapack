@@ -1,4 +1,5 @@
 function statues:feature_flags/tick_scoreboard
+function statues:debug/show_entities
 
 execute as @a[tag=!first_join] at @s run function statues:lobby/firstjoin
 
