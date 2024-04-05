@@ -18,3 +18,6 @@ execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modi
 execute at @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run fill ~ ~ ~ ~ ~1 ~ glass_pane
 fill -20 135 345 -20 136 345 air
 fill 22 135 345 22 136 345 air
+
+#> Book text 
+execute as @e[type=text_display,tag=objective_facade_book] run data modify entity @s text set value "{'text':'CONFIDENTIAL book','color':'dark_red'}"
