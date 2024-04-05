@@ -12,6 +12,12 @@ tag @a remove solo
 tag @a remove cloaker
 tag @a remove medic
 tag @a remove juggernaut
+tag @a remove runner
+tag @a remove shotgunner
+tag @a remove gunner
+tag @a remove brawler
+tag @a remove marksman
+tag @a remove trapper
 
 tag @e remove monster1
 tag @e remove monster2
