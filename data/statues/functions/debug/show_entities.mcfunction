@@ -1,2 +1,2 @@
-execute if score dev_show_markers Statues.FeatureFlags matches 1 as @a[tag=Dev] at @s at @e[type=marker,distance=..20] align xyz run particle minecraft:dust 1 0.7 1 1 ~0.5 ~0.5 ~0.5 0.4 0.4 0.4 0 5 normal @s
-execute if score dev_show_interactions Statues.FeatureFlags matches 1 as @a[tag=Dev] at @s at @e[type=interaction,distance=..20] align xyz run particle minecraft:dust 0.5 1 1 1 ~0.5 ~0.5 ~0.5 0.4 0.4 0.4 0 5 normal @s
+execute if score dev_show_markers Statues.FeatureFlags matches 1 as @a[team=Dev] at @s at @e[type=marker,distance=..20] align xyz run particle minecraft:dust 1 0.7 1 1 ~0.5 ~0.5 ~0.5 0.4 0.4 0.4 0 5 normal @s
+execute if score dev_show_interactions Statues.FeatureFlags matches 1 as @a[team=Dev] at @s at @e[type=interaction,distance=..20] align xyz run particle minecraft:dust 0.5 1 1 1 ~0.5 ~0.5 ~0.5 0.4 0.4 0.4 0 5 normal @s
