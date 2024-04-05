@@ -8,3 +8,7 @@ item replace entity @s hotbar.1 with tipped_arrow{CustomPotionColor:209,display:
 item replace entity @s hotbar.2 with tipped_arrow{CustomPotionColor:568831,display:{Name:'[{"text":"Weak Anti-anomaly Ammo","italic":false,"color":"dark_aqua"}]'},custom_potion_effects:[{id:"minecraft:blindness",duration:20,show_particles:0b},{id:"minecraft:slowness",duration:30,amplifier:3,show_particles:0b}]} 48
 
 item replace entity @s hotbar.8 with compass
+
+item replace entity @s armor.chest with leather_chestplate{Trim:{pattern:silence,material:emerald},display:{color:8439583,Name:'["",{"text":"Gunner Outfit","italic":false,"color":"dark_green","bold":true}]'},Unbreakable:1,HideFlags:196}
+item replace entity @s armor.legs with leather_leggings{Trim:{pattern:wayfinder,material:emerald},display:{color:8439583,Name:'["",{"text":"Gunner Outfit","italic":false,"color":"dark_green","bold":true}]'},Unbreakable:1,HideFlags:196}
+item replace entity @s armor.feet with leather_boots{Trim:{pattern:ward,material:emerald},display:{color:8439583,Name:'["",{"text":"Gunner Outfit","italic":false,"color":"dark_green","bold":true}]'},Unbreakable:1,HideFlags:196}

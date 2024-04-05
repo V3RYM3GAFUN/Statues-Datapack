@@ -16,3 +16,7 @@ item replace entity @s hotbar.6 with splash_potion{CustomPotionColor:9737364,dis
 item replace entity @s hotbar.7 with splash_potion{CustomPotionColor:9737364,display:{Name:'[{"text":"Armour","italic":false,"color":"gray"}]'},custom_potion_effects:[{id:"minecraft:absorption",duration:999999,amplifier:4,show_particles:0b}]}
 
 item replace entity @s hotbar.8 with compass
+
+item replace entity @s armor.chest with leather_chestplate{Trim:{pattern:raiser,material:iron},display:{color:9870729,Name:'["",{"text":"Juggernaut Outfit","italic":false,"color":"gray","bold":true}]'},Unbreakable:1,HideFlags:196}
+item replace entity @s armor.legs with leather_leggings{Trim:{pattern:wayfinder,material:iron},display:{color:9870729,Name:'["",{"text":"Juggernaut Outfit","italic":false,"color":"gray","bold":true}]'},Unbreakable:1,HideFlags:196}
+item replace entity @s armor.feet with leather_boots{Trim:{pattern:snout,material:iron},display:{color:9870729,Name:'["",{"text":"Juggernaut Outfit","italic":false,"color":"gray","bold":true}]'},Unbreakable:1,HideFlags:196}

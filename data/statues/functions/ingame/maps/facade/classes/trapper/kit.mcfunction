@@ -12,3 +12,7 @@ item replace entity @s hotbar.6 with lingering_potion{CustomPotionColor:6184542,
 item replace entity @s hotbar.7 with lingering_potion{CustomPotionColor:6184542,display:{Name:'[{"text":"Smoke grenade","italic":false,"color":"gray"}]'},custom_potion_effects:[{id:"blindness",duration:60,show_particles:0b,show_icon:0b},{id:"nausea",duration:100,show_particles:0b,show_icon:0b}]} 1
 
 item replace entity @s hotbar.8 with compass
+
+item replace entity @s armor.chest with leather_chestplate{display:{color:8606770,Name:'["",{"text":"Trapper Outfit","italic":false,"color":"#993300","bold":true}]'},Unbreakable:1,HideFlags:68}
+item replace entity @s armor.legs with leather_leggings{display:{color:8606770,Name:'["",{"text":"Trapper Outfit","italic":false,"color":"#993300","bold":true}]'},Unbreakable:1,HideFlags:68}
+item replace entity @s armor.feet with leather_boots{display:{color:8606770,Name:'["",{"text":"Trapper Outfit","italic":false,"color":"#993300","bold":true}]'},Unbreakable:1,HideFlags:68}
