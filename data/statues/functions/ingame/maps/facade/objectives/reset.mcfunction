@@ -11,7 +11,10 @@ execute as @e[tag=objective_facade_genpower,type=text_display] run data modify e
 #> Lab access room door
 execute as @e[tag=objective_facade_labkey,type=text_display] run data modify entity @s text set value "{'text':'Lab access keycard','color':'dark_red'}"
 
+#> Override doors
 execute as @e[tag=objective_facade_override,type=text_display] run data modify entity @s text set value '{text:"Emergency override",color:"dark_red"}'
+fill -4 105 378 -4 106 378 iron_block
+fill -4 105 383 -4 106 383 iron_block
 
 #> High class office doors
 execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value "{'text':'High class key','color':'dark_red'}"
