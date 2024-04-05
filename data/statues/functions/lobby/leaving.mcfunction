@@ -15,10 +15,17 @@ effect give @s saturation infinite 100 true
 tag @s remove monster1
 tag @s remove monster2
 
-#> Remove all class tags
-tag @s remove cloaker
-tag @s remove juggernaut
-tag @s remove medic
+#> Remove all survivor tags
+tag @a remove solo
+tag @a remove cloaker
+tag @a remove medic
+tag @a remove juggernaut
+tag @a remove runner
+tag @a remove shotgunner
+tag @a remove gunner
+tag @a remove brawler
+tag @a remove marksman
+tag @a remove trapper
 
 #> To avoid adding a vote from the previous game to be carried on
 tag @s remove vote_facade
@@ -28,7 +35,6 @@ tag @s remove vote_origins
 team join Lobby @s
 
 #> Other potential needs
-tag @s remove Solo
 scoreboard players reset @s Statues.Monsters
 scoreboard players reset @s Statues.Survivors
 scoreboard players reset @s Statues.Data

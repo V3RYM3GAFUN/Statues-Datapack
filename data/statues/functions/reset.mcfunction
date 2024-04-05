@@ -8,6 +8,7 @@ spawnpoint @a 0 0 0 0
 effect give @a instant_health 1 100 true
 effect give @a saturation infinite 100 true
 
+#> Get rid of class tags
 tag @a remove solo
 tag @a remove cloaker
 tag @a remove medic
@@ -18,6 +19,8 @@ tag @a remove gunner
 tag @a remove brawler
 tag @a remove marksman
 tag @a remove trapper
+
+tag @a remove class_selected
 
 tag @e remove monster1
 tag @e remove monster2

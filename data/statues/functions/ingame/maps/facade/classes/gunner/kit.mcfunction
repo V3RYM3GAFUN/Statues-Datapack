@@ -1,5 +1,5 @@
-#> Equivalent to gunner
-tag @s add soldier
+tag @s add gunner
+tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
 item replace entity @s hotbar.0 with bow{Unbreakable:1b,"display":{Name:'[{"text":"Anti anomaly gun","italic":false}]'},CustomModelData:1}

@@ -8,6 +8,9 @@ execute as @e[tag=objective_facade_genkey,type=text_display] run data modify ent
 #> Archive Room door
 execute as @e[tag=objective_facade_genpower,type=text_display] run data modify entity @s text set value "{'text':'Generator power','color':'dark_red'}"
 
+#> Lab access room door
+execute as @e[tag=objective_facade_labkey,type=text_display] run data modify entity @s text set value "{'text':'Lab access keycard','color':'dark_red'}"
+
 #> High class office doors
 execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value "{'text':'High class key','color':'dark_red'}"
 execute at @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run fill ~ ~ ~ ~ ~1 ~ glass_pane

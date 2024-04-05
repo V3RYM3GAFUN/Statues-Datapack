@@ -38,7 +38,7 @@ execute as @e[type=minecraft:interaction,tag=objective_facade_labkey] run data r
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
 execute if score $Objective Statues.Data matches 5.. run scoreboard players remove $Core.Ticks Statues.Data 1
 execute if score $Core.Ticks Statues.Data matches 0 run playsound minecraft:entity.warden.nearby_closer master @a -4 83 322 5 0
-execute if score $Core.Ticks Statues.Data matches ..0 run scoreboard players set $Core.Ticks Statues.Data 80
+execute if score $Core.Ticks Statues.Data matches ..0 run scoreboard players set $Core.Ticks Statues.Data 120
 
 
 #> High class office unlock
@@ -50,5 +50,4 @@ execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run 
 
 #> Countdown for monster spawn delay (before they can actually chase survivors)
 execute if score $MonsterSpawnDelay Statues.Data matches 0.. run scoreboard players remove $MonsterSpawnDelay Statues.Data 1
-execute if score $MonsterSpawnDelay Statues.Data matches 0 run tellraw @a {"text": "The survivors are no longer safe...","bold": true,"color": "red"}
-execute if score $MonsterSpawnDelay Statues.Data matches 0 as @a at @s run playsound minecraft:entity.enderman.stare master @s ~ ~ ~ 1 .75
+execute if score $MonsterSpawnDelay Statues.Data matches 0 run function statues:ingame/maps/facade/monsterspawn

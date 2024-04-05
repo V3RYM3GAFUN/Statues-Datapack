@@ -1,4 +1,5 @@
-tag @s add recon
+tag @s add marksman
+tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
 effect give @s night_vision infinite 0 true

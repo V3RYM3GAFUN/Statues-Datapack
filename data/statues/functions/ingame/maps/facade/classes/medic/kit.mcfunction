@@ -1,4 +1,5 @@
 tag @s add medic
+tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
 effect give @s health_boost infinite 1 true

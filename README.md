@@ -40,6 +40,9 @@ To enable a feature flag run `/scoreboard players set <featureflag> Statues.Feat
 | `objective_power`     | Self explanotary. Might rename                                                                |
 | `objective_reset`     | For all objectives that can be reset. (text displays, barrels, interactions)                  |
 | `map_team_tp`         | Marker that will teleport the player from corresponding team to it (ex: facade_monster_tp)    |
+| `map_monster_choice`  | Used to force a random monster selection if player doesn't choose after a certain time        |
+| `map_survivor_classes`| Used to force a random class selection if player doesn't choose after a certain time          |
 | `pressure_plates`     | Marker inside gold pressure plates (in class selection room)                                  |
 | `queued`              | Used in lobby                                                                                 |
 | `lobby_map_classes`   | In lobby, rooms where players look at classes                                                 | 
+| `machine_*`           | Used by machines                                                                              |

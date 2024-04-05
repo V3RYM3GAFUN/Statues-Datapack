@@ -1,4 +1,5 @@
 tag @s add shotgunner
+tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
 item replace entity @s hotbar.0 with crossbow{Unbreakable:1,display:{Name:'[{"text":"Shotgun","italic":false}]'},Enchantments:[{id:"multishot",lvl:1}],HideFlags:1}

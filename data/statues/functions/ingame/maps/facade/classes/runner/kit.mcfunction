@@ -1,4 +1,5 @@
-tag @s add rusher
+tag @s add runner
+tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
 effect give @s speed infinite 1 true
