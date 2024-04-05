@@ -31,7 +31,5 @@ map_team_tp | marker that will teleport the player from corresponding team to it
 
 pressure_plates | marker inside gold pressure plates (in class selection room)
 
-
-
 queued | used in lobby
 

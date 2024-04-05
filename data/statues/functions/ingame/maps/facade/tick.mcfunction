@@ -36,6 +36,10 @@ execute as @e[type=minecraft:interaction,tag=objective_facade_labkey] run data r
 
 #> Power on detection
 execute at @e[tag=objective_power] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
+execute if score $Objective Statues.Data matches 5.. run scoreboard players remove $Core.Ticks Statues.Data 1
+execute if score $Core.Ticks Statues.Data matches 0 run playsound minecraft:entity.warden.nearby_closer master @a -4 83 322 5 0
+execute if score $Core.Ticks Statues.Data matches ..0 run scoreboard players set $Core.Ticks Statues.Data 40
+
 
 #> High class office unlock
 execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] on target if predicate statues:holding_facade_highclass run tellraw @a[team=!Monster] ["",{"bold":true,"selector":"@s"},{"text":" has unlocked the high class offices!","color":"aqua"}]

@@ -23,3 +23,6 @@ scoreboard players set $MonsterSpawnDelay Statues.Data 1800
 tellraw @a {"text": "90 grace periods for survivors.","bold": true,"color": "aqua"}
 
 tp @a[team=Survivor] 44.5 -56 322
+
+#> Set the Core heartbeat timer
+scoreboard players set $Core.Ticks Statues.Data 20
