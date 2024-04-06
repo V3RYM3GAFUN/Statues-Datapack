@@ -28,7 +28,7 @@ execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/mon
 execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run function statues:ingame/mechanics/survivors/death
 execute as @a[team=Monster] run function statues:ingame/mechanics/survivors/survivordistance
 
-execute as @a[scores={Statues.Monsters=4}] run item replace entity @s hotbar.4 with tipped_arrow{CustomPotionColor:2325012,display:{Name:'[{"text":"Insects","italic":false,"color":"#006633","bold":true}]'},custom_potion_effects:[{id:"minecraft:poison",duration:100,amplifier:0,show_particles:0b,show_icon:0b},{id:"minecraft:instant_health",duration:1,amplifier:1,show_particles:0b,show_icon:0b}]} 1
+execute as @a[scores={Statues.Monsters=4}] run item replace entity @s hotbar.4 with tipped_arrow{CustomPotionColor:2325012,display:{Name:'[{"text":"Insects","italic":false,"color":"#006633","bold":true}]'},custom_potion_effects:[{id:"minecraft:poison",duration:60,amplifier:1,show_particles:0b,show_icon:0b},{id:"minecraft:instant_health",duration:1,amplifier:0,show_particles:0b,show_icon:0b}]} 1
 
 execute if score $Status Statues.Data matches 3 if score $Map Statues.Data matches 0 run function statues:ingame/maps/facade/tick
 execute if score $Status Statues.Data matches 3 if score $Map Statues.Data matches 1 run function statues:ingame/maps/lockdown
