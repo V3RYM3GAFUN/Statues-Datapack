@@ -23,3 +23,4 @@ clear @s
 # Reset death counter
 scoreboard players set @s Statues.Dead 0
 
+effect give @s night_vision infinite 0 true
