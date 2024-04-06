@@ -35,17 +35,17 @@ execute as @a[nbt={Inventory:[{tag:{facade_genkey_item:1b}}]}] if score $Objecti
 execute as @a[nbt={Inventory:[{tag:{facade_genkey_item:1b}}]}] if score $Objective Statues.Data matches 0 run scoreboard players set $Objective Statues.Data 1
 
 #> Generator power detection
-execute at @e[tag=objective_facade_genpower] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/genpower
+execute at @e[tag=objective_facade_genpower,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/genpower
 
 #> Lab access keycard pick up detection
 execute as @a[nbt={Inventory:[{tag:{facade_labkey_item:1b}}]}] if score $Objective Statues.Data matches 3 run function statues:ingame/maps/facade/objectives/keypickup
 execute as @a[nbt={Inventory:[{tag:{facade_labkey_item:1b}}]}] if score $Objective Statues.Data matches 3 run scoreboard players set $Objective Statues.Data 4
 
 #> Emergency override button press
-execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/override
+execute at @e[tag=objective_facade_override,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/override
 
 #> Power on detection
-execute at @e[tag=objective_facade_power] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
+execute at @e[tag=objective_facade_power,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
 execute if score $Objective Statues.Data matches 7.. run scoreboard players remove $Core.Ticks Statues.Data 1
 execute if score $Core.Ticks Statues.Data matches 0 run playsound minecraft:entity.warden.nearby_closer master @a -4 83 322 5 0
 execute if score $Core.Ticks Statues.Data matches ..0 run scoreboard players set $Core.Ticks Statues.Data 120
