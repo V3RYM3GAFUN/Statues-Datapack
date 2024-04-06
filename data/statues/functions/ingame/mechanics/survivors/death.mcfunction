@@ -20,7 +20,7 @@ data modify block 0 -60 0 Items set value []
 # Clear player's inventory now that they've died
 clear @s
 
+effect give @s night_vision infinite 0 true
+
 # Reset death counter
 scoreboard players set @s Statues.Dead 0
-
-effect give @s night_vision infinite 0 true
