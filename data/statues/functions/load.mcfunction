@@ -24,6 +24,7 @@ scoreboard players set $-1 Statues.Data -1
 scoreboard players set $2 Statues.Data 2
 scoreboard players set $20 Statues.Data 20
 scoreboard players set $45 Statues.Data 45
+scoreboard players set $60 Statues.Data 60
 scoreboard players set $90 Statues.Data 90
 
 bossbar add countdown "Starting in..."

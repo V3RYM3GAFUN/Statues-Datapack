@@ -1,4 +1,13 @@
 #> Keeps track of the time in a bossbar
+scoreboard players set $Timer.RemainingTime Statues.Data 1200
+scoreboard players operation $Timer.RemainingTime Statues.Data -= $Timer.Seconds Statues.Data
+scoreboard players operation $Timer.RemainingSeconds Statues.Data = $Timer.RemainingTime Statues.Data
+scoreboard players operation $Timer.RemainingSeconds Statues.Data %= $60 Statues.Data
+scoreboard players operation $Timer.RemainingMinutes Statues.Data = $Timer.RemainingTime Statues.Data
+scoreboard players operation $Timer.RemainingMinutes Statues.Data /= $60 Statues.Data
+execute store result storage statues:data remaining_seconds int 1 run scoreboard players get $Timer.RemainingSeconds Statues.Data
+execute store result storage statues:data remaining_minutes int 1 run scoreboard players get $Timer.RemainingMinutes Statues.Data
+function statues:ingame/gametimer_bossbar with storage statues:data
 execute store result bossbar gametimer value run scoreboard players get $Timer.Seconds Statues.Data
 bossbar set gametimer players @a
 bossbar set gametimer visible true
