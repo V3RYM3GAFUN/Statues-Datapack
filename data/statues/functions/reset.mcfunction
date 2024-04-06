@@ -30,6 +30,8 @@ tag @a remove vote_facade
 tag @a remove vote_lockdown
 tag @a remove vote_origins
 
+tag @a remove win
+
 bossbar set countdown visible false
 bossbar set gametimer visible false
 

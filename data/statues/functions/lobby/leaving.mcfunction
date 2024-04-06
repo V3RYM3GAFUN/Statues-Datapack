@@ -15,6 +15,8 @@ effect give @s saturation infinite 100 true
 tag @s remove monster1
 tag @s remove monster2
 
+tag @s remove monster_chosen
+
 #> Remove all survivor tags
 tag @a remove solo
 tag @a remove cloaker
@@ -27,10 +29,14 @@ tag @a remove brawler
 tag @a remove marksman
 tag @a remove trapper
 
+tag @s remove class_selected
+
 #> To avoid adding a vote from the previous game to be carried on
 tag @s remove vote_facade
 tag @s remove vote_lockdown
 tag @s remove vote_origins
+
+tag @s remove win
 
 team join Lobby @s
 
