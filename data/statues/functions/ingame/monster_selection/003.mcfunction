@@ -1,5 +1,6 @@
 #> Tells the monster team which one the player chose
 scoreboard players set @s Statues.Monsters 3
+tag @s add monster_chosen
 
 #> Stats for each monster
 effect give @s health_boost infinite 9 true

@@ -58,6 +58,11 @@ execute as @e[tag=objective_facade_book,type=interaction] run data remove entity
 
 # tag @e[tag=objective_triggered] remove objective_triggered
 
+#> Force monsters who haven't chosen a monster to spawn with a random choice
+# Was too lazy to add a general "No monster" tag
+execute if score $MonsterSpawnDelay Statues.Data matches 5 as @e[type=marker,tag=facade_monster_choice,sort=random,limit=1] at @s if block ~ ~ ~ light_weighted_pressure_plate run tp @r[team=Monster,tag=!monster_chosen] ~ ~ ~
+
 #> Countdown for monster spawn delay (before they can actually chase survivors)
 execute if score $MonsterSpawnDelay Statues.Data matches 0.. run scoreboard players remove $MonsterSpawnDelay Statues.Data 1
 execute if score $MonsterSpawnDelay Statues.Data matches 0 run function statues:ingame/maps/facade/monsterspawn
+
