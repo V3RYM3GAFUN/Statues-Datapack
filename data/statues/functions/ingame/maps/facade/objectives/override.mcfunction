@@ -2,7 +2,7 @@ execute as @e[type=minecraft:interaction,tag=objective_facade_override] run data
 
 execute as @e[type=text_display,tag=objective_facade_override] run data modify entity @s text set value "{'text':''}"
 
-scoreboard players set $Objective Statues.Data 4
+scoreboard players set $Objective Statues.Data 6
 
 execute as @a[team=!Monster] at @s run playsound minecraft:block.trial_spawner.spawn_mob master @a ~ ~ ~ 1 2
 

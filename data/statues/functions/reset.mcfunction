@@ -24,6 +24,7 @@ tag @a remove class_selected
 
 tag @e remove monster1
 tag @e remove monster2
+tag @e remove monster_chosen
 
 tag @a remove vote_facade
 tag @a remove vote_lockdown

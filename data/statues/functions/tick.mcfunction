@@ -15,9 +15,9 @@ execute if score $Status Statues.Data matches 1..2 run function statues:lobby/pr
 
 execute if score $Status Statues.Data matches 3 run function statues:ingame/gametimer
 execute if score $Status Statues.Data matches 3 run function statues:ingame/mechanics/misc
-execute if score $Status Statues.Data matches 3 run function statues:ingame/mechanics/survivors/survivormusic
 
-execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run function statues:ingame/mechanics/survivors/survivors
+execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/monsterdistance
+execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run function statues:ingame/mechanics/survivors/death
 
 #> Detect when a player leaves
 execute as @a[team=!Dev] if score @s Player.Leave matches 1.. run function statues:lobby/leaving

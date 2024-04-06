@@ -11,3 +11,5 @@ execute as @a[team=Survivor] at @s if score @s Statues.Data matches 80 run stops
 execute as @a[team=Survivor] at @s if score @s Statues.Data matches 100 run playsound minecraft:music_disc.11 music @s ~ ~ ~ 1 1
 
 execute as @a[team=Survivor] at @s if entity @e[team=Monster,distance=8..] if score @s Statues.Data matches 1.. run scoreboard players remove @s Statues.Data 1
+
+
