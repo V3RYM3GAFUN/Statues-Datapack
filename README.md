@@ -10,6 +10,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 - **NoodlePandarian** - Builder
 - **gosh5557** - Builder
 - **Delkom** - Builder
+- **Hydrintegral** - Builder
 - **Brownie1111** - Modeler/Graphic Designer
 
 
