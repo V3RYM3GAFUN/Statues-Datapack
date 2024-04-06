@@ -3,9 +3,13 @@ function statues:debug/show_entities
 
 execute as @a[tag=!first_join] at @s run function statues:lobby/firstjoin
 
+execute as @a[team=Spectator] run effect give @s minecraft:night_vision infinite 0 true
+execute as @a[team=!Spectator,team=!Dev] run effect clear @s minecraft:night_vision
+
 #> Queuing system
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/queuing/queuing_base
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/lobbymusic
+
 
 #> Map voting
 execute as @a[team=Lobby] run function statues:lobby/mapvoting/vote_base
@@ -15,6 +19,10 @@ execute if score $Status Statues.Data matches 1..2 run function statues:lobby/pr
 
 execute if score $Status Statues.Data matches 3 run function statues:ingame/gametimer
 execute if score $Status Statues.Data matches 3 run function statues:ingame/mechanics/misc
+
+execute if score $Status Statues.Data matches 3 if score dev_allow_debug_info Statues.FeatureFlags matches 0 run gamerule reducedDebugInfo true
+execute if score $Status Statues.Data matches 3 if score dev_allow_debug_info Statues.FeatureFlags matches 1 run gamerule reducedDebugInfo false
+execute unless score $Status Statues.Data matches 3 run gamerule reducedDebugInfo false
 
 execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/monsterdistance
 execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run function statues:ingame/mechanics/survivors/death
