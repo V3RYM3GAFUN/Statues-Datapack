@@ -29,6 +29,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `dev_show_markers`        | Shows particles at marker entities when nearby                                                                           |
 | `doors`                   | Allows use of doors and all functions in `statues:ingame/mechanics/doors`                                                |
 | `floors`                  | Shows the current objective and floor to survivors, allows the use of all functions in `statues:ingame/mechanics/floors` |
+| `hiding`                  | Enables ticking hiding spots                                                                                             |
 | `lights`                  | Allows creating and modifying lights and all functions in `statues:ingame/mechanics/lights`                              |
 | `power_doors`             | Allows opening/closing power doors, and access to all functions in `statues:ingame/mechanics/power_doors`                |
 | `vents`                   | Allows interacting with vents and all functions in `statues:ingame/mechanics/vents`                                      |
