@@ -82,6 +82,7 @@ execute at @e[tag=pressure_plates] run setblock ~ ~ ~ minecraft:light_weighted_p
 scoreboard players set $Objective Statues.Data 0 
 
 function statues:ingame/maps/facade/objectives/reset
+function statues:blockreset
 
 time set 6000
 weather clear
