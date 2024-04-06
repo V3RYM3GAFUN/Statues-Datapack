@@ -34,22 +34,12 @@ execute if score $Objective Statues.Data matches 9 run data modify storage statu
 execute as @a[nbt={Inventory:[{tag:{facade_genkey_item:1b}}]}] if score $Objective Statues.Data matches 0 run function statues:ingame/maps/facade/objectives/keypickup
 execute as @a[nbt={Inventory:[{tag:{facade_genkey_item:1b}}]}] if score $Objective Statues.Data matches 0 run scoreboard players set $Objective Statues.Data 1
 
-#> Generator room unlock
-execute as @e[type=minecraft:interaction,tag=objective_facade_genkey] on target if predicate statues:holding_facade_genkey run tellraw @a[team=!Monster] ["",{"bold":true,"selector":"@s"},{"text":" has unlocked the backup generator door!","color":"aqua"}]
-execute as @e[type=minecraft:interaction,tag=objective_facade_genkey] on target if predicate statues:holding_facade_genkey run function statues:ingame/maps/facade/objectives/genkey
-execute as @e[type=minecraft:interaction,tag=objective_facade_genkey] run data remove entity @s interaction
-
 #> Generator power detection
 execute at @e[tag=objective_facade_genpower] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/genpower
 
 #> Lab access keycard pick up detection
 execute as @a[nbt={Inventory:[{tag:{facade_labkey_item:1b}}]}] if score $Objective Statues.Data matches 3 run function statues:ingame/maps/facade/objectives/keypickup
 execute as @a[nbt={Inventory:[{tag:{facade_labkey_item:1b}}]}] if score $Objective Statues.Data matches 3 run scoreboard players set $Objective Statues.Data 4
-
-#> Lab access room unlock
-execute as @e[type=minecraft:interaction,tag=objective_facade_labkey] on target if predicate statues:holding_facade_labkey run tellraw @a[team=!Monster] ["",{"bold":true,"selector":"@s"},{"text":" has unlocked the access to the labs!","color":"aqua"}]
-execute as @e[type=minecraft:interaction,tag=objective_facade_labkey] on target if predicate statues:holding_facade_labkey run function statues:ingame/maps/facade/objectives/labkey
-execute as @e[type=minecraft:interaction,tag=objective_facade_labkey] run data remove entity @s interaction
 
 #> Emergency override button press
 execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/override
@@ -64,19 +54,9 @@ execute if score $Core.Ticks Statues.Data matches ..0 run scoreboard players set
 execute as @a[nbt={Inventory:[{tag:{facade_highclass_item:1b}}]}] if score $Objective Statues.Data matches 7 run function statues:ingame/maps/facade/objectives/keypickup
 execute as @a[nbt={Inventory:[{tag:{facade_highclass_item:1b}}]}] if score $Objective Statues.Data matches 7 run scoreboard players set $Objective Statues.Data 8
 
-#> High class office unlock
-execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] on target if predicate statues:holding_facade_highclass run tellraw @a[team=!Monster] ["",{"bold":true,"selector":"@s"},{"text":" has unlocked the high class offices!","color":"aqua"}]
-execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] on target if predicate statues:holding_facade_highclass run function statues:ingame/maps/facade/objectives/highclasskey
-execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run data remove entity @s interaction
-
 #> Book pickup detection
 execute as @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]}] if score $Objective Statues.Data matches 9 run function statues:ingame/maps/facade/objectives/bookpickup
 execute as @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]}] if score $Objective Statues.Data matches 9 run scoreboard players set $Objective Statues.Data 10
-
-#> Escape book detection
-execute as @e[tag=objective_facade_book,type=interaction] on target if predicate statues:holding_facade_book run scoreboard players set $Objective Statues.Data 11
-execute as @e[tag=objective_facade_book,type=interaction] if score $Objective Statues.Data matches 11 run function statues:ingame/maps/facade/objectives/escape 
-execute as @e[tag=objective_facade_book,type=interaction] run data remove entity @s interaction
 
 #> Force monsters who haven't chosen a monster to spawn with a random choice
 # Was too lazy to add a general "No monster" tag
