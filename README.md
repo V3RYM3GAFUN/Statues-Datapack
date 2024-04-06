@@ -18,13 +18,14 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 ## Developer Player Tags
 | Tag                               | Description                                                          |
 |-----------------------------------|----------------------------------------------------------------------|
-| `dev_allow_item_drop            ` | Allows player to drop items out of inventory                         |
+| `dev_allow_item_drop`             | Allows player to drop items out of inventory                         |
 | `dev_always_show_floor_objective` | Shows the current objective and floor when you're not a survivor     |
 | `dev_ignore_vent_requirement`     | Ignores the requirement to go in a vent (normally 002 and survivors) |
 
 ## Feature Flags
 | Feature Flag              | Description                                                                                                              |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| `dev_allow_debug_info`    | Turns off/on the `reducedDebugInfo` gamerule while in game                                                               |
 | `dev_auto_convert_lights` | Automatically converts pink concrete into lights (requires `lights` feature flag)                                        |
 | `dev_show_interactions`   | Shows particles at interaction entities when nearby                                                                      |
 | `dev_show_markers`        | Shows particles at marker entities when nearby                                                                           |
