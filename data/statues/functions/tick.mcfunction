@@ -3,6 +3,9 @@ function statues:debug/show_entities
 
 execute as @a[tag=!first_join] at @s run function statues:lobby/firstjoin
 
+execute as @a[team=Spectator] run effect give @s minecraft:night_vision infinite 0 true
+execute as @a[team=!Spectator,team=!Dev] run effect clear @s minecraft:night_vision
+
 #> Queuing system
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/queuing/queuing_base
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/lobbymusic
