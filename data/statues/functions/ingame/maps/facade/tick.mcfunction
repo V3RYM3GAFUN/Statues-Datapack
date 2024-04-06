@@ -78,8 +78,6 @@ execute as @e[tag=objective_facade_book,type=interaction] on target if predicate
 execute as @e[tag=objective_facade_book,type=interaction] if score $Objective Statues.Data matches 11 run function statues:ingame/maps/facade/objectives/escape 
 execute as @e[tag=objective_facade_book,type=interaction] run data remove entity @s interaction
 
-# tag @e[tag=objective_triggered] remove objective_triggered
-
 #> Force monsters who haven't chosen a monster to spawn with a random choice
 # Was too lazy to add a general "No monster" tag
 execute if score $MonsterSpawnDelay Statues.Data matches 5 as @e[type=marker,tag=facade_monster_choice,sort=random,limit=1] at @s if block ~ ~ ~ light_weighted_pressure_plate run tp @r[team=Monster,tag=!monster_chosen] ~ ~ ~

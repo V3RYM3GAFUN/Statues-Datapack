@@ -35,7 +35,7 @@ tag @a remove win
 bossbar set countdown visible false
 bossbar set gametimer visible false
 
-team join Lobby @e[team=!Dev]
+team join Lobby @a[team=!Dev]
 
 scoreboard players set $Status Statues.Data 0
 scoreboard players set $Timer.Ticks Statues.Data 0

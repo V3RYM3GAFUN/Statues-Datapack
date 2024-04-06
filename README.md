@@ -11,6 +11,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 - **gosh5557** - Builder
 - **Delkom** - Builder
 - **Hydrintegral** - Builder
+- **TheAI** - Builder
 - **Brownie1111** - Modeler/Graphic Designer
 
 
