@@ -9,6 +9,8 @@ item replace entity @s hotbar.2 with tipped_arrow{CustomPotionColor:568831,displ
 
 item replace entity @s hotbar.8 with compass
 
+item replace entity @s armor.head with player_head{display:{Name:'{"text":"Gunner\'s helmet"}'},SkullOwner: {Id: [I; 441116359, -2100342880, -1745843057, 808791889], Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNhNThiZWM2NTY2OGI2ODJhYmFiMzYxMzAwYTljNDEzM2JiNmMwNmRiODg0NzIxMGE2MmI4ODRlZTZmYmM3ZCJ9fX0="}]}}}
+
 item replace entity @s armor.chest with leather_chestplate{Trim:{pattern:silence,material:emerald},display:{color:8439583,Name:'["",{"text":"Gunner Outfit","italic":false,"color":"dark_green","bold":true}]'},Unbreakable:1,HideFlags:196}
 item replace entity @s armor.legs with leather_leggings{Trim:{pattern:wayfinder,material:emerald},display:{color:8439583,Name:'["",{"text":"Gunner Outfit","italic":false,"color":"dark_green","bold":true}]'},Unbreakable:1,HideFlags:196}
 item replace entity @s armor.feet with leather_boots{Trim:{pattern:ward,material:emerald},display:{color:8439583,Name:'["",{"text":"Gunner Outfit","italic":false,"color":"dark_green","bold":true}]'},Unbreakable:1,HideFlags:196}

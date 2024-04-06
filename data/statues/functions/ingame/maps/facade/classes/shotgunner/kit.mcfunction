@@ -7,6 +7,8 @@ item replace entity @s hotbar.1 with tipped_arrow{CustomPotionColor:568831,displ
 
 item replace entity @s hotbar.8 with compass
 
+item replace entity @s armor.head with player_head{display:{Name:'{"text":"Shotgunner\'s helmet"}'},SkullOwner: {Id: [I; 1246757609, -563001642, -2058751332, -311473162], Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhmZTU5MzViMmIzMjAyOWZiODY2ZTFhOTY2ODNmOWI4MDhkMzVkZDljZDNhNzY5NDU1MzRkYmQwZWM0MWNhOSJ9fX0="}]}}}
+
 item replace entity @s armor.chest with leather_chestplate{display:{color:16701501,Name:'["",{"text":"Shotgunner Outfit","italic":false,"color":"gold","bold":true}]'},Unbreakable:1,HideFlags:68}
 item replace entity @s armor.legs with leather_leggings{display:{color:16701501,Name:'["",{"text":"Shotgunner Outfit","italic":false,"color":"gold","bold":true}]'},Unbreakable:1,HideFlags:68}
 item replace entity @s armor.feet with leather_boots{display:{color:16701501,Name:'["",{"text":"Shotgunner Outfit","italic":false,"color":"gold","bold":true}]'},Unbreakable:1,HideFlags:68}
