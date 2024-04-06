@@ -84,10 +84,7 @@ function statues:ingame/maps/facade/objectives/reset
 time set 6000
 weather clear
 
-#> Force the doors to tick a few times to close those that got stuck open
-function statues:ingame/mechanics/doors/tick
-function statues:ingame/mechanics/doors/tick
-function statues:ingame/mechanics/doors/tick
+scoreboard players reset @e[tag=machine_sas] Statues.Data
 
 ## Old way for containers
 # execute at @e[tag=test] run item replace block ~ ~ ~ container.1 with air
