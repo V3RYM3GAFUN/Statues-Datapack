@@ -42,8 +42,8 @@ execute if score $Countdown.Ticks Statues.Data matches 100 run tellraw @a {"text
 execute as @a at @s if score $Countdown.Ticks Statues.Data matches 100 run playsound block.note_block.pling master @s ~ ~ ~ 0.7 1.5
 execute if score $Countdown.Ticks Statues.Data matches 100 run kill @e[tag=mapvote]
 
-execute if score $Countdown.Ticks Statues.Data matches 10 if score $Map Statues.Data matches 0 run function statues:ingame/maps/facade
-execute if score $Countdown.Ticks Statues.Data matches 10 if score $Map Statues.Data matches 1 run function statues:ingame/maps/lockdown
-execute if score $Countdown.Ticks Statues.Data matches 10 if score $Map Statues.Data matches 2 run function statues:ingame/maps/origins
+execute if score $Countdown.Ticks Statues.Data matches 10 if score $Map Statues.Data matches 0 run function statues:ingame/maps/facade/activate
+execute if score $Countdown.Ticks Statues.Data matches 10 if score $Map Statues.Data matches 1 run function statues:ingame/maps/lockdown/activate
+execute if score $Countdown.Ticks Statues.Data matches 10 if score $Map Statues.Data matches 2 run function statues:ingame/maps/origins/activate
 
 execute if score $Countdown.Ticks Statues.Data matches 0 run scoreboard players set $Status Statues.Data 3

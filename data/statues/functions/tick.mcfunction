@@ -19,6 +19,10 @@ execute if score $Status Statues.Data matches 3 run function statues:ingame/mech
 execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/monsterdistance
 execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run function statues:ingame/mechanics/survivors/death
 
+execute if score $Status Statues.Data matches 3 if score $Map Statues.Data matches 0 run function statues:ingame/maps/facade/tick
+execute if score $Status Statues.Data matches 3 if score $Map Statues.Data matches 1 run function statues:ingame/maps/lockdown
+execute if score $Status Statues.Data matches 3 if score $Map Statues.Data matches 2 run function statues:ingame/maps/origins
+
 #> Detect when a player leaves
 execute as @a[team=!Dev] if score @s Player.Leave matches 1.. run function statues:lobby/leaving
 #> Exception for Devs. Don't detect when they leave

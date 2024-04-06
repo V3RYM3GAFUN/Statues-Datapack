@@ -14,3 +14,6 @@ tag @e[tag=mapvote_wincandidate,limit=1,sort=random] add mapvote_winner
 execute store result score $Map Statues.Data run data get entity @e[tag=mapvote_winner,limit=1] Pos[1]
 
 # kill @e[tag=mapvote]
+
+#> Force Façade to be chosen, as it is the only map currently available
+scoreboard players set $Map Statues.Data 0
