@@ -1,5 +1,6 @@
 #> Tells the monster team which one the player chose
 scoreboard players set @s Statues.Monsters 2
+tag @s add 002
 tag @s add monster_chosen
 
 #> Stats for each monster
@@ -10,7 +11,7 @@ effect give @s resistance infinite 100 true
 effect give @s saturation infinite 100 true
 
 #> Stats specific to 002
-effect give @s speed infinite 6 true
+effect give @s speed infinite 5 true
 effect give @s blindness infinite 0 true 
 
 #> General armour and tools

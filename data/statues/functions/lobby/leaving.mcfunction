@@ -16,6 +16,7 @@ tag @s remove monster1
 tag @s remove monster2
 
 tag @s remove monster_chosen
+tag @s remove 002
 
 #> Remove all survivor tags
 tag @s remove solo

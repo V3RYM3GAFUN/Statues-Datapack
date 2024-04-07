@@ -1,5 +1,5 @@
-execute if entity @s[tag=!triggered] if entity @a[distance=..2.5,gamemode=!spectator] run scoreboard players set @s Statues.Sas 50
-execute if entity @s[tag=!triggered] if entity @a[distance=..2.5,gamemode=!spectator] run tag @s add triggered
+execute if entity @s[tag=!triggered] if entity @a[distance=..2,gamemode=!spectator] run scoreboard players set @s Statues.Sas 50
+execute if entity @s[tag=!triggered] if entity @a[distance=..2,gamemode=!spectator] run tag @s add triggered
 execute if score @s Statues.Sas matches 50 run playsound minecraft:block.piston.extend ambient @a ~ ~ ~ 1 1
 
 execute if score @s Statues.Sas matches -49.. at @e[tag=machine_sas_doordx,distance=..5] run fill ~-1 ~ ~ ~1 ~1 ~ iron_block replace air
