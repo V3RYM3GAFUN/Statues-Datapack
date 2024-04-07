@@ -40,7 +40,7 @@ execute if score $Timer.Seconds Statues.Data matches ..1 if score $Timer.Ticks S
 execute if entity @a[tag=win] if score $Ingame.Alive Statues.Data matches 0 run function statues:ingame/win_conditions/survivorvictory
 
 #> Detect when no survivors are alive and that no one has won
-execute unless entity @a[tag=win] if score $Ingame.Alive Statues.Data matches 0 run function statues:ingame/win_conditions/monstervictory
+execute if entity @a[tag=!win] if score $Ingame.Alive Statues.Data matches 0 run function statues:ingame/win_conditions/monstervictory
 
 #> Function that detects when the monster leaves
 execute unless entity @e[team=Monster] if score $Status Statues.Data matches 3 run function statues:ingame/win_conditions/monsterexit
