@@ -22,10 +22,12 @@ scoreboard objectives add Statues.TutorialObjective dummy
 
 scoreboard players set $-1 Statues.Data -1
 scoreboard players set $2 Statues.Data 2
+scoreboard players set $10 Statues.Data 10
 scoreboard players set $20 Statues.Data 20
 scoreboard players set $45 Statues.Data 45
 scoreboard players set $60 Statues.Data 60
 scoreboard players set $90 Statues.Data 90
+scoreboard players set $111 Statues.Data 111
 
 bossbar add countdown "Starting in..."
 bossbar set countdown color yellow

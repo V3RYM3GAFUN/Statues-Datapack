@@ -24,6 +24,10 @@ execute if score hiding Statues.FeatureFlags matches 0 run scoreboard players di
 execute unless score hiding Statues.FeatureFlags matches 0 run scoreboard players display numberformat hiding Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name hiding Statues.FeatureFlags {"text":"Hiding Spot Feature"}
 
+execute if score elevator Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score elevator Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name elevator Statues.FeatureFlags {"text":"Elevator Feature"}
+
 execute if score dev_show_markers Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_markers Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_show_markers Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_markers Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name dev_show_markers Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Show Markers","color":"white"}]

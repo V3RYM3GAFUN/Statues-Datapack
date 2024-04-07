@@ -6,7 +6,7 @@ function statues:debug/show_entities
 execute as @a[tag=!first_join] at @s run function statues:lobby/firstjoin
 
 execute as @a[team=Spectator] run effect give @s minecraft:night_vision infinite 0 true
-execute as @a[team=!Spectator,team=!Dev] run effect clear @s minecraft:night_vision
+execute as @a[team=Lobby] run effect clear @s minecraft:night_vision
 
 #> Queuing system
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/queuing/queuing_base
@@ -53,6 +53,9 @@ execute if score lights Statues.FeatureFlags matches 1 run function statues:inga
 #> Floors
 execute if score floors Statues.FeatureFlags matches 1 run execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/tick
 execute if score floors Statues.FeatureFlags matches 1 run execute as @a[tag=dev_always_show_floor_objective] at @s run function statues:ingame/mechanics/floors/tick
+
+#> Elevators
+execute if score elevator Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/elevator/tick
 
 #> For testing
 execute if score vents Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/vents/tick
