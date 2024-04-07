@@ -1,5 +1,5 @@
 execute unless function statues:feature_flags/check_elevator_flags run return fail
 
 $scoreboard players set @e[tag=elevator_room_3x3x3,sort=nearest,limit=1] Statues.ElevatorTo $(to)
-scoreboard players set @e[tag=elevator_room_3x3x3,sort=nearest,limit=1] Statues.ElevatorState 1
+scoreboard players set @e[tag=elevator_room_3x3x3,sort=nearest,limit=1] Statues.ElevatorState 2
 

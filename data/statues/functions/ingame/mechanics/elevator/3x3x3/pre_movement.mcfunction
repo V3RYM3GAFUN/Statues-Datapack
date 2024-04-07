@@ -16,10 +16,10 @@ scoreboard players operation $ElevatorEffectTime Statues.Data = @s Statues.Eleva
 scoreboard players add $ElevatorEffectTime Statues.Data 19
 scoreboard players operation $ElevatorEffectTime Statues.Data /= $20 Statues.Data
 
-execute if score @s Statues.ElevatorFrom < @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 2
-execute if score @s Statues.ElevatorFrom > @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 3
+execute if score @s Statues.ElevatorFrom < @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 3
+execute if score @s Statues.ElevatorFrom > @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 4
 
-$execute if score @s Statues.ElevatorState matches 3 run function statues:ingame/mechanics/elevator/3x3x3/apply_collision_movement_static {elevator_location: $(elevator_location), elevator_collision_y: "~-0.18"}
+$execute if score @s Statues.ElevatorState matches 4 run function statues:ingame/mechanics/elevator/3x3x3/apply_collision_movement_static {elevator_location: $(elevator_location), elevator_collision_y: "~-0.18"}
 
 execute store result storage statues:data elevator_effect_time int 1 run scoreboard players get $ElevatorEffectTime Statues.Data
 function statues:ingame/mechanics/elevator/3x3x3/apply_player_effects with storage statues:data
@@ -27,3 +27,5 @@ function statues:ingame/mechanics/elevator/3x3x3/apply_player_effects with stora
 execute store result entity @s interpolation_duration int 1 run scoreboard players get @s Statues.ElevatorRemaining
 execute store result storage statues:data elevator_to int 1 run scoreboard players get @s Statues.ElevatorTo
 function statues:ingame/mechanics/elevator/3x3x3/apply_display_translation with storage statues:data
+
+$execute positioned ~ ~$(elevator_location) ~ as @e[tag=elevator_door,sort=nearest,limit=1] at @s run function statues:ingame/mechanics/elevator/3x3x3/door_close
