@@ -3,8 +3,9 @@
 execute as @e[tag=objective_facade_power] run data modify entity @s text set value "{text:''}"
 
 #> Announce objective completion
-execute at @e[tag=objective_facade_power] if block ~ ~ ~ crimson_button[powered=true] run title @a title ""
-execute at @e[tag=objective_facade_power] if block ~ ~ ~ crimson_button[powered=true] run title @a subtitle {"text": "Main power restored!","color": "aqua"}
+title @a times 5t 3s 25t
+title @a title ""
+title @a subtitle {"text": "Main power restored!","color": "aqua"}
 
 #> Detect objective buttons being triggered
 
