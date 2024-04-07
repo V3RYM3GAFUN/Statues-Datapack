@@ -9,15 +9,15 @@ setblock 3 127 301 crimson_door[facing=west,hinge=left] replace
 setblock 3 128 301 air replace
 setblock 3 128 301 crimson_door[facing=west,half=upper,hinge=left] replace
 
-setblock 9 127 310 air replace
-setblock 9 127 310 crimson_door[facing=south,hinge=right] replace
-setblock 9 128 310 air replace
-setblock 9 128 310 crimson_door[facing=south,half=upper,hinge=right] replace
-
 setblock 8 127 310 air replace
-setblock 8 127 310 crimson_door[facing=south,hinge=left] replace
+setblock 8 127 310 crimson_door[facing=south,hinge=right] replace
 setblock 8 128 310 air replace
-setblock 8 128 310 crimson_door[facing=south,half=upper,hinge=left] replace
+setblock 8 128 310 crimson_door[facing=south,half=upper,hinge=right] replace
+
+setblock 9 127 310 air replace
+setblock 9 127 310 crimson_door[facing=south,hinge=left] replace
+setblock 9 128 310 air replace
+setblock 9 128 310 crimson_door[facing=south,half=upper,hinge=left] replace
 
 #> Archive room doors
 setblock 47 117 312 air replace
