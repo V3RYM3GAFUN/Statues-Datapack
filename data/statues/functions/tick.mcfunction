@@ -57,6 +57,9 @@ execute if score floors Statues.FeatureFlags matches 1 run execute as @a[tag=dev
 #> Elevators
 execute if score elevator Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/elevator/tick
 
+#> Spectators
+execute if score spectators_actionbar Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/spectators_actionbar/tick
+
 #> For testing
 execute if score vents Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/vents/tick
 execute if score dev_auto_convert_lights Statues.FeatureFlags matches 1 as @a[team=Dev] at @s run function statues:ingame/mechanics/lights/create_light_auto
