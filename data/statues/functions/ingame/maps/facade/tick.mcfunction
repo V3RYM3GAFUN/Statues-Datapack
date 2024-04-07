@@ -58,6 +58,11 @@ execute as @a[nbt={Inventory:[{tag:{facade_highclass_item:1b}}]}] if score $Obje
 execute as @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]}] if score $Objective Statues.Data matches 9 run function statues:ingame/maps/facade/objectives/bookpickup
 execute as @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]}] if score $Objective Statues.Data matches 9 run scoreboard players set $Objective Statues.Data 10
 
+#> Detect when a player brought the book back to the van
+execute as @e[tag=objective_facade_book] at @s if entity @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]},distance=..2] run scoreboard players set $Objective Statues.Data 11
+execute if score $Objective Statues.Data matches 11 as @a[tag=objective_facade_book] run function statues:ingame/maps/facade/objectives/escape 
+
+
 #> Force monsters who haven't chosen a monster to spawn with a random choice
 # Was too lazy to add a general "No monster" tag
 execute if score $MonsterSpawnDelay Statues.Data matches 5 as @e[type=marker,tag=facade_monster_choice,sort=random,limit=1] at @s if block ~ ~ ~ light_weighted_pressure_plate run tp @r[team=Monster,tag=!monster_chosen] ~ ~ ~
