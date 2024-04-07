@@ -37,7 +37,7 @@ execute as @e[team=Survivor] if score $Ingame.Alive Statues.Data matches 1 run f
 execute if score $Timer.Seconds Statues.Data matches ..1 if score $Timer.Ticks Statues.Data matches ..0 run function statues:ingame/win_conditions/timeout
 
 #> Detect when there's not longer a survivor alive and there's at least one winner
-execute if score $Ingame.Alive Statues.Data matches 0 if entity @a[tag=win] run function statues:ingame/win_conditions/survivorvictory
+execute if score $Ingame.Alive Statues.Data matches 0 if entity @a[tag=!win] run function statues:ingame/win_conditions/survivorvictory
 
 #> Detect when no survivors are alive and that no one has won
 execute if score $Ingame.Alive Statues.Data matches 0 unless entity @a[tag=win] run function statues:ingame/win_conditions/monstervictory
