@@ -18,16 +18,16 @@ tag @s remove monster2
 tag @s remove monster_chosen
 
 #> Remove all survivor tags
-tag @a remove solo
-tag @a remove cloaker
-tag @a remove medic
-tag @a remove juggernaut
-tag @a remove runner
-tag @a remove shotgunner
-tag @a remove gunner
-tag @a remove brawler
-tag @a remove marksman
-tag @a remove trapper
+tag @s remove solo
+tag @s remove cloaker
+tag @s remove medic
+tag @s remove juggernaut
+tag @s remove runner
+tag @s remove shotgunner
+tag @s remove gunner
+tag @s remove brawler
+tag @s remove marksman
+tag @s remove trapper
 
 tag @s remove class_selected
 
