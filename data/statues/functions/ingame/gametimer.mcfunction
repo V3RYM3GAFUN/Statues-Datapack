@@ -31,16 +31,16 @@ execute if score $Timer.Ticks Statues.Data matches ..-1 run scoreboard players s
 execute store result score $Ingame.Alive Statues.Data if entity @e[team=Survivor]
 
 #> Tell the last survivor that they're alone
-execute as @e[team=Survivor] if score $Ingame.Alive Statues.Data matches 1 run function statues:ingame/mechanics/survivors/lastsurvivor
+execute as @e[team=Survivor,tag=!solo] at @s if score $Ingame.Alive Statues.Data matches 1 run function statues:ingame/mechanics/survivors/lastsurvivor
 
 #> What to do if time runs out
 execute if score $Timer.Seconds Statues.Data matches ..1 if score $Timer.Ticks Statues.Data matches ..0 run function statues:ingame/win_conditions/timeout
 
 #> Detect when there's not longer a survivor alive and there's at least one winner
-execute if score $Ingame.Alive Statues.Data matches 0 if entity @a[tag=!win] run function statues:ingame/win_conditions/survivorvictory
+execute if entity @a[tag=win] if score $Ingame.Alive Statues.Data matches 0 run function statues:ingame/win_conditions/survivorvictory
 
 #> Detect when no survivors are alive and that no one has won
-execute if score $Ingame.Alive Statues.Data matches 0 unless entity @a[tag=win] run function statues:ingame/win_conditions/monstervictory
+execute unless entity @a[tag=win] if score $Ingame.Alive Statues.Data matches 0 run function statues:ingame/win_conditions/monstervictory
 
 #> Function that detects when the monster leaves
 execute unless entity @e[team=Monster] if score $Status Statues.Data matches 3 run function statues:ingame/win_conditions/monsterexit
