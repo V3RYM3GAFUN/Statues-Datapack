@@ -46,6 +46,8 @@ execute if score hiding Statues.FeatureFlags matches 1 run function statues:inga
 execute if score $Timer.Ticks Statues.Data matches 1 run scoreboard players reset * Statues.Survivors
 execute as @a[team=Survivor] run scoreboard players operation @s Statues.Survivors = @s Statues.Health
 
+execute if score lights Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/lights/tick
+
 #> Floors
 execute if score floors Statues.FeatureFlags matches 1 run execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/tick
 execute if score floors Statues.FeatureFlags matches 1 run execute as @a[tag=dev_always_show_floor_objective] at @s run function statues:ingame/mechanics/floors/tick
