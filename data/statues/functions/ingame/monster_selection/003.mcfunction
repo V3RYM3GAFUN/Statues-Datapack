@@ -12,6 +12,7 @@ effect give @s saturation infinite 100 true
 #> Stats specific to 003
 effect give @s mining_fatigue infinite 5 true
 effect give @s strength infinite 1 true 
+effect give @s strength infinite 0 true 
 
 #> General armour and tools
 item replace entity @s armor.feet with netherite_boots{Unbreakable:1b}

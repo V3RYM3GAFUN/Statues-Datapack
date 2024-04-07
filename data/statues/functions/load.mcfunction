@@ -1,6 +1,6 @@
 tellraw @a {"text":"Statues. Indev Datapack", "color": "#00AAAA"}
 
-scoreboard objectives add Statues.Monsters playerKillCount "Monsters"
+scoreboard objectives add Statues.Monsters dummy "Monsters"
 scoreboard objectives add Statues.Survivors dummy "Survivors"
 scoreboard objectives setdisplay sidebar.team.aqua Statues.Survivors
 scoreboard objectives add Statues.Health health "Health"
