@@ -1,3 +1,5 @@
+effect give @a saturation infinite 0 true
+
 function statues:feature_flags/tick_scoreboard
 function statues:debug/show_entities
 
