@@ -21,6 +21,7 @@ scoreboard objectives add Statues.DoorData dummy
 scoreboard objectives add Statues.TutorialObjective dummy
 
 scoreboard players set $-1 Statues.Data -1
+scoreboard players set $0 Statues.Data 0
 scoreboard players set $2 Statues.Data 2
 scoreboard players set $10 Statues.Data 10
 scoreboard players set $20 Statues.Data 20
