@@ -1,6 +1,4 @@
 execute unless function statues:feature_flags/check_elevator_flags run return fail
-execute if score @s Statues.ElevatorFrom = @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 0
-execute if score @s Statues.ElevatorFrom = @s Statues.ElevatorTo run return 0
 
 $execute positioned ~ ~$(elevator_location) ~ positioned ~-1.675 ~-2 ~-1.675 as @a[dx=2.35,dy=2,dz=2.35,gamemode=!spectator] run scoreboard players set @s Statues.ElevatorPlayerStates 1
 $execute positioned ~ ~$(elevator_location) ~ positioned ~-1.35 ~-2 ~-1.35 as @a[dx=1.7,dy=2,dz=1.7,gamemode=!spectator] run scoreboard players add @s Statues.ElevatorPlayerStates 1
@@ -23,11 +21,11 @@ $execute if score @s Statues.ElevatorState matches 4 run function statues:ingame
 
 execute store result storage statues:data elevator_effect_time int 1 run scoreboard players get $ElevatorEffectTime Statues.Data
 function statues:ingame/mechanics/elevator/3x3x3/apply_player_effects with storage statues:data
+execute if score @s Statues.ElevatorState matches 3 as @a[scores={Statues.ElevatorPlayerStates=2..3}] at @s run tp ~ ~1 ~
 
 execute store result entity @s interpolation_duration int 1 run scoreboard players get @s Statues.ElevatorRemaining
 execute store result storage statues:data elevator_to int 1 run scoreboard players get @s Statues.ElevatorTo
 function statues:ingame/mechanics/elevator/3x3x3/apply_display_translation with storage statues:data
 
-$execute positioned ~ ~$(elevator_location) ~ as @e[tag=elevator_door,sort=nearest,limit=1] at @s run function statues:ingame/mechanics/elevator/3x3x3/door_close
 $execute positioned ~ ~$(elevator_location) ~ as @e[tag=elevator_status,sort=nearest,limit=1] run data modify entity @s item.id set value "minecraft:red_concrete"
 $execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_status,sort=nearest,limit=1] run data modify entity @s item.id set value "minecraft:yellow_concrete"
