@@ -8,6 +8,11 @@ execute as @a[tag=!first_join] at @s run function statues:lobby/firstjoin
 execute as @a[team=Spectator] run effect give @s minecraft:night_vision infinite 0 true
 execute as @a[team=Lobby] run effect clear @s minecraft:night_vision
 
+execute as @a[tag=!dev_ignore_forced_gamemode,team=Survivor] run gamemode adventure @s
+execute as @a[tag=!dev_ignore_forced_gamemode,team=Lobby] run gamemode adventure @s
+execute as @a[tag=!dev_ignore_forced_gamemode,team=Monster] run gamemode adventure @s
+execute as @a[tag=!dev_ignore_forced_gamemode,team=Spectator] run gamemode spectator @s
+
 #> Queuing system
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/queuing/queuing_base
 execute if score $Status Statues.Data matches ..1 run function statues:lobby/lobbymusic
