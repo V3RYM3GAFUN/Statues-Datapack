@@ -32,14 +32,12 @@ execute if score $Objective Statues.Data matches 9 run data modify storage statu
 
 #> Generator key pick up detection
 execute as @a[nbt={Inventory:[{tag:{facade_genkey_item:1b}}]}] if score $Objective Statues.Data matches 0 run function statues:ingame/maps/facade/objectives/keypickup
-execute as @a[nbt={Inventory:[{tag:{facade_genkey_item:1b}}]}] if score $Objective Statues.Data matches 0 run scoreboard players set $Objective Statues.Data 1
 
 #> Generator power detection
 execute at @e[tag=objective_facade_genpower,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/genpower
 
 #> Lab access keycard pick up detection
 execute as @a[nbt={Inventory:[{tag:{facade_labkey_item:1b}}]}] if score $Objective Statues.Data matches 3 run function statues:ingame/maps/facade/objectives/keypickup
-execute as @a[nbt={Inventory:[{tag:{facade_labkey_item:1b}}]}] if score $Objective Statues.Data matches 3 run scoreboard players set $Objective Statues.Data 4
 
 #> Emergency override button press
 execute at @e[tag=objective_facade_override,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/override
@@ -52,7 +50,6 @@ execute if score $Core.Ticks Statues.Data matches ..0 run scoreboard players set
 
 #> High class keycard pick up detection
 execute as @a[nbt={Inventory:[{tag:{facade_highclass_item:1b}}]}] if score $Objective Statues.Data matches 7 run function statues:ingame/maps/facade/objectives/keypickup
-execute as @a[nbt={Inventory:[{tag:{facade_highclass_item:1b}}]}] if score $Objective Statues.Data matches 7 run scoreboard players set $Objective Statues.Data 8
 
 #> Book pickup detection
 execute as @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]}] if score $Objective Statues.Data matches 9 run function statues:ingame/maps/facade/objectives/bookpickup

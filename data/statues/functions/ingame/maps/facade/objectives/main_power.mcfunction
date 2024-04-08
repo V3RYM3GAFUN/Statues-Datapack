@@ -31,3 +31,4 @@ time set 18000
 weather rain
 
 scoreboard players set $Objective Statues.Data 7
+scoreboard players set $CompassSelector Statues.Data 7
