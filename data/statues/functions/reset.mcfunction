@@ -62,20 +62,7 @@ execute at @e[tag=objective_reset] run data merge block ~ ~ ~ {Items:[]}
 execute as @e[type=interaction,tag=objective_reset] run data merge entity @s {height:2}
 
 #> Resets every objective button 
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=east,face=ceiling] run setblock ~ ~ ~ crimson_button[facing=east,face=ceiling]
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=west,face=ceiling] run setblock ~ ~ ~ crimson_button[facing=west,face=ceiling]
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=south,face=ceiling] run setblock ~ ~ ~ crimson_button[facing=south,face=ceiling]
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=north,face=ceiling] run setblock ~ ~ ~ crimson_button[facing=north,face=ceiling]
-
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=east,face=floor] run setblock ~ ~ ~ crimson_button[facing=east,face=floor]
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=west,face=floor] run setblock ~ ~ ~ crimson_button[facing=west,face=floor]
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=south,face=floor] run setblock ~ ~ ~ crimson_button[facing=south,face=floor]
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=north,face=floor] run setblock ~ ~ ~ crimson_button[facing=north,face=floor]
-
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=east,face=wall] run setblock ~ ~ ~ crimson_button[facing=east,face=wall]
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=west,face=wall] run setblock ~ ~ ~ crimson_button[facing=west,face=wall]
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=south,face=wall] run setblock ~ ~ ~ crimson_button[facing=south,face=wall]
-execute at @e[tag=objective_reset] if block ~ ~ ~ warped_button[facing=north,face=wall] run setblock ~ ~ ~ crimson_button[facing=north,face=wall]
+execute at @e[tag=objective_reset] run function statues:utils/button_warped_to_crimson
 
 #> Resets the pressure plates for class selection
 execute at @e[tag=pressure_plates] run setblock ~ ~ ~ minecraft:light_weighted_pressure_plate
