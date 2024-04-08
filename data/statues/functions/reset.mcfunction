@@ -32,7 +32,7 @@ tag @a remove vote_lockdown
 tag @a remove vote_origins
 
 tag @a remove win
-tag @a remove compass_tracker
+tag @a remove has_compass_tracker
 
 bossbar set countdown visible false
 bossbar set gametimer visible false

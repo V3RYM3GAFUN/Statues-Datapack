@@ -24,6 +24,8 @@ execute at @e[tag=facade_labkey,sort=random,limit=1] run item replace block ~ ~ 
 
 #facade_highclasskey
 execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b}
 
 #facade_book
 execute at @e[tag=facade_book,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with book{CustomModelData:1,display:{Name:'{"text":"CONFIDENTIAL","italic": false}'},facade_book_item:1b,objective_item:1b}
