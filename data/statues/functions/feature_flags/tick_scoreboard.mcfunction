@@ -32,6 +32,10 @@ execute if score spectators_actionbar Statues.FeatureFlags matches 0 run scorebo
 execute unless score spectators_actionbar Statues.FeatureFlags matches 0 run scoreboard players display numberformat spectators_actionbar Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name spectators_actionbar Statues.FeatureFlags {"text":"Spectators ActionBar Feature"}
 
+execute if score compass_tracker Statues.FeatureFlags matches 0 run scoreboard players display numberformat compass_tracker Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score compass_tracker Statues.FeatureFlags matches 0 run scoreboard players display numberformat compass_tracker Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name compass_tracker Statues.FeatureFlags {"text":"Compass Tracker Feature"}
+
 execute if score dev_show_markers Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_markers Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_show_markers Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_markers Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name dev_show_markers Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Show Markers","color":"white"}]
