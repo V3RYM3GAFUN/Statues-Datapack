@@ -1,0 +1,2 @@
+execute store result storage statues:data compass_selector int 1 run scoreboard players get $TestCompassSelector Statues.Data
+execute as @a[tag=test_compass] at @s run function statues:ingame/mechanics/compass_tracker/tick_player with storage statues:data

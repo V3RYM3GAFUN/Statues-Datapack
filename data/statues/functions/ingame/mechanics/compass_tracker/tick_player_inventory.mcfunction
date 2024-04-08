@@ -1,0 +1,1 @@
+$item replace entity @s hotbar.8 with compass{LodestoneDimension:"minecraft:overworld",LodestonePos:{X:$(compass_target_pos_x),Y:$(compass_target_pos_y),Z:$(compass_target_pos_z)},LodestoneTracked:0b}

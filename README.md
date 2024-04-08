@@ -30,11 +30,12 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `dev_show_interactions`   | Shows particles at interaction entities when nearby                                                                      |
 | `dev_show_markers`        | Shows particles at marker entities when nearby                                                                           |
 | `doors`                   | Allows use of doors and all functions in `statues:ingame/mechanics/doors`                                                |
-| `elevator`                | Allows use of all functions in `statues:ingame/mechanics/elevator`                                                       |
+| `elevator`                | Enables elevators and allows use of all functions in `statues:ingame/mechanics/elevator`                                 |
 | `floors`                  | Shows the current objective and floor to survivors, allows the use of all functions in `statues:ingame/mechanics/floors` |
 | `hiding`                  | Enables ticking hiding spots                                                                                             |
 | `lights`                  | Allows creating and modifying lights and all functions in `statues:ingame/mechanics/lights`                              |
 | `power_doors`             | Allows opening/closing power doors, and access to all functions in `statues:ingame/mechanics/power_doors`                |
+| `spectators_actionbar`    | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`           |
 | `vents`                   | Allows interacting with vents and all functions in `statues:ingame/mechanics/vents`                                      |
 
 
