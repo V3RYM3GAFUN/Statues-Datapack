@@ -19,6 +19,6 @@ item replace entity @s armor.legs with netherite_leggings{Unbreakable:1b}
 item replace entity @s armor.chest with netherite_chestplate{Unbreakable:1b}
 
 #> Armour and tools specific to 001
-item replace entity @s armor.head with dragon_head
+item replace entity @s armor.head with stick{CustomModelData:4}
 item replace entity @s weapon.mainhand with trident{Unbreakable:1b,display:{Name:'[{"text":"Tentacle","italic":false,"color":"dark_red","bold":true}]'},Enchantments:[{id:"loyalty",lvl:3}],HideFlags:5} 1
 item replace entity @s weapon.offhand with trident{Unbreakable:1b,display:{Name:'[{"text":"Tentacle","italic":false,"color":"dark_red","bold":true}]'},Enchantments:[{id:"loyalty",lvl:3}],HideFlags:5} 1
