@@ -53,7 +53,6 @@ execute as @a[nbt={Inventory:[{tag:{facade_highclass_item:1b}}]}] if score $Obje
 
 #> Book pickup detection
 execute as @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]}] if score $Objective Statues.Data matches 9 run function statues:ingame/maps/facade/objectives/bookpickup
-execute as @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]}] if score $Objective Statues.Data matches 9 run scoreboard players set $Objective Statues.Data 10
 
 #> Detect when a player brought the book back to the van
 execute as @e[tag=objective_facade_book] at @s if entity @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]},distance=..2.5] run scoreboard players set $Objective Statues.Data 11
