@@ -10,7 +10,7 @@ effect give @s resistance infinite 100 true
 effect give @s saturation infinite 100 true
 
 #> Stats specific to 001
-effect give @s slowness infinite 0 true
+effect give @s slowness infinite 1 true
 effect give @s strength infinite 1 true 
 
 #> General armour and tools
