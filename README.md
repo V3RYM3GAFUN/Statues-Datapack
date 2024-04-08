@@ -2,16 +2,17 @@
 A Minecraft minigame by V3RYM3GAFUN Studios
 
 ## Credits
-- **V3RYM3GAFUN** - Creator, Producer, Coder, Builder, SFX Specialist
-- **Java_chan** - Coder, Animator
-- **RedstoneYay** - Coder
-- **Evtema3** - Coder
+- **V3RYM3GAFUN** - Creator, Producer, Programmer, Builder, SFX Specialist
+- **Java_chan** - Programmer, Animator
+- **RedstoneYay** - Programmer
+- **Evtema3** - Programmer
 - **TheAtlas29** - Builder
 - **NoodlePandarian** - Builder
 - **gosh5557** - Builder
 - **Delkom** - Builder
 - **Hydrintegral** - Builder
 - **TheAI** - Builder
+- **Creepanator77** - Builder
 - **Brownie1111** - Modeler/Graphic Designer
 
 
