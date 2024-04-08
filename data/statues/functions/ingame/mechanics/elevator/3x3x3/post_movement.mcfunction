@@ -11,6 +11,7 @@ execute as @a[scores={Statues.ElevatorPlayerStates=-2}] at @s run tp ~ ~1 ~
 execute as @a[scores={Statues.ElevatorPlayerStates=-3}] at @s run tp ~ ~2 ~
 
 $execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_door,sort=nearest,limit=1] at @s run function statues:ingame/mechanics/elevator/3x3x3/door_open
+$execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_status,sort=nearest,limit=1] run data modify entity @s item.id set value "minecraft:lime_concrete"
 
 scoreboard players set @s Statues.ElevatorState 0
 scoreboard players operation @s Statues.ElevatorFrom = @s Statues.ElevatorTo

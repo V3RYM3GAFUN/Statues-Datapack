@@ -29,3 +29,5 @@ execute store result storage statues:data elevator_to int 1 run scoreboard playe
 function statues:ingame/mechanics/elevator/3x3x3/apply_display_translation with storage statues:data
 
 $execute positioned ~ ~$(elevator_location) ~ as @e[tag=elevator_door,sort=nearest,limit=1] at @s run function statues:ingame/mechanics/elevator/3x3x3/door_close
+$execute positioned ~ ~$(elevator_location) ~ as @e[tag=elevator_status,sort=nearest,limit=1] run data modify entity @s item.id set value "minecraft:red_concrete"
+$execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_status,sort=nearest,limit=1] run data modify entity @s item.id set value "minecraft:yellow_concrete"
