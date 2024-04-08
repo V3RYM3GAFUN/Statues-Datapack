@@ -1,0 +1,9 @@
+scoreboard players operation $ElevatorOffY Statues.Data = @s Statues.ElevatorFrom
+scoreboard players operation $ElevatorOffY Statues.Data -= @s Statues.ElevatorTo
+scoreboard players operation $ElevatorOffYT Statues.Data = @s Statues.ElevatorRemaining
+execute if score @s Statues.ElevatorState matches 3 run scoreboard players operation $ElevatorOffYT Statues.Data *= $9 Statues.Data
+execute if score @s Statues.ElevatorState matches 4 run scoreboard players operation $ElevatorOffYT Statues.Data *= $-9 Statues.Data
+scoreboard players operation $ElevatorOffY Statues.Data -= $ElevatorOffYT Statues.Data
+scoreboard players operation $ElevatorOffYT Statues.Data = @s Statues.ElevatorTo
+scoreboard players operation $ElevatorOffYT Statues.Data *= $100 Statues.Data
+scoreboard players operation $ElevatorOffY Statues.Data += $ElevatorOffYT Statues.Data
