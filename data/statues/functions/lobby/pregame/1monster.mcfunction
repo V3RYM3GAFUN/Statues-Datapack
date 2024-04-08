@@ -1,4 +1,4 @@
-tag @e[team=!Monster,tag=queued,sort=random,limit=1] add monster1
+execute unless entity @e[tag=monster1] run tag @e[team=!Monster,tag=queued,sort=random,limit=1] add monster1
 team join Monster @e[tag=monster1,tag=queued,sort=random,limit=1]
 
 tellraw @a [{"selector":"@e[tag=monster1]","bold":true,"color":"red"},{"text":" is the monster!","color":"gold"}]
