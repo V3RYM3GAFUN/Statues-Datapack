@@ -5,4 +5,4 @@ scoreboard players set $sqrtX Statues.Data 0
 scoreboard players set $sqrtResult Statues.Data 0
 execute if score $distance Statues.Data > $sqrtX Statues.Data run function statues:utils/sqrt
 scoreboard players operation $SpectatorDistanceD10 Statues.Data = $sqrtResult Statues.Data
-title @s actionbar [{"text":"Tracking ","color":"green"},{"selector":"@a[tag=spectator_tracker,limit=1]"},{"text":", Distance: ", "color": "green"},{"score":{"objective":"Statues.Data","name":"$SpectatorDistanceD10"}, "color": "green"},{"text":" blocks", "color": "green"}]
+data modify storage statues:data actionbar_text append value {"score":{"objective":"Statues.Data","name":"$SpectatorDistanceD10"}, "color": "green"}

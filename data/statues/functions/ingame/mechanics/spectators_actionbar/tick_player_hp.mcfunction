@@ -8,5 +8,8 @@ scoreboard players operation $SpectatorDistanceD10 Statues.Data = $sqrtResult St
 scoreboard players operation $SpectatorDistanceD10 Statues.Data /= $10 Statues.Data
 scoreboard players operation $SpectatorDistanceM10 Statues.Data = $sqrtResult Statues.Data
 scoreboard players operation $SpectatorDistanceM10 Statues.Data %= $10 Statues.Data
-execute unless score $SpectatorDistanceD10 Statues.Data matches 0..9 run title @s actionbar [{"text":"Tracking ","color":"green"},{"selector":"@a[tag=spectator_tracker,limit=1]"},{"text":", Distance: ", "color": "green"},{"score":{"objective":"Statues.Data","name":"$SpectatorDistanceD10"}, "color": "green"},{"text":" blocks", "color": "green"}]
-execute if score $SpectatorDistanceD10 Statues.Data matches 0..9 run title @s actionbar [{"text":"Tracking ","color":"green"},{"selector":"@a[tag=spectator_tracker,limit=1]"},{"text":", Distance: ", "color": "green"},{"score":{"objective":"Statues.Data","name":"$SpectatorDistanceD10"}, "color": "green"},{"text":".", "color": "green"},{"score":{"objective":"Statues.Data","name":"$SpectatorDistanceM10"}, "color": "green"},{"text":" blocks", "color": "green"}]
+execute unless score $SpectatorDistanceD10 Statues.Data matches 0..9 run data modify storage statues:data actionbar_text append value {"score":{"objective":"Statues.Data","name":"$SpectatorDistanceD10"}, "color": "green"}
+execute unless score $SpectatorDistanceD10 Statues.Data matches 0..9 run return 0
+data modify storage statues:data actionbar_text append value {"score":{"objective":"Statues.Data","name":"$SpectatorDistanceD10"}, "color": "green"}
+data modify storage statues:data actionbar_text append value {"text": ".", "color": "green"}
+data modify storage statues:data actionbar_text append value {"score":{"objective":"Statues.Data","name":"$SpectatorDistanceM10"}, "color": "green"}

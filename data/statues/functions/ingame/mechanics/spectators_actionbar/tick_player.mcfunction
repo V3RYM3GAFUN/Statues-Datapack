@@ -20,6 +20,11 @@ scoreboard players operation $SpectatorDistanceSquared Statues.Data = $Spectator
 scoreboard players operation $SpectatorDistanceSquared Statues.Data += $SpectatorYSquared Statues.Data
 scoreboard players operation $SpectatorDistanceSquared Statues.Data += $SpectatorZSquared Statues.Data
 scoreboard players operation $distance Statues.Data = $SpectatorDistanceSquared Statues.Data
+data merge storage statues:data {actionbar_text:[{"text":"Tracking ","color":"green"},{"selector":"@a[tag=spectator_tracker,limit=1]"},{"text":" ","color":"green"}]}
+function statues:ingame/mechanics/spectators_actionbar/create_healthbar_text
+data modify storage statues:data actionbar_text append value {"text":" - ","color":"green"}
 execute unless score $distance Statues.Data matches 10000.. run function statues:ingame/mechanics/spectators_actionbar/tick_player_hp
 execute if score $distance Statues.Data matches 10000.. run function statues:ingame/mechanics/spectators_actionbar/tick_player_lp
+data modify storage statues:data actionbar_text append value {"text":" blocks","color":"green"}
+title @s actionbar {"storage":"statues:data","nbt":"actionbar_text","interpret":true}
 tag @a[tag=spectator_tracker] remove spectator_tracker
