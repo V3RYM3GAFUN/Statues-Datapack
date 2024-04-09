@@ -1,4 +1,6 @@
-playsound minecraft:block.iron_door.open master @a ~ ~ ~ 1 0.6
-data merge entity @s {item:{tag:{CustomModelData:6}}}
+execute unless function statues:feature_flags/check_doors_flags run return fail
 
-tag @s remove door_opened
+playsound minecraft:block.iron_door.open master @a ~ ~ ~ 1 0.6
+data merge entity @e[tag=3x3display,distance=..2,sort=nearest,limit=1] {item:{tag:{CustomModelData:6}}}
+
+tag @s remove door3x3_opened

@@ -33,7 +33,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `dev_auto_convert_lights` | Automatically converts pink concrete into lights (requires `lights` feature flag)                                                 |
 | `dev_show_interactions`   | Shows particles at interaction entities when nearby                                                                               |
 | `dev_show_markers`        | Shows particles at marker entities when nearby                                                                                    |
-| `doors`                   | Allows use of doors and all functions in `statues:ingame/mechanics/doors`                                                         |
+| `doors`                   | Allows use of doors and all functions in `statues:ingame/mechanics/doors` and `statues:ingame/mechanics/doors_3x3`                |
 | `elevator`                | Enables elevators and allows use of all functions in `statues:ingame/mechanics/elevator`                                          |
 | `floors`                  | Shows the current objective and floor to survivors, allows the use of all functions in `statues:ingame/mechanics/floors`          |
 | `hiding`                  | Enables ticking hiding spots                                                                                                      |
