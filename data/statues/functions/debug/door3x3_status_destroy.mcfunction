@@ -1,0 +1,1 @@
+kill @e[tag=door3x3_status,sort=nearest,limit=1,distance=..5]
