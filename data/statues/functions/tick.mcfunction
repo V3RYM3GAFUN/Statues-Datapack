@@ -86,7 +86,7 @@ scoreboard players set $rundoors Statues.Data 0
 ## execute at @e[tag=door] if entity @a[distance=..5,gamemode=!spectator] run function statues:ingame/mechanics/doors/tick
 
 #> 3x3 Doors
-execute at @a[gamemode=!spectator] if entity @e[tag=3x3door,distance=..3.5] as @e[tag=3x3] run function statues:ingame/mechanics/doors_3x3/tick
+execute at @a[gamemode=!spectator] if entity @e[tag=3x3door,distance=..3.5] as @e[tag=3x3door] run function statues:ingame/mechanics/doors_3x3/tick
 
 
 
