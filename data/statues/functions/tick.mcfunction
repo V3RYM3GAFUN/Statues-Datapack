@@ -86,9 +86,9 @@ scoreboard players set $rundoors Statues.Data 0
 ## execute at @e[tag=door] if entity @a[distance=..5,gamemode=!spectator] run function statues:ingame/mechanics/doors/tick
 
 #> 3x3 Doors
-execute at @a[gamemode=!spectator] if entity @e[tag=3x3door,distance=..3.5] as @e[tag=3x3door] run function statues:ingame/mechanics/doors_3x3/tick
-
-
+execute if score doors Statues.FeatureFlags matches 1 as @e[tag=3x3door,type=minecraft:marker] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.Data 1
+execute if score $rundoors Statues.Data matches 1 as @e[tag=3x3door] run function statues:ingame/mechanics/doors_3x3/tick
+scoreboard players set $rundoors Statues.Data 0
 
 
 
