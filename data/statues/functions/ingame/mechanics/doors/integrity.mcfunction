@@ -6,7 +6,7 @@ execute as @e[tag=doord] at @s unless loaded ~ ~ ~16 run tag @s add doord_alive
 
 scoreboard players set $IntegrityCheckAbandonedDisplayCount Statues.DoorData 0
 execute as @e[tag=door] at @s run tag @e[distance=..1.5,tag=doord] add doord_alive
-execute as @e[tag=doord,tag=!doord_alive] scoreboard players add $IntegrityCheckAbandonedDisplayCount Statues.DoorData 1
+execute as @e[tag=doord,tag=!doord_alive] run scoreboard players add $IntegrityCheckAbandonedDisplayCount Statues.DoorData 1
 kill @e[tag=doord,tag=!doord_alive]
 tag @e[tag=doord_alive] remove doord_alive
 

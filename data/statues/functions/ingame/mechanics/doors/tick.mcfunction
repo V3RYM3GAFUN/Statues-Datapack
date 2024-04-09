@@ -1,11 +1,20 @@
 execute unless function statues:feature_flags/check_doors_flags run return fail
 #> Tick Block Displays
 
-execute as @e[tag=doord_init_open_up] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{translation:[0f,0.97f,0f]}}
-tag @e[tag=doord_init_open_up] remove doord_init_open_up
+execute as @e[tag=doord_init_open_left_dx] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{translation:[0.99f,0f,0f]}}
+tag @e[tag=doord_init_open_left_dx] remove doord_init_open_left_dx
 
-execute as @e[tag=doord_init_open_down] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{translation:[0f,-0.97f,0f]}}
-tag @e[tag=doord_init_open_down] remove doord_init_open_down
+execute as @e[tag=doord_init_open_right_dx] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{translation:[-0.99f,0f,0f]}}
+tag @e[tag=doord_init_open_right_dx] remove doord_init_open_right_dx
+
+# # # # # # #
+
+#> I accidentally rotated every door to 0° so make sure the door you're inspecting has the right rotation
+execute as @e[tag=doord_init_open_left_dz] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{translation:[0f,0f,0.99f]}}
+tag @e[tag=doord_init_open_left_dz] remove doord_init_open_left_dz
+
+execute as @e[tag=doord_init_open_right_dz] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{translation:[0f,0f,-0.99f]}}
+tag @e[tag=doord_init_open_right_dz] remove doord_init_open_right_dz
 
 execute as @e[tag=doord_init_close] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{translation:[0f,0f,0f]}}
 tag @e[tag=doord_init_close] remove doord_init_close
@@ -21,14 +30,14 @@ scoreboard players reset @e[tag=door,tag=!door_anim_open,tag=!door_anim_close] S
 execute as @e[tag=door,tag=!door_generated] at @s run function statues:ingame/mechanics/doors/door_create_display
 tag @e[tag=door,tag=!door_generated] add door_generated
 
-execute as @e[tag=door,y_rotation=0] at @s align xyz positioned ~ ~ ~-0.5 if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
-execute as @e[tag=door,y_rotation=180] at @s align xyz positioned ~ ~ ~-0.5 if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
-execute as @e[tag=door,y_rotation=90] at @s align xyz positioned ~-0.5 ~ ~ if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
+execute as @e[tag=door] at @s align xyz positioned ~ ~ ~-0.5 if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
+execute as @e[tag=door] at @s align xyz positioned ~ ~ ~-0.5 if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
+execute as @e[tag=door,y_rotation=85..95] at @s align xyz positioned ~-0.5 ~ ~ if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
 execute as @e[tag=door,y_rotation=270] at @s align xyz positioned ~-0.5 ~ ~ if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
 #> Optimized: Tick players instead of doors (abandoned)
-#execute as @a[gamemode=!spectator] at @s align xy positioned ~ ~ ~0.5 run tag @e[dx=-1,dy=-1,dz=-1,tag=door,y_rotation=0] add door_req_open
-#execute as @a[gamemode=!spectator] at @s align xy positioned ~ ~ ~0.5 run tag @e[dx=-1,dy=-1,dz=-1,tag=door,y_rotation=180] add door_req_open
-#execute as @a[gamemode=!spectator] at @s align xy positioned ~0.5 ~ ~ run tag @e[dx=-1,dy=-1,dz=-1,tag=door,y_rotation=90] add door_req_open
+#execute as @a[gamemode=!spectator] at @s align xy positioned ~ ~ ~0.5 run tag @e[dx=-1,dy=-1,dz=-1,tag=door] add door_req_open
+#execute as @a[gamemode=!spectator] at @s align xy positioned ~ ~ ~0.5 run tag @e[dx=-1,dy=-1,dz=-1,tag=door] add door_req_open
+#execute as @a[gamemode=!spectator] at @s align xy positioned ~0.5 ~ ~ run tag @e[dx=-1,dy=-1,dz=-1,tag=door,y_rotation=85..95] add door_req_open
 #execute as @a[gamemode=!spectator] at @s align xy positioned ~0.5 ~ ~ run tag @e[dx=-1,dy=-1,dz=-1,tag=door,y_rotation=270] add door_req_open
 execute if score $ForceOpen Statues.DoorData matches 1 run tag @e[tag=door] add door_req_open
 execute if score $ForceClose Statues.DoorData matches 1 run tag @e[tag=door] remove door_req_open
