@@ -1,8 +1,5 @@
-execute as @e[tag=3x3door] at @s if entity @a[distance=..3,gamemode=!spectator,limit=1] run tag @s add door_opened
+execute at @s if entity @a[distance=..2,gamemode=!spectator,limit=1] run tag @s add door_opening
+execute as @e[tag=3x3display,tag=!door_opened] at @s if entity @e[tag=door_opening,sort=nearest,limit=1] run function statues:ingame/mechanics/doors_3x3/open
 
-execute as @e[tag=3x3display] if entity @e[tag=door_opened,distance=..1,limit=1] run data merge entity @e[type=minecraft:item_display,sort=nearest,limit=1] {item:{tag:{CustomModelData:5}}}
-
-
-execute as @e[tag=3x3door] at @s if entity @a[distance=3..,gamemode=!spectator,limit=1] run tag @s add door_opened
-
-execute as @e[tag=3x3display] if entity @e[tag=!door_opened,distance=..1,limit=1] run data merge entity @e[type=minecraft:item_display,sort=nearest,limit=1] {item:{tag:{CustomModelData:6}}}
+execute at @s unless entity @a[distance=..2,gamemode=!spectator,limit=1] run tag @s remove door_opening
+execute as @e[tag=3x3display,tag=door_opened] at @s unless entity @e[tag=!door_opening,sort=nearest,limit=1] run function statues:ingame/mechanics/doors_3x3/close
