@@ -32,12 +32,12 @@ tag @e[tag=door,tag=!door_generated] add door_generated
 
 execute as @e[tag=door] at @s align xyz positioned ~ ~ ~-0.5 if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
 execute as @e[tag=door] at @s align xyz positioned ~ ~ ~-0.5 if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
-execute as @e[tag=door,y_rotation=85..95] at @s align xyz positioned ~-0.5 ~ ~ if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
+execute as @e[tag=door,y_rotation=90] at @s align xyz positioned ~-0.5 ~ ~ if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
 execute as @e[tag=door,y_rotation=270] at @s align xyz positioned ~-0.5 ~ ~ if entity @a[dx=1,dy=1,dz=1,gamemode=!spectator,limit=1] run tag @s add door_req_open
 #> Optimized: Tick players instead of doors (abandoned)
 #execute as @a[gamemode=!spectator] at @s align xy positioned ~ ~ ~0.5 run tag @e[dx=-1,dy=-1,dz=-1,tag=door] add door_req_open
 #execute as @a[gamemode=!spectator] at @s align xy positioned ~ ~ ~0.5 run tag @e[dx=-1,dy=-1,dz=-1,tag=door] add door_req_open
-#execute as @a[gamemode=!spectator] at @s align xy positioned ~0.5 ~ ~ run tag @e[dx=-1,dy=-1,dz=-1,tag=door,y_rotation=85..95] add door_req_open
+#execute as @a[gamemode=!spectator] at @s align xy positioned ~0.5 ~ ~ run tag @e[dx=-1,dy=-1,dz=-1,tag=door,y_rotation=90] add door_req_open
 #execute as @a[gamemode=!spectator] at @s align xy positioned ~0.5 ~ ~ run tag @e[dx=-1,dy=-1,dz=-1,tag=door,y_rotation=270] add door_req_open
 execute if score $ForceOpen Statues.DoorData matches 1 run tag @e[tag=door] add door_req_open
 execute if score $ForceClose Statues.DoorData matches 1 run tag @e[tag=door] remove door_req_open
