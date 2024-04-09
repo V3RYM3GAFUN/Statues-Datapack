@@ -10,4 +10,3 @@ execute as @a[scores={Statues.ElevatorPlayerStates=1}] run damage @s 1 statues:e
 execute as @a[scores={Statues.ElevatorPlayerStates=2}] run damage @s 1 statues:elevator by @e[tag=elevator_door,sort=nearest,limit=1]
 
 $execute positioned ~ ~$(elevator_location) ~ as @e[tag=elevator_status,sort=nearest,limit=1] run data modify entity @s item.id set value "minecraft:orange_concrete"
-$execute positioned ~ ~$(elevator_location) ~ as @e[tag=elevator_door,sort=nearest,limit=1] at @s run function statues:ingame/mechanics/elevator/3x3x3/door_close

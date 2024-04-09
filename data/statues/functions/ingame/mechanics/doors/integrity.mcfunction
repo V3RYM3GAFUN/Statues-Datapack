@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_doors_flags run return fail
 execute as @e[tag=doord] at @s unless loaded ~ ~ ~ run tag @s add doord_alive
 execute as @e[tag=doord] at @s unless loaded ~-16 ~ ~ run tag @s add doord_alive
 execute as @e[tag=doord] at @s unless loaded ~16 ~ ~ run tag @s add doord_alive
@@ -10,7 +11,6 @@ execute as @e[tag=doord,tag=!doord_alive] run scoreboard players add $IntegrityC
 kill @e[tag=doord,tag=!doord_alive]
 tag @e[tag=doord_alive] remove doord_alive
 
-execute unless function statues:feature_flags/check_doors_flags run return fail
 scoreboard players set $IntegrityCheckCount Statues.DoorData 0
 scoreboard players set $IntegrityCheckECount Statues.DoorData 0
 execute as @e[tag=door] at @s run function statues:ingame/mechanics/doors/integrity_self
