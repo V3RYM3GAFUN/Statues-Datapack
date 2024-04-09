@@ -6,6 +6,7 @@ function statues:feature_flags/print_line {is_dev: false, name: "Floors", select
 function statues:feature_flags/print_line {is_dev: false, name: "Hiding Spot", selector: "hiding" }
 function statues:feature_flags/print_line {is_dev: false, name: "Lights", selector: "lights" }
 function statues:feature_flags/print_line {is_dev: false, name: "Power Doors", selector: "power_doors" }
+function statues:feature_flags/print_line {is_dev: false, name: "Tutorial", selector: "tutorial" }
 function statues:feature_flags/print_line {is_dev: false, name: "Spectators ActionBar", selector: "spectators_actionbar" }
 function statues:feature_flags/print_line {is_dev: false, name: "Vents", selector: "vents" }
 function statues:feature_flags/print_line {is_dev: true, name: "Allow Debug Info", selector: "dev_allow_debug_info" }

@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_tutorial_flags run return fail
 clear @s
 tp @s 0 0 0 0 0
 tag @s remove tutorial

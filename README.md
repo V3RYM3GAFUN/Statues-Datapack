@@ -39,7 +39,8 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `hiding`                  | Enables ticking hiding spots                                                                                                      |
 | `lights`                  | Allows creating and modifying lights and all functions in `statues:ingame/mechanics/lights`                                       |
 | `power_doors`             | Allows opening/closing power doors, and access to all functions in `statues:ingame/mechanics/power_doors`                         |
-| `spectators_actionbar`    | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`                    |
+| `spectators_actionbar`    | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                           |
+| `tutorial`                | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`                    |
 | `vents`                   | Allows interacting with vents and all functions in `statues:ingame/mechanics/vents`                                               |
 
 

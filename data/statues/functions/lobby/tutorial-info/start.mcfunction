@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_tutorial_flags run return fail
 tag @s add tutorial
 
 execute at @e[tag=tutorial_start] run tp @s ~ ~ ~

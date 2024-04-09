@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_tutorial_flags run return fail
 execute at @e[tag=tutorial_step3] run tp @s ~ ~ ~
 
 tellraw @s ["",{"text":"[Tutorial]","bold":true,"color":"aqua"},"\nSome of the objectives to complete are represented by ",{"text":"crimson","color":"red"},{"text":" buttons. When you press the button, it'll become a ","color":"white"},{"text":"warped","color":"dark_aqua"},{"text":" button, signaling that this objective has been accomplished","color":"white"}]

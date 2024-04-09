@@ -77,7 +77,7 @@ function statues:ingame/mechanics/misc
 #> Make it so people who aren't survivors immediately get their death count reset
 scoreboard players set @a[team=!Survivor] Statues.Dead 0
 
-execute as @a[tag=tutorial] run function statues:lobby/tutorial-info/tick
+execute if score tutorial Statues.FeatureFlags matches 1 run execute as @a[tag=tutorial] run function statues:lobby/tutorial-info/tick
 
 #> Door handling
 execute if score doors Statues.FeatureFlags matches 1 as @e[tag=door,type=minecraft:marker] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.Data 1
