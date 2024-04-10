@@ -1,0 +1,1 @@
+execute on target run tp @s 64 0 5 0 0
