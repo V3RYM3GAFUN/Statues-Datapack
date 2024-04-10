@@ -17,3 +17,5 @@ item replace entity @s armor.head with minecraft:player_head{display:{Name:'{"te
 item replace entity @s armor.chest with leather_chestplate{Trim:{pattern:sentry,material:emerald},display:{color:16777215,Name:'["",{"text":"Medic Outfit","italic":false,"bold":true}]'},Unbreakable:1,HideFlags:196}
 item replace entity @s armor.legs with leather_leggings{Trim:{pattern:wayfinder,material:emerald},display:{color:16777215,Name:'["",{"text":"Medic Outfit","italic":false,"bold":true}]'},Unbreakable:1,HideFlags:196}
 item replace entity @s armor.feet with leather_boots{Trim:{pattern:snout,material:emerald},display:{color:16777215,Name:'["",{"text":"Medic Outfit","italic":false,"bold":true}]'},Unbreakable:1,HideFlags:196}
+
+item replace entity @s weapon.offhand with stick{flashlight:1b,CustomModelData:7,display:{Name:'{"text":"Flashlight","italic": false}'}}
