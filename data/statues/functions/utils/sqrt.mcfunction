@@ -1,4 +1,4 @@
-scoreboard players operation $sqrtX Statues.Data += $sqrtI Statues.Data
-scoreboard players add $sqrtResult Statues.Data 1
-scoreboard players add $sqrtI Statues.Data 2
-execute if score $distance Statues.Data > $sqrtX Statues.Data run function statues:utils/sqrt
+scoreboard players operation $sqrtX Statues.TempData += $sqrtI Statues.TempData
+scoreboard players add $sqrtResult Statues.TempData 1
+scoreboard players add $sqrtI Statues.TempData 2
+execute if score $distance Statues.TempData > $sqrtX Statues.TempData run function statues:utils/sqrt

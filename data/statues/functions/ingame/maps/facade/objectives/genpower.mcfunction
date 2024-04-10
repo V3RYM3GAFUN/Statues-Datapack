@@ -12,7 +12,7 @@ execute at @e[tag=objective_facade_genpower] if block ~ ~ ~ crimson_button[facin
 execute at @e[tag=objective_facade_genpower] if block ~ ~ ~ crimson_button[facing=south,face=wall] run setblock ~ ~ ~ warped_button[facing=south,face=wall]
 execute at @e[tag=objective_facade_genpower] if block ~ ~ ~ crimson_button[facing=north,face=wall] run setblock ~ ~ ~ warped_button[facing=north,face=wall]
 
-scoreboard players set $CompassSelector Statues.Data 3
-scoreboard players set $Objective Statues.Data 3
+scoreboard players set $CompassSelector Statues.DynamicData 3
+scoreboard players set $Objective Statues.DynamicData 3
 
-scoreboard players add $Timer.Seconds Statues.Data 300
+scoreboard players add $Timer.Seconds Statues.DynamicData 300

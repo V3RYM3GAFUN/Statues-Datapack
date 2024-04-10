@@ -1,1 +1,1 @@
-$bossbar set minecraft:gametimer name "Time left: $(remaining_minutes)m $(remaining_seconds)s"
+$bossbar set statues:gametimer name "Time left: $(remaining_minutes)m $(remaining_seconds)s"

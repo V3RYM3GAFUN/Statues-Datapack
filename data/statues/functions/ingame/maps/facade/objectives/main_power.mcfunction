@@ -30,7 +30,7 @@ function statues:ingame/mechanics/lights/lights_on
 time set 18000
 weather rain
 
-scoreboard players set $Objective Statues.Data 7
-scoreboard players set $CompassSelector Statues.Data 7
+scoreboard players set $Objective Statues.DynamicData 7
+scoreboard players set $CompassSelector Statues.DynamicData 7
 
-scoreboard players add $Timer.Seconds Statues.Data 300
+scoreboard players add $Timer.Seconds Statues.DynamicData 300

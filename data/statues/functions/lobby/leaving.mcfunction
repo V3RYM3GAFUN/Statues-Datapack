@@ -44,7 +44,7 @@ team join Lobby @s
 #> Other potential needs
 scoreboard players reset @s Statues.Monsters
 scoreboard players reset @s Statues.Survivors
-scoreboard players reset @s Statues.Data
+scoreboard players reset @s Statues.DynamicData
 
 scoreboard players set @s Statues.Dead 0
 scoreboard players set @s Player.Leave 0

@@ -9,29 +9,31 @@ scoreboard objectives setdisplay below_name Statues.Health
 scoreboard objectives modify Statues.Health rendertype hearts
 scoreboard objectives setdisplay sidebar.team.dark_red Statues.Monsters
 scoreboard objectives add Statues.Dead deathCount
-scoreboard objectives add Statues.Data dummy
+scoreboard objectives add Statues.StaticData dummy
+scoreboard objectives add Statues.DynamicData dummy
+scoreboard objectives add Statues.TempData dummy
 scoreboard objectives add Statues.MapVote dummy
 scoreboard objectives modify Statues.MapVote displayname "Map vote"
 scoreboard objectives add Statues.Objective xp
 scoreboard objectives add Player.Leave minecraft.custom:minecraft.leave_game
-scoreboard players set $Status Statues.Data 0
+scoreboard players set $Status Statues.DynamicData 0
 scoreboard objectives add Statues.Abilities minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Statues.Players dummy
 scoreboard objectives add Statues.DoorData dummy
 scoreboard objectives add Statues.TutorialObjective dummy
 
-scoreboard players set $-9 Statues.Data -9
-scoreboard players set $-1 Statues.Data -1
-scoreboard players set $0 Statues.Data 0
-scoreboard players set $2 Statues.Data 2
-scoreboard players set $9 Statues.Data 9
-scoreboard players set $10 Statues.Data 10
-scoreboard players set $20 Statues.Data 20
-scoreboard players set $45 Statues.Data 45
-scoreboard players set $60 Statues.Data 60
-scoreboard players set $90 Statues.Data 90
-scoreboard players set $100 Statues.Data 100
-scoreboard players set $111 Statues.Data 111
+scoreboard players set $-9 Statues.StaticData -9
+scoreboard players set $-1 Statues.StaticData -1
+scoreboard players set $0 Statues.StaticData 0
+scoreboard players set $2 Statues.StaticData 2
+scoreboard players set $9 Statues.StaticData 9
+scoreboard players set $10 Statues.StaticData 10
+scoreboard players set $20 Statues.StaticData 20
+scoreboard players set $45 Statues.StaticData 45
+scoreboard players set $60 Statues.StaticData 60
+scoreboard players set $90 Statues.StaticData 90
+scoreboard players set $100 Statues.StaticData 100
+scoreboard players set $111 Statues.StaticData 111
 
 bossbar add countdown "Starting in..."
 bossbar set countdown color yellow

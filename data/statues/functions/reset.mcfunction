@@ -1,4 +1,4 @@
-scoreboard players set $Status Statues.Data 0
+scoreboard players set $Status Statues.DynamicData 0
 
 clear @a[team=!Dev]
 effect clear @a[team=!Dev]
@@ -38,12 +38,12 @@ tag @a remove vote_origins
 tag @a remove win
 tag @a remove has_compass_tracker
 
-bossbar set countdown visible false
-bossbar set gametimer visible false
+bossbar set statues:countdown visible false
+bossbar set statues:gametimer visible false
 
 
-scoreboard players set $Timer.Ticks Statues.Data 0
-scoreboard players reset $MonsterSpawnDelay Statues.Data
+scoreboard players set $Timer.Ticks Statues.DynamicsData 0
+scoreboard players reset $MonsterSpawnDelay Statues.DynamicData
 
 scoreboard players set * Statues.Dead 0
 scoreboard players reset * Statues.Monsters
@@ -51,7 +51,7 @@ scoreboard players reset * Statues.Survivors
 scoreboard players reset * Statues.Players
 scoreboard players reset * Statues.abilities
 scoreboard players reset * Statues.Objective
-scoreboard players reset @a Statues.Data
+scoreboard players reset * Statues.TempData
 
 
 #> Turn off power
@@ -70,7 +70,7 @@ execute at @e[tag=objective_reset] run function statues:utils/button_warped_to_c
 execute at @e[tag=pressure_plates] run setblock ~ ~ ~ minecraft:light_weighted_pressure_plate
 
 #> Resets the current objective
-scoreboard players set $Objective Statues.Data 0 
+scoreboard players set $Objective Statues.DynamicData 0 
 
 #> Map specific reset
 function statues:ingame/maps/facade/objectives/reset
@@ -79,4 +79,4 @@ function statues:ingame/maps/facade/blockreset
 time set 6000
 weather clear
 
-scoreboard players reset @e[tag=machine_sas] Statues.Data
+scoreboard players reset @e[tag=machine_sas] Statues.DynamicData

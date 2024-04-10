@@ -2,9 +2,9 @@ execute unless function statues:feature_flags/check_elevator_flags run return fa
 
 scoreboard players remove @s Statues.ElevatorRemaining 1
 
-scoreboard players operation $SoundTick Statues.Data = @s Statues.ElevatorRemaining
-scoreboard players operation $SoundTick Statues.Data %= $20 Statues.Data
-$execute if score $SoundTick Statues.Data matches 0 positioned ~ ~$(elevator_location_cur) ~ run function statues:ingame/mechanics/elevator/3x3x3/sound_tick
+scoreboard players operation $SoundTick Statues.TempData = @s Statues.ElevatorRemaining
+scoreboard players operation $SoundTick Statues.TempData %= $20 Statues.StaticData
+$execute if score $SoundTick Statues.TempData matches 0 positioned ~ ~$(elevator_location_cur) ~ run function statues:ingame/mechanics/elevator/3x3x3/sound_tick
 
 $execute if score @s Statues.ElevatorState matches 3 run function statues:ingame/mechanics/elevator/3x3x3/apply_collision_movement_static {elevator_location: $(elevator_location), elevator_collision_y: "~0.09"}
 $execute if score @s Statues.ElevatorState matches 4 run function statues:ingame/mechanics/elevator/3x3x3/apply_collision_movement_static {elevator_location: $(elevator_location), elevator_collision_y: "~-0.09"}

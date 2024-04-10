@@ -12,9 +12,9 @@ team join Survivor @e[team=!Monster,tag=queued]
 effect give @a weakness 16 100 true
 
 #> Allows setting the in-game timer to a custom number [Old version]
-#scoreboard players set $Timer.Minutes Statues.Data 1
-#scoreboard players set $Timer.Seconds Statues.Data 1
-#scoreboard players set $Timer.Ticks Statues.Data 0
+#scoreboard players set $Timer.Minutes Statues.DynamicData 1
+#scoreboard players set $Timer.Seconds Statues.DynamicData 1
+#scoreboard players set $Timer.Ticks Statues.DynamicData 0
 
 #> Allows setting the in-game timer to a custom number [Bossbar version]
-scoreboard players set $Timer.Seconds Statues.Data 601
+scoreboard players set $Timer.Seconds Statues.DynamicData 601

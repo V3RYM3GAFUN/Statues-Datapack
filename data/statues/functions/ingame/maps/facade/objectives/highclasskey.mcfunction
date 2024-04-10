@@ -6,7 +6,7 @@ execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run 
 
 execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value "{'text':''}"
 
-scoreboard players set $Objective Statues.Data 9
+scoreboard players set $Objective Statues.DynamicData 9
 
 execute as @a[team=!Monster] at @s run playsound minecraft:block.vault.insert_item master @a ~ ~ ~ 1 1.5
 
@@ -14,4 +14,4 @@ clear @a iron_ingot{facade_highclass_item:1b} 1
 
 weather thunder
 
-scoreboard players add $Timer.Seconds Statues.Data 300
+scoreboard players add $Timer.Seconds Statues.DynamicData 300

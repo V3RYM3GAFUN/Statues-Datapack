@@ -6,20 +6,20 @@ $execute positioned ~ ~$(elevator_location) ~ positioned ~-0.9 ~-2 ~-0.9 as @a[d
 
 scoreboard players operation @s Statues.ElevatorRemaining = @s Statues.ElevatorTo
 scoreboard players operation @s Statues.ElevatorRemaining -= @s Statues.ElevatorFrom
-execute if score @s Statues.ElevatorRemaining matches ..0 run scoreboard players operation @s Statues.ElevatorRemaining *= $-1 Statues.Data
-scoreboard players operation @s Statues.ElevatorRemaining *= $111 Statues.Data
-scoreboard players operation @s Statues.ElevatorRemaining /= $10 Statues.Data
+execute if score @s Statues.ElevatorRemaining matches ..0 run scoreboard players operation @s Statues.ElevatorRemaining *= $-1 Statues.StaticData
+scoreboard players operation @s Statues.ElevatorRemaining *= $111 Statues.StaticData
+scoreboard players operation @s Statues.ElevatorRemaining /= $10 Statues.StaticData
 
-scoreboard players operation $ElevatorEffectTime Statues.Data = @s Statues.ElevatorRemaining
-scoreboard players add $ElevatorEffectTime Statues.Data 19
-scoreboard players operation $ElevatorEffectTime Statues.Data /= $20 Statues.Data
+scoreboard players operation $ElevatorEffectTime Statues.TempData = @s Statues.ElevatorRemaining
+scoreboard players add $ElevatorEffectTime Statues.TempData 19
+scoreboard players operation $ElevatorEffectTime Statues.TempData /= $20 Statues.StaticData
 
 execute if score @s Statues.ElevatorFrom < @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 3
 execute if score @s Statues.ElevatorFrom > @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 4
 
 $execute if score @s Statues.ElevatorState matches 4 run function statues:ingame/mechanics/elevator/3x3x3/apply_collision_movement_static {elevator_location: $(elevator_location), elevator_collision_y: "~-0.18"}
 
-execute store result storage statues:data elevator_effect_time int 1 run scoreboard players get $ElevatorEffectTime Statues.Data
+execute store result storage statues:data elevator_effect_time int 1 run scoreboard players get $ElevatorEffectTime Statues.TempData
 function statues:ingame/mechanics/elevator/3x3x3/apply_player_effects with storage statues:data
 execute if score @s Statues.ElevatorState matches 3 as @a[scores={Statues.ElevatorPlayerStates=2..3}] at @s run tp ~ ~1 ~
 

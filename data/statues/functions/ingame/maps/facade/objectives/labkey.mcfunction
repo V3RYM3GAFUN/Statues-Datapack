@@ -8,7 +8,7 @@ clear @a iron_ingot{facade_labkey_item:1b} 1
 
 time set 10000
 
-scoreboard players set $Objective Statues.Data 5
-scoreboard players set $CompassSelector Statues.Data 5
+scoreboard players set $Objective Statues.DynamicData 5
+scoreboard players set $CompassSelector Statues.DynamicData 5
 
-scoreboard players add $Timer.Seconds Statues.Data 300
+scoreboard players add $Timer.Seconds Statues.DynamicData 300
