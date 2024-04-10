@@ -40,7 +40,7 @@ bossbar add gametimer "Time left:"
 
 ## Note: Don't forget to change this value when testing an actual game
 bossbar set gametimer color white
-bossbar set gametimer max 1201
+bossbar set gametimer max 601
 
 
 #> https://bugs.mojang.com/browse/MC-87984

@@ -20,4 +20,4 @@ effect give @a weakness 16 100 true
 #scoreboard players set $Timer.Ticks Statues.Data 0
 
 #> Allows setting the in-game timer to a custom number [Bossbar version]
-scoreboard players set $Timer.Seconds Statues.Data 1201
+scoreboard players set $Timer.Seconds Statues.Data 601

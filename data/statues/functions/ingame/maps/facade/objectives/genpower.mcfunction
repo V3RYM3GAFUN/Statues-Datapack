@@ -14,3 +14,5 @@ execute at @e[tag=objective_facade_genpower] if block ~ ~ ~ crimson_button[facin
 
 scoreboard players set $CompassSelector Statues.Data 3
 scoreboard players set $Objective Statues.Data 3
+
+scoreboard players add $Timer.Seconds Statues.Data 300

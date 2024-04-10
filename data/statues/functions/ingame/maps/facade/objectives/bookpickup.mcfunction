@@ -4,3 +4,5 @@ execute as @a[team=!Monster] at @s run playsound block.note_block.chime master @
 
 scoreboard players set $Objective Statues.Data 10
 scoreboard players set $CompassSelector Statues.Data 10
+
+scoreboard players add $Timer.Seconds Statues.Data 60

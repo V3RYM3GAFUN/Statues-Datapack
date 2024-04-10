@@ -10,3 +10,5 @@ time set 10000
 
 scoreboard players set $Objective Statues.Data 5
 scoreboard players set $CompassSelector Statues.Data 5
+
+scoreboard players add $Timer.Seconds Statues.Data 300

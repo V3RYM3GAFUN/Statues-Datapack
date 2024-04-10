@@ -7,6 +7,8 @@ execute as @a[team=!Monster] at @s run playsound minecraft:block.vault.insert_it
 scoreboard players set $Objective Statues.Data 2
 scoreboard players set $CompassSelector Statues.Data 2
 
+scoreboard players add $Timer.Seconds Statues.Data 300
+
 clear @a iron_ingot{facade_genkey_item:1b} 1
 
 time set 10000

@@ -13,3 +13,5 @@ execute as @a[team=!Monster] at @s run playsound minecraft:block.vault.insert_it
 clear @a iron_ingot{facade_highclass_item:1b} 1
 
 weather thunder
+
+scoreboard players add $Timer.Seconds Statues.Data 300

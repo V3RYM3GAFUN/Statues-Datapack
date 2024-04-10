@@ -3,7 +3,6 @@ tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
 effect give @s health_boost infinite 4 true
-effect give @s resistance infinite 0 true
 effect give @s slowness infinite 0 true
 effect give @s instant_health 5 10 true
 

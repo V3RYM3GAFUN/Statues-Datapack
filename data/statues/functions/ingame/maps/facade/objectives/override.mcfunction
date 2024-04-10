@@ -14,3 +14,5 @@ execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facin
 execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facing=west,face=wall] run setblock ~ ~ ~ warped_button[facing=west,face=wall]
 execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facing=south,face=wall] run setblock ~ ~ ~ warped_button[facing=south,face=wall]
 execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facing=north,face=wall] run setblock ~ ~ ~ warped_button[facing=north,face=wall]
+
+scoreboard players add $Timer.Seconds Statues.Data 300
