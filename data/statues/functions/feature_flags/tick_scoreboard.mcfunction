@@ -45,6 +45,10 @@ execute if score flashlight Statues.FeatureFlags matches 0 run scoreboard player
 execute unless score flashlight Statues.FeatureFlags matches 0 run scoreboard players display numberformat flashlight Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name flashlight Statues.FeatureFlags {"text":"Flashlight Feature"}
 
+execute if score desk_button Statues.FeatureFlags matches 0 run scoreboard players display numberformat desk_button Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score desk_button Statues.FeatureFlags matches 0 run scoreboard players display numberformat desk_button Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name desk_button Statues.FeatureFlags {"text":"Desk Button Feature"}
+
 execute if score dev_show_markers Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_markers Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_show_markers Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_markers Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name dev_show_markers Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Show Markers","color":"white"}]
