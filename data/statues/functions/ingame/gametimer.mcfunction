@@ -16,6 +16,11 @@ scoreboard players remove $Timer.Ticks Statues.Data 1
 #> Cap the timer at its max value
 execute if score $Timer.Seconds Statues.Data matches 602.. run scoreboard players set $Timer.Seconds Statues.Data 600
 
+execute if score $Timer.Seconds Statues.Data matches 451.. run bossbar set gametimer color white
+execute if score $Timer.Seconds Statues.Data matches 301..450 run bossbar set gametimer color green
+execute if score $Timer.Seconds Statues.Data matches 151..300 run bossbar set gametimer color yellow
+execute if score $Timer.Seconds Statues.Data matches ..150 run bossbar set gametimer color red
+
 #> Old in-game timer
 #execute if score $Timer.Minutes Statues.Data matches ..9 if score $Timer.Seconds Statues.Data matches ..9 run title @a actionbar [{"text": "Time left: 0"},{"score":{"name":"$Timer.Minutes","objective":"Statues.Data"}},{"text":":0"},{"score":{"name":"$Timer.Seconds","objective":"Statues.Data"}}]
 #execute if score $Timer.Minutes Statues.Data matches ..9 if score $Timer.Seconds Statues.Data matches 10.. run title @a actionbar [{"text": "Time left: 0"},{"score":{"name":"$Timer.Minutes","objective":"Statues.Data"}},{"text":":"},{"score":{"name":"$Timer.Seconds","objective":"Statues.Data"}}]
