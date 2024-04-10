@@ -2,7 +2,7 @@
 A Minecraft minigame by V3RYM3GAFUN Studios
 
 ## Credits
-- **V3RYM3GAFUN** - Creator, Producer, Programmer, Builder, SFX Specialist
+- **V3RYM3GAFUN** - Creator, Producer (Programming, Building, Graphics Design, Sound Design)
 - **Java_chan** - Programmer, Animator
 - **RedstoneYay** - Programmer
 - **Evtema3** - Programmer
@@ -13,7 +13,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 - **Hydrintegral** - Builder
 - **TheAI** - Builder
 - **Creepanator77** - Builder
-- **Brownie1111** - Modeler/Graphic Designer
+- **Brownie1111** - Modeler/Graphics Designer
 
 
 ## Developer Player Tags
