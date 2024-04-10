@@ -35,14 +35,14 @@ scoreboard players set $90 Statues.StaticData 90
 scoreboard players set $100 Statues.StaticData 100
 scoreboard players set $111 Statues.StaticData 111
 
-bossbar add countdown "Starting in..."
-bossbar set countdown color yellow
-bossbar set countdown max 30
-bossbar add gametimer "Time left:"
+bossbar add statues:countdown "Starting in..."
+bossbar set statues:countdown color yellow
+bossbar set statues:countdown max 30
+bossbar add statues:gametimer "Time left:"
 
 ## Note: Don't forget to change this value when testing an actual game
-bossbar set gametimer color white
-bossbar set gametimer max 601
+bossbar set statues:gametimer color white
+bossbar set statues:gametimer max 601
 
 
 #> https://bugs.mojang.com/browse/MC-87984
