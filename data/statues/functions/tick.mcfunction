@@ -51,9 +51,6 @@ execute as @a[team=!Dev] if score @s Player.Leave matches 1.. run function statu
 #> Exception for Devs. Don't detect when they leave
 scoreboard players set @a[team=Dev] Player.Leave 0
 
-execute if score hiding Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/survivors/hiding
-
-
 #> Allows displaying the health of every survivor in a scoreboard
 execute if score $Timer.Ticks Statues.DynamicData matches 1 run scoreboard players reset * Statues.Survivors
 execute as @a[team=Survivor] run scoreboard players operation @s Statues.Survivors = @s Statues.Health
