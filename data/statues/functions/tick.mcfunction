@@ -33,8 +33,12 @@ execute unless score $Status Statues.Data matches 3 run gamerule reducedDebugInf
 
 execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/monsterdistance
 execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run function statues:ingame/mechanics/survivors/death
-execute as @a at @s if predicate statues:flashlight run function statues:ingame/mechanics/survivors/flashlight/emit
-execute as @a at @s unless predicate statues:flashlight run function statues:ingame/mechanics/survivors/flashlight/destroy
+
+execute as @a at @s unless predicate statues:flashlight_mainhand run function statues:ingame/mechanics/survivors/flashlight/destroy
+execute as @a at @s unless predicate statues:flashlight_offhand run function statues:ingame/mechanics/survivors/flashlight/destroy
+execute as @a at @s if predicate statues:flashlight_mainhand run function statues:ingame/mechanics/survivors/flashlight/emit
+execute as @a at @s if predicate statues:flashlight_offhand run function statues:ingame/mechanics/survivors/flashlight/emit
+
 
 execute as @a[team=Monster] run function statues:ingame/mechanics/survivors/survivordistance
 
