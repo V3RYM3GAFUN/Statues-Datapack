@@ -2,6 +2,7 @@ tellraw @s {"text":"---- Feature Flags ----","color":"gray"}
 function statues:feature_flags/print_line {is_dev: false, name: "Compass Tracker", selector: "compass_tracker" }
 function statues:feature_flags/print_line {is_dev: false, name: "Doors", selector: "doors" }
 function statues:feature_flags/print_line {is_dev: false, name: "Elevator", selector: "elevator" }
+function statues:feature_flags/print_line {is_dev: false, name: "Flashlight", selector: "flashlight" }
 function statues:feature_flags/print_line {is_dev: false, name: "Floors", selector: "floors" }
 function statues:feature_flags/print_line {is_dev: false, name: "Hiding Spot", selector: "hiding" }
 function statues:feature_flags/print_line {is_dev: false, name: "Lights", selector: "lights" }
