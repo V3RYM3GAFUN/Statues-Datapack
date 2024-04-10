@@ -1,7 +1,9 @@
-# Statues.
+# "Statues."
+
 A Minecraft minigame by V3RYM3GAFUN Studios
 
 ## Credits
+
 - **V3RYM3GAFUN** - Creator, Producer (Programming, Building, Graphics Design, Sound Design)
 - **Java_chan** - Programmer, Animator
 - **RedstoneYay** - Programmer
@@ -15,8 +17,8 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 - **Creepanator77** - Builder
 - **Brownie1111** - Modeler/Graphics Designer
 
-
 ## Developer Player Tags
+
 | Tag                               | Description                                                          |
 |-----------------------------------|----------------------------------------------------------------------|
 | `dev_allow_item_drop`             | Allows player to drop items out of inventory                         |
@@ -26,6 +28,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `dev_ignore_vent_requirement`     | Ignores the requirement to go in a vent (normally 002 and survivors) |
 
 ## Feature Flags
+
 | Feature Flag              | Description                                                                                                                       |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | `compass_tracker`         | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point |
@@ -43,11 +46,12 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `tutorial`                | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`                    |
 | `vents`                   | Allows interacting with vents and all functions in `statues:ingame/mechanics/vents`                                               |
 
-
 ### Enabling/Disabling
+
 To enable a feature flag run `/scoreboard players set <featureflag> Statues.FeatureFlags 1`, and to turn it off `/scoreboard players set <featureflag> Statues.FeatureFlags 0`. Replace `<featureflag>` with the feature you want to enable/disable.
 
-## Entity tags 
+## Entity tags
+
 | Tag                    | Description                                                                                   |
 |------------------------|-----------------------------------------------------------------------------------------------|
 | `elevator_room`        | Any elevator room has this tag                                                                |
