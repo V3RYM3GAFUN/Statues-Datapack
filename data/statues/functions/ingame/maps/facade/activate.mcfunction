@@ -8,6 +8,9 @@ tp @a[team=Monster] -29.5 -56 324.5 -90 0
 scoreboard players set $MonsterSpawnDelay Statues.DynamicData 1800
 tellraw @a {"text": "90 seconds grace period for survivors.","bold": true,"color": "aqua"}
 
+#> More than enough to fill up potential lost health
+effect give @a[team=Survivor] instant_health 1 5 true
+
 tp @a[team=Survivor] 44.5 -56 322 90 0
 tag @a[team=Survivor] add has_compass_tracker
 
