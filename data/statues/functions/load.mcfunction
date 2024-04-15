@@ -1,4 +1,4 @@
-tellraw @a {"text":"Statues. Indev - v0.1a", "color": "#00AAAA"}
+tellraw @a {"text":"Statues. Indev - v0.2.1-a", "color": "#00AAAA"}
 
 scoreboard objectives add Statues.Monsters dummy "Monsters"
 scoreboard objectives add Statues.Survivors dummy "Survivors"
@@ -21,6 +21,8 @@ scoreboard objectives add Statues.Abilities minecraft.used:minecraft.carrot_on_a
 scoreboard objectives add Statues.Players dummy
 scoreboard objectives add Statues.DoorData dummy
 scoreboard objectives add Statues.TutorialObjective dummy
+scoreboard objectives add Statues.Flashlight minecraft.used:spyglass
+scoreboard objectives add Statues.Barrels minecraft.custom:open_barrel
 
 scoreboard players set $-9 Statues.StaticData -9
 scoreboard players set $-1 Statues.StaticData -1
