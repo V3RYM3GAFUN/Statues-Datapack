@@ -6,6 +6,8 @@ execute at @s[y_rotation=90] positioned ~-1.5 ~-1 ~-1 if entity @a[dx=3,dy=3,dz=
 execute if entity @s[tag=3x3door,tag=door3x3_opening,tag=!door3x3_opened] at @s run function statues:ingame/mechanics/doors_3x3/open
 execute if entity @s[tag=3x3door,tag=!door3x3_opening,tag=door3x3_opened] at @s run function statues:ingame/mechanics/doors_3x3/close
 
-execute at @s[y_rotation=0] unless entity @e[tag=3x3display,distance=..2] align xyz run summon item_display ~.5 ~.5 ~.5 {item:{Count:1b,tag:{CustomModelData:5},id:"minecraft:stick"},Tags:["3x3display"]}
+execute at @s[y_rotation=0] unless entity @e[tag=3x3left,distance=..2] align xyz run summon item_display ~.5 ~.5 ~.5 {item:{Count:1b,tag:{CustomModelData:8},id:"minecraft:stick"},Tags:["3x3display","3x3left"],Rotation:[180f]}
+execute at @s[y_rotation=0] unless entity @e[tag=3x3right,distance=..2] align xyz run summon item_display ~.5 ~.5 ~.5 {item:{Count:1b,tag:{CustomModelData:9},id:"minecraft:stick"},Tags:["3x3display","3x3right"]}
 
-execute at @s[y_rotation=90] unless entity @e[tag=3x3display,distance=..2] align xyz run summon item_display ~.5 ~.5 ~.5 {item:{Count:1b,tag:{CustomModelData:5},id:"minecraft:stick"},Tags:["3x3display"],Rotation:[90f]}
+execute at @s[y_rotation=90] unless entity @e[tag=3x3left,distance=..2] align xyz run summon item_display ~.5 ~.5 ~.5 {item:{Count:1b,tag:{CustomModelData:8},id:"minecraft:stick"},Tags:["3x3display","3x3left"],Rotation:[-90f]}
+execute at @s[y_rotation=90] unless entity @e[tag=3x3right,distance=..2] align xyz run summon item_display ~.5 ~.5 ~.5 {item:{Count:1b,tag:{CustomModelData:9},id:"minecraft:stick"},Tags:["3x3display","3x3right"],Rotation:[90f]}
