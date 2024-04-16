@@ -8,3 +8,5 @@ execute if entity @a[team=Survivor,distance=..2.5] as @a at @s run playsound min
 execute if entity @a[team=Survivor,distance=..2.5] run team join Spectator @p[team=Survivor,distance=..2.5]
 
 scoreboard players set $CompassSelector Statues.DynamicData 10
+
+particle minecraft:totem_of_undying ~ ~1 ~ 0.1 0.1 0.1 0 10 normal
