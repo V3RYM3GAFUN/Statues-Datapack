@@ -1,6 +1,9 @@
 execute unless function statues:feature_flags/check_tutorial_flags run return fail
 execute at @e[tag=tutorial_step3] run tp @s ~ ~ ~
 
-tellraw @s ["",{"text":"[Tutorial]","bold":true,"color":"aqua"},"\nSome of the objectives to complete are represented by ",{"text":"crimson","color":"red"},{"text":" buttons. When you press the button, it'll become a ","color":"white"},{"text":"warped","color":"dark_aqua"},{"text":" button, signaling that this objective has been accomplished","color":"white"}]
+tellraw @s ""
+tellraw @s [{"translate":"statues.tutorial.title","bold":true,"color":"aqua"}]
+tellraw @s [{"translate":"statues.tutorial.step3","with":[[{"translate":"statues.tutorial.step3.crimson","color":"#773355"}],[{"translate":"statues.tutorial.step3.warped","color":"#007777"}]]}]
+tellraw @s ""
 
 execute at @s run playsound block.note_block.pling master @s ~ ~ ~ 1 1
