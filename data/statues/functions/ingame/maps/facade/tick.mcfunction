@@ -56,7 +56,7 @@ execute as @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]}] if score $Objective
 
 #> Detect when a player brought the book back to the van
 execute as @e[tag=objective_facade_book] at @s if entity @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]},distance=..2.5] run scoreboard players set $Objective Statues.DynamicData 11
-execute as @e[tag=objective_facade_book] if score $Objective Statues.DynamicData matches 11 run function statues:ingame/maps/facade/objectives/escape 
+execute as @e[tag=objective_facade_book] at @s if score $Objective Statues.DynamicData matches 11 run function statues:ingame/maps/facade/objectives/escape 
 
 
 #> Force monsters who haven't chosen a monster to spawn with a random choice
