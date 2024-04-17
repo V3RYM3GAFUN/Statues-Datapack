@@ -16,3 +16,6 @@ execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facin
 execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facing=north,face=wall] run setblock ~ ~ ~ warped_button[facing=north,face=wall]
 
 scoreboard players add $Timer.Seconds Statues.DynamicData 300
+
+# Temporary solution in the freight elevator
+setblock 1 111 285 redstone_block

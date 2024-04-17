@@ -8,6 +8,8 @@ gamemode adventure @a[team=!Lobby,team=!Dev]
 spawnpoint @a 0 0 0 0
 team join Lobby @a[team=!Dev]
 
+kill @e[type=item]
+
 execute as @a run attribute @s generic.movement_speed base set 0.1
 
 effect give @a instant_health 1 100 true

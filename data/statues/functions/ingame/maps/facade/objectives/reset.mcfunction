@@ -27,3 +27,6 @@ fill 22 135 345 22 136 345 air
 
 #> Book text 
 execute as @e[type=text_display,tag=objective_facade_book] run data modify entity @s text set value "{'text':'CONFIDENTIAL book','color':'dark_red'}"
+
+# Temporary solution in the freight elevator
+setblock 1 111 285 air
