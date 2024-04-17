@@ -11,4 +11,4 @@ $tag $(player) remove brawler
 $tag $(player) remove marksman
 $tag $(player) remove trapper
 $tag $(player) add $(class)
-$function statues:ingame/maps/facade/classes/$(class)/kit
+$execute as $(player) run function statues:ingame/maps/facade/classes/$(class)/kit
