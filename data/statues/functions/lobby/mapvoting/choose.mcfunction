@@ -17,3 +17,5 @@ execute store result score $Map Statues.StaticData run data get entity @e[tag=ma
 
 #> Force Façade to be chosen, as it is the only map currently available
 scoreboard players set $Map Statues.StaticData 0
+
+effect clear @a[team=!Lobby] resistance

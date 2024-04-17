@@ -2,7 +2,7 @@ tag @s add runner
 tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
-effect give @s speed infinite 1 true
+effect give @s speed infinite 0 true
 effect give @s weakness infinite 100 true
 
 item replace entity @s hotbar.0 with bow{Unbreakable:1b,"display":{Name:'[{"text":"Anti anomaly gun","italic":false}]'},CustomModelData:1}

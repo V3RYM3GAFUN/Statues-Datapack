@@ -10,3 +10,5 @@ execute if score $QueuedCount Statues.DynamicData matches 4..5 run function stat
 execute if score $QueuedCount Statues.DynamicData matches 6.. run function statues:lobby/pregame/2monsters
 
 execute if score $QueuedCount Statues.DynamicData matches 4.. run scoreboard players set $QueuedCount Statues.DynamicData 0
+
+effect clear @a[team=!Lobby] resistance

@@ -24,3 +24,15 @@ effect give @s night_vision infinite 0 true
 
 # Reset death counter
 scoreboard players set @s Statues.Dead 0
+
+tag @s remove marksman
+tag @s remove runner
+tag @s remove medic
+tag @s remove brawler
+tag @s remove gunner
+tag @s remove trapper
+tag @s remove shotgunner
+tag @s remove gunner
+tag @s remove cloaker
+
+tag @s remove has_compass_tracker
