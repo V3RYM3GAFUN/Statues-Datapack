@@ -1,0 +1,1 @@
+$scoreboard players display numberformat @s Statues.Survivors fixed $(healthbar_text)

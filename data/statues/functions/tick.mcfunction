@@ -56,7 +56,7 @@ scoreboard players set @a[team=Dev] Player.Leave 0
 
 #> Allows displaying the health of every survivor in a scoreboard
 execute if score $Timer.Ticks Statues.DynamicData matches 1 run scoreboard players reset * Statues.Survivors
-execute as @a[team=Survivor] run scoreboard players operation @s Statues.Survivors = @s Statues.Health
+execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/healthbar/update_scoreboard
 
 execute if score lights Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/lights/tick
 
