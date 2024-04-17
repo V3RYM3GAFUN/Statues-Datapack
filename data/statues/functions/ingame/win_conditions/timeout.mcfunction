@@ -3,4 +3,4 @@ title @a subtitle {"text": "The time ran out."}
 
 function statues:reset
 
-execute as @a at @s run playsound block.chest.open master @a ~ ~ ~ 0.75 0.75
+execute as @a at @s run playsound minecraft:entity.villager.work_cartographer master @a ~ ~ ~ 1000 0.75

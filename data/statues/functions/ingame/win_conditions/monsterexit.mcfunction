@@ -3,4 +3,4 @@ title @a subtitle {"text": "No monsters are left to play."}
 
 function statues:reset
 
-execute as @a at @s run playsound ui.cartography_table.take_result master @a ~ ~ ~ 0.75 0.75
+execute as @a at @s run playsound ui.cartography_table.take_result master @a ~ ~ ~ 1000 0.75
