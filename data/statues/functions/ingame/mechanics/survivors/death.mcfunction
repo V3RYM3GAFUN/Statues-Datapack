@@ -17,14 +17,7 @@ execute at @s run loot spawn ~ ~ ~ mine 0 -60 0 minecraft:air{drop_contents:1b}
 # Clear out shulker box for next player
 data modify block 0 -60 0 Items set value []
 
-# Clear player's inventory now that they've died
-clear @s
-
-effect give @s night_vision infinite 0 true
-
-# Reset death counter
-scoreboard players set @s Statues.Dead 0
-
+# Clear any tags the player could have
 tag @s remove marksman
 tag @s remove runner
 tag @s remove medic
@@ -36,3 +29,13 @@ tag @s remove gunner
 tag @s remove cloaker
 
 tag @s remove has_compass_tracker
+
+# Clear player's inventory now that they've died
+clear @s
+
+effect give @s night_vision infinite 0 true
+
+# Reset death counter
+scoreboard players set @s Statues.Dead 0
+
+

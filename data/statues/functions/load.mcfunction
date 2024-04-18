@@ -1,4 +1,4 @@
-tellraw @a {"text":"Statues. Indev - v0.2.1-a", "color": "#00AAAA"}
+tellraw @a {"text":"Statues. Indev - v0.1.0-alpha", "color": "#00AAAA"}
 
 scoreboard objectives add Statues.Monsters dummy "Monsters"
 scoreboard objectives add Statues.Survivors dummy "Survivors"
