@@ -7,7 +7,7 @@ execute store result storage statues:data remaining_seconds int 1 run scoreboard
 execute store result storage statues:data remaining_minutes int 1 run scoreboard players get $Timer.RemainingMinutes Statues.TempData
 function statues:ingame/gametimer_bossbar with storage statues:data
 execute store result bossbar statues:gametimer value run scoreboard players get $Timer.Seconds Statues.DynamicData
-bossbar set statues:gametimer players @a[team=Survivor]
+bossbar set statues:gametimer players @a[team=!Monster]
 bossbar set statues:gametimer visible true
 
 #> Clock for the timer
@@ -35,8 +35,8 @@ execute if score $Timer.Ticks Statues.DynamicData matches ..-1 run scoreboard pl
 
 # # # # # # # # # # # # #
 
-execute if score $Timer.Seconds Statues.DynamicData matches ..300 run tellraw @a {"text": "5 minutes left!","color": "gold","bold":true}
-execute if score $Timer.Seconds Statues.DynamicData matches ..300 as @a at @s run playsound block.note_block.basedrum master @s ~ ~ ~ 1 0.5 
+execute if score $Timer.Seconds Statues.DynamicData matches 300 run tellraw @a {"text": "5 minutes left!","color": "gold","bold":true}
+execute if score $Timer.Seconds Statues.DynamicData matches 300 as @a at @s run playsound block.note_block.bass master @s ~ ~ ~ 1 0.5 
 
 #> Tracks how many survivors are still alive
 execute store result score $Ingame.Alive Statues.TempData if entity @e[team=Survivor]

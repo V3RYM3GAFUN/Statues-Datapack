@@ -11,14 +11,14 @@ effect give @s saturation infinite 100 true
 
 #> Stats specific to 001
 effect give @s slowness infinite 1 true
-effect give @s strength infinite 1 true 
+effect give @s strength infinite 0 true 
 
 #> General armour
 item replace entity @s armor.feet with netherite_boots{Unbreakable:1b}
 item replace entity @s armor.legs with netherite_leggings{Unbreakable:1b}
 item replace entity @s armor.chest with netherite_chestplate{Unbreakable:1b}
 
-#> Weapons and armour specific to 001
+#> Armour and weapons specific to 001
 item replace entity @s armor.head with stick{CustomModelData:4}
 item replace entity @s weapon.mainhand with trident{Unbreakable:1b,CustomModelData:1,display:{Name:'[{"text":"Tentacle","italic":false,"color":"dark_red","bold":true}]'},Enchantments:[{id:"loyalty",lvl:3}],HideFlags:5} 1
 item replace entity @s weapon.offhand with trident{Unbreakable:1b,CustomModelData:1,display:{Name:'[{"text":"Tentacle","italic":false,"color":"dark_red","bold":true}]'},Enchantments:[{id:"loyalty",lvl:3}],HideFlags:5} 1
