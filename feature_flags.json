@@ -1,0 +1,19 @@
+{
+    "compass_tracker": { "name": "Compass Tracker", "is_dev": false, "depends": [] },
+    "desk_button": { "name": "Desk Button", "is_dev": false, "depends": [] },
+    "doors": { "name": "Doors", "is_dev": false, "depends": [] },
+    "elevator": { "name": "Elevator", "is_dev": false, "depends": [] },
+    "flashlight": { "name": "Flashlight", "is_dev": false, "depends": [] },
+    "floors": { "name": "Floors", "is_dev": false, "depends": [] },
+    "hiding": { "name": "Hiding Spot", "is_dev": false, "depends": [] },
+    "lights": { "name": "Lights", "is_dev": false, "depends": [] },
+    "power_doors": { "name": "Power Doors", "is_dev": false, "depends": [] },
+    "spectators_actionbar": { "name": "Spectators ActionBar", "is_dev": false, "depends": [] },
+    "tutorial": { "name": "Tutorial", "is_dev": false, "depends": [] },
+    "vents": { "name": "Vents", "is_dev": false, "depends": [] },
+
+    "dev_allow_debug_info": { "name": "Allow Debug Info", "is_dev": true, "depends": [] },
+    "dev_auto_convert_lights": { "name": "Auto Convert Lights", "is_dev": true, "depends": [ "lights" ] },
+    "dev_show_interactions": { "name": "Show Interactions", "is_dev": true, "depends": [] },
+    "dev_show_markers": { "name": "Show Markers", "is_dev": true, "depends": [] }
+}
