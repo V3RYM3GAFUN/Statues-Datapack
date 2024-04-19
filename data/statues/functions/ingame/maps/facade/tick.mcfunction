@@ -69,4 +69,7 @@ execute if score $MonsterSpawnDelay Statues.DynamicData matches 0 run function s
 
 execute as @a[team=Monster] if score @s Statues.Barrels matches 1.. at @e[tag=facade_monster_tp] run tp @s ~ ~ ~
 execute as @a[team=Monster] if score @s Statues.Barrels matches 1.. run tellraw @s {"text": "Monsters cannot use barrels!","color": "red","bold": true}
+execute as @a[team=Monster] if score @s Statues.Barrels matches 1.. run effect give @s slowness 10 255 true
+execute as @a[team=Monster] if score @s Statues.Barrels matches 1.. run effect give @s weakness 10 255 true
+execute as @a[team=Monster] if score @s Statues.Barrels matches 1.. run effect give @s blindness 10 0 true
 scoreboard players reset @a Statues.Barrels

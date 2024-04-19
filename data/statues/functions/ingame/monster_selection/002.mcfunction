@@ -11,7 +11,7 @@ effect give @s resistance infinite 100 true
 effect give @s saturation infinite 100 true
 
 #> Stats specific to 002
-attribute @s generic.movement_speed base set 0.22
+attribute @s generic.movement_speed base set 0.16
 effect give @s blindness infinite 0 true 
 
 #> General armour and weapons

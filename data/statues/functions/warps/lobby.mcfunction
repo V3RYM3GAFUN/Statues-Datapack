@@ -1,1 +1,1 @@
-tp @s 0 0 0 0 0
+execute in overworld run tp @s 0 0 0 0 0

@@ -1,1 +1,1 @@
-tp @s 0.5 135.00 402.5 180 0
+execute in overworld run tp @s 0.5 135.00 402.5 180 0
