@@ -28,14 +28,13 @@ fs.writeFileSync(path.resolve(baseDir, "tick_scoreboard.mcfunction"),
 ${Object.entries(feature_flags).filter(e => e[1].depends.length).map(([k, v]) => 
 `${v.depends.map(d => `execute if score ${d} Statues.FeatureFlags matches ..0 run scoreboard players set ${k} Statues.FeatureFlags -1`).join("\n")}
 execute if score ${k} Statues.FeatureFlags matches -1 ${v.depends.map(d => `if score ${d} Statues.FeatureFlags matches 1..`).join(" ")} run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0`
-)}
+).join("\n")}
 
 ${Object.entries(feature_flags).map(([k, v]) => `
-${v.depends.length != 0 ? `execute if score ${k} Statues.FeatureFlags matches -1 run scoreboard players display numberformat ${k} Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}` : ""}
+${v.depends.length != 0 ? `\nexecute if score ${k} Statues.FeatureFlags matches -1 run scoreboard players display numberformat ${k} Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}` : ""}
 execute if score ${k} Statues.FeatureFlags matches 0 run scoreboard players display numberformat ${k} Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score ${k} Statues.FeatureFlags matches ..0 run scoreboard players display numberformat ${k} Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 ${!v.is_dev 
     ? `scoreboard players display name ${k} Statues.FeatureFlags {"text":"${v.name} Feature"}` 
-    : `scoreboard players display name ${k} Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"${v.name}","color":"white"}]`}
-`)}
+    : `scoreboard players display name ${k} Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"${v.name}","color":"white"}]`}`).join("")}
 `)

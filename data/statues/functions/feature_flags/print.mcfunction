@@ -15,6 +15,7 @@ function statues:feature_flags/print_line {is_dev: false, name: "Tutorial", sele
 function statues:feature_flags/print_line {is_dev: false, name: "Vents", selector: "vents" }
 function statues:feature_flags/print_line {is_dev: true, name: "Allow Debug Info", selector: "dev_allow_debug_info" }
 function statues:feature_flags/print_line {is_dev: true, name: "Auto Convert Lights", selector: "dev_auto_convert_lights" }
+function statues:feature_flags/print_line {is_dev: true, name: "No Start Requirement", selector: "dev_no_start_requirement" }
 function statues:feature_flags/print_line {is_dev: true, name: "Show Interactions", selector: "dev_show_interactions" }
 function statues:feature_flags/print_line {is_dev: true, name: "Show Markers", selector: "dev_show_markers" }
 

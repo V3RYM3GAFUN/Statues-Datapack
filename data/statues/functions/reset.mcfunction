@@ -45,7 +45,8 @@ bossbar set statues:countdown visible false
 bossbar set statues:gametimer visible false
 
 
-scoreboard players set $Timer.Ticks Statues.DynamicsData 0
+scoreboard players set $Timer.Ticks Statues.DynamicData 0
+scoreboard players set $QueuedCount Statues.DynamicData 0
 scoreboard players reset $MonsterSpawnDelay Statues.DynamicData
 
 scoreboard players set * Statues.Dead 0

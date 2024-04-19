@@ -16,6 +16,7 @@
 
     "dev_allow_debug_info": { "name": "Allow Debug Info", "is_dev": true, "depends": [] },
     "dev_auto_convert_lights": { "name": "Auto Convert Lights", "is_dev": true, "depends": [ "lights" ] },
+    "dev_no_start_requirement": { "name": "No Start Requirement", "is_dev": true, "depends": [] },
     "dev_show_interactions": { "name": "Show Interactions", "is_dev": true, "depends": [] },
     "dev_show_markers": { "name": "Show Markers", "is_dev": true, "depends": [] }
 }

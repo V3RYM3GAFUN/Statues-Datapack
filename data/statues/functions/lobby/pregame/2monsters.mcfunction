@@ -10,6 +10,7 @@ execute as @a at @s run playsound entity.ender_dragon.ambient master @s ~ ~ ~ 0.
 effect give @a[team=Monster] glowing 10 0 true
 
 team join Survivor @a[team=!Monster,tag=queued]
+tag @a remove queued
 
 #> Prevents players from hitting each other after getting role
 effect give @a weakness 16 100 true
