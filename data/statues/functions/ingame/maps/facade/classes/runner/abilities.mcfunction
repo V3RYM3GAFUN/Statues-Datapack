@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_abilities_flags run return fail
+
 execute if score @s Statues.Abilities matches 2.. run scoreboard players set @s Statues.Abilities 0
 
 #> Activate ability

@@ -50,9 +50,9 @@ execute as @a[team=Monster] run function statues:ingame/mechanics/survivors/surv
 
 execute as @a[scores={Statues.Monsters=4}] run item replace entity @s hotbar.4 with tipped_arrow{CustomPotionColor:2325012,display:{Name:'[{"text":"Insects","italic":false,"color":"#006633","bold":true}]'},custom_potion_effects:[{id:"minecraft:poison",duration:60,amplifier:1,show_particles:0b,show_icon:0b},{id:"minecraft:instant_health",duration:1,amplifier:0,show_particles:0b,show_icon:0b}]} 1
 
-execute if score $Status Statues.DynamicData matches 3 if score $Map Statues.StaticData matches 0 run function statues:ingame/maps/facade/tick
-execute if score $Status Statues.DynamicData matches 3 if score $Map Statues.StaticData matches 1 run function statues:ingame/maps/lockdown
-execute if score $Status Statues.DynamicData matches 3 if score $Map Statues.StaticData matches 2 run function statues:ingame/maps/origins
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.StaticData matches 0 run function statues:ingame/maps/facade/tick
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.StaticData matches 1 run function statues:ingame/maps/lockdown
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.StaticData matches 2 run function statues:ingame/maps/origins
 
 #> Detect when a player leaves
 execute as @a[team=!Dev] if score @s Player.Leave matches 1.. run function statues:lobby/leaving

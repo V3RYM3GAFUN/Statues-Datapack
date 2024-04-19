@@ -1,4 +1,5 @@
 {
+    "abilities": { "name": "Abilities", "is_dev": false, "depends": [ "map_tick" ] },
     "compass_tracker": { "name": "Compass Tracker", "is_dev": false, "depends": [] },
     "desk_button": { "name": "Desk Button", "is_dev": false, "depends": [] },
     "doors": { "name": "Doors", "is_dev": false, "depends": [] },
@@ -7,6 +8,7 @@
     "floors": { "name": "Floors", "is_dev": false, "depends": [] },
     "hiding": { "name": "Hiding Spot", "is_dev": false, "depends": [] },
     "lights": { "name": "Lights", "is_dev": false, "depends": [] },
+    "map_tick": { "name": "Map Tick", "is_dev": false, "depends": [] },
     "power_doors": { "name": "Power Doors", "is_dev": false, "depends": [] },
     "spectators_actionbar": { "name": "Spectators ActionBar", "is_dev": false, "depends": [] },
     "tutorial": { "name": "Tutorial", "is_dev": false, "depends": [] },

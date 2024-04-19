@@ -4,6 +4,11 @@ execute if score dev_auto_convert_lights Statues.FeatureFlags matches -1 if scor
 
 
 
+execute if score abilities Statues.FeatureFlags matches 0 run scoreboard players display numberformat abilities Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score abilities Statues.FeatureFlags matches ..0 run scoreboard players display numberformat abilities Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name abilities Statues.FeatureFlags {"text":"Abilities Feature"}
+,
+
 execute if score compass_tracker Statues.FeatureFlags matches 0 run scoreboard players display numberformat compass_tracker Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score compass_tracker Statues.FeatureFlags matches ..0 run scoreboard players display numberformat compass_tracker Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name compass_tracker Statues.FeatureFlags {"text":"Compass Tracker Feature"}
@@ -42,6 +47,11 @@ scoreboard players display name hiding Statues.FeatureFlags {"text":"Hiding Spot
 execute if score lights Statues.FeatureFlags matches 0 run scoreboard players display numberformat lights Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score lights Statues.FeatureFlags matches ..0 run scoreboard players display numberformat lights Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name lights Statues.FeatureFlags {"text":"Lights Feature"}
+,
+
+execute if score map_tick Statues.FeatureFlags matches 0 run scoreboard players display numberformat map_tick Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score map_tick Statues.FeatureFlags matches ..0 run scoreboard players display numberformat map_tick Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name map_tick Statues.FeatureFlags {"text":"Map Tick Feature"}
 ,
 
 execute if score power_doors Statues.FeatureFlags matches 0 run scoreboard players display numberformat power_doors Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}

@@ -1,4 +1,5 @@
 tellraw @s {"text":"---- Feature Flags ----","color":"gray"}
+function statues:feature_flags/print_line {is_dev: false, name: "Abilities", selector: "abilities" }
 function statues:feature_flags/print_line {is_dev: false, name: "Compass Tracker", selector: "compass_tracker" }
 function statues:feature_flags/print_line {is_dev: false, name: "Desk Button", selector: "desk_button" }
 function statues:feature_flags/print_line {is_dev: false, name: "Doors", selector: "doors" }
@@ -7,6 +8,7 @@ function statues:feature_flags/print_line {is_dev: false, name: "Flashlight", se
 function statues:feature_flags/print_line {is_dev: false, name: "Floors", selector: "floors" }
 function statues:feature_flags/print_line {is_dev: false, name: "Hiding Spot", selector: "hiding" }
 function statues:feature_flags/print_line {is_dev: false, name: "Lights", selector: "lights" }
+function statues:feature_flags/print_line {is_dev: false, name: "Map Tick", selector: "map_tick" }
 function statues:feature_flags/print_line {is_dev: false, name: "Power Doors", selector: "power_doors" }
 function statues:feature_flags/print_line {is_dev: false, name: "Spectators ActionBar", selector: "spectators_actionbar" }
 function statues:feature_flags/print_line {is_dev: false, name: "Tutorial", selector: "tutorial" }

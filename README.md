@@ -31,6 +31,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 
 | Feature Flag              | Description                                                                                                                       |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `abilities`               | Enables abilities of classes, and all the abilities functions (requires `map_tick`feature flag)                                   |
 | `compass_tracker`         | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point |
 | `desk_button`             | Enables desk buttons. Also enables all functions in `statues:ingame/mechanics/desk_button`                                        |
 | `dev_allow_debug_info`    | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                        |
@@ -43,6 +44,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `floors`                  | Shows the current objective and floor to survivors, allows the use of all functions in `statues:ingame/mechanics/floors`          |
 | `hiding`                  | Enables ticking hiding spots                                                                                                      |
 | `lights`                  | Allows creating and modifying lights and all functions in `statues:ingame/mechanics/lights`                                       |
+| `map_tick`                | Enables map ticking                                                                                                               |
 | `power_doors`             | Allows opening/closing power doors, and access to all functions in `statues:ingame/mechanics/power_doors`                         |
 | `spectators_actionbar`    | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                           |
 | `tutorial`                | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`                    |
