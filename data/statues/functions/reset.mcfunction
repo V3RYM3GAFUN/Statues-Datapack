@@ -83,3 +83,6 @@ time set 6000
 weather clear
 
 scoreboard players reset @e[tag=machine_sas] Statues.DynamicData
+
+# temporary
+execute as @a[team=Lobby] run function statues:warps/newlobby

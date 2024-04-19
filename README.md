@@ -54,18 +54,22 @@ To enable a feature flag run `/scoreboard players set <featureflag> Statues.Feat
 
 ## Entity tags
 
-| Tag                    | Description                                                                                   |
-|------------------------|-----------------------------------------------------------------------------------------------|
-| `elevator_room`        | Any elevator room has this tag                                                                |
-| `elevator_room_3x3x3`  | Elevator room which is 3x3x3, uses `minecraft:stick{CustomModelData:2}` for the model         |
-| `lobby_map_classes`    | In lobby, rooms where players look at classes                                                 |
-| `machine_*`            | Used by machines                                                                              |
-| `map_monster_choice`   | Used to force a random monster selection if player doesn't choose after a certain time        |
-| `map_survivor_classes` | Used to force a random class selection if player doesn't choose after a certain time          |
-| `map_team_tp`          | Marker that will teleport the player from corresponding team to it (ex: facade_monster_tp)    |
-| `map_*`                | Marker inside barrels for item spawning (ex: facade_genkey)                                   |
-| `objective_map_*`      | Interaction or text display or objective that can be completed (ex: objective_facade_genkey)  |
-| `objective_power`      | Self explanotary. Might rename                                                                |
-| `objective_reset`      | For all objectives that can be reset. (text displays, barrels, interactions)                  |
-| `pressure_plates`      | Marker inside gold pressure plates (in class selection room)                                  |
-| `queued`               | Used in lobby                                                                                 |
+| Tag                     | Description                                                                                   |
+|-------------------------|-----------------------------------------------------------------------------------------------|
+| `elevator_room`         | Any elevator room has this tag                                                                |
+| `elevator_room_3x3x3`   | Elevator room which is 3x3x3, uses `minecraft:stick{CustomModelData:2}` for the model         |
+| `lobby_map_classes`     | In lobby, rooms where players look at classes                                                 |
+| `lobby_class_tutorial`  | Used for class previews. Allows players to test classes on a zombie.                          |
+| `lobby_class_zombie`    | Spawns the test zombie for class testing.                                                     |
+| `lobby_monster_tutorial`| Used for monster previews. Allows players to test monsters on a zombie.                       |
+| `lobby_monster_zombie`  | Spawns the test zombie for class testing.                                                     |
+| `machine_*`             | Used by machines                                                                              |
+| `map_monster_choice`    | Used to force a random monster selection if player doesn't choose after a certain time        |
+| `map_survivor_classes`  | Used to force a random class selection if player doesn't choose after a certain time          |
+| `map_team_tp`           | Marker that will teleport the player from corresponding team to it (ex: facade_monster_tp)    |
+| `map_*`                 | Marker inside barrels for item spawning (ex: facade_genkey)                                   |
+| `objective_map_*`       | Interaction or text display or objective that can be completed (ex: objective_facade_genkey)  |
+| `objective_power`       | Self explanotary. Might rename                                                                |
+| `objective_reset`       | For all objectives that can be reset. (text displays, barrels, interactions)                  |
+| `pressure_plates`       | Marker inside gold pressure plates (in class selection room)                                  |
+| `queued`                | Used in lobby                                                                                 |

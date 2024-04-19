@@ -48,3 +48,6 @@ scoreboard players reset @s Statues.DynamicData
 
 scoreboard players set @s Statues.Dead 0
 scoreboard players set @s Player.Leave 0
+
+# temporary
+function statues:warps/newlobby

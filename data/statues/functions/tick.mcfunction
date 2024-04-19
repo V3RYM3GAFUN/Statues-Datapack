@@ -18,6 +18,11 @@ execute as @a[tag=!dev_ignore_forced_gamemode,team=Spectator] run gamemode spect
 execute if score $Status Statues.DynamicData matches ..1 run function statues:lobby/queuing/queuing_base
 execute if score $Status Statues.DynamicData matches ..1 run function statues:lobby/lobbymusic
 
+execute as @a[tag=class_tutorial] run function statues:lobby/tutorial-info/survivors/tick
+execute unless entity @a[tag=class_tutorial] run kill @e[type=zombie]
+
+execute as @a[tag=monster_tutorial] run function statues:lobby/tutorial-info/monsters/tick
+execute unless entity @a[tag=monster_tutorial] run kill @e[type=villager]
 
 #> Map voting
 execute as @a[team=Lobby] run function statues:lobby/mapvoting/vote_base

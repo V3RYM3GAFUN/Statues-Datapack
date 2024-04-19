@@ -1,0 +1,1 @@
+execute unless entity @e[type=zombie] at @e[tag=lobby_monster_zombie] run summon villager
