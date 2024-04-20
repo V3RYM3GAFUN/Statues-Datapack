@@ -17,4 +17,5 @@ $tag $(player) remove marksman
 $tag $(player) remove trapper
 $tag $(player) add $(class)
 $clear $(player)
+$gamemode adventure $(player)
 $execute as $(player) run function statues:ingame/maps/facade/classes/$(class)/kit
