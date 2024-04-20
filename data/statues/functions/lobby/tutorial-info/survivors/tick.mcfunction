@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_tutorial_flags run return fail
+
 #> Ticks whoever has those classes.
 execute as @a[tag=trapper] at @s run function statues:ingame/maps/facade/classes/trapper/abilities
 execute as @a[tag=cloaker] at @s run function statues:ingame/maps/facade/classes/cloaker/abilities

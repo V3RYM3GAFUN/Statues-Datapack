@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_tutorial_flags run return fail
+
 tag @s remove cloaker
 tag @s remove medic
 tag @s remove juggernaut
