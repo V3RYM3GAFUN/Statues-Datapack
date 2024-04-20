@@ -92,6 +92,10 @@ execute if score dev_allow_debug_info Statues.FeatureFlags matches 0 run scorebo
 execute unless score dev_allow_debug_info Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_allow_debug_info Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name dev_allow_debug_info Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Allow Debug Info","color":"white"}]
 
+execute if score dev_allow_empty_game Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_allow_empty_game Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score dev_allow_empty_game Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_allow_empty_game Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name dev_allow_empty_game Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Allow Empty Game","color":"white"}]
+
 execute if score dev_auto_convert_lights Statues.FeatureFlags matches -1 run scoreboard players display numberformat dev_auto_convert_lights Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
 execute if score dev_auto_convert_lights Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_auto_convert_lights Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_auto_convert_lights Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_auto_convert_lights Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}

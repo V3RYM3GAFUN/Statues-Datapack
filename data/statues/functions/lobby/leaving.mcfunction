@@ -39,6 +39,8 @@ tag @s remove vote_origins
 
 tag @s remove win
 
+tag @s[team=!Dev] remove has_compass_tracker
+
 team join Lobby @s
 
 #> Other potential needs

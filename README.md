@@ -26,6 +26,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `dev_always_show_nearby_players`  | Shows nearby survivors and monsters on the actionbar                 |
 | `dev_ignore_forced_gamemode`      | Ignores the correct gamemodes for teams                              |
 | `dev_ignore_vent_requirement`     | Ignores the requirement to go in a vent (normally 002 and survivors) |
+| `dev_not_monster`                 | Makes sure the game won't pick the player as the monster             |
 
 ## Feature Flags
 
@@ -35,6 +36,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `compass_tracker`             | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point  |
 | `desk_button`                 | Enables desk buttons. Also enables all functions in `statues:ingame/mechanics/desk_button`                                         |
 | `dev_allow_debug_info`        | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                         |
+| `dev_allow_empty_game`        | When turned on, the game won't end even if there are no monsters or survivors                                                      |
 | `dev_auto_convert_lights`     | Automatically converts pink concrete into lights (requires `lights` feature flag)                                                  |
 | `dev_infinite_game_time`      | Makes the game last for eternity until all monsters stop playing, or all survivors die                                             |
 | `dev_no_game_reset_on_reload` | Disables the game resetting when the datapack gets loaded                                                                          |
