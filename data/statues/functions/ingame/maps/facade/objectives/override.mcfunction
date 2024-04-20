@@ -10,10 +10,7 @@ execute as @a[team=!Monster] at @s run playsound minecraft:block.trial_spawner.s
 fill -4 105 378 -4 106 378 air
 fill -4 105 383 -4 106 383 air
 
-execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facing=east,face=wall] run setblock ~ ~ ~ warped_button[facing=east,face=wall]
-execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facing=west,face=wall] run setblock ~ ~ ~ warped_button[facing=west,face=wall]
-execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facing=south,face=wall] run setblock ~ ~ ~ warped_button[facing=south,face=wall]
-execute at @e[tag=objective_facade_override] if block ~ ~ ~ crimson_button[facing=north,face=wall] run setblock ~ ~ ~ warped_button[facing=north,face=wall]
+execute at @e[tag=objective_facade_override] run function statues:utils/button_crimson_to_warped
 
 scoreboard players add $Timer.Seconds Statues.DynamicData 300
 

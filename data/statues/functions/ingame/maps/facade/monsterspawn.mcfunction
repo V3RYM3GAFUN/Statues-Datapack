@@ -3,5 +3,7 @@ execute as @e[type=marker,tag=facade_survivor_classes,sort=random,limit=1] at @s
 
 execute as @e[tag=facade_monster_tp] at @s run tp @a[team=Monster,tag=monster_chosen] ~ ~ ~
 
-tellraw @a {"text": "The survivors are no longer safe...","bold": true,"color": "red"}
+execute store result score $Ingame.Alive Statues.TempData if entity @e[team=Survivor]
+execute if score $Ingame.Alive Statues.TempData matches 1 run tellraw @a {"text": "The survivor is no longer safe...","bold": true,"color": "red"}
+execute unless score $Ingame.Alive Statues.TempData matches 1 run tellraw @a {"text": "The survivors are no longer safe...","bold": true,"color": "red"}
 execute as @a at @s run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 0.25 0

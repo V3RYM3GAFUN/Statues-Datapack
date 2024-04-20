@@ -1,12 +1,13 @@
-scoreboard players set $Status Statues.DynamicData 0
-
 clear @a[team=!Dev]
 effect clear @a[team=!Dev]
 tag @a remove queued
-tp @a[team=!Lobby,team=!Dev] 0.5 0.5 0.5 0 0
-gamemode adventure @a[team=!Lobby,team=!Dev]
+#execute if score $Status Statues.DynamicData matches 1.. run tp @a[team=!Lobby,team=!Dev] 0.5 0.5 0.5 0 0
+execute if score $Status Statues.DynamicData matches 1.. as @a[team=!Lobby,team=!Dev] run function statues:warps/newlobby
+gamemode adventure @a[team=!Dev]
 spawnpoint @a 0 0 0 0
 team join Lobby @a[team=!Dev]
+
+scoreboard players set $Status Statues.DynamicData 0
 
 kill @e[type=item]
 
@@ -46,6 +47,7 @@ bossbar set statues:gametimer visible false
 
 
 scoreboard players set $Timer.Ticks Statues.DynamicData 0
+scoreboard players set $CompassSelector Statues.DynamicData 0
 scoreboard players set $QueuedCount Statues.DynamicData 0
 scoreboard players reset $MonsterSpawnDelay Statues.DynamicData
 
@@ -84,6 +86,3 @@ time set 6000
 weather clear
 
 scoreboard players reset @e[tag=machine_sas] Statues.DynamicData
-
-# temporary
-execute as @a[team=Lobby] run function statues:warps/newlobby

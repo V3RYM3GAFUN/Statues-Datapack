@@ -2,6 +2,9 @@ scoreboard players remove $Countdown.Ticks Statues.DynamicData 1
 scoreboard players operation $Countdown.Seconds Statues.TempData = $Countdown.Ticks Statues.DynamicData
 scoreboard players operation $Countdown.Seconds Statues.TempData /= $20 Statues.StaticData
 scoreboard players operation $Countdown.Bossbar Statues.TempData = $Countdown.Seconds Statues.TempData
+scoreboard players remove $Countdown.Bossbar Statues.TempData 14
+execute store result storage statues:data remaining_seconds int 1 run scoreboard players get $Countdown.Bossbar Statues.TempData
+function statues:lobby/pregame/countdown_bossbar with storage statues:data
 execute store result bossbar statues:countdown value run scoreboard players get $Countdown.Bossbar Statues.TempData
 execute if score $Countdown.Ticks Statues.DynamicData matches 1.. if score $Status Statues.DynamicData matches 1 run bossbar set statues:countdown visible true
 execute if score $Countdown.Ticks Statues.DynamicData matches ..299 run bossbar set statues:countdown visible false

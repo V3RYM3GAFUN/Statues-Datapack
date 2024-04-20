@@ -43,7 +43,7 @@ scoreboard players set $1000 Statues.StaticData 1000
 scoreboard players set $10000 Statues.StaticData 10000
 scoreboard players set $100000 Statues.StaticData 100000
 
-bossbar add statues:countdown "Starting in..."
+bossbar add statues:countdown "Starting in: 30s"
 bossbar set statues:countdown color yellow
 bossbar set statues:countdown max 30
 bossbar add statues:gametimer "Time left:"
