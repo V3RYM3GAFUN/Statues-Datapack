@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_flashlight_next_flags run return fail
+execute unless function statues:feature_flags/check_experimental_flashlight_flags run return fail
 execute as @s[advancements={statues:spyglass_use=true}] run scoreboard players set @s Statues.Flashlight 1
 execute as @s[advancements={statues:spyglass_use=false}] run scoreboard players set @s Statues.Flashlight 0
 advancement revoke @s only statues:spyglass_use

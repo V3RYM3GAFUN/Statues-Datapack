@@ -43,8 +43,8 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `doors_2x2`                | Allows use of 2x2 doors and all functions in `statues:ingame/mechanics/doors` (requires `doors` feature flag)                      |
 | `doors_3x3`                | Allows use of 3x3 doors and all functions in `statues:ingame/mechanics/doors_3x3`  (requires `doors` feature flag)                 |
 | `elevator`                 | Enables elevators and allows use of all functions in `statues:ingame/mechanics/elevator`                                           |
+| `experimental_flashlight`  | Updates flashlight to use spyglass+night vision behavior instead and use functions from `statues:ingame/mechanics/flashlight/next` |
 | `flashlight`               | Enables the flashlight item behavior and functions in `statues:ingame/mechanics/flashlight`                                        |
-| `flashlight_next`          | Updates flashlight to use spyglass+night vision behavior instead and use functions from `statues:ingame/mechanics/flashlight/next` |
 | `floors`                   | Shows the current objective and floor to survivors, allows the use of all functions in `statues:ingame/mechanics/floors`           |
 | `hiding`                   | Enables ticking hiding spots                                                                                                       |
 | `lights`                   | Allows creating and modifying lights and all functions in `statues:ingame/mechanics/lights`                                        |

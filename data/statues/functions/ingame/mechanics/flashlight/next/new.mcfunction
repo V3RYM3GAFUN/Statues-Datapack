@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_flashlight_next_flags run return fail
+execute unless function statues:feature_flags/check_experimental_flashlight_flags run return fail
 execute if score @s[tag=!marksman] Statues.Flashlight matches 0 run effect clear @s night_vision
 execute if score @s Statues.Flashlight matches 0 run attribute @s generic.movement_speed base set 0.1
 

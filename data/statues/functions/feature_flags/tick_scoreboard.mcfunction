@@ -5,8 +5,8 @@ execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players s
 execute if score doors_2x2 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_3x3 Statues.FeatureFlags -1
 execute if score doors_3x3 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
-execute if score flashlight Statues.FeatureFlags matches ..0 run scoreboard players set flashlight_next Statues.FeatureFlags -1
-execute if score flashlight_next Statues.FeatureFlags matches -1 if score flashlight Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score flashlight Statues.FeatureFlags matches ..0 run scoreboard players set experimental_flashlight Statues.FeatureFlags -1
+execute if score experimental_flashlight Statues.FeatureFlags matches -1 if score flashlight Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score lights Statues.FeatureFlags matches ..0 run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags -1
 execute if score dev_auto_convert_lights Statues.FeatureFlags matches -1 if score lights Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 
@@ -47,11 +47,6 @@ execute if score flashlight Statues.FeatureFlags matches 0 run scoreboard player
 execute unless score flashlight Statues.FeatureFlags matches ..0 run scoreboard players display numberformat flashlight Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name flashlight Statues.FeatureFlags {"text":"Flashlight Feature"}
 
-execute if score flashlight_next Statues.FeatureFlags matches -1 run scoreboard players display numberformat flashlight_next Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
-execute if score flashlight_next Statues.FeatureFlags matches 0 run scoreboard players display numberformat flashlight_next Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
-execute unless score flashlight_next Statues.FeatureFlags matches ..0 run scoreboard players display numberformat flashlight_next Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
-scoreboard players display name flashlight_next Statues.FeatureFlags {"text":"Flashlight (Next) Feature"}
-
 execute if score floors Statues.FeatureFlags matches 0 run scoreboard players display numberformat floors Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score floors Statues.FeatureFlags matches ..0 run scoreboard players display numberformat floors Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name floors Statues.FeatureFlags {"text":"Floors Feature"}
@@ -87,6 +82,11 @@ scoreboard players display name tutorial Statues.FeatureFlags {"text":"Tutorial 
 execute if score vents Statues.FeatureFlags matches 0 run scoreboard players display numberformat vents Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score vents Statues.FeatureFlags matches ..0 run scoreboard players display numberformat vents Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name vents Statues.FeatureFlags {"text":"Vents Feature"}
+
+execute if score experimental_flashlight Statues.FeatureFlags matches -1 run scoreboard players display numberformat experimental_flashlight Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
+execute if score experimental_flashlight Statues.FeatureFlags matches 0 run scoreboard players display numberformat experimental_flashlight Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score experimental_flashlight Statues.FeatureFlags matches ..0 run scoreboard players display numberformat experimental_flashlight Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name experimental_flashlight Statues.FeatureFlags [{"text":"[Experimental] ","color":"#9542f5"},{"text":"Flashlight (Next)","color":"white"}]
 
 execute if score dev_allow_debug_info Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_allow_debug_info Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_allow_debug_info Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_allow_debug_info Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
