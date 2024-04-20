@@ -18,4 +18,5 @@ $tag $(player) remove trapper
 $tag $(player) add $(class)
 $clear $(player)
 $gamemode adventure $(player)
+$effect give $(player) minecraft:instant_health 1 255 true
 $execute as $(player) run function statues:ingame/maps/facade/classes/$(class)/kit
