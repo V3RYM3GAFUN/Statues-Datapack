@@ -31,11 +31,16 @@ scoreboard players set $2 Statues.StaticData 2
 scoreboard players set $9 Statues.StaticData 9
 scoreboard players set $10 Statues.StaticData 10
 scoreboard players set $20 Statues.StaticData 20
+scoreboard players set $40 Statues.StaticData 40
 scoreboard players set $45 Statues.StaticData 45
 scoreboard players set $60 Statues.StaticData 60
 scoreboard players set $90 Statues.StaticData 90
+scoreboard players set $96 Statues.StaticData 96
 scoreboard players set $100 Statues.StaticData 100
 scoreboard players set $111 Statues.StaticData 111
+scoreboard players set $1000 Statues.StaticData 1000
+scoreboard players set $10000 Statues.StaticData 10000
+scoreboard players set $100000 Statues.StaticData 100000
 
 bossbar add statues:countdown "Starting in..."
 bossbar set statues:countdown color yellow

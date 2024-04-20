@@ -1,20 +1,20 @@
 execute unless function statues:feature_flags/check_spectators_actionbar_flags run return fail
 tag @p[team=!Spectator,team=!Dev,team=!Lobby,gamemode=!spectator] add spectator_tracker
 execute unless entity @a[tag=spectator_tracker] run return fail
-execute store result score $SpectatorXFrom Statues.TempData run data get entity @s Pos[0] 10
-execute store result score $SpectatorYFrom Statues.TempData run data get entity @s Pos[1] 10
-execute store result score $SpectatorZFrom Statues.TempData run data get entity @s Pos[2] 10
+execute store result score $PythagorasX Statues.TempData run data get entity @s Pos[0] 10
+execute store result score $PythagorasY Statues.TempData run data get entity @s Pos[1] 10
+execute store result score $PythagorasZ Statues.TempData run data get entity @s Pos[2] 10
 execute store result score $SpectatorXTo Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Pos[0] 10
 execute store result score $SpectatorYTo Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Pos[1] 10
 execute store result score $SpectatorZTo Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Pos[2] 10
-scoreboard players operation $SpectatorXSquared Statues.TempData = $SpectatorXFrom Statues.TempData
-scoreboard players operation $SpectatorXSquared Statues.TempData -= $SpectatorXTo Statues.TempData
+scoreboard players operation $PythagorasX Statues.TempData -= $SpectatorXTo Statues.TempData
+scoreboard players operation $PythagorasY Statues.TempData -= $SpectatorYTo Statues.TempData
+scoreboard players operation $PythagorasZ Statues.TempData -= $SpectatorZTo Statues.TempData
+scoreboard players operation $SpectatorXSquared Statues.TempData = $PythagorasX Statues.TempData
 scoreboard players operation $SpectatorXSquared Statues.TempData *= $SpectatorXSquared Statues.TempData
-scoreboard players operation $SpectatorYSquared Statues.TempData = $SpectatorYFrom Statues.TempData
-scoreboard players operation $SpectatorYSquared Statues.TempData -= $SpectatorYTo Statues.TempData
+scoreboard players operation $SpectatorYSquared Statues.TempData = $PythagorasY Statues.TempData
 scoreboard players operation $SpectatorYSquared Statues.TempData *= $SpectatorYSquared Statues.TempData
-scoreboard players operation $SpectatorZSquared Statues.TempData = $SpectatorZFrom Statues.TempData
-scoreboard players operation $SpectatorZSquared Statues.TempData -= $SpectatorZTo Statues.TempData
+scoreboard players operation $SpectatorZSquared Statues.TempData = $PythagorasZ Statues.TempData
 scoreboard players operation $SpectatorZSquared Statues.TempData *= $SpectatorZSquared Statues.TempData
 scoreboard players operation $SpectatorDistanceSquared Statues.TempData = $SpectatorXSquared Statues.TempData
 scoreboard players operation $SpectatorDistanceSquared Statues.TempData += $SpectatorYSquared Statues.TempData
