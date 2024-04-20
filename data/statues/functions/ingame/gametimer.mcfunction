@@ -18,7 +18,6 @@ scoreboard players remove $Timer.Ticks Statues.DynamicData 1
 
 #> Cap the timer at its max value
 execute if score $Timer.Seconds Statues.DynamicData matches 602.. run scoreboard players set $Timer.Seconds Statues.DynamicData 600
-execute if score dev_infinite_game_time Statues.FeatureFlags matches 1.. run scoreboard players set $Timer.Ticks Statues.DynamicData 0
 
 execute if score $Timer.Seconds Statues.DynamicData matches 451.. run bossbar set statues:gametimer color white
 execute if score $Timer.Seconds Statues.DynamicData matches 301..450 run bossbar set statues:gametimer color green
