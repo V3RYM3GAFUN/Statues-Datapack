@@ -97,6 +97,10 @@ execute if score dev_auto_convert_lights Statues.FeatureFlags matches 0 run scor
 execute unless score dev_auto_convert_lights Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_auto_convert_lights Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name dev_auto_convert_lights Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Auto Convert Lights","color":"white"}]
 
+execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_no_game_reset_on_reload Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_no_game_reset_on_reload Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name dev_no_game_reset_on_reload Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"No Reload Game On Reset","color":"white"}]
+
 execute if score dev_no_start_requirement Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_no_start_requirement Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_no_start_requirement Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_no_start_requirement Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name dev_no_start_requirement Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"No Start Requirement","color":"white"}]

@@ -29,31 +29,32 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 
 ## Feature Flags
 
-| Feature Flag               | Description                                                                                                                        |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `abilities`                | Enables abilities of classes, and all the abilities functions (requires `map_tick`feature flag)                                    |
-| `compass_tracker`          | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point  |
-| `desk_button`              | Enables desk buttons. Also enables all functions in `statues:ingame/mechanics/desk_button`                                         |
-| `dev_allow_debug_info`     | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                         |
-| `dev_auto_convert_lights`  | Automatically converts pink concrete into lights (requires `lights` feature flag)                                                  |
-| `dev_no_start_requirement` | Sets the minimum player requirement in queuing to just one player (requires 2+ players for the game to not end instantly)          |
-| `dev_show_interactions`    | Shows particles at interaction entities when nearby                                                                                |
-| `dev_show_markers`         | Shows particles at marker entities when nearby                                                                                     |
-| `doors`                    | Allows use of doors and the `doors_2x2` and `doors_3x3` feature flags                                                              |
-| `doors_2x2`                | Allows use of 2x2 doors and all functions in `statues:ingame/mechanics/doors` (requires `doors` feature flag)                      |
-| `doors_3x3`                | Allows use of 3x3 doors and all functions in `statues:ingame/mechanics/doors_3x3`  (requires `doors` feature flag)                 |
-| `elevator`                 | Enables elevators and allows use of all functions in `statues:ingame/mechanics/elevator`                                           |
-| `experimental_flashlight`  | Updates flashlight to use spyglass+night vision behavior instead and use functions from `statues:ingame/mechanics/flashlight/next` |
-| `flashlight`               | Enables the flashlight item behavior and functions in `statues:ingame/mechanics/flashlight`                                        |
-| `floors`                   | Shows the current objective and floor to survivors, allows the use of all functions in `statues:ingame/mechanics/floors`           |
-| `hiding`                   | Enables ticking hiding spots                                                                                                       |
-| `lights`                   | Allows creating and modifying lights and all functions in `statues:ingame/mechanics/lights`                                        |
-| `map_tick`                 | Enables map ticking                                                                                                                |
-| `power_doors`              | Allows opening/closing power doors, and access to all functions in `statues:ingame/mechanics/power_doors`                          |
-| `sas`                      | Enables SAS machines and all functions in `statues:ingame/mechanics/sas`                                                           |
-| `spectators_actionbar`     | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                            |
-| `tutorial`                 | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`                     |
-| `vents`                    | Allows interacting with vents and all functions in `statues:ingame/mechanics/vents`                                                |
+| Feature Flag                  | Description                                                                                                                        |
+|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| `abilities`                   | Enables abilities of classes, and all the abilities functions (requires `map_tick`feature flag)                                    |
+| `compass_tracker`             | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point  |
+| `desk_button`                 | Enables desk buttons. Also enables all functions in `statues:ingame/mechanics/desk_button`                                         |
+| `dev_allow_debug_info`        | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                         |
+| `dev_auto_convert_lights`     | Automatically converts pink concrete into lights (requires `lights` feature flag)                                                  |
+| `dev_no_game_reset_on_reload` | Disables the game resetting when the datapack gets loaded                                                                          |
+| `dev_no_start_requirement`    | Sets the minimum player requirement in queuing to just one player (requires 2+ players for the game to not end instantly)          |
+| `dev_show_interactions`       | Shows particles at interaction entities when nearby                                                                                |
+| `dev_show_markers`            | Shows particles at marker entities when nearby                                                                                     |
+| `doors`                       | Allows use of doors and the `doors_2x2` and `doors_3x3` feature flags                                                              |
+| `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:ingame/mechanics/doors` (requires `doors` feature flag)                      |
+| `doors_3x3`                   | Allows use of 3x3 doors and all functions in `statues:ingame/mechanics/doors_3x3`  (requires `doors` feature flag)                 |
+| `elevator`                    | Enables elevators and allows use of all functions in `statues:ingame/mechanics/elevator`                                           |
+| `experimental_flashlight`     | Updates flashlight to use spyglass+night vision behavior instead and use functions from `statues:ingame/mechanics/flashlight/next` |
+| `flashlight`                  | Enables the flashlight item behavior and functions in `statues:ingame/mechanics/flashlight`                                        |
+| `floors`                      | Shows the current objective and floor to survivors, allows the use of all functions in `statues:ingame/mechanics/floors`           |
+| `hiding`                      | Enables ticking hiding spots                                                                                                       |
+| `lights`                      | Allows creating and modifying lights and all functions in `statues:ingame/mechanics/lights`                                        |
+| `map_tick`                    | Enables map ticking                                                                                                                |
+| `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:ingame/mechanics/power_doors`                          |
+| `sas`                         | Enables SAS machines and all functions in `statues:ingame/mechanics/sas`                                                           |
+| `spectators_actionbar`        | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                            |
+| `tutorial`                    | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`                     |
+| `vents`                       | Allows interacting with vents and all functions in `statues:ingame/mechanics/vents`                                                |
 
 ### Enabling/Disabling
 

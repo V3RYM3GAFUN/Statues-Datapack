@@ -1,28 +1,29 @@
 tellraw @a {"text":"Statues. Indev - v0.1.0-alpha", "color": "#00AAAA"}
 
 scoreboard objectives add Statues.Monsters dummy "Monsters"
+scoreboard objectives setdisplay sidebar.team.dark_red Statues.Monsters
 scoreboard objectives add Statues.Survivors dummy "Survivors"
 scoreboard objectives setdisplay sidebar.team.aqua Statues.Survivors
 scoreboard objectives add Statues.Health health "Health"
-scoreboard objectives add Statues.Heartbeat dummy
-scoreboard objectives setdisplay below_name Statues.Health 
+scoreboard objectives setdisplay below_name Statues.Health
 scoreboard objectives modify Statues.Health rendertype hearts
-scoreboard objectives setdisplay sidebar.team.dark_red Statues.Monsters
+scoreboard objectives add Statues.Heartbeat dummy
 scoreboard objectives add Statues.Dead deathCount
 scoreboard objectives add Statues.StaticData dummy
 scoreboard objectives add Statues.DynamicData dummy
 scoreboard objectives add Statues.TempData dummy
 scoreboard objectives add Statues.MapVote dummy
-scoreboard objectives modify Statues.MapVote displayname "Map vote"
+scoreboard objectives modify Statues.MapVote displayname "Map Vote"
 scoreboard objectives add Statues.Objective xp
 scoreboard objectives add Player.Leave minecraft.custom:minecraft.leave_game
-scoreboard players set $Status Statues.DynamicData 0
 scoreboard objectives add Statues.Abilities minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Statues.Players dummy
 scoreboard objectives add Statues.DoorData dummy
 scoreboard objectives add Statues.TutorialObjective dummy
 scoreboard objectives add Statues.Flashlight minecraft.used:spyglass
 scoreboard objectives add Statues.Barrels minecraft.custom:open_barrel
+
+execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 unless score $Status Statues.DynamicData matches 0 run function statues:reset
 
 scoreboard players set $-9 Statues.StaticData -9
 scoreboard players set $-1 Statues.StaticData -1
