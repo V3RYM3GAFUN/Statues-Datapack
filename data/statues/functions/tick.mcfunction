@@ -25,7 +25,7 @@ execute as @a[tag=monster_tutorial] run function statues:lobby/tutorial-info/mon
 execute unless entity @a[tag=monster_tutorial] run kill @e[type=villager]
 
 #> Map voting
-execute as @a[team=Lobby] run function statues:lobby/mapvoting/vote_base
+function statues:lobby/mapvoting/vote_base
 
 #> Countdown timers
 execute if score $Status Statues.DynamicData matches 1..2 run function statues:lobby/pregame/countdown

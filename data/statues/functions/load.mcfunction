@@ -14,6 +14,12 @@ scoreboard objectives add Statues.DynamicData dummy
 scoreboard objectives add Statues.TempData dummy
 scoreboard objectives add Statues.MapVote dummy
 scoreboard objectives modify Statues.MapVote displayname "Map Vote"
+scoreboard players display name facade Statues.MapVote "Façade"
+scoreboard players display name lockdown Statues.MapVote "Lockdown"
+scoreboard players display name origins Statues.MapVote "Origins"
+function statues:lobby/mapvoting/vote_display_macro {map_name:"facade",votes:0}
+function statues:lobby/mapvoting/vote_display_macro {map_name:"lockdown",votes:0}
+function statues:lobby/mapvoting/vote_display_macro {map_name:"origins",votes:0}
 scoreboard objectives add Statues.Objective xp
 scoreboard objectives add Player.Leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add Statues.Abilities minecraft.used:minecraft.carrot_on_a_stick
@@ -28,6 +34,7 @@ execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 un
 scoreboard players set $-9 Statues.StaticData -9
 scoreboard players set $-1 Statues.StaticData -1
 scoreboard players set $0 Statues.StaticData 0
+scoreboard players set $1 Statues.StaticData 1
 scoreboard players set $2 Statues.StaticData 2
 scoreboard players set $9 Statues.StaticData 9
 scoreboard players set $10 Statues.StaticData 10
