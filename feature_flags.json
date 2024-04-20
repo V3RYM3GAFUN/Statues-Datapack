@@ -5,6 +5,7 @@
     "doors": { "name": "Doors", "is_dev": false, "depends": [] },
     "elevator": { "name": "Elevator", "is_dev": false, "depends": [] },
     "flashlight": { "name": "Flashlight", "is_dev": false, "depends": [] },
+    "flashlight_next": { "name": "Flashlight (Next)", "is_dev": false, "depends": [ "flashlight" ] },
     "floors": { "name": "Floors", "is_dev": false, "depends": [] },
     "hiding": { "name": "Hiding Spot", "is_dev": false, "depends": [] },
     "lights": { "name": "Lights", "is_dev": false, "depends": [] },

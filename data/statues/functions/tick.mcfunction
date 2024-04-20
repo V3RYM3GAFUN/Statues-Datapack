@@ -41,10 +41,7 @@ execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/mon
 execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run function statues:ingame/mechanics/survivors/death
 execute as @a[team=Survivor] at @s if entity @e[tag=locker,distance=..2] run function statues:ingame/mechanics/survivors/locker
 
-execute if score flashlight Statues.FeatureFlags matches 1 as @a at @s unless predicate statues:holding_flashlight run function statues:ingame/mechanics/survivors/flashlight/destroy
-execute if score flashlight Statues.FeatureFlags matches 1 as @a at @s if predicate statues:holding_flashlight run function statues:ingame/mechanics/survivors/flashlight/emit
-# execute if score flashlight Statues.FeatureFlags matches 1 as @a at @s unless predicate statues:holding_flashlight run function statues:ingame/mechanics/survivors/flashlight/force_off
-# execute if score flashlight Statues.FeatureFlags matches 1 as @a at @s if predicate statues:holding_flashlight run function statues:ingame/mechanics/survivors/flashlight/new
+execute if score flashlight Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/flashlight/tick
 
 execute as @a[team=Monster] run function statues:ingame/mechanics/survivors/survivordistance
 

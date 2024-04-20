@@ -1,6 +1,8 @@
 
 execute if score map_tick Statues.FeatureFlags matches ..0 run scoreboard players set abilities Statues.FeatureFlags -1
 execute if score abilities Statues.FeatureFlags matches -1 if score map_tick Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score flashlight Statues.FeatureFlags matches ..0 run scoreboard players set flashlight_next Statues.FeatureFlags -1
+execute if score flashlight_next Statues.FeatureFlags matches -1 if score flashlight Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score lights Statues.FeatureFlags matches ..0 run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags -1
 execute if score dev_auto_convert_lights Statues.FeatureFlags matches -1 if score lights Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 
@@ -30,6 +32,11 @@ scoreboard players display name elevator Statues.FeatureFlags {"text":"Elevator 
 execute if score flashlight Statues.FeatureFlags matches 0 run scoreboard players display numberformat flashlight Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score flashlight Statues.FeatureFlags matches ..0 run scoreboard players display numberformat flashlight Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name flashlight Statues.FeatureFlags {"text":"Flashlight Feature"}
+
+execute if score flashlight_next Statues.FeatureFlags matches -1 run scoreboard players display numberformat flashlight_next Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
+execute if score flashlight_next Statues.FeatureFlags matches 0 run scoreboard players display numberformat flashlight_next Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score flashlight_next Statues.FeatureFlags matches ..0 run scoreboard players display numberformat flashlight_next Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name flashlight_next Statues.FeatureFlags {"text":"Flashlight (Next) Feature"}
 
 execute if score floors Statues.FeatureFlags matches 0 run scoreboard players display numberformat floors Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score floors Statues.FeatureFlags matches ..0 run scoreboard players display numberformat floors Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
