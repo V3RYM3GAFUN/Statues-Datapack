@@ -75,8 +75,13 @@ execute if score spectators_actionbar Statues.FeatureFlags matches 1 run functio
 #> Compass Tracker
 execute if score compass_tracker Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/compass_tracker/tick
 
-#> For testing
+#> Vents
 execute if score vents Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/vents/tick
+
+#> SAS
+execute if score sas Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/sas/tick
+
+#> For testing
 execute if score dev_auto_convert_lights Statues.FeatureFlags matches 1 as @a[team=Dev] at @s run function statues:ingame/mechanics/lights/create_light_auto
 function statues:ingame/mechanics/misc
 # function statues:ingame/mechanics/survivors/survivormusic
@@ -88,13 +93,13 @@ execute if score tutorial Statues.FeatureFlags matches 1 as @a at @s if entity @
 execute if score tutorial Statues.FeatureFlags matches 1 run execute as @a[tag=tutorial] run function statues:lobby/tutorial-info/tick
 
 #> Door handling
-execute if score doors Statues.FeatureFlags matches 1 as @e[tag=door,type=minecraft:marker] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.TempData 1
+execute if score doors_2x2 Statues.FeatureFlags matches 1 as @e[tag=door] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.TempData 1
 execute if score $rundoors Statues.TempData matches 1 run function statues:ingame/mechanics/doors/tick
 scoreboard players set $rundoors Statues.TempData 0
 ## execute at @e[tag=door] if entity @a[distance=..5,gamemode=!spectator] run function statues:ingame/mechanics/doors/tick
 
 #> 3x3 Doors
-execute if score doors Statues.FeatureFlags matches 1 as @e[tag=3x3door,type=minecraft:marker] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.TempData 1
+execute if score doors_3x3 Statues.FeatureFlags matches 1 as @e[tag=3x3door,type=minecraft:marker] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.TempData 1
 execute if score $rundoors Statues.TempData matches 1 as @e[tag=3x3door] at @s run function statues:ingame/mechanics/doors_3x3/tick
 scoreboard players set $rundoors Statues.TempData 0
 

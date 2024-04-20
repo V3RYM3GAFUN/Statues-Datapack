@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_doors_flags run return fail
+execute unless function statues:feature_flags/check_doors_2x2_flags run return fail
 scoreboard players add $IntegrityCheckECount Statues.DoorData 1
 scoreboard players set $IntegrityCheck Statues.DoorData 0
 

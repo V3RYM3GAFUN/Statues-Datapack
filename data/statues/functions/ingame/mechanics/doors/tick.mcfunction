@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_doors_flags run return fail
+execute unless function statues:feature_flags/check_doors_2x2_flags run return fail
 #> Tick Block Displays
 
 execute as @e[tag=doord_init,type=minecraft:block_display] run function statues:ingame/mechanics/doors/doord_tick_init
@@ -39,7 +39,7 @@ scoreboard players add @e[tag=door_anim_close] Statues.DoorData 1
 tag @e[tag=door_anim_close,scores={Statues.DoorData=3..}] remove door_animating
 tag @e[tag=door_anim_close,scores={Statues.DoorData=3..}] remove door_anim_close
 
-execute as @e[type=#minecraft:impact_projectiles] at @s as @e[tag=door,tag=!door_opened,distance=..5] run function statues:ingame/mechanics/doors/tick_arrow
+#execute as @e[type=#minecraft:impact_projectiles] at @s as @e[tag=door,tag=!door_opened,distance=..5] run function statues:ingame/mechanics/doors/tick_arrow
 
 scoreboard players enable @e[team=Dev] check_integrity_doors
 execute as @a[team=Dev,scores={check_integrity_doors=1..}] run function statues:ingame/mechanics/doors/integrity

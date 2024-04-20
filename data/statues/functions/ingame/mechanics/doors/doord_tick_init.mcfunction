@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_doors_flags run return fail
+execute unless function statues:feature_flags/check_doors_2x2_flags run return fail
 
 data merge entity @s[tag=doord_init_open_left_dx] {interpolation_duration:3,start_interpolation:0,transformation:{translation:[0.99f,0f,0f]}}
 tag @s remove doord_init_open_left_dx

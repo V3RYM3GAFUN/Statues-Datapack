@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_doors_flags run return fail
+execute unless function statues:feature_flags/check_doors_2x2_flags run return fail
 execute as @e[tag=doord] at @s unless loaded ~ ~ ~ run tag @s add doord_alive
 execute as @e[tag=doord] at @s unless loaded ~-16 ~ ~ run tag @s add doord_alive
 execute as @e[tag=doord] at @s unless loaded ~16 ~ ~ run tag @s add doord_alive

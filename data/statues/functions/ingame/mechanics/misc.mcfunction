@@ -17,6 +17,3 @@ execute as @e[type=item,nbt={Item:{tag:{objective_item:1b}}}] at @s run data mod
 # execute as @e[type=item,nbt={Item:{tag:{Tags:["objective"]}}}] at @s if entity @a[team=Survivor,distance=..0.5] run data merge entity @s {PickupDelay:0s}
 # execute as @e[type=item,nbt={Item:{tag:{Tags:["objective"]}}}] at @s if entity @a[team=Survivor,distance=..0.5] run data modify entity @s Owner set from entity @p[team=Survivor] UUID
 
-#> Sas stuff
-# execute as @e[tag=machine_sas,type=minecraft:marker] at @s run function statues:ingame/mechanics/sas/machine_sas
-# execute as @e[tag=elevator_sas,type=minecraft:marker] at @s run function statues:ingame/mechanics/sas/elevator_sas

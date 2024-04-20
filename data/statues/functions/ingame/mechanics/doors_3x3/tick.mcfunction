@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_doors_flags run return fail
+execute unless function statues:feature_flags/check_doors_3x3_flags run return fail
 
 tag @s remove door3x3_opening
 execute at @s[y_rotation=0] positioned ~-1 ~-1 ~-1.5 if entity @a[dx=2,dy=3,dz=3,gamemode=!spectator,limit=1,sort=nearest] run tag @s add door3x3_opening

@@ -1,6 +1,10 @@
 
 execute if score map_tick Statues.FeatureFlags matches ..0 run scoreboard players set abilities Statues.FeatureFlags -1
 execute if score abilities Statues.FeatureFlags matches -1 if score map_tick Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_2x2 Statues.FeatureFlags -1
+execute if score doors_2x2 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_3x3 Statues.FeatureFlags -1
+execute if score doors_3x3 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score flashlight Statues.FeatureFlags matches ..0 run scoreboard players set flashlight_next Statues.FeatureFlags -1
 execute if score flashlight_next Statues.FeatureFlags matches -1 if score flashlight Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score lights Statues.FeatureFlags matches ..0 run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags -1
@@ -24,6 +28,16 @@ scoreboard players display name desk_button Statues.FeatureFlags {"text":"Desk B
 execute if score doors Statues.FeatureFlags matches 0 run scoreboard players display numberformat doors Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score doors Statues.FeatureFlags matches ..0 run scoreboard players display numberformat doors Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name doors Statues.FeatureFlags {"text":"Doors Feature"}
+
+execute if score doors_2x2 Statues.FeatureFlags matches -1 run scoreboard players display numberformat doors_2x2 Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
+execute if score doors_2x2 Statues.FeatureFlags matches 0 run scoreboard players display numberformat doors_2x2 Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score doors_2x2 Statues.FeatureFlags matches ..0 run scoreboard players display numberformat doors_2x2 Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name doors_2x2 Statues.FeatureFlags {"text":"Doors 2x2 Feature"}
+
+execute if score doors_3x3 Statues.FeatureFlags matches -1 run scoreboard players display numberformat doors_3x3 Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
+execute if score doors_3x3 Statues.FeatureFlags matches 0 run scoreboard players display numberformat doors_3x3 Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score doors_3x3 Statues.FeatureFlags matches ..0 run scoreboard players display numberformat doors_3x3 Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name doors_3x3 Statues.FeatureFlags {"text":"Doors 3x3 Feature"}
 
 execute if score elevator Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score elevator Statues.FeatureFlags matches ..0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
@@ -57,6 +71,10 @@ scoreboard players display name map_tick Statues.FeatureFlags {"text":"Map Tick 
 execute if score power_doors Statues.FeatureFlags matches 0 run scoreboard players display numberformat power_doors Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score power_doors Statues.FeatureFlags matches ..0 run scoreboard players display numberformat power_doors Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name power_doors Statues.FeatureFlags {"text":"Power Doors Feature"}
+
+execute if score sas Statues.FeatureFlags matches 0 run scoreboard players display numberformat sas Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score sas Statues.FeatureFlags matches ..0 run scoreboard players display numberformat sas Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name sas Statues.FeatureFlags {"text":"SAS Machines Feature"}
 
 execute if score spectators_actionbar Statues.FeatureFlags matches 0 run scoreboard players display numberformat spectators_actionbar Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score spectators_actionbar Statues.FeatureFlags matches ..0 run scoreboard players display numberformat spectators_actionbar Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}

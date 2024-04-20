@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_sas_flags run return fail
+
 execute if entity @s[tag=!triggered] if entity @a[distance=..1.5,gamemode=!spectator] run scoreboard players set @s Statues.Sas 50
 execute if entity @s[tag=!triggered] if entity @a[distance=..1.5,gamemode=!spectator] run tag @s add triggered
 execute if score @s Statues.Sas matches 50 run playsound minecraft:block.piston.extend ambient @a ~ ~ ~ 1 1
