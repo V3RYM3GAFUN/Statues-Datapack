@@ -1,12 +1,12 @@
-execute unless entity @e[tag=monster1] run tag @e[team=!Monster,tag=queued,sort=random,limit=1] add monster1
+execute unless entity @e[tag=monster1] run tag @a[team=!Monster,tag=queued,sort=random,limit=1] add monster1
 team join Monster @e[tag=monster1,tag=queued,sort=random,limit=1]
 
 tellraw @a [{"selector":"@e[tag=monster1]","bold":true,"color":"red"},{"text":" is the monster!","color":"gold"}]
 execute as @a at @s run playsound entity.ender_dragon.ambient master @s ~ ~ ~ 0.70 0.9
 
-effect give @e[team=Monster] glowing 10 0 true
+effect give @a[team=Monster] glowing 10 0 true
 
-team join Survivor @e[team=!Monster,tag=queued]
+team join Survivor @a[team=!Monster,tag=queued]
 tag @a remove queued
 
 #> Prevents players from hitting each other after getting role

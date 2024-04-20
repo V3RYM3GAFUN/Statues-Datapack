@@ -38,7 +38,7 @@ execute if score $Status Statues.DynamicData matches 3 if score dev_allow_debug_
 execute unless score $Status Statues.DynamicData matches 3 run gamerule reducedDebugInfo false
 
 execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/monsterdistance
-execute as @a[team=Survivor] at @s if score @s Statues.Dead matches 1.. run function statues:ingame/mechanics/survivors/death
+execute as @a[team=Survivor,scores={Statues.Dead=1..}] at @s run function statues:ingame/mechanics/survivors/death
 execute as @a[team=Survivor] at @s if entity @e[tag=locker,distance=..2] run function statues:ingame/mechanics/survivors/locker
 
 execute if score flashlight Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/flashlight/tick

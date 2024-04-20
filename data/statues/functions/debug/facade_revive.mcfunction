@@ -1,3 +1,4 @@
+$tp $(player) @r[team=Survivor]
 $team join Survivor $(player)
 $effect clear $(player) minecraft:night_vision
 $tag $(player) remove solo

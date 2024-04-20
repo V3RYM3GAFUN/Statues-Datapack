@@ -39,13 +39,13 @@ execute if score $Timer.Seconds Statues.DynamicData matches 300 if score $Timer.
 execute if score $Timer.Seconds Statues.DynamicData matches 300 if score $Timer.Ticks Statues.DynamicData matches 0 as @a at @s run playsound block.note_block.bass master @s ~ ~ ~ 1 0.5 
 
 #> Tracks how many survivors are still alive
-execute store result score $Ingame.Alive Statues.TempData if entity @e[team=Survivor]
+execute store result score $Ingame.Alive Statues.TempData if entity @a[team=Survivor]
 
 #> Function that detects when the monster leaves
-execute unless entity @e[team=Monster] run function statues:ingame/win_conditions/monsterexit
+execute unless entity @a[team=Monster] run function statues:ingame/win_conditions/monsterexit
 
 #> Tell the last survivor that they're alone
-execute as @e[team=Survivor,tag=!solo] at @s if score $Ingame.Alive Statues.TempData matches 1 run function statues:ingame/mechanics/survivors/lastsurvivor
+execute as @a[team=Survivor,tag=!solo] at @s if score $Ingame.Alive Statues.TempData matches 1 run function statues:ingame/mechanics/survivors/lastsurvivor
 
 #> What to do if time runs out
 execute if score $Timer.Seconds Statues.DynamicData matches ..1 if score $Timer.Ticks Statues.DynamicData matches ..0 run function statues:ingame/win_conditions/timeout

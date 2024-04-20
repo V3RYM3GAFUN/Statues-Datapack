@@ -41,6 +41,6 @@ tag @e[tag=door_anim_close,scores={Statues.DoorData=3..}] remove door_anim_close
 
 #execute as @e[type=#minecraft:impact_projectiles] at @s as @e[tag=door,tag=!door_opened,distance=..5] run function statues:ingame/mechanics/doors/tick_arrow
 
-scoreboard players enable @e[team=Dev] check_integrity_doors
+scoreboard players enable @a[team=Dev] check_integrity_doors
 execute as @a[team=Dev,scores={check_integrity_doors=1..}] run function statues:ingame/mechanics/doors/integrity
 execute as @a[scores={check_integrity_doors=1..}] run scoreboard players reset @s check_integrity_doors

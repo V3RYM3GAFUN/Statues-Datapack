@@ -7,8 +7,8 @@ execute if score @s Statues.Players matches 1..4200 run item replace entity @s h
 #> Activate ability
 
 # Success
-execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run effect give @e[team=Monster] slowness 10 3 true
-execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run effect give @e[team=Monster] blindness 5 3 true
+execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run effect give @a[team=Monster] slowness 10 3 true
+execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run effect give @a[team=Monster] blindness 5 3 true
 execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run effect give @s slowness 7 3 true
 execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run effect give @s darkness 5 3 true
 execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run scoreboard players set @s Statues.Players 4200
