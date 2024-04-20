@@ -1,3 +1,5 @@
+execute if score dev_infinite_game_time Statues.FeatureFlags matches 1.. run scoreboard players set $Timer.Seconds Statues.DynamicData 600
+
 #> Keeps track of the time in a bossbar
 scoreboard players operation $Timer.RemainingSeconds Statues.TempData = $Timer.Seconds Statues.DynamicData
 scoreboard players operation $Timer.RemainingSeconds Statues.TempData %= $60 Statues.StaticData
@@ -5,7 +7,8 @@ scoreboard players operation $Timer.RemainingMinutes Statues.TempData = $Timer.S
 scoreboard players operation $Timer.RemainingMinutes Statues.TempData /= $60 Statues.StaticData
 execute store result storage statues:data remaining_seconds int 1 run scoreboard players get $Timer.RemainingSeconds Statues.TempData
 execute store result storage statues:data remaining_minutes int 1 run scoreboard players get $Timer.RemainingMinutes Statues.TempData
-function statues:ingame/gametimer_bossbar with storage statues:data
+execute unless score dev_infinite_game_time Statues.FeatureFlags matches 1.. run function statues:ingame/gametimer_bossbar with storage statues:data
+execute if score dev_infinite_game_time Statues.FeatureFlags matches 1.. run bossbar set statues:gametimer name "Time left: ∞"
 execute store result bossbar statues:gametimer value run scoreboard players get $Timer.Seconds Statues.DynamicData
 bossbar set statues:gametimer players @a[team=!Monster]
 bossbar set statues:gametimer visible true
@@ -15,6 +18,7 @@ scoreboard players remove $Timer.Ticks Statues.DynamicData 1
 
 #> Cap the timer at its max value
 execute if score $Timer.Seconds Statues.DynamicData matches 602.. run scoreboard players set $Timer.Seconds Statues.DynamicData 600
+execute if score dev_infinite_game_time Statues.FeatureFlags matches 1.. run scoreboard players set $Timer.Ticks Statues.DynamicData 0
 
 execute if score $Timer.Seconds Statues.DynamicData matches 451.. run bossbar set statues:gametimer color white
 execute if score $Timer.Seconds Statues.DynamicData matches 301..450 run bossbar set statues:gametimer color green

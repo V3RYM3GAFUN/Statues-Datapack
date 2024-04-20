@@ -36,6 +36,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `desk_button`                 | Enables desk buttons. Also enables all functions in `statues:ingame/mechanics/desk_button`                                         |
 | `dev_allow_debug_info`        | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                         |
 | `dev_auto_convert_lights`     | Automatically converts pink concrete into lights (requires `lights` feature flag)                                                  |
+| `dev_infinite_game_time`      | Makes the game last for eternity until all monsters stop playing, or all survivors die                                             |
 | `dev_no_game_reset_on_reload` | Disables the game resetting when the datapack gets loaded                                                                          |
 | `dev_no_start_requirement`    | Sets the minimum player requirement in queuing to just one player (requires 2+ players for the game to not end instantly)          |
 | `dev_show_interactions`       | Shows particles at interaction entities when nearby                                                                                |
