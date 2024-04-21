@@ -6,7 +6,7 @@ execute if score @s Statues.Abilities matches 2.. run scoreboard players set @s 
 
 # On success, give the shield to the player and start cooldown
 execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run scoreboard players set @s Statues.Players 3200
-execute if score @s Statues.Players matches 3001..3200 unless data entity @s Inventory[{Slot:4b,id:"minecraft:crossbow"}] run item replace entity @s weapon with crossbow{Unbreakable:1,display:{Name:'[{"text":"Rapid fire Shotgun","italic":false}]'},Enchantments:[{id:"multishot",lvl:1},{id:"quick_charge",lvl:3}],HideFlags:1,CustomModelData:3}
+execute if score @s Statues.Players matches 3001..3200 unless data entity @s Inventory[{Slot:4b,id:"minecraft:crossbow"}] run item replace entity @s weapon with crossbow{Unbreakable:1,display:{Name:'[{"text":"Rapid fire Shotgun","italic":false}]'},Enchantments:[{id:"multishot",lvl:1},{id:"quick_charge",lvl:10}],HideFlags:1,CustomModelData:3}
 
 # Audios for the cooldown
 execute if score @s Statues.Players matches 3200 run playsound block.enchantment_table.use block @s

@@ -4,7 +4,6 @@ tag @s add 002
 tag @s add monster_chosen
 
 #> Stats for each monster
-effect give @s health_boost infinite 9 true
 effect give @s night_vision infinite 0 true
 effect give @s regeneration infinite 100 true
 effect give @s resistance infinite 100 true

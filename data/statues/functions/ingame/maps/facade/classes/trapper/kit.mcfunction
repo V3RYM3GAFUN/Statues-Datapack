@@ -2,7 +2,7 @@ tag @s add trapper
 tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
-item replace entity @s hotbar.0 with bow{Unbreakable:1b,"display":{Name:'[{"text":"Trapper\'s gun","italic":false}]'},CustomModelData:3}
+item replace entity @s hotbar.0 with crossbow{Unbreakable:1b,"display":{Name:'[{"text":"Trapper\'s gun","italic":false}]'},CustomModelData:7,Enchantments:[{id:"quick_charge",lvl:5}]}
 
 item replace entity @s hotbar.1 with tipped_arrow{CustomPotionColor:209,display:{Name:'[{"text":"Strong Anti-anomaly Ammo","italic":false,"color":"dark_blue"}]'},custom_potion_effects:[{id:"minecraft:blindness",duration:100,show_particles:0b},{id:"minecraft:slowness",duration:140,amplifier:4,show_particles:0b}]} 16
 
