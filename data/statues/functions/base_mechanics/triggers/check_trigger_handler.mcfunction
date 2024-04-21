@@ -1,0 +1,1 @@
+execute as @a[scores={Statues.ActionTrigger=-2147483648..2147483647}] at @s run function statues:base_mechanics/triggers/trigger_handler

@@ -1,5 +1,5 @@
 execute unless function statues:feature_flags/check_tutorial_flags run return fail
-execute at @e[tag=tutorial_step1] run tp @s ~ ~ ~
+tp @s @e[tag=tutorial_step1,limit=1]
 
 tellraw @s ""
 tellraw @s [{"translate":"statues.tutorial.title","bold":true,"color":"aqua"}]

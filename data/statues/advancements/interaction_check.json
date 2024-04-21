@@ -17,7 +17,7 @@
       }
     },
     "rewards": {
-      "function": "statues:ingame/mechanics/interactions/on_interaction_handler_advancement"
+      "function": "statues:base_mechanics/interactions/on_interaction_handler_advancement"
     }
   }
   

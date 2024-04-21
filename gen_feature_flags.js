@@ -7,9 +7,9 @@ fs.mkdirSync(baseDir)
 
 for(const [k, v] of Object.entries(feature_flags)) {
     fs.writeFileSync(path.resolve(baseDir, `check_${k.toLowerCase()}_flags.mcfunction`), 
-`execute if score ${k} Statues.FeatureFlags matches 0 run tellraw @a {"color":"red","text":"Tried to use ${v.name} specific feature when the feature is disabled."}
-execute if score ${k} Statues.FeatureFlags matches 0 run return fail
-return 1`)
+`execute if score ${k} Statues.FeatureFlags matches 1.. run return 1
+tellraw @a {"color":"red","text":"Tried to use ${v.name} specific feature when the feature is disabled."}
+return fail`)
 }
 
 fs.writeFileSync(path.resolve(baseDir, "print.mcfunction"), 

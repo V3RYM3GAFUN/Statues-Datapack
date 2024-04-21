@@ -14,6 +14,9 @@ execute as @a[tag=!dev_ignore_forced_gamemode,team=Lobby] run gamemode adventure
 execute as @a[tag=!dev_ignore_forced_gamemode,team=Monster] run gamemode adventure @s
 execute as @a[tag=!dev_ignore_forced_gamemode,team=Spectator] run gamemode spectator @s
 
+function statues:base_mechanics/triggers/check_trigger_handler
+scoreboard players enable @a Statues.ActionTrigger
+
 #> Queuing system
 execute if score $Status Statues.DynamicData matches ..1 run function statues:lobby/queuing/queuing_base
 execute if score $Status Statues.DynamicData matches ..1 run function statues:lobby/lobbymusic
@@ -89,8 +92,8 @@ function statues:ingame/mechanics/misc
 #> Make it so people who aren't survivors immediately get their death count reset
 scoreboard players set @a[team=!Survivor] Statues.Dead 0
 
-execute if score tutorial Statues.FeatureFlags matches 1 as @a at @s if entity @e[tag=lobby_tutorial_tp,distance=..1] run function statues:lobby/tutorial-info/start 
-execute if score tutorial Statues.FeatureFlags matches 1 run execute as @a[tag=tutorial] run function statues:lobby/tutorial-info/tick
+execute if score tutorial Statues.FeatureFlags matches 1 as @a at @s if entity @e[tag=lobby_tutorial_tp,distance=..1,gamemode=!spectator] run function statues:lobby/tutorial-info/start 
+execute if score tutorial Statues.FeatureFlags matches 1 as @a[tag=tutorial] run function statues:lobby/tutorial-info/tick
 
 #> Door handling
 execute if score doors_2x2 Statues.FeatureFlags matches 1 as @e[tag=door] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.TempData 1

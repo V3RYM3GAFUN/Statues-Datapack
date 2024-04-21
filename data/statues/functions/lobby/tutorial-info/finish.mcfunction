@@ -1,6 +1,6 @@
 execute unless function statues:feature_flags/check_tutorial_flags run return fail
 clear @s
-tp @s 0 0 0 0 0
+function statues:warps/newlobby
 tag @s remove tutorial
 
 title @s title [{"translate":"statues.tutorial.finish","color":"aqua"}]
