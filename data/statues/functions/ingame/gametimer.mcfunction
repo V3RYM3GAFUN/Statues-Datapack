@@ -48,7 +48,7 @@ execute store result score $Ingame.Alive Statues.TempData if entity @a[team=Surv
 execute unless score dev_allow_empty_game Statues.FeatureFlags matches 1.. unless entity @a[team=Monster] run function statues:ingame/win_conditions/monsterexit
 
 #> Tell the last survivor that they're alone
-execute as @a[team=Survivor,tag=!solo] at @s if score $Ingame.Alive Statues.TempData matches 1 run function statues:ingame/mechanics/survivors/lastsurvivor
+execute if score $Ingame.Alive Statues.TempData matches 1 as @a[team=Survivor,tag=!solo] at @s run function statues:ingame/mechanics/survivors/lastsurvivor
 
 #> What to do if time runs out
 execute if score $Timer.Seconds Statues.DynamicData matches ..1 if score $Timer.Ticks Statues.DynamicData matches ..0 run function statues:ingame/win_conditions/timeout

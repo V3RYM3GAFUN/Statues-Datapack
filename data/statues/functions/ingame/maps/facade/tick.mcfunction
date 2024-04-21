@@ -24,41 +24,21 @@ execute if score $Objective Statues.DynamicData matches 8 run data modify storag
 execute if score $Objective Statues.DynamicData matches 9 run data modify storage statues:data objective_text set value '{"text":"Find the confidential book and escape!","color":"red","bold":true}'
 execute if score $Objective Statues.DynamicData matches 9 run data modify storage statues:data objective_floor set value 1
 
-#> Generator key pick up detection
-execute as @a[nbt={Inventory:[{tag:{facade_genkey_item:1b}}]}] if score $Objective Statues.DynamicData matches 0 run function statues:ingame/maps/facade/objectives/keypickup
-
 #> Generator power detection
-execute at @e[tag=objective_facade_genpower,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/genpower
-
-#> Lab access keycard pick up detection
-execute as @a[nbt={Inventory:[{tag:{facade_labkey_item:1b}}]}] if score $Objective Statues.DynamicData matches 3 run function statues:ingame/maps/facade/objectives/keypickup
+execute if score $Objective Statues.DynamicData matches 2 at @e[tag=objective_facade_genpower,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/genpower
 
 #> Emergency override button press
-execute at @e[tag=objective_facade_override,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/override
-
-execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:0}}].tag
-execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:1}}].tag
-execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:2}}].tag
-execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:3}}].tag
-execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:4}}].tag
-execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:5}}].tag
+execute if score $Objective Statues.DynamicData matches 5 at @e[tag=objective_facade_override,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/override
 
 #> Power on detection
-execute at @e[tag=objective_facade_power,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
+execute if score $Objective Statues.DynamicData matches 6 at @e[tag=objective_facade_power,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
 execute if score $Objective Statues.DynamicData matches 7.. run scoreboard players remove $Core.Ticks Statues.DynamicData 1
 execute if score $Core.Ticks Statues.DynamicData matches 0 run playsound minecraft:entity.warden.nearby_closer master @a -4 83 322 5 0
 execute if score $Core.Ticks Statues.DynamicData matches ..0 run scoreboard players set $Core.Ticks Statues.DynamicData 120
 
-#> High class keycard pick up detection
-execute as @a[nbt={Inventory:[{tag:{facade_highclass_item:1b}}]}] if score $Objective Statues.DynamicData matches 7 run function statues:ingame/maps/facade/objectives/keypickup
+execute as @a unless entity @s[team=!Monster,team=!Survivor] run function statues:ingame/maps/facade/tick_player
 
-#> Book pickup detection
-execute as @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]}] if score $Objective Statues.DynamicData matches 9 run function statues:ingame/maps/facade/objectives/bookpickup
-
-#> Detect when a player brought the book back to the van
-execute as @e[tag=objective_facade_book] at @s if entity @a[nbt={Inventory:[{tag:{facade_book_item:1b}}]},distance=..2.5] run scoreboard players set $Objective Statues.DynamicData 11
-execute as @e[tag=objective_facade_book] at @s if score $Objective Statues.DynamicData matches 11 run function statues:ingame/maps/facade/objectives/escape 
-
+execute if score $Objective Statues.DynamicData matches 11 as @e[tag=objective_facade_book] at @s run function statues:ingame/maps/facade/objectives/escape
 
 #> Force monsters who haven't chosen a monster to spawn with a random choice
 # Was too lazy to add a general "No monster" tag
