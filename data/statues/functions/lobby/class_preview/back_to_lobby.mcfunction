@@ -1,5 +1,3 @@
-execute unless function statues:feature_flags/check_tutorial_flags run return fail
-
 tag @s remove cloaker
 tag @s remove medic
 tag @s remove juggernaut
@@ -12,7 +10,7 @@ tag @s remove trapper
 
 tag @s remove 002
 
-tp @s 0 0 0 0 0
+function statues:warps/newlobby
 effect clear @s
 clear @s
 

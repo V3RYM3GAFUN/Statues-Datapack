@@ -28,6 +28,7 @@ scoreboard objectives add Statues.DoorData dummy
 scoreboard objectives add Statues.TutorialObjective dummy
 scoreboard objectives add Statues.Flashlight minecraft.used:spyglass
 scoreboard objectives add Statues.Barrels minecraft.custom:open_barrel
+scoreboard objectives add Statues.ActionTrigger trigger
 
 execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 unless score $Status Statues.DynamicData matches 0 run function statues:reset
 
