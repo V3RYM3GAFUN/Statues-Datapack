@@ -30,3 +30,11 @@ scoreboard players set $ClassKind.Runner Statues.GameEventEnum 6
 scoreboard players set $ClassKind.Shotgunner Statues.GameEventEnum 7
 scoreboard players set $ClassKind.Trapper Statues.GameEventEnum 8
 scoreboard players operation $ClassKind._Max Statues.GameEventEnum = $ClassKind.Trapper Statues.GameEventEnum
+
+
+scoreboard players set $MonsterKind.001 Statues.GameEventEnum 0
+scoreboard players operation $MonsterKind._Min Statues.GameEventEnum = $MonsterKind.001 Statues.GameEventEnum
+scoreboard players set $MonsterKind.002 Statues.GameEventEnum 1
+scoreboard players set $MonsterKind.003 Statues.GameEventEnum 2
+scoreboard players set $MonsterKind.004 Statues.GameEventEnum 3
+scoreboard players operation $MonsterKind._Max Statues.GameEventEnum = $MonsterKind.004 Statues.GameEventEnum
