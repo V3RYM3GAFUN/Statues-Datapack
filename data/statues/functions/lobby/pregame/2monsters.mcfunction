@@ -1,5 +1,4 @@
 execute unless entity @a[tag=monster1] run tag @r[team=!Monster,tag=queued,tag=!dev_not_monster] add monster1
-tag @r[team=!Monster,tag=queued] add monster1
 team join Monster @a[tag=monster1,tag=queued]
 
 execute unless entity @a[tag=monster2] run tag @r[team=!Monster,tag=queued,tag=!dev_not_monster] add monster2
