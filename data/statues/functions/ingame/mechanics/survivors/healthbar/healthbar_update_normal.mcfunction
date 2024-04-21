@@ -1,6 +1,6 @@
-execute if score $Health Statues.TempData matches 2.. run data modify storage statues:data healthbar_text append value ""
-execute if score $Health Statues.TempData matches 1 run data modify storage statues:data healthbar_text append value ""
-execute if score $Health Statues.TempData matches ..0 run data modify storage statues:data healthbar_text append value ""
+execute if score $Health Statues.TempData matches 2.. run data modify storage statues:data healthbar_text prepend value ""
+execute if score $Health Statues.TempData matches 1 run data modify storage statues:data healthbar_text prepend value ""
+execute if score $Health Statues.TempData matches ..0 run data modify storage statues:data healthbar_text prepend value ""
 
 scoreboard players remove $MaxHealth Statues.TempData 2
 scoreboard players remove $Health Statues.TempData 2
