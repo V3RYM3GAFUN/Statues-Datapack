@@ -16,7 +16,7 @@ execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players ma
 # Audios for the cooldown
 execute if score @s Statues.Players matches 4200 run playsound minecraft:block.conduit.deactivate block @s ~ ~ ~ 1 1
 execute if score @s Statues.Players matches 4200 run playsound minecraft:block.conduit.deactivate block @a[team=Monster] ~ ~ ~ 1 1
-execute if score @s Statues.Abilities matches 1 if score @s Statues.Players matches 1..1799 run playsound block.note_block.guitar block @s ~ ~ ~ 1 0.5
+execute if score @s Statues.Abilities matches 1 if score @s Statues.Players matches 1..4199 run playsound block.note_block.guitar block @s ~ ~ ~ 1 0.5
 
 # Resets the interaction amount
 execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches 1..4200 run scoreboard players set @s Statues.Abilities 0

@@ -11,7 +11,7 @@ execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players ma
 execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run scoreboard players set @s Statues.Players 3000
 
 execute if score @s Statues.Players matches 3000 run playsound entity.enderman.teleport block @s ~ ~ ~ 1 0.75
-execute if score @s Statues.Abilities matches 1 if score @s Statues.Players matches 1..1199 run playsound block.note_block.guitar block @s ~ ~ ~ 1 0.5
+execute if score @s Statues.Abilities matches 1 if score @s Statues.Players matches 1..2999 run playsound block.note_block.guitar block @s ~ ~ ~ 1 0.5
 
 execute if score @s Statues.Abilities matches 1.. run scoreboard players set @s Statues.Abilities 0
 
