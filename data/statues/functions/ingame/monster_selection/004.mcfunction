@@ -19,5 +19,5 @@ item replace entity @s armor.chest with netherite_chestplate{Unbreakable:1b}
 
 #> Armour and weapons specific to 004
 item replace entity @s armor.head with skeleton_skull
-item replace entity @s weapon.mainhand with crossbow{CustomModelData:4,Unbreakable:1b,display:{Name:'[{"text":"Insect launcher","italic":false,"color":"white","bold":true}]'},Enchantments:[{id:"multishot",lvl:1}]} 1
+item replace entity @s weapon.mainhand with crossbow{CustomModelData:4,Unbreakable:1b,display:{Name:'[{"text":"Insect launcher","italic":false,"color":"white","bold":true}]'},Enchantments:[{id:"multishot",lvl:1},{id:"quick_charge",lvl:1}]} 1
 item replace entity @s hotbar.4 with tipped_arrow{CustomPotionColor:2325012,display:{Name:'[{"text":"Insects","italic":false,"color":"#006633","bold":true}]'},custom_potion_effects:[{id:"minecraft:poison",duration:60,amplifier:1,show_particles:0b,show_icon:0b},{id:"minecraft:instant_health",duration:1,amplifier:1,show_particles:0b,show_icon:0b}]} 1
