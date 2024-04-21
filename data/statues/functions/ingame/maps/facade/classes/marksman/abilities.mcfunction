@@ -8,7 +8,7 @@ execute if score @s Statues.Abilities matches 2.. run scoreboard players set @s 
 execute if score @s Statues.Players matches 1..4200 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"X-ray","italic":false,"color":"gray"}]',Lore:['[{"text":"Reveals the monsters,","italic":false}]','[{"text":"but you get revealed too","italic":false}]','[{"text":"Cooldown: 3m30s","italic":false}]']},HideFlags:4}
 
 execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run effect give @s glowing 6 0 true
-execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run effect give @a[team=Monster] glowing 12 0 true
+execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run effect give @e[team=Monster] glowing 12 0 true
 execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run scoreboard players set @s Statues.Players 4200
 
 execute if score @s Statues.Players matches 4200 run playsound item.lodestone_compass.lock ambient @s ~ ~ ~ 2 2
