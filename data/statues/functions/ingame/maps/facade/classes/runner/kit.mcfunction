@@ -15,3 +15,6 @@ item replace entity @s armor.legs with leather_leggings{Trim:{pattern:shaper,mat
 item replace entity @s armor.feet with leather_boots{Trim:{pattern:shaper,material:lapis},display:{color:3949738,Name:'["",{"text":"Runner Outfit","italic":false,"color":"dark_aqua","bold":true}]'},Unbreakable:1,HideFlags:196}
 
 item replace entity @s weapon.offhand with stick{flashlight:1b,CustomModelData:7,display:{Name:'{"text":"Flashlight","italic": false}'}}
+
+execute if entity @s[tag=!class_tutorial] run scoreboard players operation $ClassKind Statues.GameEventData = $ClassKind.Runner Statues.GameEventEnum
+execute if entity @s[tag=!class_tutorial] run function statues:game_events/pick_class_survivor

@@ -22,3 +22,6 @@ item replace entity @s armor.legs with leather_leggings{Trim:{pattern:wayfinder,
 item replace entity @s armor.feet with leather_boots{Trim:{pattern:snout,material:iron},display:{color:9870729,Name:'["",{"text":"Juggernaut Outfit","italic":false,"color":"gray","bold":true}]'},Unbreakable:1,HideFlags:196}
 
 item replace entity @s weapon.offhand with stick{flashlight:1b,CustomModelData:7,display:{Name:'{"text":"Flashlight","italic": false}'}}
+
+execute if entity @s[tag=!class_tutorial] run scoreboard players operation $ClassKind Statues.GameEventData = $ClassKind.Juggernaut Statues.GameEventEnum
+execute if entity @s[tag=!class_tutorial] run function statues:game_events/pick_class_survivor

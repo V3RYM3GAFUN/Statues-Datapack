@@ -19,3 +19,6 @@ item replace entity @s armor.legs with leather_leggings{display:{color:8606770,N
 item replace entity @s armor.feet with leather_boots{display:{color:8606770,Name:'["",{"text":"Trapper Outfit","italic":false,"color":"#993300","bold":true}]'},Unbreakable:1,HideFlags:68}
 
 item replace entity @s weapon.offhand with stick{flashlight:1b,CustomModelData:7,display:{Name:'{"text":"Flashlight","italic": false}'}}
+
+execute if entity @s[tag=!class_tutorial] run scoreboard players operation $ClassKind Statues.GameEventData = $ClassKind.Trapper Statues.GameEventEnum
+execute if entity @s[tag=!class_tutorial] run function statues:game_events/pick_class_survivor

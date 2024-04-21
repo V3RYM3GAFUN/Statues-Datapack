@@ -17,3 +17,16 @@ scoreboard players set $KeyKind.Lab Statues.GameEventEnum 1
 scoreboard players set $KeyKind.HighClass Statues.GameEventEnum 2
 scoreboard players set $KeyKind.Book Statues.GameEventEnum 3
 scoreboard players operation $KeyKind._Max Statues.GameEventEnum = $KeyKind.Book Statues.GameEventEnum
+
+
+scoreboard players set $ClassKind.Brawler Statues.GameEventEnum 0
+scoreboard players operation $ClassKind._Min Statues.GameEventEnum = $ClassKind.Brawler Statues.GameEventEnum
+scoreboard players set $ClassKind.Cloaker Statues.GameEventEnum 1
+scoreboard players set $ClassKind.Gunner Statues.GameEventEnum 2
+scoreboard players set $ClassKind.Juggernaut Statues.GameEventEnum 3
+scoreboard players set $ClassKind.Marksman Statues.GameEventEnum 4
+scoreboard players set $ClassKind.Medic Statues.GameEventEnum 5
+scoreboard players set $ClassKind.Runner Statues.GameEventEnum 6
+scoreboard players set $ClassKind.Shotgunner Statues.GameEventEnum 7
+scoreboard players set $ClassKind.Trapper Statues.GameEventEnum 8
+scoreboard players operation $ClassKind._Max Statues.GameEventEnum = $ClassKind.Trapper Statues.GameEventEnum
