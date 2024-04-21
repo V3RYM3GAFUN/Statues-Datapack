@@ -38,3 +38,18 @@ scoreboard players set $MonsterKind.002 Statues.GameEventEnum 1
 scoreboard players set $MonsterKind.003 Statues.GameEventEnum 2
 scoreboard players set $MonsterKind.004 Statues.GameEventEnum 3
 scoreboard players operation $MonsterKind._Max Statues.GameEventEnum = $MonsterKind.004 Statues.GameEventEnum
+
+
+scoreboard players set $ObjectiveKind.Facade.FindBackupGeneratorKey Statues.GameEventEnum 0
+scoreboard players operation $ObjectiveKind._Min Statues.GameEventEnum = $ObjectiveKind.Facade.FindBackupGeneratorKey Statues.GameEventEnum
+scoreboard players set $ObjectiveKind.Facade.UnlockBackupGenerator Statues.GameEventEnum 1
+scoreboard players set $ObjectiveKind.Facade.StartBackupGenerator Statues.GameEventEnum 2
+scoreboard players set $ObjectiveKind.Facade.FindLabKey Statues.GameEventEnum 3
+scoreboard players set $ObjectiveKind.Facade.UnlockLabDoors Statues.GameEventEnum 4
+scoreboard players set $ObjectiveKind.Facade.PressEmergencyOverride Statues.GameEventEnum 5
+scoreboard players set $ObjectiveKind.Facade.TurnOnPower Statues.GameEventEnum 6
+scoreboard players set $ObjectiveKind.Facade.FindHighClassKey Statues.GameEventEnum 7
+scoreboard players set $ObjectiveKind.Facade.UnlockHighClassOffices Statues.GameEventEnum 8
+scoreboard players set $ObjectiveKind.Facade.FindConfidentialBook Statues.GameEventEnum 9
+scoreboard players set $ObjectiveKind.Facade.Escape Statues.GameEventEnum 10
+scoreboard players operation $ObjectiveKind._Max Statues.GameEventEnum = $ObjectiveKind.Facade.Escape Statues.GameEventEnum

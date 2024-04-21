@@ -15,3 +15,6 @@ clear @a iron_ingot{facade_highclass_item:1b} 1
 weather thunder
 
 scoreboard players add $Timer.Seconds Statues.DynamicData 300
+
+scoreboard players operation $ObjectiveKind Statues.GameEventData = $ObjectiveKind.Facade.UnlockHighClassOffices Statues.GameEventEnum
+function statues:game_events/complete_objective

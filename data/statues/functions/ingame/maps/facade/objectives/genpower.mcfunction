@@ -13,3 +13,6 @@ scoreboard players set $CompassSelector Statues.DynamicData 3
 scoreboard players set $Objective Statues.DynamicData 3
 
 scoreboard players add $Timer.Seconds Statues.DynamicData 300
+
+scoreboard players operation $ObjectiveKind Statues.GameEventData = $ObjectiveKind.Facade.StartBackupGenerator Statues.GameEventEnum
+function statues:game_events/complete_objective
