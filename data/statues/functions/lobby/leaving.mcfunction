@@ -11,33 +11,7 @@ gamemode adventure @s
 effect give @s instant_health 1 100 true
 effect give @s saturation infinite 100 true
 
-#> In case the player was a monster
-tag @s remove monster1
-tag @s remove monster2
-
-tag @s remove monster_chosen
-tag @s remove 002
-
-#> Remove all survivor tags
-tag @s remove solo
-tag @s remove cloaker
-tag @s remove medic
-tag @s remove juggernaut
-tag @s remove runner
-tag @s remove shotgunner
-tag @s remove gunner
-tag @s remove brawler
-tag @s remove marksman
-tag @s remove trapper
-
-tag @s remove class_selected
-
-#> To avoid adding a vote from the previous game to be carried on
-tag @s remove vote_facade
-tag @s remove vote_lockdown
-tag @s remove vote_origins
-
-tag @s remove win
+function statues:reset_player_tags
 
 tag @s[team=!Dev] remove has_compass_tracker
 

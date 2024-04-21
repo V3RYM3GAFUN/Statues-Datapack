@@ -36,6 +36,13 @@ execute as @a[nbt={Inventory:[{tag:{facade_labkey_item:1b}}]}] if score $Objecti
 #> Emergency override button press
 execute at @e[tag=objective_facade_override,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/override
 
+execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:0}}].tag
+execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:1}}].tag
+execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:2}}].tag
+execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:3}}].tag
+execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:4}}].tag
+execute as @a run function statues:ingame/maps/facade/on_collect_key with entity @s Inventory[{tag:{item_objective_id:5}}].tag
+
 #> Power on detection
 execute at @e[tag=objective_facade_power,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
 execute if score $Objective Statues.DynamicData matches 7.. run scoreboard players remove $Core.Ticks Statues.DynamicData 1

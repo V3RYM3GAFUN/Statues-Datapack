@@ -1,3 +1,4 @@
+scoreboard players operation $EndCause Statues.GameEventData = $GameEndCause.NoSurvivors Statues.GameEventEnum
 function statues:reset
 
 title @a title {"text": "Monsters win!","color": "red"}

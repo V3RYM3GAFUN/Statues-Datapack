@@ -54,6 +54,8 @@ execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statue
 execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.StaticData matches 1 run function statues:ingame/maps/lockdown
 execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.StaticData matches 2 run function statues:ingame/maps/origins
 
+execute if score $Status Statues.DynamicData matches 3 run scoreboard players add $RunningGameTicks Statues.DynamicData 1
+
 #> Detect when a player leaves
 execute as @a[team=!Dev] if score @s Player.Leave matches 1.. run function statues:lobby/leaving
 #> Exception for Devs. Don't detect when they leave

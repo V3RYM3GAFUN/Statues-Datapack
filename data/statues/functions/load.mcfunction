@@ -30,6 +30,8 @@ scoreboard objectives add Statues.Flashlight minecraft.used:spyglass
 scoreboard objectives add Statues.Barrels minecraft.custom:open_barrel
 scoreboard objectives add Statues.ActionTrigger trigger
 
+function statues:game_events/init
+
 execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 unless score $Status Statues.DynamicData matches 0 run function statues:reset
 
 scoreboard players set $-9 Statues.StaticData -9

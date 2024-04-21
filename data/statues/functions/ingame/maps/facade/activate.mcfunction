@@ -20,18 +20,18 @@ scoreboard players set $Core.Ticks Statues.DynamicData 20
 #> List of tags for generating objective items:
 
 #facade_genkey
-execute at @e[tag=facade_genkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:1,display:{Name:'{"text":"Emergency Generator Key","italic": false}'},facade_genkey_item:1b,objective_item:1b}
+execute at @e[tag=facade_genkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:1,display:{Name:'{"text":"Emergency Generator Key","italic": false}'},facade_genkey_item:1b,objective_item:1b,item_objective_id:0}
 
 #facade_labkey
-execute at @e[tag=facade_labkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:2,display:{Name:'{"text":"Lab access keycard","italic": false}'},facade_labkey_item:1b,objective_item:1b}
+execute at @e[tag=facade_labkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:2,display:{Name:'{"text":"Lab access keycard","italic": false}'},facade_labkey_item:1b,objective_item:1b,item_objective_id:1}
 
 #facade_highclasskey
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b,item_objective_id:2}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b,item_objective_id:3}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b,item_objective_id:4}
 
 #facade_book
-execute at @e[tag=facade_book,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with book{CustomModelData:1,display:{Name:'{"text":"CONFIDENTIAL","italic": false}'},facade_book_item:1b,objective_item:1b}
+execute at @e[tag=facade_book,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with book{CustomModelData:1,display:{Name:'{"text":"CONFIDENTIAL","italic": false}'},facade_book_item:1b,objective_item:1b,item_objective_id:5}
 
 scoreboard players set $CompassSelector Statues.DynamicData 0
 

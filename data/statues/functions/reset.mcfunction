@@ -1,7 +1,7 @@
 clear @a[team=!Dev]
 effect clear @a[team=!Dev]
 tag @a remove queued
-#execute if score $Status Statues.DynamicData matches 1.. run tp @a[team=!Lobby,team=!Dev] 0.5 0.5 0.5 0 0
+execute if score $Status Statues.DynamicData matches 3 run function statues:game_events/game_end
 execute if score $Status Statues.DynamicData matches 1.. as @a[team=!Lobby,team=!Dev] run function statues:warps/newlobby
 gamemode adventure @a[team=!Dev]
 spawnpoint @a 0 0 0 0
@@ -16,39 +16,15 @@ execute as @a run attribute @s generic.movement_speed base set 0.1
 effect give @a instant_health 1 100 true
 effect give @a saturation infinite 100 true
 
-#> Get rid of class tags
-tag @a remove solo
-tag @a remove cloaker
-tag @a remove medic
-tag @a remove juggernaut
-tag @a remove runner
-tag @a remove shotgunner
-tag @a remove gunner
-tag @a remove brawler
-tag @a remove marksman
-tag @a remove trapper
-
-tag @a remove class_selected
-
-tag @e remove monster1
-tag @e remove monster2
-tag @e remove monster_chosen
-tag @e remove 002
-
-tag @a remove vote_facade
-tag @a remove vote_lockdown
-tag @a remove vote_origins
-
-tag @a remove win
-tag @a remove has_compass_tracker
-
 bossbar set statues:countdown visible false
 bossbar set statues:gametimer visible false
 
+execute as @a run function statues:reset_player_tags
 
 scoreboard players set $Timer.Ticks Statues.DynamicData 0
 scoreboard players set $CompassSelector Statues.DynamicData 0
 scoreboard players set $QueuedCount Statues.DynamicData 0
+scoreboard players set $RunningGameTicks Statues.DynamicData 0
 scoreboard players reset $MonsterSpawnDelay Statues.DynamicData
 
 scoreboard players set * Statues.Dead 0
@@ -86,3 +62,5 @@ time set 6000
 weather clear
 
 scoreboard players reset @e[tag=machine_sas] Statues.DynamicData
+
+scoreboard players operation $EndCause Statues.GameEventData = $GameEndCause.GameReset Statues.GameEventEnum
