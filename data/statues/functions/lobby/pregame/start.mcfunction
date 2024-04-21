@@ -12,8 +12,8 @@ execute unless score dev_no_start_requirement Statues.FeatureFlags matches 1.. i
 execute unless score dev_no_start_requirement Statues.FeatureFlags matches 1.. if score $QueuedCount Statues.DynamicData matches ..3 run return 0
 
 function statues:lobby/mapvoting/choose
-execute unless score $QueuedCount Statues.DynamicData matches 6.. run function statues:lobby/pregame/1monster
-execute if score $QueuedCount Statues.DynamicData matches 6.. run function statues:lobby/pregame/2monsters
+execute unless score $QueuedCount Statues.DynamicData matches 7.. run function statues:lobby/pregame/1monster
+execute if score $QueuedCount Statues.DynamicData matches 7.. run function statues:lobby/pregame/2monsters
 
 scoreboard players set $QueuedCount Statues.DynamicData 0
 
