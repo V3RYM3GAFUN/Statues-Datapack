@@ -21,11 +21,11 @@ scoreboard players enable @a Statues.ActionTrigger
 execute if score $Status Statues.DynamicData matches ..1 run function statues:lobby/queuing/queuing_base
 execute if score $Status Statues.DynamicData matches ..1 run function statues:lobby/lobbymusic
 
-execute if score tutorial Statues.FeatureFlags matches 1.. as @a[tag=class_tutorial] run function statues:lobby/tutorial-info/survivors/tick
-execute if score tutorial Statues.FeatureFlags matches 1.. unless entity @a[tag=class_tutorial] run kill @e[type=zombie]
+execute if score class_preview Statues.FeatureFlags matches 1.. as @a[tag=class_tutorial] run function statues:lobby/class_preview/survivors/tick
+execute if score class_preview Statues.FeatureFlags matches 1.. unless entity @a[tag=class_tutorial] run kill @e[type=zombie]
 
-execute if score tutorial Statues.FeatureFlags matches 1.. as @a[tag=monster_tutorial] run function statues:lobby/tutorial-info/monsters/tick
-execute if score tutorial Statues.FeatureFlags matches 1.. unless entity @a[tag=monster_tutorial] run kill @e[type=villager]
+execute if score class_preview Statues.FeatureFlags matches 1.. as @a[tag=monster_tutorial] run function statues:lobby/class_preview/monsters/tick
+execute if score class_preview Statues.FeatureFlags matches 1.. unless entity @a[tag=monster_tutorial] run kill @e[type=villager]
 
 #> Map voting
 function statues:lobby/mapvoting/vote_base

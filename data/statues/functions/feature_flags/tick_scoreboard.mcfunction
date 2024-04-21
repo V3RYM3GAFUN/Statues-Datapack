@@ -1,6 +1,6 @@
 
-execute if score map_tick Statues.FeatureFlags matches ..0 run scoreboard players set abilities Statues.FeatureFlags -1
-execute if score abilities Statues.FeatureFlags matches -1 if score map_tick Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score abilities Statues.FeatureFlags matches ..0 run scoreboard players set class_preview Statues.FeatureFlags -1
+execute if score class_preview Statues.FeatureFlags matches -1 if score abilities Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_2x2 Statues.FeatureFlags -1
 execute if score doors_2x2 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_3x3 Statues.FeatureFlags -1
@@ -12,10 +12,14 @@ execute if score dev_auto_convert_lights Statues.FeatureFlags matches -1 if scor
 
 
 
-execute if score abilities Statues.FeatureFlags matches -1 run scoreboard players display numberformat abilities Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
 execute if score abilities Statues.FeatureFlags matches 0 run scoreboard players display numberformat abilities Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score abilities Statues.FeatureFlags matches ..0 run scoreboard players display numberformat abilities Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name abilities Statues.FeatureFlags {"text":"Abilities Feature"}
+
+execute if score class_preview Statues.FeatureFlags matches -1 run scoreboard players display numberformat class_preview Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
+execute if score class_preview Statues.FeatureFlags matches 0 run scoreboard players display numberformat class_preview Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score class_preview Statues.FeatureFlags matches ..0 run scoreboard players display numberformat class_preview Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name class_preview Statues.FeatureFlags {"text":"Class Preview Feature"}
 
 execute if score compass_tracker Statues.FeatureFlags matches 0 run scoreboard players display numberformat compass_tracker Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score compass_tracker Statues.FeatureFlags matches ..0 run scoreboard players display numberformat compass_tracker Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}

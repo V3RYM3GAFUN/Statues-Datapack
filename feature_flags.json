@@ -1,5 +1,6 @@
 {
-    "abilities": { "name": "Abilities", "depends": [ "map_tick" ] },
+    "abilities": { "name": "Abilities", "depends": [] },
+    "class_preview": { "name": "Class Preview", "depends": [ "abilities", "tutorial" ] },
     "compass_tracker": { "name": "Compass Tracker", "depends": [] },
     "desk_button": { "name": "Desk Button", "depends": [] },
     "doors": { "name": "Doors", "depends": [] },

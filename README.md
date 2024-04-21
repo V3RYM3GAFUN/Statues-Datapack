@@ -32,7 +32,8 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 
 | Feature Flag                  | Description                                                                                                                        |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `abilities`                   | Enables abilities of classes, and all the abilities functions (requires `map_tick`feature flag)                                    |
+| `abilities`                   | Enables abilities of classes, and all the abilities functions                                                                      |
+| `class_preview`               | Enables tutorial class preview and functions in `statues:lobby/class_preview` (requires `abilities` and `tutorial` feature flags)  |
 | `compass_tracker`             | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point  |
 | `desk_button`                 | Enables desk buttons. Also enables all functions in `statues:ingame/mechanics/desk_button`                                         |
 | `dev_allow_debug_info`        | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                         |
