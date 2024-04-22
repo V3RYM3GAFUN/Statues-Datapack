@@ -18,7 +18,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 - **Brownie1111** - Modeler/Graphics Designer
 
 ## Developer Player Tags
-
+dev_see_game_events
 | Tag                               | Description                                                          |
 |-----------------------------------|----------------------------------------------------------------------|
 | `dev_allow_item_drop`             | Allows player to drop items out of inventory                         |
@@ -27,6 +27,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `dev_ignore_forced_gamemode`      | Ignores the correct gamemodes for teams                              |
 | `dev_ignore_vent_requirement`     | Ignores the requirement to go in a vent (normally 002 and survivors) |
 | `dev_not_monster`                 | Makes sure the game won't pick the player as the monster             |
+| `dev_see_game_events`             | Shows game events when in lobby team or spectator team               |
 
 ## Feature Flags
 
