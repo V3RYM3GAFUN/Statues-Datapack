@@ -18,6 +18,7 @@ effect give @a saturation infinite 100 true
 
 bossbar set statues:countdown visible false
 bossbar set statues:gametimer visible false
+bossbar set statues:warptimer visible false
 
 execute as @a run function statues:reset_player_tags
 

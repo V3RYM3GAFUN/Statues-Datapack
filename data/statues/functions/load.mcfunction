@@ -57,11 +57,12 @@ bossbar add statues:countdown "Starting in: 30s"
 bossbar set statues:countdown color yellow
 bossbar set statues:countdown max 30
 bossbar add statues:gametimer "Time left:"
-
 ## Note: Don't forget to change this value when testing an actual game
 bossbar set statues:gametimer color white
 bossbar set statues:gametimer max 601
-
+bossbar add statues:warptimer "Warp in: 90s"
+bossbar set statues:warptimer color green
+bossbar set statues:warptimer max 1800
 
 #> https://bugs.mojang.com/browse/MC-87984
 #> pushOwnTeam and pushOtherTeams are swapped

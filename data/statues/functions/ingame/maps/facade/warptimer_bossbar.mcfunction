@@ -1,0 +1,1 @@
+$bossbar set statues:warptimer name "Warp in: $(remaining_seconds)s"
