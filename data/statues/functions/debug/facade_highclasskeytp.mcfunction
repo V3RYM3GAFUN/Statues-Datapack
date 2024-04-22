@@ -1,1 +1,1 @@
-execute at @e[tag=facade_highclasskey,type=minecraft:marker] unless block ~ ~ ~ minecraft:barrel{Items:[]} run tp @s ~ ~ ~
+execute at @e[tag=facade_highclasskey,type=minecraft:marker,sort=random] unless block ~ ~ ~ minecraft:barrel{Items:[]} run tp @s ~ ~ ~
