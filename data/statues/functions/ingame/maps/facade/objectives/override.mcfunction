@@ -1,6 +1,7 @@
 execute as @e[type=minecraft:interaction,tag=objective_facade_override] run data merge entity @s {height:0}
 
 execute as @e[type=text_display,tag=objective_facade_override] run data modify entity @s text set value "{'text':''}"
+execute as @e[type=text_display,tag=objective_facade_override] run data modify entity @s background set value 0
 
 scoreboard players set $CompassSelector Statues.DynamicData 6
 scoreboard players set $Objective Statues.DynamicData 6
@@ -14,7 +15,7 @@ execute at @e[tag=objective_facade_override] run function statues:utils/button_c
 
 scoreboard players add $Timer.Seconds Statues.DynamicData 300
 
-# Temporary solution in the freight elevator
+#> Temporary solution in the freight elevator
 setblock 1 111 285 redstone_block
 
 scoreboard players operation $ObjectiveKind Statues.GameEventData = $ObjectiveKind.Facade.PressEmergencyOverride Statues.GameEventEnum

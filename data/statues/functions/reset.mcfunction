@@ -49,6 +49,9 @@ execute as @e[type=interaction,tag=objective_reset] run data merge entity @s {he
 #> Resets every objective button 
 execute at @e[tag=objective_reset] run function statues:utils/button_warped_to_crimson
 
+#> Make background of text displays what they were
+execute as @e[tag=objective_reset,type=text_display] run data modify entity @s background set value 1073741824
+
 #> Resets the pressure plates for class selection
 execute at @e[tag=pressure_plates] run setblock ~ ~ ~ minecraft:light_weighted_pressure_plate
 

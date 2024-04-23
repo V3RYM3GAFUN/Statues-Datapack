@@ -28,5 +28,14 @@ fill 22 135 345 22 136 345 air
 #> Book text 
 execute as @e[type=text_display,tag=objective_facade_book] run data modify entity @s text set value "{'text':'CONFIDENTIAL book','color':'dark_red'}"
 
-# Temporary solution in the freight elevator
+#> Temporary solution in the freight elevator
 setblock 1 111 285 air
+
+#> Temporary solution for vents that go into the archives
+# South
+setblock 26 114 357 minecraft:air
+setblock -24 114 357 minecraft:air
+
+# North
+setblock -24 114 307 minecraft:air
+setblock 26 114 307 minecraft:air

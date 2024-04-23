@@ -1,6 +1,7 @@
 
 #> Clear Text Displays for "Main Power"
 execute as @e[tag=objective_facade_power] run data modify entity @s text set value "{text:''}"
+execute as @e[type=text_display,tag=objective_facade_power] run data modify entity @s background set value 0
 
 #> Announce objective completion
 title @a times 5t 3s 25t

@@ -30,6 +30,16 @@ setblock -45 117 312 crimson_door[facing=south,hinge=right] replace
 setblock -45 118 312 air replace
 setblock -45 118 312 crimson_door[facing=south,half=upper,hinge=right] replace
 
+setblock -45 117 352 air replace
+setblock -45 117 352 crimson_door[facing=north,hinge=left] replace
+setblock -45 118 352 air replace
+setblock -45 118 352 crimson_door[facing=north,half=upper,hinge=left] replace
+
+setblock 47 117 352 air
+setblock 47 117 352 crimson_door[facing=north,hinge=right]
+setblock 47 118 352 air
+setblock 47 118 352 crimson_door[facing=north,half=upper,hinge=right]
+
 #> Lab access room doors
 setblock 5 105 382 air replace
 setblock 5 105 382 crimson_door[facing=east,hinge=right] replace
@@ -46,3 +56,4 @@ setblock -7 105 375 air replace
 setblock -7 105 375 crimson_door[facing=east,hinge=left] replace
 setblock -7 106 375 air replace
 setblock -7 106 375 crimson_door[facing=east,half=upper,hinge=left] replace
+
