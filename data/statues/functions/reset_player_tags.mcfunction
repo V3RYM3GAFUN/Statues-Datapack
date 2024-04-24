@@ -30,3 +30,5 @@ tag @s remove found_key_2
 tag @s remove found_key_3
 tag @s remove found_key_4
 tag @s remove found_key_5
+tag @s remove found_key_6
+tag @s remove found_key_7
