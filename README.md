@@ -58,6 +58,7 @@ dev_see_game_events
 | `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:ingame/mechanics/power_doors`                          |
 | `sas`                         | Enables SAS machines and all functions in `statues:ingame/mechanics/sas`                                                           |
 | `spectators_actionbar`        | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                            |
+| `survivors_heart_sidebar`     | Enables showing hearts in the survivors scoreboard, shows `<>hp` when disabled instead                                             |
 | `tutorial`                    | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`                     |
 | `vents`                       | Allows interacting with vents and all functions in `statues:ingame/mechanics/vents`                                                |
 

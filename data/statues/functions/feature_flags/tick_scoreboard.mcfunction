@@ -94,6 +94,10 @@ execute if score spectators_actionbar Statues.FeatureFlags matches 0 run scorebo
 execute unless score spectators_actionbar Statues.FeatureFlags matches ..0 run scoreboard players display numberformat spectators_actionbar Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name spectators_actionbar Statues.FeatureFlags {"text":"Spectators ActionBar Feature"}
 
+execute if score survivors_heart_sidebar Statues.FeatureFlags matches 0 run scoreboard players display numberformat survivors_heart_sidebar Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score survivors_heart_sidebar Statues.FeatureFlags matches ..0 run scoreboard players display numberformat survivors_heart_sidebar Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name survivors_heart_sidebar Statues.FeatureFlags {"text":"Survivors Heart Sidebar Feature"}
+
 execute if score tutorial Statues.FeatureFlags matches 0 run scoreboard players display numberformat tutorial Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score tutorial Statues.FeatureFlags matches ..0 run scoreboard players display numberformat tutorial Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name tutorial Statues.FeatureFlags {"text":"Tutorial Feature"}

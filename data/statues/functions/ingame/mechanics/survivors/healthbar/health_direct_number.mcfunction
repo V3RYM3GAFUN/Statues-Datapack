@@ -1,0 +1,1 @@
+$data modify storage statues:data healthbar_text append value "$(Health)"
