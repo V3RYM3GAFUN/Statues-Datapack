@@ -8,6 +8,7 @@ tellraw @a [{"selector":"@a[tag=monster1]","bold":true,"color":"red"},{"text":" 
 execute as @a at @s run playsound entity.ender_dragon.ambient master @s ~ ~ ~ 0.70 0.9
 
 effect give @a[team=Monster] glowing 10 0 true
+effect give @a[team=Monster] weakness infinite 0 true
 
 team join Survivor @a[team=!Monster,tag=queued]
 tag @a remove queued

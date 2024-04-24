@@ -22,16 +22,12 @@ execute if score $Countdown.Ticks Statues.DynamicData matches 500 as @a at @s ru
 execute if score $Countdown.Ticks Statues.DynamicData matches 400 run tellraw @a {"text": "5 seconds left before game starts!","color": "gold"}
 execute if score $Countdown.Ticks Statues.DynamicData matches 400 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 380 run tellraw @a {"text": "4 seconds left before game starts!","color": "gold"}
 execute if score $Countdown.Ticks Statues.DynamicData matches 380 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 360 run tellraw @a {"text": "3 seconds left before game starts!","color": "gold"}
 execute if score $Countdown.Ticks Statues.DynamicData matches 360 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 340 run tellraw @a {"text": "2 seconds left before game starts!","color": "gold"}
 execute if score $Countdown.Ticks Statues.DynamicData matches 340 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 320 run tellraw @a {"text": "1 seconds left before game starts!","color": "gold"}
 execute if score $Countdown.Ticks Statues.DynamicData matches 320 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
 
 execute if score $Countdown.Ticks Statues.DynamicData matches 300 run function statues:lobby/pregame/start
