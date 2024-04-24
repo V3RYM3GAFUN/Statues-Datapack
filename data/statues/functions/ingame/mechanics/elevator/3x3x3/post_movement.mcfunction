@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_elevator_flags run return fail
+execute unless function statues:feature_flags/check_elevator_3x3x3_flags run return fail
 
 function statues:ingame/mechanics/elevator/3x3x3/apply_collision_movement_align
 

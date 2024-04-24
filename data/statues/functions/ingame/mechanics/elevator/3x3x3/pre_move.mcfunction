@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_elevator_flags run return fail
+execute unless function statues:feature_flags/check_elevator_3x3x3_flags run return fail
 
 execute if score @s Statues.ElevatorRemaining matches 0 run function statues:ingame/mechanics/elevator/3x3x3/pre_move_first with storage statues:data
 execute if score @s Statues.ElevatorRemaining matches 0 if score @s Statues.ElevatorState matches 0 run return 0

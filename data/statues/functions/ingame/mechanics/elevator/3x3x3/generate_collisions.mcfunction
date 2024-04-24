@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_elevator_flags run return fail
+execute unless function statues:feature_flags/check_elevator_3x3x3_flags run return fail
 
 summon minecraft:armor_stand ~-1 ~-2.5 ~-1 {NoGravity:1b,Marker:1b,Tags:["elevator_room_3x3x3_col_main", "elevator_room_3x3x3_col_part"],Invisible:1b,Passengers:[{id:"minecraft:shulker",Color:2,NoAI:1b,Silent:1b,active_effects:[{duration:-1,show_particles:0b,id:"minecraft:invisibility"}],Invulnerable:1b,Health:1,Tags:["elevator_room_3x3x3_col_shulker", "elevator_room_3x3x3_col_part"]}]}
 summon minecraft:armor_stand ~0 ~-2.5 ~-1 {NoGravity:1b,Marker:1b,Tags:["elevator_room_3x3x3_col_main", "elevator_room_3x3x3_col_part"],Invisible:1b,Passengers:[{id:"minecraft:shulker",Color:2,NoAI:1b,Silent:1b,active_effects:[{duration:-1,show_particles:0b,id:"minecraft:invisibility"}],Invulnerable:1b,Health:1,Tags:["elevator_room_3x3x3_col_shulker", "elevator_room_3x3x3_col_part"]}]}

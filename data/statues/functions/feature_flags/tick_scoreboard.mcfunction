@@ -1,10 +1,15 @@
 
 execute if score abilities Statues.FeatureFlags matches ..0 run scoreboard players set class_preview Statues.FeatureFlags -1
-execute if score class_preview Statues.FeatureFlags matches -1 if score abilities Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score tutorial Statues.FeatureFlags matches ..0 run scoreboard players set class_preview Statues.FeatureFlags -1
+execute if score class_preview Statues.FeatureFlags matches -1 if score abilities Statues.FeatureFlags matches 1.. if score tutorial Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_2x2 Statues.FeatureFlags -1
 execute if score doors_2x2 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_3x3 Statues.FeatureFlags -1
 execute if score doors_3x3 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_3x3x3 Statues.FeatureFlags -1
+execute if score elevator_3x3x3 Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_freight Statues.FeatureFlags -1
+execute if score elevator_freight Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score flashlight Statues.FeatureFlags matches ..0 run scoreboard players set experimental_flashlight Statues.FeatureFlags -1
 execute if score experimental_flashlight Statues.FeatureFlags matches -1 if score flashlight Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score lights Statues.FeatureFlags matches ..0 run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags -1
@@ -46,6 +51,16 @@ scoreboard players display name doors_3x3 Statues.FeatureFlags {"text":"Doors 3x
 execute if score elevator Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score elevator Statues.FeatureFlags matches ..0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name elevator Statues.FeatureFlags {"text":"Elevator Feature"}
+
+execute if score elevator_3x3x3 Statues.FeatureFlags matches -1 run scoreboard players display numberformat elevator_3x3x3 Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
+execute if score elevator_3x3x3 Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator_3x3x3 Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score elevator_3x3x3 Statues.FeatureFlags matches ..0 run scoreboard players display numberformat elevator_3x3x3 Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name elevator_3x3x3 Statues.FeatureFlags {"text":"Elevator 3x3x3 Feature"}
+
+execute if score elevator_freight Statues.FeatureFlags matches -1 run scoreboard players display numberformat elevator_freight Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
+execute if score elevator_freight Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator_freight Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score elevator_freight Statues.FeatureFlags matches ..0 run scoreboard players display numberformat elevator_freight Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name elevator_freight Statues.FeatureFlags {"text":"Elevator Freight Feature"}
 
 execute if score flashlight Statues.FeatureFlags matches 0 run scoreboard players display numberformat flashlight Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score flashlight Statues.FeatureFlags matches ..0 run scoreboard players display numberformat flashlight Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}

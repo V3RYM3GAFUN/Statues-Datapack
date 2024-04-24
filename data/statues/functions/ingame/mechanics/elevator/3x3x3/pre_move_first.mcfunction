@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_elevator_flags run return fail
+execute unless function statues:feature_flags/check_elevator_3x3x3_flags run return fail
 execute if score @s Statues.ElevatorFrom = @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 0
 execute if score @s Statues.ElevatorFrom = @s Statues.ElevatorTo run return 0
 

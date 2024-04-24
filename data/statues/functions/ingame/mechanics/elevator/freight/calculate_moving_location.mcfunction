@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_elevator_3x3x3_flags run return fail
+execute unless function statues:feature_flags/check_elevator_freight_flags run return fail
 
 scoreboard players operation $ElevatorOffY Statues.TempData = @s Statues.ElevatorFrom
 scoreboard players operation $ElevatorOffY Statues.TempData -= @s Statues.ElevatorTo

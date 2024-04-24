@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_elevator_flags run return fail
+execute unless function statues:feature_flags/check_elevator_3x3x3_flags run return fail
 
 $execute positioned ~ ~$(elevator_location) ~ positioned ~-1.675 ~-2 ~-1.675 as @a[dx=2.35,dy=2,dz=2.35,gamemode=!spectator] run scoreboard players set @s Statues.ElevatorPlayerStates 1
 $execute positioned ~ ~$(elevator_location) ~ positioned ~-1.35 ~-2 ~-1.35 as @a[dx=1.7,dy=2,dz=1.7,gamemode=!spectator] run scoreboard players add @s Statues.ElevatorPlayerStates 1
