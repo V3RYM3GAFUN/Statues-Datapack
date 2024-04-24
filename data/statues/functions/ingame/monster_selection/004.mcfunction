@@ -1,6 +1,6 @@
 #> Tells the monster team which one the player chose
 scoreboard players set @s Statues.Monsters 4
-scoreboard players display numberformat @s Statues.Monsters fixed "004"
+scoreboard players display numberformat @s Statues.Monsters fixed {"text":"004: \"The Skeleton\"","color": "white"}
 tag @s add monster_chosen
 
 #> Stats for each monster
