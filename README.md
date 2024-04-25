@@ -45,7 +45,8 @@ dev_see_game_events
 | `dev_no_start_requirement`    | Sets the minimum player requirement in queuing to just one player (requires 2+ players for the game to not end instantly)          |
 | `dev_show_interactions`       | Shows particles at interaction entities when nearby                                                                                |
 | `dev_show_markers`            | Shows particles at marker entities when nearby                                                                                     |
-| `doors`                       | Allows use of doors and the `doors_2x2` and `doors_3x3` feature flags                                                              |
+| `doors`                       | Allows use of doors and the `doors_1x2`,  `doors_2x2`, and `doors_3x3` feature flags                                                              |
+| `doors_1x2`                   | Allows use of 1x2 doors and all functions in `statues:ingame/mechanics/doors_1x2` (requires `doors` feature flag)                      |
 | `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:ingame/mechanics/doors` (requires `doors` feature flag)                      |
 | `doors_3x3`                   | Allows use of 3x3 doors and all functions in `statues:ingame/mechanics/doors_3x3`  (requires `doors` feature flag)                 |
 | `elevator`                    | Enables elevators and allows use of all functions in `statues:ingame/mechanics/elevator`                                           |

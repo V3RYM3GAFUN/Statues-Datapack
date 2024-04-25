@@ -4,6 +4,7 @@
     "compass_tracker": { "name": "Compass Tracker", "depends": [] },
     "desk_button": { "name": "Desk Button", "depends": [] },
     "doors": { "name": "Doors", "depends": [] },
+    "doors_1x2": { "name": "Doors 1x2", "depends": [ "doors" ] },
     "doors_2x2": { "name": "Doors 2x2", "depends": [ "doors" ] },
     "doors_3x3": { "name": "Doors 3x3", "depends": [ "doors" ] },
     "elevator": { "name": "Elevator", "depends": [] },
