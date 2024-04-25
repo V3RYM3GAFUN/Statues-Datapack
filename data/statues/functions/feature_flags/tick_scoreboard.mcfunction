@@ -149,4 +149,8 @@ scoreboard players display name dev_show_interactions Statues.FeatureFlags [{"te
 
 execute if score dev_show_markers Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_markers Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_show_markers Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_show_markers Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
-scoreboard players display name dev_show_markers Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Show Markers","color":"white"}]
+scoreboard players display name dev_show_markers Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Show Markers (Block Aligned)","color":"white"}]
+
+execute if score dev_show_markers_accurate Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_markers_accurate Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score dev_show_markers_accurate Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_show_markers_accurate Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name dev_show_markers_accurate Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Show Markers (Accurate)","color":"white"}]

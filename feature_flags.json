@@ -31,5 +31,6 @@
     "dev_no_game_reset_on_reload": { "name": "No Reload Game On Reload", "is_dev": true, "depends": [] },
     "dev_no_start_requirement": { "name": "No Start Requirement", "is_dev": true, "depends": [] },
     "dev_show_interactions": { "name": "Show Interactions", "is_dev": true, "depends": [] },
-    "dev_show_markers": { "name": "Show Markers", "is_dev": true, "depends": [] }
+    "dev_show_markers": { "name": "Show Markers (Block Aligned)", "is_dev": true, "depends": [] },
+    "dev_show_markers_accurate": { "name": "Show Markers (Accurate)", "is_dev": true, "depends": [] }
 }
