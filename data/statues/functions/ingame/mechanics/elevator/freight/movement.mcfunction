@@ -8,9 +8,9 @@ $execute if score $SoundTick Statues.TempData matches 0 positioned ~ ~$(elevator
 
 $data merge storage statues:data {elevator_location: $(elevator_location)}
 scoreboard players set $OffsetY Statues.TempData 9
-execute if score @s Statues.ElevatorState matches 4 run scoreboard players operation $OffsetY Statues.TempData *= $-1 Statues.Constants
+scoreboard players operation $OffsetY Statues.TempData *= $-1 Statues.Constants
 scoreboard players operation $OffsetY Statues.TempData *= @s Statues.ElevatorSpeed
 execute store result storage statues:data elevator_collision_y_offset float 0.01 run scoreboard players get $OffsetY Statues.TempData
-function statues:ingame/mechanics/elevator/freight/apply_collision_movement_relative with storage statues:data
+execute if score @s Statues.ElevatorState matches 4 run function statues:ingame/mechanics/elevator/freight/apply_collision_movement_relative with storage statues:data
 
 execute if score @s Statues.ElevatorRemaining matches 0 run function statues:ingame/mechanics/elevator/freight/post_movement with storage statues:data
