@@ -49,6 +49,14 @@ execute as @e[type=interaction,tag=objective_reset] run data merge entity @s {he
 #> Resets every objective button 
 execute at @e[tag=objective_reset] run function statues:utils/button_warped_to_crimson
 
+#> Resets every objective button 
+execute at @e[tag=objective_reset,tag=elevator_button_facade_genpower] run function statues:utils/button_crimson_to_blackstone
+
+#> Resets elevators
+execute as @e[tag=objective_reset,tag=elevator_room] run scoreboard players operation @s Statues.ElevatorTo = @s Statues.DefaultElevatorY
+execute as @e[tag=objective_reset,tag=elevator_room_3x3x3] at @s run function statues:ingame/mechanics/elevator/3x3x3/force_go_to
+execute as @e[tag=objective_reset,tag=elevator_room_freight] at @s run function statues:ingame/mechanics/elevator/freight/force_go_to
+
 #> Make background of text displays what they were
 execute as @e[tag=objective_reset,type=text_display] run data modify entity @s background set value 1073741824
 
