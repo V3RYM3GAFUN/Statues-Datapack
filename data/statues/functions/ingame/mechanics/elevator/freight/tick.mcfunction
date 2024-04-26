@@ -8,6 +8,7 @@
 
 execute unless function statues:feature_flags/check_elevator_freight_flags run return fail
 execute unless score @s Statues.ElevatorSpeed matches 1.. run scoreboard players set @s Statues.ElevatorSpeed 1
+execute unless score @s Statues.ElevatorState matches 0..5 run scoreboard players set @s Statues.ElevatorState 0
 
 execute unless entity @s[tag=elevator_room_freight_gencol] align xyz positioned ~0.5 ~ ~0.5 run function statues:ingame/mechanics/elevator/freight/generate_collisions
 
