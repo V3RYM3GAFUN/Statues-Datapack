@@ -12,6 +12,7 @@ title @a subtitle {"text": "Main power restored!","color": "aqua"}
 
 execute at @e[tag=objective_facade_power] run function statues:utils/button_crimson_to_warped
 execute at @e[tag=elevator_button_facade_power] run function statues:utils/button_blackstone_to_crimson
+execute as @e[tag=objective_reset,tag=elevator_room_freight] at @s run data merge entity @s {brightness:{block:15,sky:0}}
 
 function statues:ingame/mechanics/power_doors/open
 function statues:ingame/mechanics/lights/lights_on

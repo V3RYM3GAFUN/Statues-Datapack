@@ -56,6 +56,7 @@ execute at @e[tag=objective_reset,tag=elevator_button_facade_power] run function
 execute as @e[tag=objective_reset,tag=elevator_room] run scoreboard players operation @s Statues.ElevatorTo = @s Statues.DefaultElevatorY
 execute as @e[tag=objective_reset,tag=elevator_room_3x3x3] at @s run function statues:ingame/mechanics/elevator/3x3x3/force_go_to
 execute as @e[tag=objective_reset,tag=elevator_room_freight] at @s run function statues:ingame/mechanics/elevator/freight/force_go_to
+execute as @e[tag=objective_reset,tag=elevator_room_freight] at @s run data merge entity @s {brightness:{block:1,sky:0}}
 
 #> Make background of text displays what they were
 execute as @e[tag=objective_reset,type=text_display] run data modify entity @s background set value 1073741824
