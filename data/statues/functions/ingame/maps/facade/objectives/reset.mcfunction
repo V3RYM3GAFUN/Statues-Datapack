@@ -20,7 +20,7 @@ fill -4 105 378 -4 106 378 iron_block
 fill -4 105 383 -4 106 383 iron_block
 
 #> Remove the background of Main Power text
-execute as @e[tag=objective_facade_genpower,type=text_display] run data modify entity @s background set value 0
+execute as @e[tag=objective_facade_power,type=text_display] run data modify entity @s background set value 0
 
 #> High class office doors
 execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value "{'text':'High class key','color':'dark_red'}"

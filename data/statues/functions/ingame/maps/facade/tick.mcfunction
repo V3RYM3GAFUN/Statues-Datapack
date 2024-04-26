@@ -37,7 +37,7 @@ execute if score $Objective Statues.DynamicData matches 5 at @e[tag=objective_fa
 #> Power on detection
 execute if score $Objective Statues.DynamicData matches 6 at @e[tag=objective_facade_power,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
 execute if score $Objective Statues.DynamicData matches 7.. run scoreboard players remove $Core.Ticks Statues.DynamicData 1
-execute if score $Core.Ticks Statues.DynamicData matches 0 run playsound minecraft:entity.warden.nearby_closer master @a -4 83 322 5 0
+execute if score $Core.Ticks Statues.DynamicData matches 0 run playsound minecraft:entity.warden.nearby_closer master @a -4 83 322 3 0
 execute if score $Core.Ticks Statues.DynamicData matches ..0 run scoreboard players set $Core.Ticks Statues.DynamicData 120
 
 execute as @a unless entity @s[team=!Monster,team=!Survivor] run function statues:ingame/maps/facade/tick_player
@@ -45,7 +45,6 @@ execute as @a unless entity @s[team=!Monster,team=!Survivor] run function statue
 execute if score $Objective Statues.DynamicData matches 11 as @e[tag=objective_facade_book] at @s run function statues:ingame/maps/facade/objectives/escape
 
 #> Force monsters who haven't chosen a monster to spawn with a random choice
-# Was too lazy to add a general "No monster" tag
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 5 as @e[type=marker,tag=facade_monster_choice,sort=random,limit=1] at @s if block ~ ~ ~ light_weighted_pressure_plate run tp @r[team=Monster,tag=!monster_chosen] ~ ~ ~
 
 #> Countdown for monster spawn delay (before they can actually chase survivors)
@@ -55,4 +54,3 @@ execute if score $MonsterSpawnDelay Statues.DynamicData matches 0 run function s
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 0 run bossbar set statues:warptimer visible false
 
 
-execute as @a[team=Monster] if score @s Statues.Barrels matches 1.. run function statues:ingame/maps/facade/monster_anti_barrel
