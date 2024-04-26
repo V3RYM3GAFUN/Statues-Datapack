@@ -15,7 +15,7 @@ execute as @e[tag=mapvote] if score @s Statues.DynamicData = $MapVote.Max Statue
 tag @e[tag=mapvote_facade,limit=1] add mapvote_winner
 #tag @e[tag=mapvote_wincandidate,limit=1,sort=random] add mapvote_winner
 
-execute store result score $Map Statues.StaticData run data get entity @e[tag=mapvote_winner,limit=1] Pos[1]
+execute store result score $Map Statues.DynamicData run data get entity @e[tag=mapvote_winner,limit=1] Pos[1]
 
 # kill @e[tag=mapvote]
 

@@ -2,9 +2,9 @@ execute if score dev_infinite_game_time Statues.FeatureFlags matches 1.. run sco
 
 #> Keeps track of the time in a bossbar
 scoreboard players operation $Timer.RemainingSeconds Statues.TempData = $Timer.Seconds Statues.DynamicData
-scoreboard players operation $Timer.RemainingSeconds Statues.TempData %= $60 Statues.StaticData
+scoreboard players operation $Timer.RemainingSeconds Statues.TempData %= $60 Statues.Constants
 scoreboard players operation $Timer.RemainingMinutes Statues.TempData = $Timer.Seconds Statues.DynamicData
-scoreboard players operation $Timer.RemainingMinutes Statues.TempData /= $60 Statues.StaticData
+scoreboard players operation $Timer.RemainingMinutes Statues.TempData /= $60 Statues.Constants
 execute store result storage statues:data remaining_seconds int 1 run scoreboard players get $Timer.RemainingSeconds Statues.TempData
 execute store result storage statues:data remaining_minutes int 1 run scoreboard players get $Timer.RemainingMinutes Statues.TempData
 execute unless score dev_infinite_game_time Statues.FeatureFlags matches 1.. run function statues:ingame/gametimer_bossbar with storage statues:data

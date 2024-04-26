@@ -13,7 +13,7 @@ execute unless entity @s[tag=elevator_room_3x3x3_gencol] run function statues:in
 execute if score @s Statues.ElevatorState matches 0..2 run scoreboard players operation $ElevatorOffY Statues.TempData = @s Statues.ElevatorFrom
 execute if score @s Statues.ElevatorState matches 3..4 run function statues:ingame/mechanics/elevator/3x3x3/calculate_moving_location
 execute if score @s Statues.ElevatorState matches 5.. run scoreboard players operation $ElevatorOffY Statues.TempData = @s Statues.ElevatorTo
-execute unless score @s Statues.ElevatorState matches 3..4 run scoreboard players operation $ElevatorOffY Statues.TempData *= $100 Statues.StaticData
+execute unless score @s Statues.ElevatorState matches 3..4 run scoreboard players operation $ElevatorOffY Statues.TempData *= $100 Statues.Constants
 
 execute store result storage statues:data elevator_location_cur float 0.01 run scoreboard players get $ElevatorOffY Statues.TempData
 execute store result storage statues:data elevator_location int 1 run scoreboard players get @s Statues.ElevatorFrom

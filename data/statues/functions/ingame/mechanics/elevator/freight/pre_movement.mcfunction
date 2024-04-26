@@ -8,13 +8,13 @@ $execute at @s[y_rotation=270] align xyz positioned ~-2 ~$(elevator_location) ~-
 
 scoreboard players operation @s Statues.ElevatorRemaining = @s Statues.ElevatorTo
 scoreboard players operation @s Statues.ElevatorRemaining -= @s Statues.ElevatorFrom
-execute if score @s Statues.ElevatorRemaining matches ..0 run scoreboard players operation @s Statues.ElevatorRemaining *= $-1 Statues.StaticData
-scoreboard players operation @s Statues.ElevatorRemaining *= $111 Statues.StaticData
-scoreboard players operation @s Statues.ElevatorRemaining /= $10 Statues.StaticData
+execute if score @s Statues.ElevatorRemaining matches ..0 run scoreboard players operation @s Statues.ElevatorRemaining *= $-1 Statues.Constants
+scoreboard players operation @s Statues.ElevatorRemaining *= $111 Statues.Constants
+scoreboard players operation @s Statues.ElevatorRemaining /= $10 Statues.Constants
 
 scoreboard players operation $ElevatorEffectTime Statues.TempData = @s Statues.ElevatorRemaining
 scoreboard players add $ElevatorEffectTime Statues.TempData 19
-scoreboard players operation $ElevatorEffectTime Statues.TempData /= $20 Statues.StaticData
+scoreboard players operation $ElevatorEffectTime Statues.TempData /= $20 Statues.Constants
 
 execute if score @s Statues.ElevatorFrom < @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 3
 execute if score @s Statues.ElevatorFrom > @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 4

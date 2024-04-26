@@ -7,6 +7,6 @@ execute if score $FloorDiff Statues.TempData matches 0 run title @s actionbar [{
 execute if score $FloorDiff Statues.TempData matches 0 run return 1
 execute if score $FloorDiff Statues.TempData matches 1.. run title @s actionbar [{"text":"The objective is ","color":"white"},{"score":{"name":"$FloorDiff","objective":"Statues.TempData"}},{"text":" floor(s) above you","color":"white"},{"text":" | Objective: ","color":"white"},{"storage":"statues:data","nbt":"objective_text","interpret":true}]
 execute if score $FloorDiff Statues.TempData matches 1.. run return 1
-scoreboard players operation $FloorDiff Statues.TempData *= $-1 Statues.StaticData
+scoreboard players operation $FloorDiff Statues.TempData *= $-1 Statues.Constants
 execute if score $FloorDiff Statues.TempData matches 1.. run title @s actionbar [{"text":"The objective is ","color":"white"},{"score":{"name":"$FloorDiff","objective":"Statues.TempData"}},{"text":" floor(s) below you","color":"white"},{"text":" | Objective: ","color":"white"},{"storage":"statues:data","nbt":"objective_text","interpret":true}]
 execute if score $FloorDiff Statues.TempData matches 1.. run return 1

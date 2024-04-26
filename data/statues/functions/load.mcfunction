@@ -9,7 +9,7 @@ scoreboard objectives setdisplay below_name Statues.Health
 scoreboard objectives modify Statues.Health rendertype hearts
 scoreboard objectives add Statues.Heartbeat dummy
 scoreboard objectives add Statues.Dead deathCount
-scoreboard objectives add Statues.StaticData dummy
+scoreboard objectives add Statues.Constants dummy
 scoreboard objectives add Statues.DynamicData dummy
 scoreboard objectives add Statues.TempData dummy
 scoreboard objectives add Statues.MapVote dummy
@@ -34,24 +34,24 @@ function statues:game_events/init
 
 execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 unless score $Status Statues.DynamicData matches 0 run function statues:reset
 
-scoreboard players set $-9 Statues.StaticData -9
-scoreboard players set $-1 Statues.StaticData -1
-scoreboard players set $0 Statues.StaticData 0
-scoreboard players set $1 Statues.StaticData 1
-scoreboard players set $2 Statues.StaticData 2
-scoreboard players set $9 Statues.StaticData 9
-scoreboard players set $10 Statues.StaticData 10
-scoreboard players set $20 Statues.StaticData 20
-scoreboard players set $40 Statues.StaticData 40
-scoreboard players set $45 Statues.StaticData 45
-scoreboard players set $60 Statues.StaticData 60
-scoreboard players set $90 Statues.StaticData 90
-scoreboard players set $96 Statues.StaticData 96
-scoreboard players set $100 Statues.StaticData 100
-scoreboard players set $111 Statues.StaticData 111
-scoreboard players set $1000 Statues.StaticData 1000
-scoreboard players set $10000 Statues.StaticData 10000
-scoreboard players set $100000 Statues.StaticData 100000
+scoreboard players set $-9 Statues.Constants -9
+scoreboard players set $-1 Statues.Constants -1
+scoreboard players set $0 Statues.Constants 0
+scoreboard players set $1 Statues.Constants 1
+scoreboard players set $2 Statues.Constants 2
+scoreboard players set $9 Statues.Constants 9
+scoreboard players set $10 Statues.Constants 10
+scoreboard players set $20 Statues.Constants 20
+scoreboard players set $40 Statues.Constants 40
+scoreboard players set $45 Statues.Constants 45
+scoreboard players set $60 Statues.Constants 60
+scoreboard players set $90 Statues.Constants 90
+scoreboard players set $96 Statues.Constants 96
+scoreboard players set $100 Statues.Constants 100
+scoreboard players set $111 Statues.Constants 111
+scoreboard players set $1000 Statues.Constants 1000
+scoreboard players set $10000 Statues.Constants 10000
+scoreboard players set $100000 Statues.Constants 100000
 
 bossbar add statues:countdown "Starting in: 30s"
 bossbar set statues:countdown color yellow

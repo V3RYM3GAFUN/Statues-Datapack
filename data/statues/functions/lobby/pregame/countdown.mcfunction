@@ -1,6 +1,6 @@
 scoreboard players remove $Countdown.Ticks Statues.DynamicData 1
 scoreboard players operation $Countdown.Seconds Statues.TempData = $Countdown.Ticks Statues.DynamicData
-scoreboard players operation $Countdown.Seconds Statues.TempData /= $20 Statues.StaticData
+scoreboard players operation $Countdown.Seconds Statues.TempData /= $20 Statues.Constants
 scoreboard players operation $Countdown.Bossbar Statues.TempData = $Countdown.Seconds Statues.TempData
 scoreboard players remove $Countdown.Bossbar Statues.TempData 14
 execute store result storage statues:data remaining_seconds int 1 run scoreboard players get $Countdown.Bossbar Statues.TempData
@@ -42,9 +42,9 @@ execute if score $Countdown.Ticks Statues.DynamicData matches 100 run kill @e[ta
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 run scoreboard players set $Status Statues.DynamicData 3
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 run function statues:game_events/game_start
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.StaticData matches 0 run function statues:ingame/maps/facade/activate
-execute if score $Countdown.Ticks Statues.DynamicData matches 200 if score $Map Statues.StaticData matches 0 run forceload add 54 257 -82 394
+execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 0 run function statues:ingame/maps/facade/activate
+execute if score $Countdown.Ticks Statues.DynamicData matches 200 if score $Map Statues.DynamicData matches 0 run forceload add 54 257 -82 394
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.StaticData matches 1 run function statues:ingame/maps/lockdown/activate
+execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 1 run function statues:ingame/maps/lockdown/activate
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.StaticData matches 2 run function statues:ingame/maps/origins/activate
+execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 2 run function statues:ingame/maps/origins/activate
