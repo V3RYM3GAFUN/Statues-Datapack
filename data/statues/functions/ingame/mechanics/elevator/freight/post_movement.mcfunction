@@ -9,6 +9,6 @@ $execute at @s[y_rotation=270] align xyz positioned ~-2 ~$(elevator_location_to)
 
 effect clear @a[scores={Statues.ElevatorPlayerStates=3..}] minecraft:levitation
 
-$execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_status,sort=nearest,limit=2,distance=..10] run data modify entity @s item.id set value "minecraft:green_concrete"
+$execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_status,sort=nearest,limit=2,distance=..5] run data modify entity @s item.id set value "minecraft:green_concrete"
 
 scoreboard players set @s Statues.ElevatorState 5

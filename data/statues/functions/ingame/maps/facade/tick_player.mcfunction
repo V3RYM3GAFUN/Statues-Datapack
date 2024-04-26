@@ -22,4 +22,4 @@ execute if score $Objective Statues.DynamicData matches 7 if data storage statue
 execute if score $Objective Statues.DynamicData matches 9 if data storage statues:map_tick {inventory:[{tag:{facade_book_item:1b}}]} run function statues:ingame/maps/facade/objectives/bookpickup
 
 #> Detect when a player brought the book back to the van
-execute if score $Objective Statues.DynamicData matches 10.. as @e[tag=objective_facade_book] at @s if entity @s[distance=..2.5] if data storage statues:map_tick {inventory:[{tag:{facade_book_item:1b}}]} run scoreboard players set $Objective Statues.DynamicData 11
+execute if score $Objective Statues.DynamicData matches 10.. at @e[tag=objective_facade_book] if entity @s[distance=..2.5] if data storage statues:map_tick {inventory:[{tag:{facade_book_item:1b}}]} run scoreboard players set $Objective Statues.DynamicData 11

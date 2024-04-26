@@ -38,5 +38,5 @@ execute store result entity @s interpolation_duration int 1 run scoreboard playe
 execute store result storage statues:data elevator_to int 1 run scoreboard players get @s Statues.ElevatorTo
 function statues:ingame/mechanics/elevator/freight/apply_display_translation with storage statues:data
 
-$execute positioned ~ ~$(elevator_location) ~ as @e[tag=elevator_status,sort=nearest,limit=2,distance=..10] run data modify entity @s item.id set value "minecraft:red_concrete"
-$execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_status,sort=nearest,limit=2,distance=..10] run data modify entity @s item.id set value "minecraft:yellow_concrete"
+$execute positioned ~ ~$(elevator_location) ~ as @e[tag=elevator_status,sort=nearest,limit=2,distance=..5] run data modify entity @s item.id set value "minecraft:red_concrete"
+$execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_status,sort=nearest,limit=2,distance=..5] run data modify entity @s item.id set value "minecraft:yellow_concrete"
