@@ -50,7 +50,7 @@ execute as @e[type=interaction,tag=objective_reset] run data merge entity @s {he
 execute at @e[tag=objective_reset] run function statues:utils/button_warped_to_crimson
 
 #> Resets every objective button 
-execute at @e[tag=objective_reset,tag=elevator_button_facade_genpower] run function statues:utils/button_crimson_to_blackstone
+execute at @e[tag=objective_reset,tag=elevator_button_facade_power] run function statues:utils/button_crimson_to_blackstone
 
 #> Resets elevators
 execute as @e[tag=objective_reset,tag=elevator_room] run scoreboard players operation @s Statues.ElevatorTo = @s Statues.DefaultElevatorY

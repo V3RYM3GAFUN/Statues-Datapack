@@ -7,5 +7,5 @@ $execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_door,sort=ne
 $execute positioned ~ ~$(elevator_location_to) ~ as @e[tag=elevator_status,sort=nearest,limit=2,distance=..10] run data modify entity @s item.id set value "minecraft:lime_concrete"
 
 scoreboard players set @s Statues.ElevatorRemaining 0
-scoreboard players set @s Statues.ElevatorState 0
+scoreboard players set @s Statues.ElevatorState 6
 scoreboard players operation @s Statues.ElevatorFrom = @s Statues.ElevatorTo

@@ -19,6 +19,7 @@ scoreboard players operation $ElevatorEffectTime Statues.TempData /= $20 Statues
 
 execute if score @s Statues.ElevatorFrom < @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 3
 execute if score @s Statues.ElevatorFrom > @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 4
+execute if score @s Statues.ElevatorFrom = @s Statues.ElevatorTo run scoreboard players set @s Statues.ElevatorState 5
 
 $execute if score @s Statues.ElevatorState matches 4 run function statues:ingame/mechanics/elevator/freight/apply_collision_movement_static {elevator_location: $(elevator_location), elevator_collision_y: "~-0.18"}
 

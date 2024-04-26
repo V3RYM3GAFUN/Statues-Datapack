@@ -11,6 +11,7 @@ title @a subtitle {"text": "Main power restored!","color": "aqua"}
 #> Detect objective buttons being triggered
 
 execute at @e[tag=objective_facade_power] run function statues:utils/button_crimson_to_warped
+execute at @e[tag=elevator_button_facade_power] run function statues:utils/button_blackstone_to_crimson
 
 function statues:ingame/mechanics/power_doors/open
 function statues:ingame/mechanics/lights/lights_on

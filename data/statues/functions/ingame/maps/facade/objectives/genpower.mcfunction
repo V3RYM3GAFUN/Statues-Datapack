@@ -18,7 +18,6 @@ setblock -24 114 307 minecraft:redstone_block
 setblock 26 114 307 minecraft:redstone_block
 
 execute at @e[tag=objective_facade_genpower] run function statues:utils/button_crimson_to_warped
-execute at @e[tag=elevator_button_facade_genpower] run function statues:utils/button_blackstone_to_crimson
 
 scoreboard players set $CompassSelector Statues.DynamicData 3
 scoreboard players set $Objective Statues.DynamicData 3
