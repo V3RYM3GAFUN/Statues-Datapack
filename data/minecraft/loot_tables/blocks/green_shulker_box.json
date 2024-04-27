@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tipped_arrow",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionColor:209,display:{Name:'[{\"text\":\"Strong Anti-anomaly Ammo\",\"italic\":false,\"color\":\"dark_blue\"}]'},custom_potion_effects:[{id:\"minecraft:blindness\",duration:100,show_particles:0b},{id:\"minecraft:slowness\",duration:140,amplifier:4,show_particles:0b}]}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 5
+                },
+                "add": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:arrow",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Unbreakable:1b,\"display\":{Name:'[{\"text\":\"Anti anomaly gun\",\"italic\":false}]'},CustomModelData:6,Enchantments:[{id:\"quick_charge\",lvl:5}]}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 15
+                },
+                "add": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
