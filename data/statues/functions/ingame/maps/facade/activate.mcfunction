@@ -42,7 +42,7 @@ execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace bloc
 execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armory keycard","italic": false}'},facade_armory_item:1b,objective_item:1b,item_objective_id:11}
 execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armory keycard","italic": false}'},facade_armory_item:1b,objective_item:1b,item_objective_id:12}
 
-execute at @e[tag=armory_ammo_box] run loot insert ~ ~ ~ loot minecraft:blocks/green_shulker_box
+execute at @e[tag=armory_ammo_box] run loot insert ~ ~ ~ loot statues:blocks/ammo_crate
 
 scoreboard players set $CompassSelector Statues.DynamicData 0
 
