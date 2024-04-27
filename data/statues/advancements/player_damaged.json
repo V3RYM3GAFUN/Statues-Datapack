@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "example": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "taken": {
+              "min": 0.01
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "statues:ingame/mechanics/misc_on_damage"
+    }
+  }
