@@ -10,4 +10,4 @@ team join Spectator @a[team=Survivor,distance=..2.5]
 
 scoreboard players set $CompassSelector Statues.DynamicData 10
 
-particle minecraft:totem_of_undying ~ ~1 ~ 0.1 0.1 0.1 0 10 normal
+execute as @s[type=marker] run particle minecraft:totem_of_undying ~ ~1 ~ 1 0.1 0.5 0 10 normal
