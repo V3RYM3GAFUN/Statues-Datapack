@@ -35,12 +35,12 @@ execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace bloc
 #facade_book
 execute at @e[tag=facade_book,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with book{CustomModelData:1,display:{Name:'{"text":"CONFIDENTIAL","italic": false}'},facade_book_item:1b,objective_item:1b,item_objective_id:7}
 
-#facade_armoury
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armoury_item:1b,item_objective_id:1}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armoury_item:1b,item_objective_id:2}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armoury_item:1b,item_objective_id:3}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armoury_item:1b,item_objective_id:4}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armoury_item:1b,item_objective_id:5}
+#facade_armory
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armory_item:1b,item_objective_id:1}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armory_item:1b,item_objective_id:2}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armory_item:1b,item_objective_id:3}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armory_item:1b,item_objective_id:4}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armoury keycard","italic": false}'},facade_armory_item:1b,item_objective_id:5}
 
 scoreboard players set $CompassSelector Statues.DynamicData 0
 

@@ -42,3 +42,6 @@ setblock -24 114 357 minecraft:air
 # North
 setblock -24 114 307 minecraft:air
 setblock 26 114 307 minecraft:air
+
+# Armoury doors
+clone -40 59 344 -40 57 346 -40 63 344
