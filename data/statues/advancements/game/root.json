@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:cake"
+      },
+      "title": "You joined statues!",
+      "description": "Where everything begins.",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  
