@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_blood_trail_flags run return fail
+
 execute if score @s Statues.Survivors matches 16..19 run scoreboard players remove @s Statues.SurvivorTrail 1
 
 execute if score @s Statues.Survivors matches 7..15 run scoreboard players remove @s Statues.SurvivorTrail 2
