@@ -6,3 +6,5 @@ particle dust 1 0 0 1 ~ ~ ~ 0.1 0 0.1 0 5 normal @a[team=Dev,distance=..10]
 
 execute if score @s Statues.SurvivorTrail matches 0.. run scoreboard players remove @s Statues.SurvivorTrail 1
 execute if score @s Statues.SurvivorTrail matches 0 run kill @s
+
+execute align y if block ~ ~-1 ~ air run tp @s ~ ~-1 ~ 
