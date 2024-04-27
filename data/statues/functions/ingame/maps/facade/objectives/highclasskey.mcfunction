@@ -18,4 +18,4 @@ weather thunder
 scoreboard players add $Timer.Seconds Statues.DynamicData 300
 
 scoreboard players operation $ObjectiveKind Statues.GameEventData = $ObjectiveKind.Facade.UnlockHighClassOffices Statues.GameEventEnum
-function statues:game_events/complete_objective
+function #statues:game_events/complete_objective

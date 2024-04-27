@@ -18,4 +18,4 @@ item replace entity @s armor.feet with leather_boots{Trim:{pattern:snout,materia
 item replace entity @s weapon.offhand with stick{flashlight:1b,CustomModelData:7,display:{Name:'{"text":"Flashlight","italic": false}'}}
 
 execute if entity @s[tag=!class_tutorial] run scoreboard players operation $ClassKind Statues.GameEventData = $ClassKind.Brawler Statues.GameEventEnum
-execute if entity @s[tag=!class_tutorial] run function statues:game_events/pick_class_survivor
+execute if entity @s[tag=!class_tutorial] run function #statues:game_events/pick_class_survivor
