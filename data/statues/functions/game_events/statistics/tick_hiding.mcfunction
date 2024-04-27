@@ -1,0 +1,1 @@
+scoreboard players add $TicksHiding Statues.GameStatistics 1

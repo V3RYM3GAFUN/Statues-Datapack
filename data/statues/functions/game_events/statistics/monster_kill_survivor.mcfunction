@@ -1,0 +1,1 @@
+scoreboard players add $SurvivorsKilled Statues.GameStatistics 1

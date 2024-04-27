@@ -2,3 +2,4 @@
 
 #> Prevents players from having Absorption if they have no extra health from it
 effect clear @a[nbt={AbsorptionAmount:0f}] minecraft:absorption
+advancement revoke @s only statues:player_damaged
