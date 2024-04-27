@@ -12,6 +12,8 @@ effect give @s instant_health 1 100 true
 effect give @s saturation infinite 100 true
 
 function statues:reset_player_tags
+xp set @s 0 points
+xp set @s 0 levels
 
 tag @s[team=!Dev] remove has_compass_tracker
 

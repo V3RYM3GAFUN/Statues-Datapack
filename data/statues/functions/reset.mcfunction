@@ -21,6 +21,8 @@ bossbar set statues:gametimer visible false
 bossbar set statues:warptimer visible false
 
 execute as @a run function statues:reset_player_tags
+xp set @a 0 points
+xp set @a 0 levels
 
 scoreboard players set $Timer.Ticks Statues.DynamicData 0
 scoreboard players set $CompassSelector Statues.DynamicData 0

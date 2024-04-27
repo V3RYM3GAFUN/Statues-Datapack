@@ -17,6 +17,7 @@ execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players ma
 
 #> Internal timer
 execute if score @s Statues.Players matches 1..3200 run scoreboard players remove @s Statues.Players 1
+function statues:ingame/mechanics/xp_bar/from_cooldown { max: 3200 }
 
 #> Removes rapid fire shotgun after 30 seconds, then 60 seconds cooldown
 execute if score @s Statues.Players matches 1..3000 run clear @s crossbow{display:{Name:'[{"text":"Rapid fire Shotgun","italic":false}]'}}

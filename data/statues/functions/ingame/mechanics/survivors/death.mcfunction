@@ -18,6 +18,8 @@ execute at @s run loot spawn ~ ~ ~ mine 0 -60 0 minecraft:air{drop_contents:1b}
 data modify block 0 -60 0 Items set value []
 
 function statues:reset_player_tags
+xp set @s 0 points
+xp set @s 0 levels
 
 # Clear player's inventory now that they've died
 clear @s

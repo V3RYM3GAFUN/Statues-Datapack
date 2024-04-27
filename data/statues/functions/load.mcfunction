@@ -52,6 +52,7 @@ scoreboard players set $100 Statues.Constants 100
 scoreboard players set $111 Statues.Constants 111
 scoreboard players set $625 Statues.Constants 625
 scoreboard players set $1000 Statues.Constants 1000
+scoreboard players set $8841 Statues.Constants 8841
 scoreboard players set $10000 Statues.Constants 10000
 scoreboard players set $100000 Statues.Constants 100000
 

@@ -23,6 +23,7 @@ execute if score @s Statues.Players matches 2801..3000 run item replace entity @
 
 #> Internal timer
 execute if score @s Statues.Players matches 1..3000 run scoreboard players remove @s Statues.Players 1
+function statues:ingame/mechanics/xp_bar/from_cooldown { max: 3000 }
 
 #> Gives back armour after invisibility runs out, then 30 seconds cooldown
 execute if score @s Statues.Players matches 2800 run item replace entity @s armor.chest with leather_chestplate{display:{color:8991416,Name:'["",{"text":"Cloaker Outfit","italic":false,"color":"dark_purple","bold":true}]'},Unbreakable:1,HideFlags:68}

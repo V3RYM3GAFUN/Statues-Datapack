@@ -19,6 +19,7 @@ execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players ma
 
 #> Internal timer
 execute if score @s Statues.Players matches 1..3800 run scoreboard players remove @s Statues.Players 1
+function statues:ingame/mechanics/xp_bar/from_cooldown { max: 3800 }
 
 #> Removes arrows after 30 seconds, then 60 seconds cooldown
 execute if score @s Statues.Players matches ..0 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1b,CustomModelData:4,display:{Name:'[{"text":"Infinite ammo","italic":false,"color":"aqua"}]',Lore:['[{"text":"Cooldown: 3m","italic":false}]']},Enchantments:[{}],HideFlags:4}
