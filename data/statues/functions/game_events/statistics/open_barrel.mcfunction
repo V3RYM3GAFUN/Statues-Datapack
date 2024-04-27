@@ -1,0 +1,1 @@
+scoreboard players add $BarrelsOpened Statues.GameStatistics 1

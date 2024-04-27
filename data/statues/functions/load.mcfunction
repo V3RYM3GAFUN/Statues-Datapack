@@ -31,6 +31,7 @@ scoreboard objectives add Statues.Flashlight minecraft.used:spyglass
 scoreboard objectives add Statues.Barrels minecraft.custom:open_barrel
 scoreboard objectives add Statues.ActionTrigger trigger
 scoreboard objectives add Statues.Drop minecraft.custom:minecraft.drop
+scoreboard objectives add Statues.GameStatistics dummy
 
 function statues:game_events/init
 

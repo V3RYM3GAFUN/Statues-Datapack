@@ -7,7 +7,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "nbt": "{tutorial_key:1b}"
+            "nbt": "{is_crowbar:1b}"
           }
         }
       }
@@ -18,7 +18,7 @@
       "predicate": {
         "equipment": {
           "offhand": {
-            "nbt": "{tutorial_key:1b}"
+            "nbt": "{is_crowbar:1b}"
           }
         }
       }

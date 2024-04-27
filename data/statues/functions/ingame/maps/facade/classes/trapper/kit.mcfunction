@@ -6,7 +6,7 @@ item replace entity @s hotbar.0 with crossbow{Unbreakable:1b,"display":{Name:'[{
 
 item replace entity @s hotbar.1 with tipped_arrow{CustomPotionColor:209,display:{Name:'[{"text":"Strong Anti-anomaly Ammo","italic":false,"color":"dark_blue"}]'},custom_potion_effects:[{id:"minecraft:blindness",duration:100,show_particles:0b},{id:"minecraft:slowness",duration:140,amplifier:4,show_particles:0b}]} 16
 
-item replace entity @s hotbar.2 with stick{display:{Name:'{"text":"Crowbar","italic":false}',Lore:['{"text":"Used to open barrels.","italic":false,"color":"aqua"}']},CustomModelData:10}
+item replace entity @s hotbar.2 with stick{display:{Name:'{"text":"Crowbar","italic":false}',Lore:['{"text":"Used to open barrels.","italic":false,"color":"aqua"}']},CustomModelData:10,is_crowbar:1b}
 
 item replace entity @s hotbar.3 with lingering_potion{CustomPotionColor:6184542,display:{Name:'[{"text":"Smoke grenade","italic":false,"color":"gray"}]'},custom_potion_effects:[{id:"blindness",duration:60,show_particles:0b,show_icon:0b},{id:"nausea",duration:160,show_particles:0b,show_icon:0b},{id:"slowness",duration:120,amplifier:3b,show_particles:0b,show_icon:0b}]}
 item replace entity @s inventory.0 with lingering_potion{CustomPotionColor:6184542,display:{Name:'[{"text":"Smoke grenade","italic":false,"color":"gray"}]'},custom_potion_effects:[{id:"blindness",duration:60,show_particles:0b,show_icon:0b},{id:"nausea",duration:160,show_particles:0b,show_icon:0b},{id:"slowness",duration:120,amplifier:3b,show_particles:0b,show_icon:0b}]}
