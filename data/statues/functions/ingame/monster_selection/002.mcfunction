@@ -25,4 +25,4 @@ item replace entity @s weapon.offhand with iron_sword{CustomModelData:1,Unbreaka
 give @s iron_sword{CustomModelData:1,Unbreakable:1b,display:{Name:'[{"text":"Blade","italic":false,"color":"gold","bold":true}]'}}
 
 execute if entity @s[tag=!monster_tutorial] run scoreboard players operation $MonsterKind Statues.GameEventData = $MonsterKind.002 Statues.GameEventEnum
-execute if entity @s[tag=!monster_tutorial] run function statues:game_events/pick_monster
+execute if entity @s[tag=!monster_tutorial] run function #statues:game_events/pick_monster

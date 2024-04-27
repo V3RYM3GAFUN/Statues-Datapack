@@ -1,1 +1,0 @@
-function statues:game_events/broadcast_event {message:'[{"selector":"@s"},{"text":" escaped"}]'}

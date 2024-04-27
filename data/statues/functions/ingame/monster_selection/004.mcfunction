@@ -24,4 +24,4 @@ item replace entity @s weapon.mainhand with crossbow{CustomModelData:4,Unbreakab
 item replace entity @s hotbar.4 with tipped_arrow{CustomPotionColor:2325012,display:{Name:'[{"text":"Insects","italic":false,"color":"#006633","bold":true}]'},custom_potion_effects:[{id:"minecraft:poison",duration:60,amplifier:1,show_particles:0b,show_icon:0b},{id:"minecraft:instant_health",duration:1,amplifier:1,show_particles:0b,show_icon:0b}]} 1
 
 execute if entity @s[tag=!monster_tutorial] run scoreboard players operation $MonsterKind Statues.GameEventData = $MonsterKind.004 Statues.GameEventEnum
-execute if entity @s[tag=!monster_tutorial] run function statues:game_events/pick_monster
+execute if entity @s[tag=!monster_tutorial] run function #statues:game_events/pick_monster

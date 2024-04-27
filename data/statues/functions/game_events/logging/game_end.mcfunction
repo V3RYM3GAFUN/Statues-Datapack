@@ -1,0 +1,6 @@
+execute if score $GameEndCause.NoTime Statues.GameEventEnum = $EndCause Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"text":"Game ended (Time ran out)"}]'}
+execute if score $GameEndCause.SurvivorsEscaped Statues.GameEventEnum = $EndCause Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"text":"Game ended (Survivors escaped)"}]'}
+execute if score $GameEndCause.NoMonsters Statues.GameEventEnum = $EndCause Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"text":"Game ended (No monsters left)"}]'}
+execute if score $GameEndCause.NoSurvivors Statues.GameEventEnum = $EndCause Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"text":"Game ended (Survivors died)"}]'}
+execute if score $GameEndCause.GameReset Statues.GameEventEnum = $EndCause Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"text":"Game ended (Game reset)"}]'}
+execute unless score $GameEndCause._Min Statues.GameEventEnum <= $EndCause Statues.GameEventData unless score $GameEndCause._Max Statues.GameEventEnum >= $EndCause Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"text":"Game ended (Unknown cause)"}]'}

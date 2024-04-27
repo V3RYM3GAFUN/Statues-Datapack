@@ -1,7 +1,7 @@
 clear @a[team=!Dev]
 effect clear @a[team=!Dev]
 tag @a remove queued
-execute if score $Status Statues.DynamicData matches 3 run function statues:game_events/game_end
+execute if score $Status Statues.DynamicData matches 3 run function #statues:game_events/game_end
 execute if score $Status Statues.DynamicData matches 1.. as @a[team=!Lobby,team=!Dev] run function statues:warps/newlobby
 gamemode adventure @a[team=!Dev]
 spawnpoint @a 0 0 0 0
