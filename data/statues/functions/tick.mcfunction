@@ -40,13 +40,7 @@ execute if score $Status Statues.DynamicData matches 3 if score dev_allow_debug_
 execute if score $Status Statues.DynamicData matches 3 if score dev_allow_debug_info Statues.FeatureFlags matches 1 run gamerule reducedDebugInfo false
 execute unless score $Status Statues.DynamicData matches 3 run gamerule reducedDebugInfo false
 
-execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/monsterdistance
 execute as @a[team=Survivor,scores={Statues.Dead=1..}] at @s run function statues:ingame/mechanics/survivors/death
-execute as @a[team=Survivor] at @s if entity @e[tag=locker,distance=..2] run function statues:ingame/mechanics/survivors/locker
-
-execute if score flashlight Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/flashlight/tick
-
-execute as @a[team=Monster] run function statues:ingame/mechanics/survivors/survivordistance
 
 execute as @a[scores={Statues.Monsters=4}] run item replace entity @s hotbar.4 with tipped_arrow{CustomPotionColor:2325012,display:{Name:'[{"text":"Insects","italic":false,"color":"#006633","bold":true}]'},custom_potion_effects:[{id:"minecraft:poison",duration:60,amplifier:1,show_particles:0b,show_icon:0b},{id:"minecraft:instant_health",duration:1,amplifier:0,show_particles:0b,show_icon:0b}]} 1
 
@@ -112,3 +106,5 @@ scoreboard players set $rundoors Statues.TempData 0
 execute if score doors_1x2 Statues.FeatureFlags matches 1 as @e[tag=1x2door,type=minecraft:marker] at @s if entity @a[limit=1,gamemode=!spectator,distance=..5] run scoreboard players set $rundoors Statues.TempData 1
 execute if score $rundoors Statues.TempData matches 1 as @e[tag=1x2door] at @s run function statues:ingame/mechanics/doors_1x2/tick
 scoreboard players set $rundoors Statues.TempData 0
+
+execute as @a[team=Monster] if score @s Statues.Barrels matches 1.. run function statues:ingame/mechanics/monsters/monster_anti_barrel

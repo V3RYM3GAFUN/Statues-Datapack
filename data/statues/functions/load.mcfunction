@@ -13,6 +13,7 @@ scoreboard objectives add Statues.Constants dummy
 scoreboard objectives add Statues.DynamicData dummy
 scoreboard objectives add Statues.TempData dummy
 scoreboard objectives add Statues.MapVote dummy
+scoreboard objectives add Statues.SurvivorTrail dummy
 scoreboard objectives modify Statues.MapVote displayname "Map Vote"
 scoreboard players display name facade Statues.MapVote "Façade"
 scoreboard players display name lockdown Statues.MapVote "Lockdown"
