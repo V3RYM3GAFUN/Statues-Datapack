@@ -2,6 +2,7 @@
 execute if entity @s[scores={Statues.ActionTrigger=195500}] run function statues:lobby/mapvoting/vote_facade
 execute if entity @s[scores={Statues.ActionTrigger=195501}] run function statues:lobby/mapvoting/vote_lockdown
 execute if entity @s[scores={Statues.ActionTrigger=195502}] run function statues:lobby/mapvoting/vote_origins
+execute if entity @s[scores={Statues.ActionTrigger=195503}] unless entity @s[team=!Dev,team=!Lobby] run function statues:warps/newlobby
 
 #> Tutorial triggers (scores 195600-159699)
 execute if entity @s[scores={Statues.ActionTrigger=195600}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:lobby/tutorial-info/hiding
