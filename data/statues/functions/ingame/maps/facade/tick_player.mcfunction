@@ -23,3 +23,5 @@ execute if score $Objective Statues.DynamicData matches 9 if entity @s[tag=found
 
 #> Detect when a player brought the book back to the van
 execute if score $Objective Statues.DynamicData matches 10.. at @e[tag=objective_facade_book] if entity @s[distance=..2.5] if entity @s[tag=found_key_7] run scoreboard players set $Objective Statues.DynamicData 11
+
+#> Armoury keycard pickup detection
