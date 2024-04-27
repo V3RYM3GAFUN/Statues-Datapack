@@ -1,1 +1,0 @@
-execute at @e[tag=facade_genkey,type=minecraft:marker] unless block ~ ~ ~ minecraft:barrel{Items:[]} run tp @s ~ ~ ~
