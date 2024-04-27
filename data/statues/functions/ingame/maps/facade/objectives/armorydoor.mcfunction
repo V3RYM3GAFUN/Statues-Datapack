@@ -1,4 +1,5 @@
 execute as @e[type=interaction,tag=facade_armory] run data merge entity @s {height:0}
+execute as @e[type=interaction,tag=facade_armory] run tag @s add opened
 
 execute as @e[type=text_display,tag=facade_armory] run data modify entity @s text set value "{'text':''}"
 execute as @e[type=text_display,tag=facade_armory] run data modify entity @s background set value 0

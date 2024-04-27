@@ -44,4 +44,6 @@ setblock -24 114 307 minecraft:air
 setblock 26 114 307 minecraft:air
 
 # Armory doors
+execute as @e[tag=facade_armory,type=text_display] run data modify entity @s text set value "{'text':'Amoury keycard','color':'dark_red'}"
+execute as @e[tag=facade_armory,type=interaction] run tag @s remove opened
 clone -40 59 344 -40 57 346 -40 63 344

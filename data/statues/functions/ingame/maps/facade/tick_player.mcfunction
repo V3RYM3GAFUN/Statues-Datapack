@@ -1,7 +1,5 @@
 data modify storage statues:map_tick inventory set from entity @s Inventory
 
-tag @s[tag=!found_key_8,tag=!found_key_9,tag=!found_key_10,tag=!found_key_11,tag=!found_key_12] add not_found_key_armory_pre
-
 execute if score $Objective Statues.DynamicData matches 0.. if entity @s[tag=!found_key_0] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{tag:{item_objective_id:0}}].tag
 execute if score $Objective Statues.DynamicData matches 3.. if entity @s[tag=!found_key_1] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{tag:{item_objective_id:1}}].tag
 execute if score $Objective Statues.DynamicData matches 3.. if entity @s[tag=!found_key_2] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{tag:{item_objective_id:2}}].tag
