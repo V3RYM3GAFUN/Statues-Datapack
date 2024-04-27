@@ -4,5 +4,6 @@ execute if score $KeyId Statues.GameEventData matches 0 run scoreboard players o
 execute if score $KeyId Statues.GameEventData matches 1..3 run scoreboard players operation $KeyKind Statues.GameEventData = $KeyKind.Lab Statues.GameEventEnum
 execute if score $KeyId Statues.GameEventData matches 4..6 run scoreboard players operation $KeyKind Statues.GameEventData = $KeyKind.HighClass Statues.GameEventEnum
 execute if score $KeyId Statues.GameEventData matches 7 run scoreboard players operation $KeyKind Statues.GameEventData = $KeyKind.Book Statues.GameEventEnum
+execute if score $KeyId Statues.GameEventData matches 8..12 run scoreboard players operation $KeyKind Statues.GameEventData = $KeyKind.Armory Statues.GameEventEnum
 $tag @s add found_key_$(item_objective_id)
 function #statues:game_events/find_key

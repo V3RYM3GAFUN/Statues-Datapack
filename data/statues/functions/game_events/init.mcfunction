@@ -16,7 +16,8 @@ scoreboard players operation $KeyKind._Min Statues.GameEventEnum = $KeyKind.Gene
 scoreboard players set $KeyKind.Lab Statues.GameEventEnum 1
 scoreboard players set $KeyKind.HighClass Statues.GameEventEnum 2
 scoreboard players set $KeyKind.Book Statues.GameEventEnum 3
-scoreboard players operation $KeyKind._Max Statues.GameEventEnum = $KeyKind.Book Statues.GameEventEnum
+scoreboard players set $KeyKind.Armory Statues.GameEventEnum 4
+scoreboard players operation $KeyKind._Max Statues.GameEventEnum = $KeyKind.Armory Statues.GameEventEnum
 
 
 scoreboard players set $ClassKind.Brawler Statues.GameEventEnum 0
