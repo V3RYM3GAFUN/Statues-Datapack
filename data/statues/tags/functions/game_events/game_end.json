@@ -1,6 +1,7 @@
 {
     "values": [
         "statues:game_events/logging/game_end",
-        "statues:game_events/statistics/game_end"
+        "statues:game_events/statistics/game_end",
+        "statues:game_events/advancements/game_end"
     ]
 }

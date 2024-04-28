@@ -2,4 +2,5 @@
 
 #> Prevents players from having Absorption if they have no extra health from it
 effect clear @a[nbt={AbsorptionAmount:0f}] minecraft:absorption
+scoreboard players remove @s[team=Survivor] Statues.Advancements.IngameNoDamage 1
 advancement revoke @s only statues:player_damaged

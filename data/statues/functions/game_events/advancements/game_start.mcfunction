@@ -1,0 +1,1 @@
+scoreboard players set @a[team=Survivor] Statues.Advancements.IngameNoDamage 0

@@ -3,7 +3,7 @@
       "icon": {
         "item": "minecraft:cake"
       },
-      "title": "You joined statues!",
+      "title": "You joined Statues!",
       "description": "Where everything begins.",
       "background": "minecraft:textures/block/deepslate.png",
       "frame": "task",

@@ -30,7 +30,7 @@ scoreboard players set $QueuedCount Statues.DynamicData 0
 scoreboard players set $RunningGameTicks Statues.DynamicData 0
 scoreboard players reset $MonsterSpawnDelay Statues.DynamicData
 
-scoreboard players set * Statues.Dead 0
+scoreboard players reset * Statues.Dead
 scoreboard players reset * Statues.Monsters
 scoreboard players reset * Statues.Survivors
 scoreboard players reset * Statues.Players
@@ -40,6 +40,7 @@ scoreboard players reset * Statues.TempData
 scoreboard players reset * Statues.Barrels
 scoreboard players reset * Statues.SurvivorTrail
 scoreboard players reset * Statues.GameStatistics
+scoreboard players reset * Statues.Advancements.IngameNoDamage
 
 #> Turn off power
 function statues:ingame/mechanics/lights/lights_off
