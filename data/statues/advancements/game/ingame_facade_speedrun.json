@@ -5,7 +5,7 @@
       },
       "title": "Speedrun",
       "description": "Complete Façade in under 5 minutes.",
-      "frame": "task",
+      "frame": "challenge",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
