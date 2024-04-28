@@ -8,6 +8,8 @@ scoreboard players set $Countdown.Ticks Statues.DynamicData 0
 scoreboard players set $IsDevGame Statues.DynamicData 1
 scoreboard players set $Status Statues.DynamicData 3
 
+effect clear @a[tag=queued]
+
 execute unless score $QueuedCount Statues.DynamicData matches 7.. run function statues:lobby/pregame/1monster
 execute if score $QueuedCount Statues.DynamicData matches 7.. run function statues:lobby/pregame/2monsters
 
