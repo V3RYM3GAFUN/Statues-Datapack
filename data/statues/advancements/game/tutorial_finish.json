@@ -1,16 +1,17 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:cake"
+        "item": "minecraft:iron_ingot",
+        "nbt": "{CustomModelData:1}"
       },
-      "title": "You Joined Statues!",
-      "description": "Where everything begins.",
-      "background": "minecraft:textures/block/deepslate.png",
+      "title": "Got The Hang Of It",
+      "description": "Finish the tutorial.",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": false
     },
+    "parent": "statues:game/root",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"

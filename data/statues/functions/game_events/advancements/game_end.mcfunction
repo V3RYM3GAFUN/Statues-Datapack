@@ -1,1 +1,1 @@
-execute as @a[scores={Statues.Advancements.IngameNoDamage=0}] unless entity @s[team=!Survivor,team=!Spectator] run advancement grant @s only statues:game/ingame_no_damage
+execute if score $GameEndCause.SurvivorsEscaped Statues.GameEventEnum = $EndCause Statues.GameEventData as @a[scores={Statues.Advancements.IngameNoDamage=0}] unless entity @s[team=!Survivor,team=!Spectator] run advancement grant @s only statues:game/ingame_no_damage

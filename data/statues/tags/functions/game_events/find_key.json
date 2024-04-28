@@ -1,5 +1,6 @@
 {
     "values": [
-        "statues:game_events/logging/find_key"
+        "statues:game_events/logging/find_key",
+        "statues:game_events/advancements/find_key"
     ]
 }
