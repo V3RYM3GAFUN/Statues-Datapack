@@ -17,7 +17,7 @@ execute if score $IntegrityCheck Statues.TempData matches 1 run tag @s add faile
 
 scoreboard players set $IntegrityCheck Statues.TempData 0
 
-execute store result score $IntegrityCheck Statues.TempData align xyz if entity @e[dx=0,dy=0,dz=0,tag=facade_keyloc]
+execute store result score $IntegrityCheck Statues.TempData align xyz positioned ~0.5 ~0.5 ~0.5 if entity @e[distance=..0.9,tag=facade_keyloc]
 
 data modify storage statues:data facade_integrity.x set from entity @s Pos[0]
 data modify storage statues:data facade_integrity.y set from entity @s Pos[1]

@@ -12,7 +12,21 @@ tellraw @a {"color":"red","text":"Tried to use ${v.name} specific feature when t
 return fail`)
 }
 
-fs.writeFileSync(path.resolve(baseDir, "print.mcfunction"), 
+for(const [k, v] of Object.entries(feature_flags)) {
+    fs.writeFileSync(path.resolve(baseDir, `set_${k.toLowerCase()}.mcfunction`), 
+`$scoreboard players set ${k} Statues.FeatureFlags $(value)
+function statues:feature_flags/tick_scoreboard
+${
+    !v.is_dev
+      ? !v.is_experimental
+          ? `tellraw @a [{"text":"Updated "},{"text":"${v.name} Feature"},{"text":" to "},{"score":{"name":"${k}","objective":"Statues.FeatureFlags"}}]`
+          : `tellraw @a [{"text":"Updated "},{"text":"[Experimental] ","color":"#9542f5"},{"text":"${v.name}","color":"white"},{"text":" to "},{"score":{"name":"${k}","objective":"Statues.FeatureFlags"}}]`
+      : `tellraw @a [{"text":"Updated "},{"text":"[Dev] ","color":"gold"},{"text":"${v.name}","color":"white"},{"text":" to "},{"score":{"name":"${k}","objective":"Statues.FeatureFlags"}}]`
+}
+`)
+}
+
+fs.writeFileSync(path.resolve(baseDir, "_print.mcfunction"), 
 `tellraw @s {"text":"---- Feature Flags ----","color":"gray"}
 ${Object.entries(feature_flags).map(([k, v]) => 
     !v.is_dev 
