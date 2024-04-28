@@ -1,2 +1,1 @@
-execute if score $ObjectiveKind.Facade._Min Statues.GameEventEnum <= $ObjectiveKind Statues.GameEventData if score $ObjectiveKind.Facade._Max Statues.GameEventEnum >= $ObjectiveKind Statues.GameEventData run scoreboard players operation $CompletedObjectives Statues.GameStatistics = $ObjectiveKind Statues.GameEventData
-execute if score $ObjectiveKind.Facade._Min Statues.GameEventEnum <= $ObjectiveKind Statues.GameEventData if score $ObjectiveKind.Facade._Max Statues.GameEventEnum >= $ObjectiveKind Statues.GameEventData run scoreboard players add $CompletedObjectives Statues.GameStatistics 1
+scoreboard players add $CompletedObjectives Statues.GameStatistics 1

@@ -97,6 +97,10 @@ execute if score power_doors Statues.FeatureFlags matches 0 run scoreboard playe
 execute unless score power_doors Statues.FeatureFlags matches ..0 run scoreboard players display numberformat power_doors Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name power_doors Statues.FeatureFlags {"text":"Power Doors Feature"}
 
+execute if score queue Statues.FeatureFlags matches 0 run scoreboard players display numberformat queue Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score queue Statues.FeatureFlags matches ..0 run scoreboard players display numberformat queue Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name queue Statues.FeatureFlags {"text":"Queue Feature"}
+
 execute if score sas Statues.FeatureFlags matches 0 run scoreboard players display numberformat sas Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score sas Statues.FeatureFlags matches ..0 run scoreboard players display numberformat sas Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name sas Statues.FeatureFlags {"text":"SAS Machines Feature"}

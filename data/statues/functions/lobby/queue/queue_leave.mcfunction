@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_queue_flags run return fail
+
 tag @s remove queued
 # Replace @e with @a after testing
 execute store result score $QueuedCount Statues.DynamicData if entity @e[tag=queued]

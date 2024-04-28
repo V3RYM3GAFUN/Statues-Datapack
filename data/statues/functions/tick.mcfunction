@@ -18,7 +18,7 @@ function statues:base_mechanics/triggers/check_trigger_handler
 scoreboard players enable @a Statues.ActionTrigger
 
 #> Queuing system
-execute if score $Status Statues.DynamicData matches ..1 run function statues:lobby/queuing/queuing_base
+execute if score queue Statues.FeatureFlags matches 1.. if score $Status Statues.DynamicData matches ..1 run function statues:lobby/queue/tick
 execute if score $Status Statues.DynamicData matches ..1 run function statues:lobby/lobbymusic
 
 execute if score class_preview Statues.FeatureFlags matches 1.. as @a[tag=class_tutorial] run function statues:lobby/class_preview/survivors/tick

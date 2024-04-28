@@ -59,6 +59,7 @@ dev_see_game_events
 | `lights`                      | Allows creating and modifying lights and all functions in `statues:ingame/mechanics/lights`                                        |
 | `map_tick`                    | Enables map ticking                                                                                                                |
 | `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:ingame/mechanics/power_doors`                          |
+| `queue`                       | Enables the queue system in the lobby                                                                                              |
 | `sas`                         | Enables SAS machines and all functions in `statues:ingame/mechanics/sas`                                                           |
 | `spectators_actionbar`        | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                            |
 | `survivors_heart_sidebar`     | Enables showing hearts in the survivors scoreboard, shows `<>hp` when disabled instead                                             |
