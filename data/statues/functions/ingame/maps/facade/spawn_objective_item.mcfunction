@@ -1,0 +1,2 @@
+$item replace block ~ ~ ~ container.13 with $(type){CustomModelData:$(model),display:{Name:'{"text":"$(name)","italic": false}'},$(item_kind):1b,objective_item:1b,item_objective_id:$(item_objective_id)}
+tag @s add key_spawned

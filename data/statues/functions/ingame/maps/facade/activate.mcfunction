@@ -20,27 +20,29 @@ scoreboard players set $Core.Ticks Statues.DynamicData 20
 #> List of tags for generating objective items:
 
 #facade_genkey
-execute at @e[tag=facade_genkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:1,display:{Name:'{"text":"Emergency Generator Key","italic": false}'},facade_genkey_item:1b,objective_item:1b,item_objective_id:0}
+execute at @e[tag=facade_genkey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 1, name: "Emergency Generator Key", item_kind: "facade_genkey_item", item_objective_id: 0 }
 
 #facade_labkey
-execute at @e[tag=facade_labkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:2,display:{Name:'{"text":"Lab access keycard","italic": false}'},facade_labkey_item:1b,objective_item:1b,item_objective_id:1}
-execute at @e[tag=facade_labkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:2,display:{Name:'{"text":"Lab access keycard","italic": false}'},facade_labkey_item:1b,objective_item:1b,item_objective_id:2}
-execute at @e[tag=facade_labkey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:2,display:{Name:'{"text":"Lab access keycard","italic": false}'},facade_labkey_item:1b,objective_item:1b,item_objective_id:3}
+execute at @e[tag=facade_labkey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 2, name: "Lab Access Keycard", item_kind: "facade_labkey_item", item_objective_id: 1 }
+execute at @e[tag=facade_labkey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 2, name: "Lab Access Keycard", item_kind: "facade_labkey_item", item_objective_id: 2 }
+execute at @e[tag=facade_labkey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 2, name: "Lab Access Keycard", item_kind: "facade_labkey_item", item_objective_id: 3 }
 
 #facade_highclasskey
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b,item_objective_id:4}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b,item_objective_id:5}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"High class keycard","italic": false}'},facade_highclass_item:1b,objective_item:1b,item_objective_id:6}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 4, name: "High Class Keycard", item_kind: "facade_highclass_item", item_objective_id: 4 }
+execute at @e[tag=facade_highclasskey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 4, name: "High Class Keycard", item_kind: "facade_highclass_item", item_objective_id: 5 }
+execute at @e[tag=facade_highclasskey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 4, name: "High Class Keycard", item_kind: "facade_highclass_item", item_objective_id: 6 }
 
 #facade_book
-execute at @e[tag=facade_book,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with book{CustomModelData:1,display:{Name:'{"text":"CONFIDENTIAL","italic": false}'},facade_book_item:1b,objective_item:1b,item_objective_id:7}
+execute at @e[tag=facade_book,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:book", model: 1, name: "CONFIDENTIAL", item_kind: "facade_book_item", item_objective_id: 7 }
 
 #facade_armory
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armory keycard","italic": false}'},facade_armory_item:1b,objective_item:1b,item_objective_id:8}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armory keycard","italic": false}'},facade_armory_item:1b,objective_item:1b,item_objective_id:9}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armory keycard","italic": false}'},facade_armory_item:1b,objective_item:1b,item_objective_id:10}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armory keycard","italic": false}'},facade_armory_item:1b,objective_item:1b,item_objective_id:11}
-execute at @e[tag=facade_highclasskey,sort=random,limit=1] run item replace block ~ ~ ~ container.13 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Armory keycard","italic": false}'},facade_armory_item:1b,objective_item:1b,item_objective_id:12}
+execute at @e[tag=facade_highclasskey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 8 }
+execute at @e[tag=facade_highclasskey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 9 }
+execute at @e[tag=facade_highclasskey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 10 }
+execute at @e[tag=facade_highclasskey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 11 }
+execute at @e[tag=facade_highclasskey,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 12 }
+
+tag @e[tag=key_spawned] remove key_spawned
 
 execute at @e[tag=armory_ammo_box] run loot insert ~ ~ ~ loot statues:blocks/ammo_crate
 
