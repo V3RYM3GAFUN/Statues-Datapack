@@ -9,6 +9,7 @@
     "doors_2x2": { "name": "Doors 2x2", "depends": [ "doors" ] },
     "doors_3x3": { "name": "Doors 3x3", "depends": [ "doors" ] },
     "elevator": { "name": "Elevator", "depends": [] },
+    "elevator_2x3x2": { "name": "Elevator 2x3x2", "depends": [ "elevator" ] },
     "elevator_3x3x3": { "name": "Elevator 3x3x3", "depends": [ "elevator" ] },
     "elevator_freight": { "name": "Elevator Freight", "depends": [ "elevator" ] },
     "flashlight": { "name": "Flashlight", "depends": [] },
