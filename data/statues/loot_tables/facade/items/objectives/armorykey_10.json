@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "statues:objective_items/templates/facade_labkey",
+          "name": "statues:facade/items/objectives/armorykey",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{item_objective_id:2}"
+              "tag": "{item_objective_id:10}"
             }
           ]
         }

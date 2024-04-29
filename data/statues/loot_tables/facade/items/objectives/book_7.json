@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "statues:objective_items/templates/facade_armorykey",
+          "name": "statues:facade/items/objectives/book",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{item_objective_id:8}"
+              "tag": "{item_objective_id:7}"
             }
           ]
         }
