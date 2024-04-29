@@ -19,17 +19,7 @@ scoreboard players set $Core.Ticks Statues.DynamicData 20
 
 #> List of tags for generating objective items:
 
-execute unless score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_genkey] add facade_genkey_pool
-execute unless score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_labkey] add facade_labkey_pool
-execute unless score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_highclasskey] add facade_highclasskey_pool
-execute unless score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_highclasskey] add facade_armorykey_pool
-execute unless score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_book] add facade_book_pool
-
-execute if score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_genkey_devonly] add facade_genkey_pool
-execute if score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_labkey_devonly] add facade_labkey_pool
-execute if score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_highclasskey_devonly] add facade_highclasskey_pool
-execute if score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_armorykey_devonly] add facade_armorykey_pool
-execute if score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_book_devonly] add facade_book_pool
+function statues:ingame/maps/facade/pool_locations_load
 
 execute at @e[tag=facade_genkey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
 execute at @e[tag=facade_labkey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
@@ -61,13 +51,9 @@ execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"sta
 execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_armorykey_12"}
 
 tag @e[tag=key_spawned] remove key_spawned
-tag @e[tag=facade_genkey_pool] remove facade_genkey_pool
-tag @e[tag=facade_labkey_pool] remove facade_labkey_pool
-tag @e[tag=facade_highclasskey_pool] remove facade_highclasskey_pool
-tag @e[tag=facade_armorykey_pool] remove facade_armorykey_pool
-tag @e[tag=facade_book_pool] remove facade_book_pool
+function statues:ingame/maps/facade/pool_locations_unload
 
-execute at @e[tag=armory_ammo_box] run loot insert ~ ~ ~ loot statues:blocks/ammo_crate
+execute at @e[tag=armory_ammo_box] run data merge block ~ ~ ~ {LootTable:"statues:blocks/ammo_crate"}
 
 scoreboard players set $CompassSelector Statues.DynamicData 0
 
