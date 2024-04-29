@@ -1,14 +1,14 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "name": "statues:blocks/garbage_loot"
-          }
-        ]
-      }
-    ]
-  }
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "statues:blocks/garbage_loot"
+        }
+      ]
+    }
+  ]
+}
   

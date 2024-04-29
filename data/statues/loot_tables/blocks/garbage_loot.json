@@ -1,31 +1,30 @@
 {
-    "pools": [
-      {
-        "rolls": 6,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:cobweb",
-            "weight": 5,
-            "conditions": [
-              {
-                "condition": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:paper",
-            "conditions": [
-              {
-                "condition": "minecraft:random_chance",
-                "chance": 0.3
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "pools": [
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobweb",
+          "weight": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.7
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
