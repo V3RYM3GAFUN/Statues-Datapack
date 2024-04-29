@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "statues:facade/items/objectives/labkey",
+          "name": "statues:items/facade/objectives/labkey",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{item_objective_id:3}"
+              "tag": "{item_objective_id:2}"
             }
           ]
         }

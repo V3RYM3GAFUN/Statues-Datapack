@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "statues:facade/items/objectives/armorykey",
+          "name": "statues:items/facade/objectives/genkey",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{item_objective_id:11}"
+              "tag": "{item_objective_id:0}"
             }
           ]
         }
