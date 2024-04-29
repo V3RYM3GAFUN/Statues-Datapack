@@ -1,0 +1,1 @@
+$item replace entity @s $(Slot) with filled_map{map:$(New)}

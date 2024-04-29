@@ -65,6 +65,12 @@ execute if score lights Statues.FeatureFlags matches 1 run function statues:inga
 execute if score floors Statues.FeatureFlags matches 1 run execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/floors/tick
 execute if score floors Statues.FeatureFlags matches 1 run execute as @a[tag=dev_always_show_floor_objective] at @s run function statues:ingame/mechanics/floors/tick
 
+# TODO: Dynamic Map may replace Floors
+# TODO: Add Feature Flag and Dev override tag
+
+#> Dynamic Map
+execute as @a[team=Survivor] at @s run function statues:ingame/mechanics/dynamic_map/tick_player
+
 #> Elevators
 execute if score elevator Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/elevator/tick
 

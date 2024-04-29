@@ -46,6 +46,7 @@ scoreboard players set $1 Statues.Constants 1
 scoreboard players set $2 Statues.Constants 2
 scoreboard players set $9 Statues.Constants 9
 scoreboard players set $10 Statues.Constants 10
+scoreboard players set $11 Statues.Constants 11
 scoreboard players set $20 Statues.Constants 20
 scoreboard players set $40 Statues.Constants 40
 scoreboard players set $45 Statues.Constants 45
