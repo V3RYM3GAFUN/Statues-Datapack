@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:1,display:{Name:'{\"text\":\"CONFIDENTIAL\",\"italic\": false}'},facade_book_item:1b,objective_item:1b,item_objective_id:7}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "statues:blocks/barrel_with_key"
+          }
+        ]
+      }
+    ]
+  }
+  

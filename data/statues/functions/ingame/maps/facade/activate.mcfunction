@@ -31,28 +31,34 @@ execute if score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_
 execute if score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_armorykey_devonly] add facade_armorykey_pool
 execute if score $IsDevGame Statues.DynamicData matches 1 run tag @e[tag=facade_book_devonly] add facade_book_pool
 
+execute at @e[tag=facade_genkey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
+execute at @e[tag=facade_labkey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
+execute at @e[tag=facade_highclasskey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
+execute at @e[tag=facade_armorykey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
+execute at @e[tag=facade_book_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
+
 #facade_genkey
-execute at @e[tag=facade_genkey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 1, name: "Emergency Generator Key", item_kind: "facade_genkey_item", item_objective_id: 0 }
+execute at @e[tag=facade_genkey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_genkey_0"}
 
 #facade_labkey
-execute at @e[tag=facade_labkey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 2, name: "Lab Access Keycard", item_kind: "facade_labkey_item", item_objective_id: 1 }
-execute at @e[tag=facade_labkey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 2, name: "Lab Access Keycard", item_kind: "facade_labkey_item", item_objective_id: 2 }
-execute at @e[tag=facade_labkey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 2, name: "Lab Access Keycard", item_kind: "facade_labkey_item", item_objective_id: 3 }
+execute at @e[tag=facade_labkey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_labkey_1"}
+execute at @e[tag=facade_labkey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_labkey_2"}
+execute at @e[tag=facade_labkey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_labkey_3"}
 
 #facade_highclasskey
-execute at @e[tag=facade_highclasskey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 4, name: "High Class Keycard", item_kind: "facade_highclass_item", item_objective_id: 4 }
-execute at @e[tag=facade_highclasskey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 4, name: "High Class Keycard", item_kind: "facade_highclass_item", item_objective_id: 5 }
-execute at @e[tag=facade_highclasskey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 4, name: "High Class Keycard", item_kind: "facade_highclass_item", item_objective_id: 6 }
+execute at @e[tag=facade_highclasskey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_highclasskey_4"}
+execute at @e[tag=facade_highclasskey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_highclasskey_5"}
+execute at @e[tag=facade_highclasskey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_highclasskey_6"}
 
 #facade_book
-execute at @e[tag=facade_book_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:book", model: 1, name: "CONFIDENTIAL", item_kind: "facade_book_item", item_objective_id: 7 }
+execute at @e[tag=facade_book_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_book_7"}
 
 #facade_armory
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 8 }
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 9 }
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 10 }
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 11 }
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,tag=!key_spawned] run function statues:ingame/maps/facade/spawn_objective_item { type: "minecraft:iron_ingot", model: 3, name: "Armory Keycard", item_kind: "facade_armory_item", item_objective_id: 12 }
+execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_armorykey_8"}
+execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_armorykey_9"}
+execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_armorykey_10"}
+execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_armorykey_11"}
+execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:objective_items/facade_armorykey_12"}
 
 tag @e[tag=key_spawned] remove key_spawned
 tag @e[tag=facade_genkey_pool] remove facade_genkey_pool
