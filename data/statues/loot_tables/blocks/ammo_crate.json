@@ -13,8 +13,17 @@
           "weight": 1,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Strong Anti-anomaly Ammo",
+                "italic": false,
+                "color": "dark_blue"
+              }
+            },
+            {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomPotionColor:209,display:{Name:'[{\"text\":\"Strong Anti-anomaly Ammo\",\"italic\":false,\"color\":\"dark_blue\"}]'},custom_potion_effects:[{id:\"minecraft:blindness\",duration:100,show_particles:0b},{id:\"minecraft:slowness\",duration:140,amplifier:4,show_particles:0b}]}"
+              "tag": "{CustomPotionColor:209,custom_potion_effects:[{id:\"minecraft:blindness\",duration:100,show_particles:0b},{id:\"minecraft:slowness\",duration:140,amplifier:4,show_particles:0b}]}"
             }
           ]
         }
@@ -32,8 +41,17 @@
           "weight": 5,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Weak Anti-anomaly Ammo",
+                "italic": false,
+                "color": "dark_aqua"
+              }
+            },
+            {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomPotionColor:568831,display:{Name:'[{\"text\":\"Weak Anti-anomaly Ammo\",\"italic\":false,\"color\":\"dark_aqua\"}]'},custom_potion_effects:[{id:\"minecraft:blindness\",duration:60,show_particles:0b},{id:\"minecraft:slowness\",duration:120,amplifier:2,show_particles:0b}]}"
+              "tag": "{CustomPotionColor:568831,custom_potion_effects:[{id:\"minecraft:blindness\",duration:60,show_particles:0b},{id:\"minecraft:slowness\",duration:120,amplifier:2,show_particles:0b}]}"
             }
           ]
         }
