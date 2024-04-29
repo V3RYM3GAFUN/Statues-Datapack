@@ -1,0 +1,1 @@
+$damage @e[tag=attacker,limit=1] $(damage) statues:team_grief by @e[tag=attacker,limit=1] from @s

@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "Survivor"
+            }
+          }
+        ],
+        "damage": {
+          "blocked": false,
+          "source_entity": {
+            "type": "minecraft:player",
+            "team": "Survivor"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "statues:ingame/mechanics/misc_on_survivor_damage_survivor"
+  }
+}

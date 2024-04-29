@@ -32,6 +32,7 @@ scoreboard objectives add Statues.Barrels minecraft.custom:open_barrel
 scoreboard objectives add Statues.ActionTrigger trigger
 scoreboard objectives add Statues.Drop minecraft.custom:minecraft.drop
 scoreboard objectives add Statues.GameStatistics dummy
+scoreboard objectives add Statues.DamageTaken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add Statues.Advancements.IngameNoDamage dummy
 
 function statues:game_events/init
