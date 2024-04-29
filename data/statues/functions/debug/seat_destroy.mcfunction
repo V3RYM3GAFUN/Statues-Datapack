@@ -1,0 +1,1 @@
+kill @e[tag=seat,limit=1,sort=nearest,distance=..3]

@@ -12,3 +12,5 @@ execute if entity @s[tag=tutorial_button] run function statues:lobby/tutorial-in
 execute if entity @s[tag=tutorial_door] run function statues:lobby/tutorial-info/interactions/tutorial_door
 execute if entity @s[tag=desk_button_interaction] run function statues:ingame/mechanics/desk_button/interaction_handler
 execute if entity @s[tag=npc_receptionist] run function statues:lobby/interactions/receptionist
+execute if entity @s[tag=click_test] run function statues:debug/called
+execute if entity @s[tag=seat] run function statues:ingame/mechanics/seat

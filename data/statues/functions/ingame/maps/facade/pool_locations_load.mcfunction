@@ -14,4 +14,4 @@ tag @e[tag=facade_genkey_pool] add facade_all_pool
 tag @e[tag=facade_labkey_pool] add facade_all_pool
 tag @e[tag=facade_highclasskey_pool] add facade_all_pool
 tag @e[tag=facade_armorykey_pool] add facade_all_pool
-tag @e[tag=facade_book_pool] add facade_all_pool
+tag @e[tag=facade_book_pool] add facade_all_poold

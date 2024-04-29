@@ -1,0 +1,1 @@
+execute align xyz positioned ~0.5 ~-0.5 ~0.5 run summon minecraft:interaction ~ ~ ~ {Tags:["seat"],width:0.8,height:0.55}
