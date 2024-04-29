@@ -5,7 +5,7 @@ scoreboard players set @s Statues.Players 0
 effect give @s health_boost infinite 2 true
 effect give @s instant_health 5 10 true
 
-item replace entity @s hotbar.0 with stick{Unbreakable:1b,"display":{Name:'[{"text":"Stun baton","italic":false}]'},Enchantments:[{id:"knockback",lvl:6},{id:"sharpness",lvl:1}],CustomModelData:11}
+loot replace entity @s hotbar.0 loot statues:items/facade/classes/brawler/stun_baton
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar
 

@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Armor",
+                "color": "gray",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionColor:9737364,custom_potion_effects:[{id:\"minecraft:absorption\",duration:-1,amplifier:4,show_particles:0b}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
