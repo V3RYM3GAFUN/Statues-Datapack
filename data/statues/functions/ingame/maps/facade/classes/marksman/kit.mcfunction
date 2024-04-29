@@ -5,7 +5,7 @@ scoreboard players set @s Statues.Players 0
 effect give @s night_vision infinite 0 true
 
 item replace entity @s hotbar.0 with crossbow{Unbreakable:1,display:{Name:'[{"text":"Sniper rifle","italic":false}]'},Enchantments:[{id:"quick_charge",lvl:2}],HideFlags:1,CustomModelData:2} 1
-item replace entity @s hotbar.1 with tipped_arrow{CustomPotionColor:0,display:{Name:'[{"text":"Sniper ammo","italic":false,"color":"dark_gray","bold":true}]'},custom_potion_effects:[{id:"minecraft:slowness",duration:80,amplifier:2,show_particles:0b},{id:"minecraft:glowing",duration:300,show_particles:0b}]} 16
+item replace entity @s hotbar.1 with tipped_arrow{CustomPotionColor:0,display:{Name:'[{"text":"Sniper ammo","italic":false,"color":"dark_gray","bold":true}]'},custom_potion_effects:[{id:"minecraft:slowness",duration:80,amplifier:3,show_particles:0b},{id:"minecraft:glowing",duration:300,show_particles:0b}]} 16
 
 item replace entity @s hotbar.2 with stick{display:{Name:'{"text":"Crowbar","italic":false}',Lore:['{"text":"Used to open barrels.","italic":false,"color":"aqua"}']},CustomModelData:10,is_crowbar:1b}
 

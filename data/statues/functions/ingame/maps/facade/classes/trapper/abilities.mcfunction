@@ -12,7 +12,7 @@ execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players ma
 # Audios for the cooldown
 execute if score @s Statues.Players matches 4200 run playsound minecraft:block.conduit.deactivate master @s ~ ~ ~ 1 1
 execute if score @s Statues.Players matches 4200 run playsound minecraft:block.conduit.deactivate master @a[team=Monster] ~ ~ ~ 1 1
-execute if score @s Statues.Players matches 4200 run effect give @a[team=Monster] slowness 10 3 true
+execute if score @s Statues.Players matches 4200 run effect give @a[team=Monster] slowness 5 10 true
 execute if score @s Statues.Players matches 4200 run effect give @a[team=Monster] blindness 5 3 true
 execute if score @s Statues.Players matches 4200 run effect give @s slowness 7 3 true
 execute if score @s Statues.Players matches 4200 run effect give @s darkness 5 3 true

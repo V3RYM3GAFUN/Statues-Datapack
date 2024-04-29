@@ -7,7 +7,7 @@ effect give @s instant_health 5 10 true
 
 item replace entity @s hotbar.0 with bow{Unbreakable:1b,"display":{Name:'[{"text":"Medic pistol","italic":false}]'},CustomModelData:2}
 item replace entity @s hotbar.1 with tipped_arrow{CustomPotionColor:16711680,display:{Name:'[{"text":"Adrenaline-injected dart","italic":false,"color":"red"}]'},custom_potion_effects:[{id:"minecraft:instant_health",duration:1,amplifier:1,show_particles:0b,show_icon:0b},{id:"minecraft:regeneration",duration:450,amplifier:1,show_particles:0b},{id:"minecraft:resistance",duration:200,amplifier:1,show_particles:0b},{id:"minecraft:speed",duration:100,amplifier:2}]} 32
-item replace entity @s hotbar.2 with tipped_arrow{CustomPotionColor:568831,display:{Name:'[{"text":"Weak Anti-anomaly Ammo","italic":false,"color":"dark_aqua"}]'},custom_potion_effects:[{id:"minecraft:blindness",duration:60,show_particles:0b},{id:"minecraft:slowness",duration:120,amplifier:2,show_particles:0b}]} 8
+item replace entity @s hotbar.2 with tipped_arrow{CustomPotionColor:568831,display:{Name:'[{"text":"Weak Anti-anomaly Ammo","italic":false,"color":"dark_aqua"}]'},custom_potion_effects:[{id:"minecraft:blindness",duration:60,show_particles:0b},{id:"minecraft:slowness",duration:120,amplifier:3,show_particles:0b}]} 8
 
 item replace entity @s hotbar.3 with stick{display:{Name:'{"text":"Crowbar","italic":false}',Lore:['{"text":"Used to open barrels.","italic":false,"color":"aqua"}']},CustomModelData:10,is_crowbar:1b}
 

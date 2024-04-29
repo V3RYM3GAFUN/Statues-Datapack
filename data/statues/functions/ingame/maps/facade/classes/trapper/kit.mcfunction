@@ -4,7 +4,7 @@ scoreboard players set @s Statues.Players 0
 
 item replace entity @s hotbar.0 with crossbow{Unbreakable:1b,"display":{Name:'[{"text":"Trapper\'s gun","italic":false}]'},CustomModelData:7,Enchantments:[{id:"quick_charge",lvl:5}]}
 
-item replace entity @s hotbar.1 with tipped_arrow{CustomPotionColor:209,display:{Name:'[{"text":"Strong Anti-anomaly Ammo","italic":false,"color":"dark_blue"}]'},custom_potion_effects:[{id:"minecraft:blindness",duration:100,show_particles:0b},{id:"minecraft:slowness",duration:140,amplifier:4,show_particles:0b}]} 16
+item replace entity @s hotbar.1 with tipped_arrow{CustomPotionColor:209,display:{Name:'[{"text":"Strong Anti-anomaly Ammo","italic":false,"color":"dark_blue"}]'},custom_potion_effects:[{id:"minecraft:blindness",duration:100,show_particles:0b},{id:"minecraft:slowness",duration:140,amplifier:10,show_particles:0b}]} 16
 
 item replace entity @s hotbar.2 with stick{display:{Name:'{"text":"Crowbar","italic":false}',Lore:['{"text":"Used to open barrels.","italic":false,"color":"aqua"}']},CustomModelData:10,is_crowbar:1b}
 
