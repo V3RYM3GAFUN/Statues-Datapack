@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "statues:items/facade/objectives/genkey",
+          "name": "statues:items/facade/objectives/templates/genkey",
           "functions": [
             {
               "function": "minecraft:set_nbt",

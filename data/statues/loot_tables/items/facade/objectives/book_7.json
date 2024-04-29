@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "statues:items/facade/objectives/book",
+          "name": "statues:items/facade/objectives/templates/book",
           "functions": [
             {
               "function": "minecraft:set_nbt",

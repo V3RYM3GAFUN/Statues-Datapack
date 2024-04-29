@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "statues:items/facade/objectives/armorykey",
+          "name": "statues:items/facade/objectives/templates/armorykey",
           "functions": [
             {
               "function": "minecraft:set_nbt",

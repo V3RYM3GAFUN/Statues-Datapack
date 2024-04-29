@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "statues:items/facade/objectives/labkey",
+          "name": "statues:items/facade/objectives/templates/labkey",
           "functions": [
             {
               "function": "minecraft:set_nbt",

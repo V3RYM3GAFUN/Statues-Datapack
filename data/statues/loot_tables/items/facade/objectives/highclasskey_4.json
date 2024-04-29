@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "statues:items/facade/objectives/highclasskey",
+          "name": "statues:items/facade/objectives/templates/highclasskey",
           "functions": [
             {
               "function": "minecraft:set_nbt",
