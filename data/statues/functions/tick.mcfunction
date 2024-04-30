@@ -115,3 +115,7 @@ scoreboard players set $rundoors Statues.TempData 0
 
 function #statues:game_events/server_tick
 execute as @a at @s run function #statues:game_events/server_tick_player
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 run function #statues:game_events/map_tick
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 0 run function #statues:game_events/map_facade_tick
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 1 run function #statues:game_events/map_lockdown_tick
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 2 run function #statues:game_events/map_origins_tick

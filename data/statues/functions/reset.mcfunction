@@ -35,7 +35,6 @@ scoreboard players reset * Statues.Monsters
 scoreboard players reset * Statues.Survivors
 scoreboard players reset * Statues.Players
 scoreboard players reset * Statues.Abilities
-scoreboard players reset * Statues.Objective
 scoreboard players reset * Statues.TempData
 scoreboard players reset * Statues.Barrels
 scoreboard players reset * Statues.SurvivorTrail
@@ -55,11 +54,12 @@ execute as @e[type=interaction,tag=objective_reset] run data merge entity @s {he
 execute at @e[tag=objective_reset] run function statues:utils/button_warped_to_crimson
 
 #> Resets every objective button 
-execute at @e[tag=objective_reset,tag=elevator_button_facade_power] run function statues:utils/button_crimson_to_blackstone
+execute at @e[tag=objective_reset,tag=elevator_button_power_lock] run function statues:utils/button_crimson_to_blackstone
 
 #> Resets elevators
 execute as @e[tag=objective_reset,tag=elevator_room] run scoreboard players operation @s Statues.ElevatorTo = @s Statues.DefaultElevatorY
 execute as @e[tag=objective_reset,tag=elevator_room_3x3x3] at @s run function statues:ingame/mechanics/elevator/3x3x3/force_go_to
+execute as @e[tag=objective_reset,tag=elevator_room_2x3x2] at @s run function statues:ingame/mechanics/elevator/2x3x2/force_go_to
 execute as @e[tag=objective_reset,tag=elevator_room_freight] at @s run function statues:ingame/mechanics/elevator/freight/force_go_to
 execute as @e[tag=objective_reset,tag=elevator_room_freight] at @s run data merge entity @s {brightness:{block:1,sky:0}}
 

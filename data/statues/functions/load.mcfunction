@@ -21,7 +21,6 @@ scoreboard players display name origins Statues.MapVote {"text":"Origins","color
 function statues:lobby/mapvoting/vote_display_macro {map_name:"facade",votes:0}
 function statues:lobby/mapvoting/vote_display_macro {map_name:"lockdown",votes:0}
 function statues:lobby/mapvoting/vote_display_macro {map_name:"origins",votes:0}
-scoreboard objectives add Statues.Objective xp
 scoreboard objectives add Player.Leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add Statues.Abilities minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Statues.Players dummy
@@ -36,8 +35,6 @@ scoreboard objectives add Statues.DamageTaken minecraft.custom:minecraft.damage_
 scoreboard objectives add Statues.Advancements.IngameNoDamage dummy
 
 function statues:game_events/init
-
-execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 unless score $Status Statues.DynamicData matches 0 run function statues:reset
 
 scoreboard players set $-9 Statues.Constants -9
 scoreboard players set $-1 Statues.Constants -1
@@ -106,3 +103,5 @@ gamerule mobGriefing false
 gamerule naturalRegeneration false
 
 function #statues:game_events/server_load
+
+execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 unless score $Status Statues.DynamicData matches 0 run function statues:reset

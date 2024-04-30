@@ -7,9 +7,6 @@ execute as @e[tag=objective_facade_genkey,type=text_display] run data modify ent
 
 #> Archive Room door
 execute as @e[tag=objective_facade_genpower,type=text_display] run data modify entity @s text set value "{'text':'Generator power','color':'dark_red'}"
-#> elevator doors
-fill -4 112 365 -3 113 365 iron_block
-fill 5 112 365 6 113 365 iron_block
 
 #> Lab access room door
 execute as @e[tag=objective_facade_labkey,type=text_display] run data modify entity @s text set value "{'text':'Lab access keycard','color':'dark_red'}"
