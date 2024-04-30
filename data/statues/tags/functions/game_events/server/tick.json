@@ -12,6 +12,7 @@
     "statues:ingame/mechanics/compass_tracker/game_events/server_tick",
     "statues:ingame/mechanics/doors_1x2/game_events/server_tick",
     "statues:ingame/mechanics/doors_2x2/game_events/server_tick",
-    "statues:ingame/mechanics/doors_3x3/game_events/server_tick"
+    "statues:ingame/mechanics/doors_3x3/game_events/server_tick",
+    "statues:ingame/mechanics/flashlight/game_events/server_tick"
   ]
 }

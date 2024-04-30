@@ -7,7 +7,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "nbt": "{flashlight:1b}"
+            "nbt": "{is_flashlight:1b}"
           }
         }
       }
@@ -18,7 +18,7 @@
       "predicate": {
         "equipment": {
           "offhand": {
-            "nbt": "{flashlight:1b}"
+            "nbt": "{is_flashlight:1b}"
           }
         }
       }

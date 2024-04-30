@@ -9,7 +9,5 @@ execute as @a[team=Survivor] at @s if entity @e[tag=locker,distance=..2] run fun
 
 execute as @a[team=Monster] at @s run function statues:ingame/mechanics/monsters/survivordistance
 
-execute if score flashlight Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/flashlight/tick
-
 execute if score blood_traces Statues.FeatureFlags matches 1 as @a[team=Survivor] at @s run function statues:ingame/mechanics/survivors/leave_trail
 execute if score blood_traces Statues.FeatureFlags matches 1 as @e[tag=survivor_blood_trail] at @s run function statues:ingame/mechanics/monsters/trail_tick
