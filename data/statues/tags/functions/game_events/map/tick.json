@@ -2,7 +2,6 @@
   "values": [
     "statues:game_events/dev/map_tick",
     "statues:ingame/maps/common/tick",
-    "statues:ingame/gametimer",
-    "statues:ingame/mechanics/misc"
+    "statues:ingame/gametimer"
   ]
 }
