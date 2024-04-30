@@ -1,1 +1,1 @@
-execute if score floors Statues.FeatureFlags matches 1 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run function statues:ingame/mechanics/floors/tick
+execute if score floors Statues.FeatureFlags matches 1 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run function statues:ingame/mechanics/floors/tick_player
