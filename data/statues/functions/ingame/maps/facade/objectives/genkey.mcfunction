@@ -15,4 +15,4 @@ clear @a iron_ingot{facade_genkey_item:1b} 1
 time set 10000
 
 scoreboard players operation $ObjectiveKind Statues.GameEventData = $ObjectiveKind.Facade.UnlockBackupGenerator Statues.GameEventEnum
-function #statues:game_events/complete_objective
+function #statues:game_events/ingame/complete_objective

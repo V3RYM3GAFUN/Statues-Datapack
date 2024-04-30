@@ -25,4 +25,4 @@ item replace entity @s weapon.mainhand with red_dye{CustomModelData:1,display:{N
 item replace entity @s weapon.offhand with red_dye{CustomModelData:1,display:{Name:'[{"text":"Boxing glove","italic":false,"color":"red","bold":true}]'}} 1
 
 execute if entity @s[tag=!monster_tutorial] run scoreboard players operation $MonsterKind Statues.GameEventData = $MonsterKind.003 Statues.GameEventEnum
-execute if entity @s[tag=!monster_tutorial] run function #statues:game_events/pick_monster
+execute if entity @s[tag=!monster_tutorial] run function #statues:game_events/ingame/pick_monster

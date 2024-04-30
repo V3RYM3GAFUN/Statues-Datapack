@@ -40,7 +40,7 @@ execute as @a at @s if score $Countdown.Ticks Statues.DynamicData matches 100 ru
 execute if score $Countdown.Ticks Statues.DynamicData matches 100 run kill @e[tag=mapvote]
 
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 run scoreboard players set $Status Statues.DynamicData 3
-execute if score $Countdown.Ticks Statues.DynamicData matches 0 run function #statues:game_events/game_start
+execute if score $Countdown.Ticks Statues.DynamicData matches 0 run function #statues:game_events/ingame/game_start
 
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 0 run function statues:ingame/maps/facade/activate
 execute if score $Countdown.Ticks Statues.DynamicData matches 200 if score $Map Statues.DynamicData matches 0 run forceload add 54 257 -82 394

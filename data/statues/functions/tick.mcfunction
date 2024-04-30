@@ -103,9 +103,9 @@ execute if score doors_1x2 Statues.FeatureFlags matches 1 as @e[tag=1x2door,type
 execute if score $rundoors Statues.TempData matches 1 as @e[tag=1x2door] at @s run function statues:ingame/mechanics/doors_1x2/tick
 scoreboard players set $rundoors Statues.TempData 0
 
-function #statues:game_events/server_tick
-execute as @a at @s run function #statues:game_events/server_tick_player
-execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 run function #statues:game_events/map_tick
-execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 0 run function #statues:game_events/map_facade_tick
-execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 1 run function #statues:game_events/map_lockdown_tick
-execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 2 run function #statues:game_events/map_origins_tick
+function #statues:game_events/server/tick
+execute as @a at @s run function #statues:game_events/server/tick_player
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 run function #statues:game_events/map/tick
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 0 run function #statues:game_events/map/facade_tick
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 1 run function #statues:game_events/map/lockdown_tick
+execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 2 run function #statues:game_events/map/origins_tick

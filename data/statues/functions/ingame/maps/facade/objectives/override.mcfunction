@@ -19,4 +19,4 @@ scoreboard players add $Timer.Seconds Statues.DynamicData 300
 setblock 1 111 285 redstone_block
 
 scoreboard players operation $ObjectiveKind Statues.GameEventData = $ObjectiveKind.Facade.PressEmergencyOverride Statues.GameEventEnum
-function #statues:game_events/complete_objective
+function #statues:game_events/ingame/complete_objective

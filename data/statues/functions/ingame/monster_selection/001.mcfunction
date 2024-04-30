@@ -24,4 +24,4 @@ item replace entity @s weapon.mainhand with trident{Unbreakable:1b,CustomModelDa
 item replace entity @s weapon.offhand with trident{Unbreakable:1b,CustomModelData:1,display:{Name:'[{"text":"Tentacle","italic":false,"color":"dark_red","bold":true}]'},Enchantments:[{id:"loyalty",lvl:3}],HideFlags:5} 1
 
 execute if entity @s[tag=!monster_tutorial] run scoreboard players operation $MonsterKind Statues.GameEventData = $MonsterKind.001 Statues.GameEventEnum
-execute if entity @s[tag=!monster_tutorial] run function #statues:game_events/pick_monster
+execute if entity @s[tag=!monster_tutorial] run function #statues:game_events/ingame/pick_monster

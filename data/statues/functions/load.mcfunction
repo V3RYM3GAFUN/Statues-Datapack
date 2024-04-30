@@ -102,6 +102,6 @@ gamerule keepInventory true
 gamerule mobGriefing false
 gamerule naturalRegeneration false
 
-function #statues:game_events/server_load
+function #statues:game_events/server/load
 
 execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 unless score $Status Statues.DynamicData matches 0 run function statues:reset

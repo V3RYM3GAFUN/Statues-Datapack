@@ -16,4 +16,4 @@ item replace entity @s armor.legs with leather_leggings{Trim:{pattern:sentry,mat
 item replace entity @s armor.feet with leather_boots{Trim:{pattern:host,material:gold},display:{color:1908001,Name:'["",{"text":"Marksman Outfit","italic":false,"color":"#666666","bold":true}]'},Unbreakable:1,HideFlags:196}
 
 execute if entity @s[tag=!class_tutorial] run scoreboard players operation $ClassKind Statues.GameEventData = $ClassKind.Marksman Statues.GameEventEnum
-execute if entity @s[tag=!class_tutorial] run function #statues:game_events/pick_class_survivor
+execute if entity @s[tag=!class_tutorial] run function #statues:game_events/ingame/pick_class_survivor

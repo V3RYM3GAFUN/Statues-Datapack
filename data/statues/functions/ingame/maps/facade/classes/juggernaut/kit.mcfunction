@@ -24,4 +24,4 @@ item replace entity @s armor.feet with leather_boots{Trim:{pattern:snout,materia
 loot replace entity @s weapon.offhand loot statues:items/flashlight
 
 execute if entity @s[tag=!class_tutorial] run scoreboard players operation $ClassKind Statues.GameEventData = $ClassKind.Juggernaut Statues.GameEventEnum
-execute if entity @s[tag=!class_tutorial] run function #statues:game_events/pick_class_survivor
+execute if entity @s[tag=!class_tutorial] run function #statues:game_events/ingame/pick_class_survivor
