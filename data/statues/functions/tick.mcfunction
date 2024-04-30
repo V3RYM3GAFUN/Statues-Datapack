@@ -44,20 +44,10 @@ execute as @a[team=Survivor,scores={Statues.Dead=1..}] at @s run function statue
 
 execute as @a[scores={Statues.Monsters=4}] run item replace entity @s hotbar.4 with tipped_arrow{CustomPotionColor:2325012,display:{Name:'[{"text":"Insects","italic":false,"color":"#006633","bold":true}]'},custom_potion_effects:[{id:"minecraft:poison",duration:60,amplifier:1,show_particles:0b,show_icon:0b},{id:"minecraft:instant_health",duration:1,amplifier:0,show_particles:0b,show_icon:0b}]} 1
 
-execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 0 run function statues:ingame/maps/facade/tick
-execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 1 run function statues:ingame/maps/lockdown
-execute if score map_tick Statues.FeatureFlags matches 1 if score $Status Statues.DynamicData matches 3 if score $Map Statues.DynamicData matches 2 run function statues:ingame/maps/origins
-
-execute if score $Status Statues.DynamicData matches 3 run scoreboard players add $RunningGameTicks Statues.DynamicData 1
-
 #> Detect when a player leaves
 execute as @a[team=!Dev] if score @s Player.Leave matches 1.. run function statues:lobby/leaving
 #> Exception for Devs. Don't detect when they leave
 scoreboard players set @a[team=Dev] Player.Leave 0
-
-#> Allows displaying the health of every survivor in a scoreboard
-execute if score $Timer.Ticks Statues.DynamicData matches 1 run scoreboard players reset * Statues.Survivors
-execute as @a[team=Survivor] run function statues:ingame/mechanics/survivors/healthbar/update_scoreboard
 
 execute if score lights Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/lights/tick
 

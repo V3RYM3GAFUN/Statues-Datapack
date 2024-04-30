@@ -1,7 +1,5 @@
 execute unless function statues:feature_flags/check_map_tick_flags run return fail
 
-function statues:ingame/maps/common/tick
-
 execute if score abilities Statues.FeatureFlags matches 1 run function statues:ingame/maps/facade/ability_tick
 
 #> Objective tracking

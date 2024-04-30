@@ -2,6 +2,7 @@
     "values": [
         "statues:game_events/logging/game_start",
         "statues:game_events/statistics/game_start",
-        "statues:game_events/advancements/game_start"
+        "statues:game_events/advancements/game_start",
+        "statues:ingame/mechanics/survivors/healthbar/game_event/game_start"
     ]
 }
