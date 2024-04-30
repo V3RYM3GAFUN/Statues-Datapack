@@ -45,6 +45,7 @@ dev_see_game_events
 | `dev_infinite_game_time`      | Makes the game last for eternity until all monsters stop playing, or all survivors die                                             |
 | `dev_no_game_reset_on_reload` | Disables the game resetting when the datapack gets loaded                                                                          |
 | `dev_no_start_requirement`    | Sets the minimum player requirement in queuing to just one player (requires 2+ players for the game to not end instantly)          |
+| `dev_override_dev_loot_pools` | Changes the dev game barrel locations to be dev specific, instead of being the default of a normal game                                 |
 | `dev_show_interactions`       | Shows particles at interaction entities when nearby                                                                                |
 | `dev_show_markers`            | Shows block aligned particles at marker entities when nearby                                                                       |
 | `dev_show_markers_accurate`   | Shows particles directly at marker entities when nearby                                                                            |
@@ -52,6 +53,7 @@ dev_see_game_events
 | `doors_1x2`                   | Allows use of 1x2 doors and all functions in `statues:ingame/mechanics/doors_1x2` (requires `doors` feature flag)                  |
 | `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:ingame/mechanics/doors` (requires `doors` feature flag)                      |
 | `doors_3x3`                   | Allows use of 3x3 doors and all functions in `statues:ingame/mechanics/doors_3x3`  (requires `doors` feature flag)                 |
+| `dynamic_maps`                | Enables experimental dynamic maps feature                                                                                          |
 | `elevator`                    | Enables elevators and allows use of all functions in `statues:ingame/mechanics/elevator`                                           |
 | `experimental_flashlight`     | Updates flashlight to use spyglass+night vision behavior instead and use functions from `statues:ingame/mechanics/flashlight/next` |
 | `flashlight`                  | Enables the flashlight item behavior and functions in `statues:ingame/mechanics/flashlight`                                        |

@@ -162,6 +162,10 @@ execute if score dev_no_start_requirement Statues.FeatureFlags matches 0 run sco
 execute unless score dev_no_start_requirement Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_no_start_requirement Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name dev_no_start_requirement Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"No Start Requirement","color":"white"}]
 
+execute if score dev_override_dev_loot_pools Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_override_dev_loot_pools Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score dev_override_dev_loot_pools Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_override_dev_loot_pools Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name dev_override_dev_loot_pools Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Override Dev Loot Pools","color":"white"}]
+
 execute if score dev_show_interactions Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_show_interactions Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_show_interactions Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_show_interactions Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name dev_show_interactions Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"Show Interactions","color":"white"}]
