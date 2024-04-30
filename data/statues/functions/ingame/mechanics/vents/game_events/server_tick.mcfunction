@@ -1,0 +1,1 @@
+execute if score vents Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/vents/tick

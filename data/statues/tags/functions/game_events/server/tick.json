@@ -1,3 +1,17 @@
 {
-  "values": []
+  "values": [
+    "statues:feature_flags/tick_scoreboard",
+    "statues:debug/show_entities",
+    "statues:base_mechanics/triggers/check_trigger_handler",
+    "statues:lobby/mapvoting/vote_base",
+    "statues:ingame/mechanics/lights/game_events/server_tick",
+    "statues:ingame/mechanics/elevator/game_events/server_tick",
+    "statues:ingame/mechanics/spectators_actionbar/game_events/server_tick",
+    "statues:ingame/mechanics/sas/game_events/server_tick",
+    "statues:ingame/mechanics/vents/game_events/server_tick",
+    "statues:ingame/mechanics/compass_tracker/game_events/server_tick",
+    "statues:ingame/mechanics/doors_1x2/game_events/server_tick",
+    "statues:ingame/mechanics/doors_2x2/game_events/server_tick",
+    "statues:ingame/mechanics/doors_3x3/game_events/server_tick"
+  ]
 }

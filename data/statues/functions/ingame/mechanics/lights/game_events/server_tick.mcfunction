@@ -1,0 +1,1 @@
+execute if score lights Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/lights/tick

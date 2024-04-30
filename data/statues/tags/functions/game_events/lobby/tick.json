@@ -1,0 +1,6 @@
+{
+  "values": [
+    "statues:game_events/dev/non_map_tick",
+    "statues:lobby/queue/game_events/tick"
+  ]
+}

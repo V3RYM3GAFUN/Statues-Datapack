@@ -1,0 +1,1 @@
+execute if score queue Statues.FeatureFlags matches 1.. run function statues:lobby/queue/tick

@@ -1,0 +1,10 @@
+{
+  "values": [
+    "statues:game_events/dev/player_tick",
+    "statues:game_events/players/player_tick",
+    "statues:ingame/mechanics/floors/game_events/player_tick",
+    "statues:lobby/tutorial-info/game_events/player_tick",
+    "statues:ingame/mechanics/dynamic_map/game_events/player_tick",
+    "statues:lobby/class_preview/game_events/player_tick"
+  ]
+}

@@ -1,0 +1,2 @@
+execute if score dev_allow_debug_info Statues.FeatureFlags matches 0 run gamerule reducedDebugInfo true
+execute if score dev_allow_debug_info Statues.FeatureFlags matches 1 run gamerule reducedDebugInfo false

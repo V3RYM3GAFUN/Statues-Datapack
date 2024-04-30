@@ -1,0 +1,1 @@
+execute if score elevator Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/elevator/tick

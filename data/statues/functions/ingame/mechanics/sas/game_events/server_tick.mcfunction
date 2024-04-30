@@ -1,0 +1,1 @@
+execute if score sas Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/sas/tick
