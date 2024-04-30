@@ -24,6 +24,7 @@ dev_see_game_events
 | `dev_allow_item_drop`             | Allows player to drop items out of inventory                         |
 | `dev_always_show_floor_objective` | Shows the current objective and floor when you're not a survivor     |
 | `dev_always_show_nearby_players`  | Shows nearby survivors and monsters on the actionbar                 |
+| `dev_always_update_dynamic_map`   | Always updates the dynamic map, even when not a survivor             |
 | `dev_ignore_forced_gamemode`      | Ignores the correct gamemodes for teams                              |
 | `dev_ignore_vent_requirement`     | Ignores the requirement to go in a vent (normally 002 and survivors) |
 | `dev_not_monster`                 | Makes sure the game won't pick the player as the monster             |

@@ -1,3 +1,2 @@
 # TODO: Dynamic Map may replace Floors
-# TODO: Add Feature Flag and Dev override tag
-execute if entity @s[team=Survivor] run function statues:ingame/mechanics/dynamic_map/tick_player
+execute if score dynamic_maps Statues.FeatureFlags matches 1.. unless entity @s[team=!Survivor,tag=!dev_always_update_dynamic_map] run function statues:ingame/mechanics/dynamic_map/tick_player

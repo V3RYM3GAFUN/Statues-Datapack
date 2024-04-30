@@ -25,6 +25,7 @@
     "tutorial": { "name": "Tutorial", "depends": [] },
     "vents": { "name": "Vents", "depends": [] },
 
+    "dynamic_maps": { "name": "Dynamic Maps", "is_experimental": true, "depends": [] },
     "experimental_flashlight": { "name": "Flashlight (Next)", "is_experimental": true, "depends": [ "flashlight" ] },
 
     "dev_allow_debug_info": { "name": "Allow Debug Info", "is_dev": true, "depends": [] },

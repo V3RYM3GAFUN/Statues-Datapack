@@ -1,3 +1,4 @@
+execute unless function statues:feature_flags/check_dynamic_map_flags run return fail
 execute store result score $SlotN2SIn Statues.TempData store success score $DynamicMapExists Statues.TempData run data get entity @s Inventory[{id:"minecraft:filled_map"}].Slot
 execute if score $DynamicMapExists Statues.TempData matches 0 run return 0
 
