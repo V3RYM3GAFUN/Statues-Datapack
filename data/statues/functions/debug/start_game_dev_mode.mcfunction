@@ -4,7 +4,7 @@ function statues:feature_flags/set_dev_infinite_game_time {value:1}
 function statues:feature_flags/set_dev_no_start_requirement {value:1}
 
 tag @a remove queued
-execute as @a[team=Lobby,tag=dev_queue] at @s if block ~ -64 ~ diamond_block run tag @s add queued
+execute as @a[team=Lobby,tag=dev_queue_allow] at @s if block ~ -64 ~ diamond_block run tag @s add queued
 
 scoreboard players set $Map Statues.DynamicData 0
 scoreboard players set $Countdown.Ticks Statues.DynamicData 0
