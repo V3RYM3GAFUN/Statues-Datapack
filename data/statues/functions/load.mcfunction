@@ -14,10 +14,10 @@ scoreboard objectives add Statues.DynamicData dummy
 scoreboard objectives add Statues.TempData dummy
 scoreboard objectives add Statues.MapVote dummy
 scoreboard objectives add Statues.SurvivorTrail dummy
-scoreboard objectives modify Statues.MapVote displayname "Map Vote"
-scoreboard players display name facade Statues.MapVote "Façade"
-scoreboard players display name lockdown Statues.MapVote "Lockdown"
-scoreboard players display name origins Statues.MapVote "Origins"
+scoreboard objectives modify Statues.MapVote displayname {"text":"Map Vote","color":"aqua","underlined":true}
+scoreboard players display name facade Statues.MapVote {"text":"Façade","color":"#D2B4A2"}
+scoreboard players display name lockdown Statues.MapVote {"text":"Lockdown","color":"#AEAEAE"}
+scoreboard players display name origins Statues.MapVote {"text":"Origins","color":"#24737F"}
 function statues:lobby/mapvoting/vote_display_macro {map_name:"facade",votes:0}
 function statues:lobby/mapvoting/vote_display_macro {map_name:"lockdown",votes:0}
 function statues:lobby/mapvoting/vote_display_macro {map_name:"origins",votes:0}
@@ -104,3 +104,5 @@ gamerule doWeatherCycle false
 gamerule keepInventory true
 gamerule mobGriefing false
 gamerule naturalRegeneration false
+
+function #statues:game_events/server_load
