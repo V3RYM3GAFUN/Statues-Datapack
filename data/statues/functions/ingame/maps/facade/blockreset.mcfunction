@@ -67,3 +67,5 @@ setblock -7 105 375 crimson_door[facing=east,hinge=left] replace
 setblock -7 106 375 air replace
 setblock -7 106 375 crimson_door[facing=east,half=upper,hinge=left] replace
 
+#> Emergency override vents
+setblock 7 107 384 minecraft:warped_trapdoor[facing=south,half=top,open=true,powered=false,waterlogged=false]
