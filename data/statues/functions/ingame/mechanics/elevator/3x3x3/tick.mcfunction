@@ -21,6 +21,7 @@ execute unless score @s Statues.ElevatorState matches 3..4 run scoreboard player
 execute store result storage statues:data elevator_location_cur float 0.01 run scoreboard players get $ElevatorOffY Statues.TempData
 execute store result storage statues:data elevator_location int 1 run scoreboard players get @s Statues.ElevatorFrom
 execute store result storage statues:data elevator_location_to int 1 run scoreboard players get @s Statues.ElevatorTo
+function statues:ingame/mechanics/elevator/3x3x3/elevator_tick with storage statues:data
 execute if score @s Statues.ElevatorState matches 1 run function statues:ingame/mechanics/elevator/3x3x3/pre_move with storage statues:data
 execute if score @s Statues.ElevatorState matches 2 run function statues:ingame/mechanics/elevator/3x3x3/pre_movement with storage statues:data
 execute if score @s Statues.ElevatorState matches 3..4 run function statues:ingame/mechanics/elevator/3x3x3/movement with storage statues:data
