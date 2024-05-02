@@ -12,6 +12,8 @@ execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard player
 execute if score elevator_2x3x2 Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_3x3x3 Statues.FeatureFlags -1
 execute if score elevator_3x3x3 Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_buttons Statues.FeatureFlags -1
+execute if score elevator_buttons Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_freight Statues.FeatureFlags -1
 execute if score elevator_freight Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 execute if score flashlight Statues.FeatureFlags matches ..0 run scoreboard players set experimental_flashlight Statues.FeatureFlags -1
@@ -74,6 +76,11 @@ execute if score elevator_3x3x3 Statues.FeatureFlags matches -1 run scoreboard p
 execute if score elevator_3x3x3 Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator_3x3x3 Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score elevator_3x3x3 Statues.FeatureFlags matches ..0 run scoreboard players display numberformat elevator_3x3x3 Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name elevator_3x3x3 Statues.FeatureFlags {"text":"Elevator 3x3x3 Feature"}
+
+execute if score elevator_buttons Statues.FeatureFlags matches -1 run scoreboard players display numberformat elevator_buttons Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
+execute if score elevator_buttons Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator_buttons Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score elevator_buttons Statues.FeatureFlags matches ..0 run scoreboard players display numberformat elevator_buttons Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name elevator_buttons Statues.FeatureFlags {"text":"Elevator Buttons Feature"}
 
 execute if score elevator_freight Statues.FeatureFlags matches -1 run scoreboard players display numberformat elevator_freight Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
 execute if score elevator_freight Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator_freight Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
