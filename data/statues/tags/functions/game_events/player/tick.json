@@ -4,7 +4,7 @@
     "statues:game_events/players/player_tick",
     "statues:game_events/mechanics/floors/player_tick",
     "statues:lobby/tutorial-info/game_events/player_tick",
-    "statues:ingame/mechanics/dynamic_map/game_events/player_tick",
+    "statues:game_events/mechanics/dynamic_map/player_tick",
     "statues:lobby/class_preview/game_events/player_tick",
     "statues:game_events/mechanics/vents/player_tick",
     "statues:game_events/mechanics/blood_trails/player_tick",
