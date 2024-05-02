@@ -1,0 +1,1 @@
+execute if score doors_3x3 Statues.FeatureFlags matches 1 run function statues:mechanics/doors_3x3/server_tick

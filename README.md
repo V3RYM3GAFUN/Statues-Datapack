@@ -51,11 +51,15 @@ dev_see_game_events
 | `dev_show_markers`            | Shows block aligned particles at marker entities when nearby                                                                       |
 | `dev_show_markers_accurate`   | Shows particles directly at marker entities when nearby                                                                            |
 | `doors`                       | Allows use of doors and the `doors_1x2`,  `doors_2x2`, and `doors_3x3` feature flags                                               |
-| `doors_1x2`                   | Allows use of 1x2 doors and all functions in `statues:ingame/mechanics/doors_1x2` (requires `doors` feature flag)                  |
-| `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:ingame/mechanics/doors_2x2` (requires `doors` feature flag)                  |
-| `doors_3x3`                   | Allows use of 3x3 doors and all functions in `statues:ingame/mechanics/doors_3x3`  (requires `doors` feature flag)                 |
+| `doors_1x2`                   | Allows use of 1x2 doors and all functions in `statues:mechanics/doors_1x2` (requires `doors` feature flag)                         |
+| `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:mechanics/doors_2x2` (requires `doors` feature flag)                         |
+| `doors_3x3`                   | Allows use of 3x3 doors and all functions in `statues:mechanics/doors_3x3`  (requires `doors` feature flag)                        |
 | `dynamic_maps`                | Enables experimental dynamic maps feature                                                                                          |
-| `elevator`                    | Enables elevators and allows use of all functions in `statues:ingame/mechanics/elevator`                                           |
+| `elevator`                    | Allows use of elevators and the `elevator_2x3x2`,  `elevator_3x3x3`, `elevator_buttons`, and `elevator_freight` feature flags      |
+| `elevator_2x3x2`              | Allows use of 2x3x2 elevators and all functions in `statues:mechanics/elevator_2x3x2` (requires `elevator` feature flag)           |
+| `elevator_3x3x3`              | Allows use of 3x3x3 elevators and all functions in `statues:mechanics/elevator_3x3x3` (requires `elevator` feature flag)           |
+| `elevator_buttons`            | Allows use of buttons of elevators and all functions in `statues:mechanics/elevator_buttons`  (requires `elevator` feature flag)   |
+| `elevator_freight`            | Allows use of freight elevators and all functions in `statues:mechanics/elevator_freight`  (requires `elevator` feature flag)      |
 | `experimental_flashlight`     | Updates flashlight to use spyglass+night vision behavior instead and use functions from `statues:mechanics/flashlight/next`        |
 | `flashlight`                  | Enables the flashlight item behavior and functions in `statues:mechanics/flashlight`                                               |
 | `floors`                      | Shows the current objective and floor to survivors, allows the use of all functions in `statues:mechanics/floors`                  |

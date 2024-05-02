@@ -1,0 +1,1 @@
+execute if score elevator_buttons Statues.FeatureFlags matches 1 run function statues:mechanics/elevator_buttons/server_tick
