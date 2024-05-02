@@ -1,0 +1,1 @@
+execute if score survivors_heartbeat Statues.FeatureFlags matches 1 run function statues:mechanics/survivors_heartbeat/player_tick

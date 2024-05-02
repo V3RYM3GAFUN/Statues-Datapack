@@ -23,6 +23,7 @@
     "sas": { "name": "SAS Machines", "depends": [] },
     "spectators_actionbar": { "name": "Spectators ActionBar", "depends": [] },
     "survivors_heart_sidebar": { "name": "Survivors Heart Sidebar", "depends": [] },
+    "survivors_heartbeat": { "name": "Survivors' Heartbeat", "depends": [] },
     "tutorial": { "name": "Tutorial", "depends": [] },
     "vents": { "name": "Vents", "depends": [] },
 
