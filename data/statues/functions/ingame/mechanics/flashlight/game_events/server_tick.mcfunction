@@ -1,1 +1,0 @@
-execute if score flashlight Statues.FeatureFlags matches 1 run function statues:ingame/mechanics/flashlight/tick

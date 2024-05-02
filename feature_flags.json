@@ -1,6 +1,6 @@
 {
     "abilities": { "name": "Abilities", "depends": [] },
-    "blood_traces": { "name": "Blood Trails", "depends": [] },
+    "blood_trails": { "name": "Blood Trails", "depends": [] },
     "class_preview": { "name": "Class Preview", "depends": [ "abilities", "tutorial" ] },
     "compass_tracker": { "name": "Compass Tracker", "depends": [] },
     "desk_button": { "name": "Desk Button", "depends": [] },

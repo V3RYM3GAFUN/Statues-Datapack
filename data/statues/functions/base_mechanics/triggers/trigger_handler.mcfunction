@@ -33,4 +33,7 @@ execute if entity @s[scores={Statues.ActionTrigger=195790}] if function statues:
 #> Credits room triggers (scores 195800-195899)
 execute if entity @s[scores={Statues.ActionTrigger=195800}] unless entity @s[team=!Dev,team=!Lobby] run function statues:warps/newlobby
 
+#> Debug triggers 250000-259999
+execute if entity @s[scores={Statues.ActionTrigger=250000}] run function statues:mechanics/vents/integrity
+
 scoreboard players reset @s Statues.ActionTrigger

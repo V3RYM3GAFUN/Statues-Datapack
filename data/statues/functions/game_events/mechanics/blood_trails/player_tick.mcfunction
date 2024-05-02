@@ -1,0 +1,1 @@
+execute if score blood_trails Statues.FeatureFlags matches 1 run function statues:mechanics/player_tick

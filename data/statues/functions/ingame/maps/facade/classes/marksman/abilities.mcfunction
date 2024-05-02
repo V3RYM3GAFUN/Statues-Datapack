@@ -19,7 +19,7 @@ execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players ma
 
 #> Internal timer
 execute if score @s Statues.Players matches 1..4200 run scoreboard players remove @s Statues.Players 1
-function statues:ingame/mechanics/xp_bar/from_cooldown { max: 4200 }
+function statues:mechanics/xp_bar/from_cooldown { max: 4200 }
 
 #> Enchant the ability item back after a x seconds cooldown
 execute if score @s Statues.Players matches ..0 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"X-ray","italic":false,"color":"gray"}]',Lore:['[{"text":"Reveals the monsters,","italic":false}]','[{"text":"but you get revealed too","italic":false}]','[{"text":"Cooldown: 3m30s","italic":false}]']},Enchantments:[{}],HideFlags:4}

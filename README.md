@@ -39,36 +39,36 @@ dev_see_game_events
 | `blood_trails`                | Enables survivor blood trails (best if activated/deactivated before the game starts, to make sure there are no leftover entities)  |
 | `class_preview`               | Enables tutorial class preview and functions in `statues:lobby/class_preview` (requires `abilities` and `tutorial` feature flags)  |
 | `compass_tracker`             | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point  |
-| `desk_button`                 | Enables desk buttons. Also enables all functions in `statues:ingame/mechanics/desk_button`                                         |
+| `desk_button`                 | Enables desk buttons. Also enables all functions in `statues:mechanics/desk_button`                                                |
 | `dev_allow_debug_info`        | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                         |
 | `dev_allow_empty_game`        | When turned on, the game won't end even if there are no monsters or survivors                                                      |
 | `dev_auto_convert_lights`     | Automatically converts pink concrete into lights (requires `lights` feature flag)                                                  |
 | `dev_infinite_game_time`      | Makes the game last for eternity until all monsters stop playing, or all survivors die                                             |
 | `dev_no_game_reset_on_reload` | Disables the game resetting when the datapack gets loaded                                                                          |
 | `dev_no_start_requirement`    | Sets the minimum player requirement in queuing to just one player (requires 2+ players for the game to not end instantly)          |
-| `dev_override_dev_loot_pools` | Changes the dev game barrel locations to be dev specific, instead of being the default of a normal game                                 |
+| `dev_override_dev_loot_pools` | Changes the dev game barrel locations to be dev specific, instead of being the default of a normal game                            |
 | `dev_show_interactions`       | Shows particles at interaction entities when nearby                                                                                |
 | `dev_show_markers`            | Shows block aligned particles at marker entities when nearby                                                                       |
 | `dev_show_markers_accurate`   | Shows particles directly at marker entities when nearby                                                                            |
 | `doors`                       | Allows use of doors and the `doors_1x2`,  `doors_2x2`, and `doors_3x3` feature flags                                               |
 | `doors_1x2`                   | Allows use of 1x2 doors and all functions in `statues:ingame/mechanics/doors_1x2` (requires `doors` feature flag)                  |
-| `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:ingame/mechanics/doors` (requires `doors` feature flag)                      |
+| `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:ingame/mechanics/doors_2x2` (requires `doors` feature flag)                  |
 | `doors_3x3`                   | Allows use of 3x3 doors and all functions in `statues:ingame/mechanics/doors_3x3`  (requires `doors` feature flag)                 |
 | `dynamic_maps`                | Enables experimental dynamic maps feature                                                                                          |
 | `elevator`                    | Enables elevators and allows use of all functions in `statues:ingame/mechanics/elevator`                                           |
-| `experimental_flashlight`     | Updates flashlight to use spyglass+night vision behavior instead and use functions from `statues:ingame/mechanics/flashlight/next` |
-| `flashlight`                  | Enables the flashlight item behavior and functions in `statues:ingame/mechanics/flashlight`                                        |
-| `floors`                      | Shows the current objective and floor to survivors, allows the use of all functions in `statues:ingame/mechanics/floors`           |
+| `experimental_flashlight`     | Updates flashlight to use spyglass+night vision behavior instead and use functions from `statues:mechanics/flashlight/next`        |
+| `flashlight`                  | Enables the flashlight item behavior and functions in `statues:mechanics/flashlight`                                               |
+| `floors`                      | Shows the current objective and floor to survivors, allows the use of all functions in `statues:mechanics/floors`                  |
 | `hiding`                      | Enables ticking hiding spots                                                                                                       |
-| `lights`                      | Allows creating and modifying lights and all functions in `statues:ingame/mechanics/lights`                                        |
+| `lights`                      | Allows creating and modifying lights and all functions in `statues:mechanics/lights`                                               |
 | `map_tick`                    | Enables map ticking                                                                                                                |
-| `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:ingame/mechanics/power_doors`                          |
+| `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:mechanics/power_doors`                                 |
 | `queue`                       | Enables the queue system in the lobby                                                                                              |
-| `sas`                         | Enables SAS machines and all functions in `statues:ingame/mechanics/sas`                                                           |
+| `sas`                         | Enables SAS machines and all functions in `statues:mechanics/sas`                                                                  |
 | `spectators_actionbar`        | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                            |
 | `survivors_heart_sidebar`     | Enables showing hearts in the survivors scoreboard, shows `<>hp` when disabled instead                                             |
 | `tutorial`                    | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`                     |
-| `vents`                       | Allows interacting with vents and all functions in `statues:ingame/mechanics/vents`                                                |
+| `vents`                       | Allows interacting with vents and all functions in `statues:mechanics/vents`                                                       |
 
 ### Enabling/Disabling
 

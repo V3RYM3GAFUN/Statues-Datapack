@@ -25,9 +25,9 @@ execute if score abilities Statues.FeatureFlags matches 0 run scoreboard players
 execute unless score abilities Statues.FeatureFlags matches ..0 run scoreboard players display numberformat abilities Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name abilities Statues.FeatureFlags {"text":"Abilities Feature"}
 
-execute if score blood_traces Statues.FeatureFlags matches 0 run scoreboard players display numberformat blood_traces Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
-execute unless score blood_traces Statues.FeatureFlags matches ..0 run scoreboard players display numberformat blood_traces Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
-scoreboard players display name blood_traces Statues.FeatureFlags {"text":"Blood Trails Feature"}
+execute if score blood_trails Statues.FeatureFlags matches 0 run scoreboard players display numberformat blood_trails Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score blood_trails Statues.FeatureFlags matches ..0 run scoreboard players display numberformat blood_trails Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name blood_trails Statues.FeatureFlags {"text":"Blood Trails Feature"}
 
 execute if score class_preview Statues.FeatureFlags matches -1 run scoreboard players display numberformat class_preview Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
 execute if score class_preview Statues.FeatureFlags matches 0 run scoreboard players display numberformat class_preview Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}

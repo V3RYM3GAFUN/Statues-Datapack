@@ -42,7 +42,7 @@ scoreboard players reset * Statues.GameStatistics
 scoreboard players reset * Statues.Advancements.IngameNoDamage
 
 #> Turn off power
-function statues:ingame/mechanics/lights/lights_off
+function statues:mechanics/lights/lights_off
 
 #> Clears every container that had an item in it
 execute at @e[tag=objective_reset] run data merge block ~ ~ ~ {Items:[]}
