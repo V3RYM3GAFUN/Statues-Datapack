@@ -9,7 +9,7 @@
     "statues:game_events/mechanics/elevator_2x3x2/server_tick",
     "statues:game_events/mechanics/elevator_3x3x3/server_tick",
     "statues:game_events/mechanics/elevator_freight/server_tick",
-    "statues:ingame/mechanics/spectators_actionbar/game_events/server_tick",
+    "statues:game_events/mechanics/spectators_actionbar/server_tick",
     "statues:game_events/mechanics/sas/server_tick",
     "statues:game_events/mechanics/compass_tracker/server_tick",
     "statues:game_events/mechanics/doors_1x2/server_tick",

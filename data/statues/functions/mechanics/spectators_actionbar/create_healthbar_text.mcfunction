@@ -8,5 +8,5 @@ execute store result score $SpectatorAbsorptionHealth Statues.TempData run data 
 scoreboard players add $SpectatorAbsorptionHealth Statues.TempData 99
 scoreboard players operation $SpectatorAbsorptionHealth Statues.TempData /= $100 Statues.Constants
 
-function statues:ingame/mechanics/spectators_actionbar/healthbar_update_normal
-function statues:ingame/mechanics/spectators_actionbar/healthbar_update_absorption
+function statues:mechanics/spectators_actionbar/healthbar_update_normal
+function statues:mechanics/spectators_actionbar/healthbar_update_absorption

@@ -5,4 +5,4 @@ execute if score $SpectatorAbsorptionHealth Statues.TempData matches 1 run data 
 
 scoreboard players remove $SpectatorAbsorptionHealth Statues.TempData 2
 
-execute if score $SpectatorAbsorptionHealth Statues.TempData matches 1.. run function statues:ingame/mechanics/spectators_actionbar/healthbar_update_absorption
+execute if score $SpectatorAbsorptionHealth Statues.TempData matches 1.. run function statues:mechanics/spectators_actionbar/healthbar_update_absorption

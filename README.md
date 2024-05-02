@@ -71,7 +71,7 @@ dev_see_game_events
 | `sas`                         | Enables SAS machines and all functions in `statues:mechanics/sas`                                                                  |
 | `spectators_actionbar`        | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                            |
 | `survivors_heart_sidebar`     | Enables showing hearts in the survivors scoreboard, shows `<>hp` when disabled instead                                             |
-| `tutorial`                    | Shows actionbar for spectators, and access to all functions in `statues:ingame/mechanics/spectators_actionbar`                     |
+| `tutorial`                    | Shows actionbar for spectators, and access to all functions in `statues:mechanics/spectators_actionbar`                     |
 | `vents`                       | Allows interacting with vents and all functions in `statues:mechanics/vents`                                                       |
 
 ### Enabling/Disabling
