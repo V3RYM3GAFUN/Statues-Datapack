@@ -8,6 +8,7 @@
     "statues:game_events/mechanics/class_preview/player_tick",
     "statues:game_events/mechanics/vents/player_tick",
     "statues:game_events/mechanics/blood_trails/player_tick",
-    "statues:game_events/mechanics/survivors_heartbeat/player_tick"
+    "statues:game_events/mechanics/survivors_heartbeat/player_tick",
+    "statues:game_events/mechanics/survivors_healthbar/player_tick"
   ]
 }

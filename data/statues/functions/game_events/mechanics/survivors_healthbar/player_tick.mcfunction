@@ -1,0 +1,1 @@
+execute if entity @s[team=Survivor] run function statues:mechanics/survivors_healthbar/player_tick
