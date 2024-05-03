@@ -3,7 +3,7 @@
     "statues:feature_flags/tick_scoreboard",
     "statues:debug/show_entities",
     "statues:base_mechanics/triggers/check_trigger_handler",
-    "statues:lobby/mapvoting/vote_base",
+    "statues:game_events/mechanics/mapvoting/server_tick",
     "statues:game_events/mechanics/lights/server_tick",
     "statues:game_events/mechanics/elevator_buttons/server_tick",
     "statues:game_events/mechanics/elevator_2x3x2/server_tick",

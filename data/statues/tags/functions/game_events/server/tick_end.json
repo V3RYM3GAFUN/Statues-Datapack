@@ -1,5 +1,5 @@
 {
   "values": [
-    "statues:lobby/class_preview/game_events/server_tick_end"
+    "statues:game_events/mechanics/class_preview/server_tick_end"
   ]
 }

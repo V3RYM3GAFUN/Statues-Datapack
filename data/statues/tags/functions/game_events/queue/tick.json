@@ -2,6 +2,6 @@
   "values": [
     "statues:game_events/dev/non_map_tick",
     "statues:lobby/pregame/countdown",
-    "statues:lobby/queue/game_events/tick"
+    "statues:game_events/mechanics/queue/queue_tick"
   ]
 }

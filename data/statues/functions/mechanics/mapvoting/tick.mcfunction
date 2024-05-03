@@ -4,12 +4,12 @@ execute store result score origins Statues.MapVote if entity @a[tag=vote_origins
 
 data merge storage statues:data {mapvote:{map_name:"facade"}}
 execute store result storage statues:data mapvote.votes int 1 run scoreboard players get facade Statues.MapVote
-function statues:lobby/mapvoting/vote_display_macro with storage statues:data mapvote
+function statues:mechanics/mapvoting/vote_display_macro with storage statues:data mapvote
 
 data merge storage statues:data {mapvote:{map_name:"lockdown"}}
 execute store result storage statues:data mapvote.votes int 1 run scoreboard players get lockdown Statues.MapVote
-function statues:lobby/mapvoting/vote_display_macro with storage statues:data mapvote
+function statues:mechanics/mapvoting/vote_display_macro with storage statues:data mapvote
 
 data merge storage statues:data {mapvote:{map_name:"origins"}}
 execute store result storage statues:data mapvote.votes int 1 run scoreboard players get origins Statues.MapVote
-function statues:lobby/mapvoting/vote_display_macro with storage statues:data mapvote
+function statues:mechanics/mapvoting/vote_display_macro with storage statues:data mapvote

@@ -12,7 +12,7 @@ execute unless score dev_no_start_requirement Statues.FeatureFlags matches 1.. u
 execute unless score dev_no_start_requirement Statues.FeatureFlags matches 1.. unless score $QueuedCount Statues.DynamicData matches 4..11 run function statues:reset
 execute unless score dev_no_start_requirement Statues.FeatureFlags matches 1.. unless score $QueuedCount Statues.DynamicData matches 4..11 run return 0
 
-function statues:lobby/mapvoting/choose
+function statues:mechanics/mapvoting/choose
 execute unless score $QueuedCount Statues.DynamicData matches 7.. run function statues:lobby/pregame/1monster
 execute if score $QueuedCount Statues.DynamicData matches 7.. run function statues:lobby/pregame/2monsters
 

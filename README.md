@@ -37,7 +37,7 @@ dev_see_game_events
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | `abilities`                   | Enables abilities of classes, and all the abilities functions                                                                      |
 | `blood_trails`                | Enables survivor blood trails (best if activated/deactivated before the game starts, to make sure there are no leftover entities)  |
-| `class_preview`               | Enables tutorial class preview and functions in `statues:lobby/class_preview` (requires `abilities` and `tutorial` feature flags)  |
+| `class_preview`               | Enables tutorial class preview and functions in `statues:mechanics/class_preview` (requires `abilities` and `tutorial` feature flags)  |
 | `compass_tracker`             | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point  |
 | `desk_button`                 | Enables desk buttons. Also enables all functions in `statues:mechanics/desk_button`                                                |
 | `dev_allow_debug_info`        | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                         |
