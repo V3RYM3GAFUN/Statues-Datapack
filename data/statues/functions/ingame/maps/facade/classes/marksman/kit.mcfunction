@@ -8,6 +8,7 @@ loot replace entity @s hotbar.0 loot statues:items/facade/classes/marksman/snipe
 loot replace entity @s hotbar.1 loot statues:items/facade/classes/marksman/sniper_ammo
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar
+loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 
 item replace entity @s armor.head with player_head{display:{Name:'{"text":"Marksman\'s helmet"}'},SkullOwner: {Id: [I; -21530089, -992393454, -1370318747, 1865408282], Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM3YzEzZjNhNGM1OWFkNmJlZmE3ZjQzMmViNDBiODAxMDliZDkwZGNmZDI2MGY4ODY0ZmI0MTZjOTY2ZDc4MCJ9fX0="}]}}}
 

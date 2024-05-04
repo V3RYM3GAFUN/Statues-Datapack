@@ -10,6 +10,7 @@ loot replace entity @s hotbar.0 loot statues:items/facade/classes/juggernaut/ant
 loot replace entity @s hotbar.1 loot statues:items/facade/classes/juggernaut/strong_anti_anomaly_ammo
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar
+loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 
 loot replace entity @s hotbar.5 loot statues:items/facade/classes/juggernaut/potion_armor
 loot replace entity @s inventory.0 loot statues:items/facade/classes/juggernaut/potion_armor

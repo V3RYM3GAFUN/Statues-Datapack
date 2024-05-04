@@ -10,6 +10,7 @@ loot replace entity @s hotbar.1 loot statues:items/facade/classes/medic/adrenali
 loot replace entity @s hotbar.2 loot statues:items/facade/classes/medic/weak_anti_anomaly_ammo
 
 loot replace entity @s hotbar.3 loot statues:items/crowbar
+loot replace entity @s hotbar.4 loot statues:items/dynamic_map_survivor
 
 loot replace entity @s hotbar.5 loot statues:items/facade/classes/medic/potion_stim
 loot replace entity @s inventory.0 loot statues:items/facade/classes/medic/potion_stim

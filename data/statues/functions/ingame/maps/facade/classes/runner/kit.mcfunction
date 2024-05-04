@@ -9,6 +9,7 @@ loot replace entity @s hotbar.0 loot statues:items/facade/classes/runner/anti_an
 loot replace entity @s hotbar.1 loot statues:items/facade/classes/runner/weak_anti_anomaly_ammo
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar
+loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 
 item replace entity @s armor.head with player_head{display:{Name:'{"text":"Runner\'s helmet"}'},SkullOwner: {Id: [I; -1925825735, 286674216, -1522073039, -1856057337], Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQzNzI4NTc5MzEzMWVkNzU1ZjFiMDA5OGYyOWRkNDEzZDY3NjU2YjYyMDg3Mjg5MzU0OTJiNDliMWQwZDRiYSJ9fX0="}]}}}
 

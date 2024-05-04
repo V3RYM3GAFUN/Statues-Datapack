@@ -6,6 +6,7 @@ loot replace entity @s hotbar.0 loot statues:items/facade/classes/shotgunner/sho
 loot replace entity @s hotbar.1 loot statues:items/facade/classes/shotgunner/weak_anti_anomaly_ammo
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar
+loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 
 item replace entity @s armor.head with player_head{display:{Name:'{"text":"Shotgunner\'s helmet"}'},SkullOwner: {Id: [I; 1246757609, -563001642, -2058751332, -311473162], Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhmZTU5MzViMmIzMjAyOWZiODY2ZTFhOTY2ODNmOWI4MDhkMzVkZDljZDNhNzY5NDU1MzRkYmQwZWM0MWNhOSJ9fX0="}]}}}
 

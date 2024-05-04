@@ -5,6 +5,7 @@ scoreboard players set @s Statues.Players 0
 loot replace entity @s hotbar.0 loot statues:items/facade/classes/gunner/anti_anomaly_gun
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar
+loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 
 loot replace entity @s hotbar.6 loot statues:items/facade/classes/gunner/strong_anti_anomaly_ammo
 loot replace entity @s hotbar.7 loot statues:items/facade/classes/gunner/weak_anti_anomaly_ammo
