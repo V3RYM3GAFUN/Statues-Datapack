@@ -6,8 +6,8 @@ execute at @s[y_rotation=90] positioned ~ ~.5 ~.25 if entity @a[distance=..2,gam
 execute if entity @s[tag=1x2door,tag=door1x2_opening,tag=!door1x2_opened] run function statues:mechanics/doors_1x2/open
 execute if entity @s[tag=1x2door,tag=!door1x2_opening,tag=door1x2_opened] run function statues:mechanics/doors_1x2/close
 
-execute at @s[y_rotation=0] positioned ~ ~1 ~ unless entity @e[tag=1x2top,distance=..2] align xyz run summon block_display ~ ~ ~-.4 {block_state:{Name:"minecraft:iron_door",Properties:{half:"upper",hinge:"right"}},Tags:["1x2display","1x2top"],Rotation:[0f]}
-execute at @s[y_rotation=0] unless entity @e[tag=1x2bottom,distance=..2] align xyz run summon block_display ~ ~ ~-.4 {block_state:{Name:"minecraft:iron_door",Properties:{half:"lower",hinge:"right"}},Tags:["1x2display","1x2bottom"],Rotation:[0f]}
+execute at @s[y_rotation=0] positioned ~ ~1 ~ unless entity @e[tag=1x2top,distance=..2] align xyz run summon block_display ~ ~ ~-.4 {block_state:{Name:"minecraft:iron_door",Properties:{half:"upper",hinge:"right"}},Tags:["1x2display","1x2top"],Rotation:[0f,0f]}
+execute at @s[y_rotation=0] unless entity @e[tag=1x2bottom,distance=..2] align xyz run summon block_display ~ ~ ~-.4 {block_state:{Name:"minecraft:iron_door",Properties:{half:"lower",hinge:"right"}},Tags:["1x2display","1x2bottom"],Rotation:[0f,0f]}
 
-execute at @s[y_rotation=90] positioned ~ ~1 ~ unless entity @e[tag=1x2top,distance=..2] align xyz run summon block_display ~1.4 ~ ~ {block_state:{Name:"minecraft:iron_door",Properties:{half:"upper",hinge:"right"}},Tags:["1x2display","1x2top"],Rotation:[90f]}
-execute at @s[y_rotation=90] unless entity @e[tag=1x2bottom,distance=..2] align xyz run summon block_display ~1.4 ~ ~ {block_state:{Name:"minecraft:iron_door",Properties:{half:"lower",hinge:"right"}},Tags:["1x2display","1x2bottom"],Rotation:[90f]}
+execute at @s[y_rotation=90] positioned ~ ~1 ~ unless entity @e[tag=1x2top,distance=..2] align xyz run summon block_display ~1.4 ~ ~ {block_state:{Name:"minecraft:iron_door",Properties:{half:"upper",hinge:"right"}},Tags:["1x2display","1x2top"],Rotation:[90f,0f]}
+execute at @s[y_rotation=90] unless entity @e[tag=1x2bottom,distance=..2] align xyz run summon block_display ~1.4 ~ ~ {block_state:{Name:"minecraft:iron_door",Properties:{half:"lower",hinge:"right"}},Tags:["1x2display","1x2bottom"],Rotation:[90f,0f]}

@@ -1,4 +1,4 @@
-execute as @e[type=text_display,tag=objective_facade_book] run data modify entity @s text set value "{'text':''}"
+execute as @e[type=text_display,tag=objective_facade_book] run data modify entity @s text set value "{\"text\":\"\"}"
 
 tag @a[team=Survivor,distance=..2.5] add win
 gamemode spectator @a[team=Survivor,distance=..2.5]

@@ -8,4 +8,4 @@ particle falling_lava ~ ~ ~ 1 0 1 0 1 normal @a[team=Dev,distance=..30]
 execute if score @s Statues.SurvivorTrail matches 0.. run scoreboard players remove @s Statues.SurvivorTrail 1
 execute if score @s Statues.SurvivorTrail matches 0 run kill @s
 
-execute if block ~ ~-.1 ~ air run tp @s ~ ~-.05 ~ 
+execute if block ~ ~-.1 ~ air run tp @s ~ ~-.05 ~

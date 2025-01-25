@@ -5,7 +5,7 @@ execute if score @s Statues.Abilities matches 2.. run scoreboard players set @s 
 #> Activate ability
 
 # Cooldown
-execute if score @s Statues.Players matches 1..4200 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"X-ray","italic":false,"color":"gray"}]',Lore:['[{"text":"Reveals the monsters,","italic":false}]','[{"text":"but you get revealed too","italic":false}]','[{"text":"Cooldown: 3m30s","italic":false}]']},HideFlags:4}
+# execute if score @s Statues.Players matches 1..4200 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"X-ray","italic":false,"color":"gray"}]',Lore:['[{"text":"Reveals the monsters,","italic":false}]','[{"text":"but you get revealed too","italic":false}]','[{"text":"Cooldown: 3m30s","italic":false}]']},HideFlags:4}
 
 execute if score @s Statues.Abilities matches 1.. if score @s Statues.Players matches ..0 run scoreboard players set @s Statues.Players 4200
 
@@ -22,7 +22,7 @@ execute if score @s Statues.Players matches 1..4200 run scoreboard players remov
 function statues:mechanics/xp_bar/from_cooldown { max: 4200 }
 
 #> Enchant the ability item back after a x seconds cooldown
-execute if score @s Statues.Players matches ..0 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"X-ray","italic":false,"color":"gray"}]',Lore:['[{"text":"Reveals the monsters,","italic":false}]','[{"text":"but you get revealed too","italic":false}]','[{"text":"Cooldown: 3m30s","italic":false}]']},Enchantments:[{}],HideFlags:4}
+# execute if score @s Statues.Players matches ..0 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"X-ray","italic":false,"color":"gray"}]',Lore:['[{"text":"Reveals the monsters,","italic":false}]','[{"text":"but you get revealed too","italic":false}]','[{"text":"Cooldown: 3m30s","italic":false}]']},Enchantments:[{}],HideFlags:4}
 
 #> Prevents duplicates
 execute store result score $Carrots Statues.ItemCount run clear @s carrot_on_a_stick 0

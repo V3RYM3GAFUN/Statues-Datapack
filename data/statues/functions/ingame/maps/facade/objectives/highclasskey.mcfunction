@@ -4,14 +4,14 @@ fill 22 135 345 22 136 345 glass_pane
 
 execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run data merge entity @s {height:0}
 
-execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value "{'text':''}"
+execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value "{\"text\":\"\"}"
 execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s background set value 0
 
 scoreboard players set $Objective Statues.DynamicData 9
 
 execute as @a[team=!Monster] at @s run playsound minecraft:block.vault.insert_item master @a ~ ~ ~ 1 1.5
 
-clear @a iron_ingot{facade_highclass_item:1b} 1
+clear @a iron_ingot[custom_data={facade_highclass_item:1b}] 1
 
 weather thunder
 

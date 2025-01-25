@@ -1,7 +1,7 @@
 execute unless function statues:feature_flags/check_tutorial_flags run return fail
 tp @s @e[tag=tutorial_step3,limit=1]
 
-clear @s[tag=tutorial] iron_ingot{tutorial_key:1b}
+clear @s[tag=tutorial] iron_ingot[custom_data={tutorial_key:1b}]
 
 tellraw @s ""
 tellraw @s [{"translate":"statues.tutorial.title","bold":true,"color":"aqua"}]

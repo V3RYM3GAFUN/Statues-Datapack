@@ -8,11 +8,11 @@ loot replace entity @s hotbar.1 loot statues:items/facade/classes/shotgunner/wea
 loot replace entity @s hotbar.2 loot statues:items/crowbar
 loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 
-item replace entity @s armor.head with player_head{display:{Name:'{"text":"Shotgunner\'s helmet"}'},SkullOwner: {Id: [I; 1246757609, -563001642, -2058751332, -311473162], Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhmZTU5MzViMmIzMjAyOWZiODY2ZTFhOTY2ODNmOWI4MDhkMzVkZDljZDNhNzY5NDU1MzRkYmQwZWM0MWNhOSJ9fX0="}]}}}
+item replace entity @s armor.head with player_head[custom_name='{"text":"Shotgunner\'s helmet"}',profile={id:[I;1246757609,-563001642,-2058751332,-311473162],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhmZTU5MzViMmIzMjAyOWZiODY2ZTFhOTY2ODNmOWI4MDhkMzVkZDljZDNhNzY5NDU1MzRkYmQwZWM0MWNhOSJ9fX0="}]}]
 
-item replace entity @s armor.chest with leather_chestplate{display:{color:16701501,Name:'["",{"text":"Shotgunner Outfit","italic":false,"color":"gold","bold":true}]'},Unbreakable:1,HideFlags:68}
-item replace entity @s armor.legs with leather_leggings{display:{color:16701501,Name:'["",{"text":"Shotgunner Outfit","italic":false,"color":"gold","bold":true}]'},Unbreakable:1,HideFlags:68}
-item replace entity @s armor.feet with leather_boots{display:{color:16701501,Name:'["",{"text":"Shotgunner Outfit","italic":false,"color":"gold","bold":true}]'},Unbreakable:1,HideFlags:68}
+item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:0b},custom_name='["",{"text":"Shotgunner Outfit","italic":false,"color":"gold","bold":true}]',dyed_color={rgb:16701501,show_in_tooltip:0b}]
+item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:0b},custom_name='["",{"text":"Shotgunner Outfit","italic":false,"color":"gold","bold":true}]',dyed_color={rgb:16701501,show_in_tooltip:0b}]
+item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:0b},custom_name='["",{"text":"Shotgunner Outfit","italic":false,"color":"gold","bold":true}]',dyed_color={rgb:16701501,show_in_tooltip:0b}]
 
 loot replace entity @s weapon.offhand loot statues:items/flashlight
 

@@ -10,11 +10,11 @@ loot replace entity @s hotbar.0 loot statues:items/facade/classes/brawler/stun_b
 loot replace entity @s hotbar.2 loot statues:items/crowbar
 loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 
-item replace entity @s armor.head with player_head{display:{Name:'{"text":"Brawler\'s helmet"}'},SkullOwner: {Id: [I; -662616329, -1973991523, -1808312113, 1763872922], Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQyNWVjZDA2ODQ3ZTQ5OGE4OWU0MmE2M2RlOGEwNzI3MzNjYjQ1ODZjYjMwMThkODM5NTExZDYwNjBmZjk0YyJ9fX0="}]}}}
+item replace entity @s armor.head with player_head[custom_name='{"text":"Brawler\'s helmet"}',profile={id:[I;-662616329,-1973991523,-1808312113,1763872922],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQyNWVjZDA2ODQ3ZTQ5OGE4OWU0MmE2M2RlOGEwNzI3MzNjYjQ1ODZjYjMwMThkODM5NTExZDYwNjBmZjk0YyJ9fX0="}]}]
 
-item replace entity @s armor.chest with leather_chestplate{Trim:{pattern:dune,material:diamond},display:{color:11546150,Name:'["",{"text":"Brawler Outfit","italic":false,"color":"dark_red","bold":true}]'},Unbreakable:1,HideFlags:196}
-item replace entity @s armor.legs with leather_leggings{Trim:{pattern:tide,material:diamond},display:{color:11546150,Name:'["",{"text":"Brawler Outfit","italic":false,"color":"dark_red","bold":true}]'},Unbreakable:1,HideFlags:196}
-item replace entity @s armor.feet with leather_boots{Trim:{pattern:snout,material:diamond},display:{color:11546150,Name:'["",{"text":"Brawler Outfit","italic":false,"color":"dark_red","bold":true}]'},Unbreakable:1,HideFlags:196}
+item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:0b},custom_name='["",{"text":"Brawler Outfit","italic":false,"color":"dark_red","bold":true}]',dyed_color={rgb:11546150,show_in_tooltip:0b},trim={pattern:"dune",material:"diamond"}]
+item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:0b},custom_name='["",{"text":"Brawler Outfit","italic":false,"color":"dark_red","bold":true}]',dyed_color={rgb:11546150,show_in_tooltip:0b},trim={pattern:"tide",material:"diamond"}]
+item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:0b},custom_name='["",{"text":"Brawler Outfit","italic":false,"color":"dark_red","bold":true}]',dyed_color={rgb:11546150,show_in_tooltip:0b},trim={pattern:"snout",material:"diamond"}]
 
 loot replace entity @s weapon.offhand loot statues:items/flashlight
 

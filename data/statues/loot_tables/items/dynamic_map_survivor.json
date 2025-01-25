@@ -1,19 +1,21 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:filled_map",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{map:742001}"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "minecraft:custom_data": {
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:filled_map",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{map:742001}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

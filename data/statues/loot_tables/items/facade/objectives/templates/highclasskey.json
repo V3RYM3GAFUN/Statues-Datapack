@@ -1,4 +1,5 @@
 {
+  "minecraft:custom_data": {
     "type": "minecraft:generic",
     "pools": [
       {
@@ -12,8 +13,8 @@
                 "function": "minecraft:set_name",
                 "entity": "this",
                 "name": {
-                    "text": "High Class Keycard",
-                    "italic": false
+                  "text": "High Class Keycard",
+                  "italic": false
                 }
               },
               {
@@ -26,4 +27,4 @@
       }
     ]
   }
-  
+}

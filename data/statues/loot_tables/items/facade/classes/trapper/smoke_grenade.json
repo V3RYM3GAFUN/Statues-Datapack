@@ -1,28 +1,30 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:lingering_potion",
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": {
-                "text": "Smoke grenade",
-                "color": "gray",
-                "italic": false
+  "minecraft:custom_data": {
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:lingering_potion",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Smoke grenade",
+                  "color": "gray",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionColor:6184542,custom_potion_effects:[{id:\"blindness\",duration:60,show_particles:0b,show_icon:0b},{id:\"nausea\",duration:160,show_particles:0b,show_icon:0b},{id:\"slowness\",duration:120,amplifier:3b,show_particles:0b,show_icon:0b}]}"
               }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomPotionColor:6184542,custom_potion_effects:[{id:\"blindness\",duration:60,show_particles:0b,show_icon:0b},{id:\"nausea\",duration:160,show_particles:0b,show_icon:0b},{id:\"slowness\",duration:120,amplifier:3b,show_particles:0b,show_icon:0b}]}"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

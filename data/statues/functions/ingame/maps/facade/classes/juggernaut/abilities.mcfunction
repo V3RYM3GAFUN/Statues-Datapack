@@ -20,8 +20,8 @@ execute if score @s Statues.Players matches 1..4200 run scoreboard players remov
 function statues:mechanics/xp_bar/from_cooldown { max: 4200 }
 
 #> Removes shield after 30 seconds, then 60 seconds cooldown
-execute if score @s Statues.Players matches 1..3600 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"Retractable shield","italic":false,"color":"gray"}]',Lore:['[{"text":"Cooldown: 60 secs","italic":false}]']},HideFlags:4}
-execute if score @s Statues.Players matches ..0 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"Retractable shield","italic":false,"color":"gray"}]',Lore:['[{"text":"Cooldown: 60 secs","italic":false}]']},Enchantments:[{}],HideFlags:4}
+# execute if score @s Statues.Players matches 1..3600 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"Retractable shield","italic":false,"color":"gray"}]',Lore:['[{"text":"Cooldown: 60 secs","italic":false}]']},HideFlags:4}
+# execute if score @s Statues.Players matches ..0 run item replace entity @s hotbar.4 with carrot_on_a_stick{Unbreakable:1,CustomModelData:3,display:{Name:'[{"text":"Retractable shield","italic":false,"color":"gray"}]',Lore:['[{"text":"Cooldown: 60 secs","italic":false}]']},Enchantments:[{}],HideFlags:4}
 
 #> Prevents the player from duplicating items
 execute store result score $Shields Statues.ItemCount run clear @s shield 0
