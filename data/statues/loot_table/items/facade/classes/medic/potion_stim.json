@@ -12,7 +12,6 @@
               "entity": "this",
               "name": {
                 "text": "Stim",
-                "extra": [],
                 "color": "light_purple",
                 "italic": false
               }
@@ -54,8 +53,7 @@
                 }
               }
             }
-          ],
-          "conditions": []
+          ]
         }
       ]
     }

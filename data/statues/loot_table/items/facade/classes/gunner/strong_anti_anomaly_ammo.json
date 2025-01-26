@@ -24,7 +24,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
-                  "custom_color": 568831,
+                  "custom_color": 12287,
                   "custom_effects": [
                     {
                       "id": "minecraft:blindness",
