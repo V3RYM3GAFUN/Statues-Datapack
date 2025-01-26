@@ -1,11 +1,13 @@
 {
-  "minecraft:custom_data": {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "equipment": {
-        "mainhand": {
-          "nbt": "{facade_genkey_item:1b}"
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "components": {
+          "minecraft:custom_data": {
+            "facade_genkey_item": true
+          }
         }
       }
     }

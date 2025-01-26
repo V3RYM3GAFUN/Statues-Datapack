@@ -1,10 +1,8 @@
 {
-  "minecraft:custom_data": {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "type": "minecraft:item",
-      "nbt": "{Item:{tag:{objective_item:1b}}}"
-    }
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:item",
+    "nbt": "{Item:{tag:{objective_item:1b}}}"
   }
 }

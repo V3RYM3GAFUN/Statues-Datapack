@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Strong Anti-anomaly Ammo",
+                "color": "dark_blue",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 32
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 568831,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:blindness",
+                      "duration": 100,
+                      "show_particles": false,
+                      "show_icon": false
+                    },
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 10,
+                      "duration": 140,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
