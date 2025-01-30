@@ -14,7 +14,7 @@ tag @s remove class_selected
 tag @s remove monster1
 tag @s remove monster2
 tag @s remove monster_chosen
-tag @s remove 002
+tag @s remove vent_always_available
 
 tag @s remove vote_facade
 tag @s remove vote_lockdown

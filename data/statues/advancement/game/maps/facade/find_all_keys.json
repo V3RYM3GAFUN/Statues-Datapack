@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_ingot",
+      "components": {
+        "minecraft:custom_model_data": 4
+      }
+    },
+    "title": "Dream Luck",
+    "description": "Find all the keys in the map.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "statues:game/maps/facade/win_as_survivor",
+  "criteria": {
+    "get": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "get"
+    ]
+  ]
+}

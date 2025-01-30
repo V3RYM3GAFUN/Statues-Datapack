@@ -1,4 +1,4 @@
-tellraw @a {"text":"Statues. Indev - v0.1.0-alpha", "color": "#00AAAA"}
+tellraw @a {"text":"Statues. Indev Preview", "color": "#00AAAA"}
 
 scoreboard objectives add Statues.Monsters dummy "Monsters"
 scoreboard objectives setdisplay sidebar.team.dark_red Statues.Monsters

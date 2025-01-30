@@ -28,9 +28,6 @@ fill 22 135 345 22 136 345 air
 #> Book text 
 execute as @e[type=text_display,tag=objective_facade_book] run data modify entity @s text set value "{\"text\":\"CONFIDENTIAL book\",\"color\":\"dark_red\"}"
 
-#> Temporary solution in the freight elevator
-setblock 1 111 285 air
-
 #> Temporary solution for vents that go into the archives
 # South
 setblock 26 114 357 minecraft:air
@@ -41,6 +38,6 @@ setblock -24 114 307 minecraft:air
 setblock 26 114 307 minecraft:air
 
 # Armory doors
-execute as @e[tag=facade_armory,type=text_display] run data modify entity @s text set value "{\"text\":\"Amoury keycard\",\"color\":\"dark_red\"}"
+execute as @e[tag=facade_armory,type=text_display] run data modify entity @s text set value "{\"text\":\"Armory keycard\",\"color\":\"dark_red\"}"
 execute as @e[tag=facade_armory,type=interaction] run tag @s remove opened
 clone -40 59 344 -40 57 346 -40 63 344

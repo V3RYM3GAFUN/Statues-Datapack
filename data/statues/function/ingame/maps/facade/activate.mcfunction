@@ -59,3 +59,5 @@ scoreboard players set $CompassSelector Statues.DynamicData 0
 
 #> Stop force loading the chunks once the items have generated
 forceload remove 54 257 -82 394
+
+advancement grant @a[team=!Lobby,team=!Dev] only statues:game/maps/facade/play_once

@@ -1,17 +1,17 @@
 {
     "pack": {
-        "pack_format": 48,
-        "description": "InDev Datapack - v0.1.0-alpha"
+        "pack_format": 61,
+        "description": "Statues. Dev Preview"
     },
     "filter": {
         "block": [
             {
                 "namespace": "minecraft",
-                "path": "advancements/.*"
+                "path": "advancement/"
             },
 		    {
                 "namespace": "minecraft",
-                "path": "recipes/.*"
+                "path": "recipe/"
             }
         ]
     }

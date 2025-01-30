@@ -2,6 +2,7 @@
 scoreboard players set @s Statues.Monsters 3
 scoreboard players display numberformat @s Statues.Monsters fixed {"text":"003: \"The Brawler\"","color": "red"}
 tag @s add monster_chosen
+tag @s add vent_always_available
 
 #> Stats for each monster
 effect give @s night_vision infinite 0 true

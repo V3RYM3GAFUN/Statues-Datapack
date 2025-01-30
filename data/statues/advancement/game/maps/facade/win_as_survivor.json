@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:stick",
+      "components": {
+        "custom_model_data": 10
+      }
+    },
+    "title": "It's Highly Confidential",
+    "description": "Win on Façade as survivor.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "statues:game/maps/facade/play_once",
+  "criteria": {
+    "survivor": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "survivor"
+    ]
+  ]
+}
