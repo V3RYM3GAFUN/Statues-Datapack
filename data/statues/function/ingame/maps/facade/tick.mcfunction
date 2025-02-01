@@ -25,7 +25,7 @@ execute if score $Objective Statues.DynamicData matches 9 run data modify storag
 execute if score $Objective Statues.DynamicData matches 9 run data modify storage statues:data objective_floor set value 1
 execute if score $Objective Statues.DynamicData matches 10 run data modify storage statues:data objective_text set value '{"text":"Get to the van and escape!","color":"dark_red","bold":true}'
 execute if score $Objective Statues.DynamicData matches 10 run data modify storage statues:data objective_floor set value 1
-execute if score $Objective Statues.DynamicData matches 11 run data modify storage statues:data objective_text set value '{"text":"Survivor or escape!","color":"red","bold":true}'
+execute if score $Objective Statues.DynamicData matches 11 run data modify storage statues:data objective_text set value '{"text":"Survive or escape!","color":"red","bold":true}'
 execute if score $Objective Statues.DynamicData matches 11 run data modify storage statues:data objective_floor set value 1
 
 #> Generator power detection

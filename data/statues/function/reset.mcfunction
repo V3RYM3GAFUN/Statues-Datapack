@@ -11,7 +11,7 @@ scoreboard players set $Status Statues.DynamicData 0
 
 kill @e[type=item]
 
-execute as @a run attribute @s generic.movement_speed base set 0.1
+execute as @a run attribute @s movement_speed base set 0.1
 
 effect give @a instant_health 1 100 true
 effect give @a saturation infinite 100 true

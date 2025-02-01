@@ -3,7 +3,9 @@
     "icon": {
       "id": "minecraft:stick",
       "components": {
-        "custom_model_data": 10
+        "custom_data": {
+          "custom_model_data": 10
+        }
       }
     },
     "title": "It's Highly Confidential",
