@@ -27,7 +27,9 @@
                 "minecraft:unbreakable": {
                   "show_in_tooltip": false
                 },
-                "minecraft:custom_model_data": 6
+                "custom_data": {
+                  "custom_model_data": 6
+                }
               }
             }
           ]

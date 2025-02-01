@@ -25,7 +25,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 11
+                "custom_data": {
+                  "custom_model_data": 11
+                }
               }
             }
           ]

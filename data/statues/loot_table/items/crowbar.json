@@ -30,8 +30,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 10,
                 "minecraft:custom_data": {
+                  "custom_model_data": 10,
                   "is_crowbar": true
                 }
               }

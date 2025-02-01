@@ -19,54 +19,56 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_model_data": 2,
-                "minecraft:potion_contents": {
-                  "custom_color": 16657023,
-                  "custom_effects": []
-                },
-                "minecraft:food": {
-                  "nutrition": 5,
-                  "saturation": 1.0,
-                  "can_always_eat": true,
-                  "eat_seconds": 0.1,
-                  "effects": [
-                    {
-                      "effect": {
-                        "id": "minecraft:instant_health",
-                        "amplifier": 1,
-                        "duration": 1,
-                        "show_particles": false,
-                        "show_icon": false
+                "custom_data": {
+                  "custom_model_data": 7,
+                  "minecraft:potion_contents": {
+                    "custom_color": 16657023,
+                    "custom_effects": []
+                  },
+                  "minecraft:food": {
+                    "nutrition": 5,
+                    "saturation": 1.0,
+                    "can_always_eat": true,
+                    "eat_seconds": 0.1,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:instant_health",
+                          "amplifier": 1,
+                          "duration": 1,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:speed",
+                          "amplifier": 2,
+                          "duration": 100,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:regeneration",
+                          "amplifier": 4,
+                          "duration": 40,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:nausea",
+                          "amplifier": 1,
+                          "duration": 450,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
                       }
-                    },
-                    {
-                      "effect": {
-                        "id": "minecraft:speed",
-                        "amplifier": 2,
-                        "duration": 100,
-                        "show_particles": false,
-                        "show_icon": false
-                      }
-                    },
-                    {
-                      "effect": {
-                        "id": "minecraft:regeneration",
-                        "amplifier": 4,
-                        "duration": 40,
-                        "show_particles": false,
-                        "show_icon": false
-                      }
-                    },
-                    {
-                      "effect": {
-                        "id": "minecraft:nausea",
-                        "amplifier": 1,
-                        "duration": 450,
-                        "show_particles": false,
-                        "show_icon": false
-                      }
-                    }
-                  ]
+                    ]
+                  }
                 }
               }
             }
