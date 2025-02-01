@@ -23,7 +23,11 @@
                   "facade_labkey_item": true,
                   "objective_item": true
                 },
-                "custom_model_data": 2
+                "custom_model_data": {
+                  "strings": [
+                    "keycard_white"
+                  ]
+                }
               }
             }
           ]

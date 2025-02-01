@@ -4,8 +4,8 @@
       "id": "minecraft:stick",
       "components": {
         "custom_model_data": {
-          "floats": [
-            4
+          "strings": [
+            "elephant"
           ]
         }
       }

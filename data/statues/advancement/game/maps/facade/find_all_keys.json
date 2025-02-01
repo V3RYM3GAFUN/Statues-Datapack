@@ -3,7 +3,9 @@
     "icon": {
       "id": "minecraft:iron_ingot",
       "components": {
-        "minecraft:custom_model_data": 4
+        "minecraft:custom_model_data": {
+          "strings": ["keycard_blue"]
+        }
       }
     },
     "title": "Dream Luck",

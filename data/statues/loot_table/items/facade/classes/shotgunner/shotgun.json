@@ -28,8 +28,10 @@
                 "minecraft:unbreakable": {
                   "show_in_tooltip": false
                 },
-                "custom_data": {
-                  "custom_model_data": 3
+                "custom_model_data": {
+                  "strings": [
+                    "shotgun"
+                  ]
                 }
               }
             }

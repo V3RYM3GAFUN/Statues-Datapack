@@ -18,8 +18,12 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "custom_model_data": {
+                  "strings": [
+                    "flashlight"
+                  ]
+                },
                 "minecraft:custom_data": {
-                  "custom_model_data": 7,
                   "is_flashlight": true
                 }
               }

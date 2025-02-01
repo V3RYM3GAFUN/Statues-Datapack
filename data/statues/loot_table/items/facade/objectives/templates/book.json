@@ -22,8 +22,7 @@
                 "custom_data": {
                   "facade_book_item": true,
                   "objective_item": true
-                },
-                "custom_model_data": 1
+                }
               }
             }
           ]

@@ -3,8 +3,10 @@
     "icon": {
       "id": "minecraft:stick",
       "components": {
-        "custom_data": {
-          "custom_model_data": 10
+        "custom_model_data": {
+          "strings": [
+            "crowbar"
+          ]
         }
       }
     },

@@ -20,7 +20,7 @@ item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_i
 
 #> Armour and weapons specific to 004
 item replace entity @s armor.head with skeleton_skull
-item replace entity @s weapon.mainhand with crossbow[unbreakable={},enchantments={multishot:1,quick_charge:1},custom_name='[{"text":"Insect launcher","italic":false,"color":"white","bold":true}]',custom_data={custom_model_data:4}] 1
+item replace entity @s weapon.mainhand with crossbow[unbreakable={},enchantments={multishot:1,quick_charge:1},custom_name='[{"text":"Insect launcher","italic":false,"color":"white","bold":true}]',custom_model_data={strings:["insect"]}] 1
 item replace entity @s hotbar.4 with tipped_arrow[custom_name='[{"text":"Insects","italic":false,"color":"#006633","bold":true}]',potion_contents={custom_color:2325012,custom_effects:[{id:"minecraft:poison",duration:60,amplifier:1,show_particles:0b,show_icon:0b},{id:"minecraft:instant_health",duration:1,amplifier:1,show_particles:0b,show_icon:0b}]}] 1
 
 execute if entity @s[tag=!monster_tutorial] run scoreboard players operation $MonsterKind Statues.GameEventData = $MonsterKind.004 Statues.GameEventEnum

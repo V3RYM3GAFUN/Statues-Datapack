@@ -23,7 +23,11 @@
                   "facade_highclass_item": true,
                   "objective_item": true
                 },
-                "custom_model_data": 4
+                "custom_model_data": {
+                  "strings": [
+                    "keycard_blue"
+                  ]
+                }
               }
             }
           ]

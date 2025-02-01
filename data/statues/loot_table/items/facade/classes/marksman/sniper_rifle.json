@@ -27,8 +27,10 @@
                 "unbreakable": {
                   "show_in_tooltip": false
                 },
-                "custom_data": {
-                  "custom_model_data": 2
+                "custom_model_data": {
+                  "strings": [
+                    "sniper"
+                  ]
                 }
               }
             }
