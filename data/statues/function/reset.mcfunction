@@ -44,9 +44,6 @@ scoreboard players reset * Statues.Advancements.IngameNoDamage
 #> Turn off power
 function statues:mechanics/lights/lights_off
 
-#> Clears every container that had an item in it
-execute at @e[tag=objective_reset] run data merge block ~ ~ ~ {Items:[]}
-
 #> Resets interaction entities
 execute as @e[type=interaction,tag=objective_reset] run data merge entity @s {height:2}
 

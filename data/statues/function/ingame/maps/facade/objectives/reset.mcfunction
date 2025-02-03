@@ -1,3 +1,6 @@
+#> Force the map to stay loaded to reset properly
+forceload add 54 257 -82 394
+
 #> Brings back the text for Power objective, as well closes the doors related to it
 execute as @e[tag=objective_facade_power] run data modify entity @s text set value "{\"text\":\"Main Power\",\"color\":\"dark_red\"}"
 function statues:mechanics/power_doors/close
@@ -41,3 +44,9 @@ setblock 26 114 307 minecraft:air
 execute as @e[tag=facade_armory,type=text_display] run data modify entity @s text set value "{\"text\":\"Armory keycard\",\"color\":\"dark_red\"}"
 execute as @e[tag=facade_armory,type=interaction] run tag @s remove opened
 clone -40 59 344 -40 57 346 -40 63 344
+
+#> Clears every container that had an item in it
+execute as @e[tag=objective_reset] at @s run data merge block ~ ~ ~ {Items:[]}
+
+#> Unload the map
+forceload remove 54 257 -82 394

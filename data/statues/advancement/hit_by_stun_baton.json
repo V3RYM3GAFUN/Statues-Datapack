@@ -1,0 +1,42 @@
+{
+  "criteria": {
+    "hit_by_stun_baton": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "source_entity": {
+                "type_specific": {
+                  "type": "minecraft:player"
+                },
+                "team": "Survivor",
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:stick",
+                    "components": {
+                      "minecraft:custom_model_data": {
+                        "strings": [
+                          "stun_baton"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hit_by_stun_baton"
+    ]
+  ],
+  "rewards": {
+    "function": "statues:ingame/mechanics/monsters/hit_by_stun_baton"
+  }
+}

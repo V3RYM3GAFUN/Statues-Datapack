@@ -27,6 +27,9 @@
                 "unbreakable": {
                   "show_in_tooltip": false
                 },
+                "use_cooldown": {
+                  "seconds": 10
+                },
                 "custom_model_data": {
                   "strings": [
                     "sniper"

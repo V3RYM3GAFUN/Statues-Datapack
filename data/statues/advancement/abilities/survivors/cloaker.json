@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "used_ability": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:blaze_rod",
+          "count": 1,
+          "components": {
+            "custom_name": "{\"text\":\"Invisibility cloak\",\"italic\":false,\"color\":\"dark_purple\"}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "used_ability"
+    ]
+  ],
+  "rewards": {
+    "function": "statues:ingame/mechanics/survivors/abilities/cloaker"
+  }
+}

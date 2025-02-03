@@ -21,6 +21,9 @@
                 "minecraft:unbreakable": {
                   "show_in_tooltip": false
                 },
+                "use_cooldown": {
+                  "seconds": 2
+                },
                 "custom_model_data": {
                   "strings": [
                     "medic_gun"

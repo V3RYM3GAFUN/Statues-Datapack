@@ -12,6 +12,8 @@ loot replace entity @s hotbar.7 loot statues:items/facade/classes/gunner/weak_an
 
 item replace entity @s armor.head with player_head[custom_name='{"text":"Gunner\'s helmet"}',profile={id:[I;441116359,-2100342880,-1745843057,808791889],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNhNThiZWM2NTY2OGI2ODJhYmFiMzYxMzAwYTljNDEzM2JiNmMwNmRiODg0NzIxMGE2MmI4ODRlZTZmYmM3ZCJ9fX0="}]}]
 
+item replace entity @s hotbar.4 with blaze_rod[use_cooldown={seconds:210},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"item.armor.equip_netherite"},custom_model_data={strings:["ammo"]},custom_name='{"text":"Ammo Pack","italic":false,"color":"dark_aqua"}',lore=['{"text":"Cooldown: 3m30s","italic":false}']]
+
 item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:0b},custom_name='["",{"text":"Gunner Outfit","italic":false,"color":"dark_green","bold":true}]',dyed_color={rgb:8439583,show_in_tooltip:0b},trim={pattern:"silence",material:"emerald"}]
 item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:0b},custom_name='["",{"text":"Gunner Outfit","italic":false,"color":"dark_green","bold":true}]',dyed_color={rgb:8439583,show_in_tooltip:0b},trim={pattern:"wayfinder",material:"emerald"}]
 item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:0b},custom_name='["",{"text":"Gunner Outfit","italic":false,"color":"dark_green","bold":true}]',dyed_color={rgb:8439583,show_in_tooltip:0b},trim={pattern:"ward",material:"emerald"}]

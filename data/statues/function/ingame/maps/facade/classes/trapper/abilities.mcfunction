@@ -31,3 +31,4 @@ function statues:mechanics/xp_bar/from_cooldown { max: 4200 }
 #> Prevents the player from duplicating items
 # execute store result score $Carrots Statues.ItemCount run clear @s carrot_on_a_stick 0
 # execute if score $Carrots Statues.ItemCount matches 2.. run clear @s carrot_on_a_stick
+
