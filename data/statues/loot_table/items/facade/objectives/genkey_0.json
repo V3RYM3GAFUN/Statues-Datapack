@@ -11,8 +11,10 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": {
-                  "item_objective_id": 0
+                "minecraft:custom_data": {
+                  "item_objective_id": 0,
+                  "facade_genkey_item": true,
+                  "objective_item": true
                 }
               }
             }

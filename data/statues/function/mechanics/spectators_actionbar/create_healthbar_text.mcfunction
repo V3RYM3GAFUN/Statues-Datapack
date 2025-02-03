@@ -1,6 +1,6 @@
 execute unless function statues:feature_flags/check_spectators_actionbar_flags run return fail
 
-execute store result score $SpectatorMaxHealth Statues.TempData run attribute @a[tag=spectator_tracker,limit=1] minecraft:generic.max_health get
+execute store result score $SpectatorMaxHealth Statues.TempData run attribute @a[tag=spectator_tracker,limit=1] max_health get
 execute store result score $SpectatorHealth Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Health 100
 scoreboard players add $SpectatorHealth Statues.TempData 99
 scoreboard players operation $SpectatorHealth Statues.TempData /= $100 Statues.Constants

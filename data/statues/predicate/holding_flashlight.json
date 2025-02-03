@@ -7,7 +7,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "components": {
+            "predicates": {
               "minecraft:custom_data": {
                 "is_flashlight": true
               }
@@ -22,7 +22,7 @@
       "predicate": {
         "equipment": {
           "offhand": {
-            "components": {
+            "predicates": {
               "minecraft:custom_data": {
                 "is_flashlight": true
               }

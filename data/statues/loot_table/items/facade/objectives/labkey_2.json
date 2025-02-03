@@ -12,7 +12,9 @@
               "function": "minecraft:set_components",
               "components": {
                 "custom_data": {
-                  "item_objective_id": 2
+                  "item_objective_id": 2,
+                  "facade_labkey_item": true,
+                  "objective_item": true
                 }
               }
             }

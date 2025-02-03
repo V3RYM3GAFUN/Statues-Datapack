@@ -21,5 +21,5 @@ function statues:mechanics/xp_bar/from_cooldown { max: 1800 }
 execute if score @s Statues.Players matches ..600 run attribute @s knockback_resistance base set 0
 
 #> Prevents duplicates
-execute store result score $Carrots Statues.ItemCount run clear @s carrot_on_a_stick 0
-execute if score $Carrots Statues.ItemCount matches 2.. run clear @s carrot_on_a_stick
+# execute store result score $Carrots Statues.ItemCount run clear @s carrot_on_a_stick 0
+# execute if score $Carrots Statues.ItemCount matches 2.. run clear @s carrot_on_a_stick

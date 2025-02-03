@@ -12,7 +12,9 @@
               "function": "minecraft:set_components",
               "components": {
                 "custom_data": {
-                  "item_objective_id": 6
+                  "item_objective_id": 6,
+                  "facade_highclass_item": true,
+                  "objective_item": true
                 }
               }
             }
