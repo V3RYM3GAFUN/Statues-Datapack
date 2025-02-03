@@ -9,11 +9,7 @@ loot replace entity @s hotbar.1 loot statues:items/facade/classes/trapper/strong
 loot replace entity @s hotbar.2 loot statues:items/crowbar
 loot replace entity @s hotbar.4 loot statues:items/dynamic_map_survivor
 
-loot replace entity @s hotbar.3 loot statues:items/facade/classes/trapper/smoke_grenade
-loot replace entity @s inventory.0 loot statues:items/facade/classes/trapper/smoke_grenade
-loot replace entity @s inventory.1 loot statues:items/facade/classes/trapper/smoke_grenade
-loot replace entity @s inventory.2 loot statues:items/facade/classes/trapper/smoke_grenade
-loot replace entity @s inventory.3 loot statues:items/facade/classes/trapper/smoke_grenade
+loot replace entity @s hotbar.3 loot statues:items/facade/classes/trapper/trap
 
 item replace entity @s armor.head with player_head[custom_name='{"text":"Trapper\'s helmet"}',profile={id:[I;183527404,-589148335,-2024239231,1720157330],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZGVjMDRkMjM4MGNkNzcwMjdmOWQ0NDQ1NWM5OGI3ZWRjNWY2NjRjYTBkZDMwYTYxMDY5MDM5MTUzOTFkYiJ9fX0="}]}]
 

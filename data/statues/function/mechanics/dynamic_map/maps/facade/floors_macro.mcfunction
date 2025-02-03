@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_dynamic_map_flags run return fail
+execute unless function statues:feature_flags/check_dynamic_maps_flags run return fail
 $execute if block $(floors_x) ~ $(floors_z) oak_planks run return run function statues:mechanics/dynamic_map/maps/facade/floor_macro {floor:0,floor_y:$(floor0_y)}
 $execute if block $(floors_x) ~ $(floors_z) spruce_planks run return run function statues:mechanics/dynamic_map/maps/facade/floor_macro {floor:11,floor_y:$(floor1_y)}
 $execute if block $(floors_x) ~ $(floors_z) birch_planks run return run function statues:mechanics/dynamic_map/maps/facade/floor_macro {floor:22,floor_y:$(floor2_y)}

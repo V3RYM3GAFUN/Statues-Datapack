@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:breeze_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Anti-anomaly Trap",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "use_cooldown": {
+                  "seconds": 2.5
+                },
+                "custom_model_data": {
+                  "strings": [
+                    "trap"
+                  ]
+                },
+                "consumable": {
+                  "animation": "bow",
+                  "consume_seconds": 0.01,
+                  "has_consume_particles": false,
+                  "sound": "item.spyglass.use"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

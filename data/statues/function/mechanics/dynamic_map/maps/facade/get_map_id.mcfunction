@@ -13,7 +13,7 @@
 # F bit 2 = 400: BLINKING?
 # XX: 01 + FLOOR[0-8] * 11 + OBJECTIVE[0-10]
 #
-execute unless function statues:feature_flags/check_dynamic_map_flags run return fail
+execute unless function statues:feature_flags/check_dynamic_maps_flags run return fail
 
 scoreboard players set $DynamicMapNew Statues.TempData 742001
 

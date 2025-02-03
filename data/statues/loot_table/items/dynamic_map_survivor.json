@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_data": "{map:742001}"
+                "map_id": 742001
               }
             }
           ]

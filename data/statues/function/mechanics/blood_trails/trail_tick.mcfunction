@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_blood_trail_flags run return fail
+execute unless function statues:feature_flags/check_blood_trails_flags run return fail
 
 execute unless score @s Statues.SurvivorTrail matches 0.. run scoreboard players set @s Statues.SurvivorTrail 200
 

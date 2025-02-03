@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_dynamic_map_flags run return fail
+execute unless function statues:feature_flags/check_dynamic_maps_flags run return fail
 execute store result storage statues:dynamic_map_pos facade.floors_x int 1 run data get entity @e[tag=dynamic_map_facade_floors,limit=1] Pos[0]
 execute store result storage statues:dynamic_map_pos facade.floors_z int 1 run data get entity @e[tag=dynamic_map_facade_floors,limit=1] Pos[2]
 execute store result storage statues:dynamic_map_pos facade.floor0_y int 1 run data get entity @e[tag=dynamic_map_facade_floor0,limit=1] Pos[1]

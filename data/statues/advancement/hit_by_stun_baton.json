@@ -11,15 +11,12 @@
                 "type_specific": {
                   "type": "minecraft:player"
                 },
-                "team": "Survivor",
                 "equipment": {
                   "mainhand": {
                     "items": "minecraft:stick",
-                    "components": {
-                      "minecraft:custom_model_data": {
-                        "strings": [
-                          "stun_baton"
-                        ]
+                    "predicates": {
+                      "minecraft:custom_data": {
+                        "is_stun_baton": true
                       }
                     }
                   }

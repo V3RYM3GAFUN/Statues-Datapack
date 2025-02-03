@@ -29,6 +29,9 @@
                   "strings": [
                     "stun_baton"
                   ]
+                },
+                "custom_data": {
+                  "is_stun_baton": true
                 }
               }
             }

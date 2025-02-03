@@ -1,15 +1,14 @@
 {
   "criteria": {
-    "used_ability": {
+    "place_trap": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": "minecraft:blaze_rod",
-          "count": 1,
+          "items": "minecraft:breeze_rod",
           "components": {
             "minecraft:custom_model_data": {
               "strings": [
-                "emp_shock"
+                "trap"
               ]
             }
           }
@@ -19,10 +18,10 @@
   },
   "requirements": [
     [
-      "used_ability"
+      "place_trap"
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/survivors/abilities/trapper/emp"
+    "function": "statues:ingame/mechanics/survivors/abilities/trapper/place_trap"
   }
 }
