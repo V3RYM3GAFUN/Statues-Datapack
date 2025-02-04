@@ -4,12 +4,18 @@
       "id": "minecraft:iron_ingot",
       "components": {
         "minecraft:custom_model_data": {
-          "strings": ["keycard_blue"]
+          "strings": [
+            "keycard_blue"
+          ]
         }
       }
     },
-    "title": "Dream Luck",
-    "description": "Find all the keys in the map.",
+    "title": {
+      "translate": "statues.advancement.facade.allkeys.title"
+    },
+    "description": {
+      "translate": "statues.advancement.facade.allkeys.description"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

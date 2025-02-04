@@ -7,6 +7,6 @@ execute as @e[type=item] at @s run function statues:ingame/mechanics/misc_tick_i
 execute as @a[team=Survivor] at @s if entity @e[tag=locker,distance=..2] run function statues:ingame/mechanics/survivors/locker
 
 #> Tick the trapper trap
-execute at @e[tag=trap,type=marker] unless entity @e[tag=trap_display,type=item_display,distance=..1] align xyz run summon item_display ~.5 ~ ~.5 {item:{id:breeze_rod,components:{custom_model_data:{strings:["trap"]}}},Tags:["trap_display"]} 
+execute at @e[tag=trap,type=marker,x=0,limit=4] unless entity @e[tag=trap_display,type=item_display,distance=..1] align xyz run summon item_display ~.5 ~ ~.5 {item:{id:breeze_rod,components:{custom_model_data:{strings:["trap"]}}},Tags:["trap_display"]} 
 execute as @a[team=Monster] at @s if entity @n[tag=trap,type=marker,distance=..3] run function statues:ingame/mechanics/survivors/abilities/trapper/trigger_trap
-execute as @e[tag=trap_display,type=item_display] at @s unless entity @e[tag=trap,type=marker,distance=..1] run kill @s
+execute as @e[tag=trap_display,type=item_display,limit=4] at @s unless entity @e[tag=trap,type=marker,distance=..1] run kill @s

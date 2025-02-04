@@ -3,7 +3,7 @@
 spawnpoint @s ~ ~ ~ ~
 
 # Puts the dead player in spectator and adds them to team
-tellraw @a [{"selector":"@s","color":"red"},{"text":" has died!","color":"red"}]
+tellraw @a [{"selector":"@s","color":"red"},{"translate":"statues.game.death","color":"red"}]
 gamemode spectator
 team join Spectator
 

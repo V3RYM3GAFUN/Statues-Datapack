@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Shotgun",
+                "translate": "statues.item.shotgun",
                 "italic": false
               }
             },

@@ -10,16 +10,16 @@ execute if score $Countdown.Ticks Statues.DynamicData matches 1.. if score $Stat
 execute if score $Countdown.Ticks Statues.DynamicData matches ..299 run bossbar set statues:countdown visible false
 bossbar set statues:countdown players @a
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 900 run tellraw @a {"text": "Game will start in 30 seconds!", "color": "gold"}
+execute if score $Countdown.Ticks Statues.DynamicData matches 900 run tellraw @a {"translate": "statues.pregame.start.warning","with":[{"text":"30"}], "color": "gold"}
 execute if score $Countdown.Ticks Statues.DynamicData matches 900 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 700 run tellraw @a {"text": "20 seconds left before game starts!","color": "gold"}
+execute if score $Countdown.Ticks Statues.DynamicData matches 700 run tellraw @a {"translate": "statues.pregame.start.warning","with":[{"text":"20"}],"color": "gold"}
 execute if score $Countdown.Ticks Statues.DynamicData matches 700 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 500 run tellraw @a {"text": "10 seconds left before game starts!","color": "gold"}
+execute if score $Countdown.Ticks Statues.DynamicData matches 500 run tellraw @a {"translate": "statues.pregame.start.warning","with":[{"text":"10"}],"color": "gold"}
 execute if score $Countdown.Ticks Statues.DynamicData matches 500 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 400 run tellraw @a {"text": "5 seconds left before game starts!","color": "gold"}
+execute if score $Countdown.Ticks Statues.DynamicData matches 400 run tellraw @a {"translate": "statues.pregame.start.warning","with":[{"text":"5"}],"color": "gold"}
 execute if score $Countdown.Ticks Statues.DynamicData matches 400 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
 
 execute if score $Countdown.Ticks Statues.DynamicData matches 380 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.75
@@ -32,10 +32,10 @@ execute if score $Countdown.Ticks Statues.DynamicData matches 320 as @a at @s ru
 
 execute if score $Countdown.Ticks Statues.DynamicData matches 300 run function statues:lobby/pregame/start
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 200 run tellraw @a [{"text": "Selected map: ["},{"selector":"@e[tag=mapvote_winner,limit=1]","bold":true},{"text": "]"}]
+execute if score $Countdown.Ticks Statues.DynamicData matches 200 run tellraw @a [{"translate": "statues.pregame.map.chosen","with":[{"text":"["}]},{"selector":"@e[tag=mapvote_winner,limit=1]","bold":true},{"text": "]"}]
 execute as @a at @s if score $Countdown.Ticks Statues.DynamicData matches 200 run playsound block.note_block.chime master @s ~ ~ ~ 0.7 1
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 100 run tellraw @a {"text": "Teleporting in 5 seconds...","color": "aqua"}
+execute if score $Countdown.Ticks Statues.DynamicData matches 100 run tellraw @a {"translate": "statues.pregame.teleport.warning","color": "aqua"}
 execute as @a at @s if score $Countdown.Ticks Statues.DynamicData matches 100 run playsound block.note_block.pling master @s ~ ~ ~ 0.7 1.5
 execute if score $Countdown.Ticks Statues.DynamicData matches 100 run kill @e[tag=mapvote]
 

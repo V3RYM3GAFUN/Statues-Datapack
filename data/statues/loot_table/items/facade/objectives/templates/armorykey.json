@@ -12,7 +12,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Armory Keycard",
+                "translate": "statues.item.facade.armorykey",
                 "italic": false
               }
             },

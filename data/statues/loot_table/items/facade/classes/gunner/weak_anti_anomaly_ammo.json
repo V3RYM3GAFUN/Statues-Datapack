@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Weak Anti-anomaly Ammo",
+                "translate": "statues.item.weak_ammo",
                 "color": "dark_aqua",
                 "bold": true,
                 "italic": false

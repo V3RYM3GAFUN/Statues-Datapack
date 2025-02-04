@@ -12,7 +12,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "CONFIDENTIAL",
+                "translate": "statues.item.facade.book",
                 "italic": false
               }
             },

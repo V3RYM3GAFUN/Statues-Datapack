@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Adrenaline-injected dart",
+                "translate": "statues.item.medic.arrow",
                 "color": "red",
                 "italic": false
               }

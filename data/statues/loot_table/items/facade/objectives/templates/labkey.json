@@ -12,7 +12,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Lab Access Keycard",
+                "translate": "statues.item.facade.labkey",
                 "italic": false
               }
             },

@@ -3,8 +3,12 @@
     "icon": {
       "id": "minecraft:golden_apple"
     },
-    "title": "Fragile",
-    "description": "Don't take any damage the entire game.",
+    "title": {
+      "translate": "statues.advancement.fragile.title"
+    },
+    "description": {
+      "translate": "statues.advancement.fragile.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

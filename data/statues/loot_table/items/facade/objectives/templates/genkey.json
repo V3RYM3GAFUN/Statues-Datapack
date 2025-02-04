@@ -12,7 +12,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Emergency Generator Key",
+                "translate": "statues.item.facade.genkey",
                 "italic": false
               }
             },

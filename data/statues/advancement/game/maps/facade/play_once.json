@@ -3,8 +3,12 @@
     "icon": {
       "id": "minecraft:stripped_oak_log"
     },
-    "title": "Façade",
-    "description": "Play on Façade for the first time.",
+    "title": {
+      "translate": "statues.advancement.facade.play_once.title"
+    },
+    "description": {
+      "translate": "statues.advancement.facade.play_once.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,

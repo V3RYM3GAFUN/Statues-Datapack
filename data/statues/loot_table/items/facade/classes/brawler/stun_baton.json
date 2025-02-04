@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Stun baton",
+                "translate": "statues.item.stun_baton",
                 "italic": false
               }
             },

@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Sniper rifle",
+                "translate": "statues.item.sniper",
                 "italic": false
               }
             },

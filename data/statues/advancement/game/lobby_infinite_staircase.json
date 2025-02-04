@@ -3,8 +3,12 @@
     "icon": {
       "id": "minecraft:deepslate_tile_stairs"
     },
-    "title": "One Must Imagine Sisyphus Happy",
-    "description": "Spend an incredible amount of time doing the same thing.",
+    "title": {
+      "translate": "statues.advancement.infinite_staircase.title"
+    },
+    "description": {
+      "translate": "statues.advancement.infinite_staircase.description"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

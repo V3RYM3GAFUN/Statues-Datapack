@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Anti-anomaly Trap",
+                "translate": "statues.item.trap",
                 "italic": false
               }
             },

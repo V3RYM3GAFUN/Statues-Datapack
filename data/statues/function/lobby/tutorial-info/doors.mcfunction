@@ -2,7 +2,7 @@ execute unless function statues:feature_flags/check_tutorial_flags run return fa
 tp @s @e[tag=tutorial_step4,limit=1]
 
 clear @s
-give @s iron_ingot[custom_data={tutorial_key:1b},custom_model_data=1,custom_name='[{"text":"Tutorial Key","italic":false}]']
+give @s iron_ingot[custom_data={tutorial_key:1b},custom_model_data={strings:["key_v2"]},custom_name='[{"translate":"statues.tutorial.key","italic":false}]']
 
 tellraw @s ""
 tellraw @s [{"translate":"statues.tutorial.title","bold":true,"color":"aqua"}]

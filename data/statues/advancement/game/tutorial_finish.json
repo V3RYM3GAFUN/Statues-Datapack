@@ -10,8 +10,12 @@
         }
       }
     },
-    "title": "Got The Hang Of It",
-    "description": "Finish the tutorial.",
+    "title": {
+      "translate": "statues.advancement.tutorial.title"
+    },
+    "description": {
+      "translate": "statues.advancement.tutorial.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,

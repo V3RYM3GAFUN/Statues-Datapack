@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Medic pistol",
+                "translate": "statues.item.medic_gun",
                 "italic": false
               }
             },

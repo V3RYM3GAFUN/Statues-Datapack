@@ -12,7 +12,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "High Class Keycard",
+                "translate": "statues.item.facade.highclasskey",
                 "italic": false
               }
             },

@@ -10,8 +10,12 @@
         }
       }
     },
-    "title": "Monstrous",
-    "description": "Win on Façade as monster.",
+    "title": {
+      "translate": "statues.advancement.facade.win_as_monster.title"
+    },
+    "description": {
+      "translate": "statues.advancement.facade.win_as_monster.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,

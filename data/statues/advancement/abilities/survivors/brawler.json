@@ -7,7 +7,7 @@
           "items": "minecraft:blaze_rod",
           "count": 1,
           "components": {
-            "custom_name": "{\"translate\":\"statues.item.medic.ability.name\",\"italic\":false,\"color\": \"red\"}"
+            "custom_name": "{\"translate\":\"statues.item.brawler.ability.name\",\"italic\":false,\"color\":\"dark_purple\"}"
           }
         }
       }
@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/survivors/abilities/medic"
+    "function": "statues:ingame/mechanics/survivors/abilities/brawler"
   }
 }

@@ -10,8 +10,12 @@
         }
       }
     },
-    "title": "It's Highly Confidential",
-    "description": "Win on Façade as survivor.",
+    "title": {
+      "translate": "statues.advancement.facade.win_as_survivor.title"
+    },
+    "description": {
+      "translate": "statues.advancement.facade.win_as_survivor.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,

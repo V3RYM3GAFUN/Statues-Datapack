@@ -2,8 +2,8 @@ effect give @a[team=Monster] slowness 5 10 true
 effect give @a[team=Monster] blindness 5 3 true
 effect give @s slowness 7 3 true
 effect give @s darkness 5 3 true
-tellraw @a [{"selector": "@s"},{"text":" used an EMP shock on monsters!"}]
+tellraw @a [{"selector": "@s"},{"translate":"statues.tell.trapper.used_ability"}]
 
-give @s minecraft:blaze_rod[use_cooldown={seconds:210},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"minecraft:block.conduit.deactivate"},custom_model_data={strings:["emp_shock"]},custom_name='{"text":"EMP shock","italic":false,"color":"gray"}',lore=['[{"text":"Slows down the monsters","italic":false}]','[{"text":"Will also affect the user.","italic":false}]','[{"text":"Cooldown: 3m30s","italic":false}]']]
+give @s minecraft:blaze_rod[use_cooldown={seconds:210},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"minecraft:block.conduit.deactivate"},custom_model_data={strings:["emp_shock"]},custom_name='{"translate":"statues.item.trapper.ability.name","italic":false,"color":"gray"}',lore=['[{"translate":"statues.item.trapper.ability.lore.line1","italic":false}]','[{"translate":"statues.item.trapper.ability.lore.line2","italic":false}]','[{"translate":"statues.item.medic.ability.lore.line2","italic":false}]','[{"translate":"statues.item.cooldown","with":[{"translate":"statues.text.3m30s"}]}]']]
 
 advancement revoke @s only statues:abilities/survivors/trapper

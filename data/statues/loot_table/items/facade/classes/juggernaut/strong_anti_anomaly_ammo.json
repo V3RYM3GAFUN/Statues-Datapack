@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Strong Anti-anomaly Ammo",
+                "translate": "statues.item.strong_ammo",
                 "color": "dark_blue",
                 "italic": false
               }

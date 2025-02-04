@@ -4,7 +4,7 @@ team join Monster @a[tag=monster1,tag=queued]
 execute unless entity @a[tag=monster2] run tag @r[team=!Monster,tag=queued,tag=!dev_not_monster] add monster2
 team join Monster @a[tag=monster2,tag=queued]
 
-tellraw @a [{"selector":"@a[tag=monster1]","bold":true,"color":"red"},{"text":" and ","bold":false,"color":"gold"},{"selector":"@a[tag=monster2]","bold":true,"color":"red"},{"text":" are the monsters!","bold":false,"color":"gold"}]
+tellraw @a [{"selector":"@a[tag=monster1]","bold":true,"color":"red"},{"text":" and ","bold":false,"color":"gold"},{"selector":"@a[tag=monster2]","bold":true,"color":"red"},{"translate":"statues.pregame.monster.group","bold":false,"color":"gold"}]
 execute as @a at @s run playsound entity.ender_dragon.ambient master @s ~ ~ ~ 0.70 0.9
 
 effect give @a[team=Monster] glowing 10 0 true
