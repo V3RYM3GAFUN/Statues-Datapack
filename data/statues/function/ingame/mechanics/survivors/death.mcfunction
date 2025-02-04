@@ -9,7 +9,8 @@ team join Spectator
 
 #> Objective Item Drop
 # Copy Objective Item to shulker box
-data modify block 0 -60 0 Items append from entity @s Inventory[{tag:{objective_item:1b}}]
+# data modify block 0 -60 0 Items append from entity @s Inventory[{tag:{objective_item:1b}}]
+data modify block 0 -60 0 Items append from entity @s Inventory[{custom_data:{objective_item:1b}}]
 
 # Drop the actual items
 execute at @s run loot spawn ~ ~ ~ mine 0 -60 0 minecraft:air[custom_data={drop_contents:1b}]

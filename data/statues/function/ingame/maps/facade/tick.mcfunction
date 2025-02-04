@@ -1,31 +1,31 @@
 execute unless function statues:feature_flags/check_map_tick_flags run return fail
 
-execute if score abilities Statues.FeatureFlags matches 1 run function statues:ingame/maps/facade/ability_tick
+# execute if score abilities Statues.FeatureFlags matches 1 run function statues:ingame/maps/facade/ability_tick
 
 #> Objective tracking
-execute if score $Objective Statues.DynamicData matches 0 run data modify storage statues:data objective_text set value '{"text":"Find backup generator key in office area","color":"aqua"}'
+execute if score $Objective Statues.DynamicData matches 0 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.0","color":"aqua"}'
 execute if score $Objective Statues.DynamicData matches 0 run data modify storage statues:data objective_floor set value -1
-execute if score $Objective Statues.DynamicData matches 1 run data modify storage statues:data objective_text set value '{"text":"Unlock backup generator room","color":"aqua"}'
+execute if score $Objective Statues.DynamicData matches 1 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.1","color":"aqua"}'
 execute if score $Objective Statues.DynamicData matches 1 run data modify storage statues:data objective_floor set value 0
-execute if score $Objective Statues.DynamicData matches 2 run data modify storage statues:data objective_text set value '{"text":"Turn on the generator","color":"gold"}'
+execute if score $Objective Statues.DynamicData matches 2 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.2","color":"gold"}'
 execute if score $Objective Statues.DynamicData matches 2 run data modify storage statues:data objective_floor set value 0
-execute if score $Objective Statues.DynamicData matches 3 run data modify storage statues:data objective_text set value '{"text":"Find lab access keycard in Archive room","color":"green"}'
+execute if score $Objective Statues.DynamicData matches 3 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.3","color":"green"}'
 execute if score $Objective Statues.DynamicData matches 3 run data modify storage statues:data objective_floor set value -1
-execute if score $Objective Statues.DynamicData matches 4 run data modify storage statues:data objective_text set value '{"text":"Unlock lab access doors","color":"white"}'
+execute if score $Objective Statues.DynamicData matches 4 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.4","color":"white"}'
 execute if score $Objective Statues.DynamicData matches 4 run data modify storage statues:data objective_floor set value -1
-execute if score $Objective Statues.DynamicData matches 5 run data modify storage statues:data objective_text set value '{"text":"Press emergency override button","color":"red"}'
+execute if score $Objective Statues.DynamicData matches 5 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.5","color":"red"}'
 execute if score $Objective Statues.DynamicData matches 5 run data modify storage statues:data objective_floor set value -1
-execute if score $Objective Statues.DynamicData matches 6 run data modify storage statues:data objective_text set value '{"text":"Head down the labs and turn on the main power","color":"yellow"}'
+execute if score $Objective Statues.DynamicData matches 6 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.6","color":"yellow"}'
 execute if score $Objective Statues.DynamicData matches 6 run data modify storage statues:data objective_floor set value -4
-execute if score $Objective Statues.DynamicData matches 7 run data modify storage statues:data objective_text set value '{"text":"Search underground for keycard","color":"white"}'
+execute if score $Objective Statues.DynamicData matches 7 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.7","color":"white"}'
 execute if score $Objective Statues.DynamicData matches 7 run data modify storage statues:data objective_floor set value -3
-execute if score $Objective Statues.DynamicData matches 8 run data modify storage statues:data objective_text set value '{"text":"Unlock high class offices","color":"white"}'
+execute if score $Objective Statues.DynamicData matches 8 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.8","color":"white"}'
 execute if score $Objective Statues.DynamicData matches 8 run data modify storage statues:data objective_floor set value 1
-execute if score $Objective Statues.DynamicData matches 9 run data modify storage statues:data objective_text set value '{"text":"Find the confidential book!","color":"gold","bold":true}'
+execute if score $Objective Statues.DynamicData matches 9 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.9","color":"gold","bold":true}'
 execute if score $Objective Statues.DynamicData matches 9 run data modify storage statues:data objective_floor set value 1
-execute if score $Objective Statues.DynamicData matches 10 run data modify storage statues:data objective_text set value '{"text":"Get to the van and escape!","color":"dark_red","bold":true}'
+execute if score $Objective Statues.DynamicData matches 10 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.10","color":"dark_red","bold":true}'
 execute if score $Objective Statues.DynamicData matches 10 run data modify storage statues:data objective_floor set value 1
-execute if score $Objective Statues.DynamicData matches 11 run data modify storage statues:data objective_text set value '{"text":"Survive or escape!","color":"red","bold":true}'
+execute if score $Objective Statues.DynamicData matches 11 run data modify storage statues:data objective_text set value '{"translate":"statues.text.facade.objective.actionbar.11","color":"red","bold":true}'
 execute if score $Objective Statues.DynamicData matches 11 run data modify storage statues:data objective_floor set value 1
 
 #> Generator power detection

@@ -1,5 +1,5 @@
-title @a title {"text": "Survivors win!","color": "aqua"}
-title @a subtitle {"text": "No monsters are left to play."}
+title @a title {"translate": "statues.game.survivor.victory","color": "aqua"}
+title @a subtitle {"translate": "statues.game.subtitle.monsterexit"}
 
 scoreboard players operation $EndCause Statues.GameEventData = $GameEndCause.NoMonsters Statues.GameEventEnum
 function statues:reset

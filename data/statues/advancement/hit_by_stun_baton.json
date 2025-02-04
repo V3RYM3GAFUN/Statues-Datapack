@@ -8,9 +8,7 @@
             "condition": "minecraft:damage_source_properties",
             "predicate": {
               "source_entity": {
-                "type_specific": {
-                  "type": "minecraft:player"
-                },
+                "type": "minecraft:player",
                 "equipment": {
                   "mainhand": {
                     "items": "minecraft:stick",

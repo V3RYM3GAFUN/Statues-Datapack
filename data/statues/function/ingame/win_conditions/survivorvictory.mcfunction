@@ -4,6 +4,6 @@ execute if score $Objective Statues.DynamicData matches 11 run function #statues
 scoreboard players operation $EndCause Statues.GameEventData = $GameEndCause.SurvivorsEscaped Statues.GameEventEnum
 function statues:reset
 
-title @a title {"text": "Survivors win!","color": "aqua"}
+title @a title {"translate": "statues.game.survivor.victory","color": "aqua"}
 
 execute as @a at @s run playsound ui.toast.challenge_complete master @a ~ ~ ~ 0.5 0.75

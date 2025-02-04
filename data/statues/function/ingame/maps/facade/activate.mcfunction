@@ -6,7 +6,7 @@ weather clear
 tp @a[team=Monster] -29.5 -56 324.5 -90 0
 
 scoreboard players set $MonsterSpawnDelay Statues.DynamicData 1800
-tellraw @a {"text": "90 seconds grace period for survivors.","bold": true,"color": "aqua"}
+tellraw @a {"translate": "statues.game.grace_period","bold": true,"color": "aqua"}
 
 #> More than enough to fill up potential lost health
 effect give @a[team=Survivor] instant_health 1 5 true

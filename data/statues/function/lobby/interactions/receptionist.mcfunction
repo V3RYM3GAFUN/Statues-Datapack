@@ -1,1 +1,1 @@
-execute on target run tellraw @s {"text":"Hello, I am the receptionist"}
+execute on target run tellraw @s {"translate":"statues.lobby.receptionist"}

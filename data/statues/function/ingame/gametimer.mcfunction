@@ -38,7 +38,7 @@ execute if score $Timer.Ticks Statues.DynamicData matches ..-1 run scoreboard pl
 
 # # # # # # # # # # # # #
 
-execute if score $Timer.Seconds Statues.DynamicData matches 300 if score $Timer.Ticks Statues.DynamicData matches 0 run tellraw @a {"text": "5 minutes left!","color": "gold","bold":true}
+execute if score $Timer.Seconds Statues.DynamicData matches 300 if score $Timer.Ticks Statues.DynamicData matches 0 run tellraw @a {"translate": "statues.game.warning.5min","color": "gold","bold":true}
 execute if score $Timer.Seconds Statues.DynamicData matches 300 if score $Timer.Ticks Statues.DynamicData matches 0 as @a at @s run playsound block.note_block.bass master @s ~ ~ ~ 1 0.5
 
 #> Tracks how many survivors are still alive

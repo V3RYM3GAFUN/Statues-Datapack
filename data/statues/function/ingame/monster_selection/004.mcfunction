@@ -1,6 +1,6 @@
 #> Tells the monster team which one the player chose
 scoreboard players set @s Statues.Monsters 4
-scoreboard players display numberformat @s Statues.Monsters fixed {"text":"004: \"The Skeleton\"","color": "white"}
+scoreboard players display numberformat @s Statues.Monsters fixed {"translate":"statues.score.004","color": "white"}
 tag @s add monster_chosen
 
 #> Stats for each monster
@@ -8,19 +8,22 @@ effect give @s night_vision infinite 0 true
 effect give @s regeneration infinite 100 true
 effect give @s resistance infinite 100 true
 effect give @s saturation infinite 100 true
+attribute @s jump_strength base set 0
+attribute @s knockback_resistance modifier add statues:no_knockback 1 add_value
+attribute @s fall_damage_multiplier base set 0
 
 #> Stats specific to 004
 effect give @s darkness infinite 0 true
 effect give @s weakness infinite 4 true 
 
-#> General armour and weapons
-item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b}]
-item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b}]
-item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b}]
+#> General armour
+item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
+item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
+item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
 
-#> Armour and weapons specific to 004
-item replace entity @s armor.head with skeleton_skull
-item replace entity @s weapon.mainhand with crossbow[unbreakable={},enchantments={multishot:1,quick_charge:1},custom_name='[{"text":"Insect launcher","italic":false,"color":"white","bold":true}]',custom_model_data={strings:["insect"]}] 1
+#> Items specific to 004
+item replace entity @s armor.head with skeleton_skull[custom_name='{"translate": "statues.item.004.head","bold": true,"italic": false}']
+item replace entity @s weapon.mainhand with crossbow[unbreakable={},enchantments={multishot:1,quick_charge:1},custom_name='[{"translate":"statues.item.004.weapon","italic":false,"color":"white","bold":true}]',custom_model_data={strings:["insect"]}] 1
 item replace entity @s hotbar.4 with tipped_arrow[custom_name='[{"text":"Insects","italic":false,"color":"#006633","bold":true}]',potion_contents={custom_color:2325012,custom_effects:[{id:"minecraft:poison",duration:60,amplifier:1,show_particles:0b,show_icon:0b},{id:"minecraft:instant_health",duration:1,amplifier:1,show_particles:0b,show_icon:0b}]}] 1
 
 execute if entity @s[tag=!monster_tutorial] run scoreboard players operation $MonsterKind Statues.GameEventData = $MonsterKind.004 Statues.GameEventEnum
