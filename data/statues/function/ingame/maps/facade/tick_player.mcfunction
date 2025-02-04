@@ -2,19 +2,19 @@ data modify storage statues:map_tick inventory set from entity @s Inventory
 
 tag @s[tag=!found_key_8,tag=!found_key_9,tag=!found_key_10,tag=!found_key_11,tag=!found_key_12] add not_found_key_armory_pre
 
-execute if score $Objective Statues.DynamicData matches 0.. if entity @s[tag=!found_key_0] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:0}}].tag
-execute if score $Objective Statues.DynamicData matches 3.. if entity @s[tag=!found_key_1] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:1}}].tag
-execute if score $Objective Statues.DynamicData matches 3.. if entity @s[tag=!found_key_2] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:2}}].tag
-execute if score $Objective Statues.DynamicData matches 3.. if entity @s[tag=!found_key_3] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:3}}].tag
-execute if score $Objective Statues.DynamicData matches 7.. if entity @s[tag=!found_key_4] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:4}}].tag
-execute if score $Objective Statues.DynamicData matches 7.. if entity @s[tag=!found_key_5] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:5}}].tag
-execute if score $Objective Statues.DynamicData matches 7.. if entity @s[tag=!found_key_6] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:6}}].tag
-execute if score $Objective Statues.DynamicData matches 9.. if entity @s[tag=!found_key_7] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:7}}].tag
-execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_8] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:8}}].tag
-execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_9] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:9}}].tag
-execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_10] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:10}}].tag
-execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_11] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:11}}].tag
-execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_12] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:12}}].tag
+execute if score $Objective Statues.DynamicData matches 0.. if entity @s[tag=!found_key_0] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:0}}].components
+execute if score $Objective Statues.DynamicData matches 3.. if entity @s[tag=!found_key_1] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:1}}].components
+execute if score $Objective Statues.DynamicData matches 3.. if entity @s[tag=!found_key_2] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:2}}].components
+execute if score $Objective Statues.DynamicData matches 3.. if entity @s[tag=!found_key_3] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:3}}].components
+execute if score $Objective Statues.DynamicData matches 7.. if entity @s[tag=!found_key_4] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:4}}].components
+execute if score $Objective Statues.DynamicData matches 7.. if entity @s[tag=!found_key_5] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:5}}].components
+execute if score $Objective Statues.DynamicData matches 7.. if entity @s[tag=!found_key_6] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:6}}].components
+execute if score $Objective Statues.DynamicData matches 9.. if entity @s[tag=!found_key_7] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:7}}].components
+execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_8] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:8}}].components
+execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_9] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:9}}].components
+execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_10] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:10}}].components
+execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_11] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:11}}].components
+execute if score $Objective Statues.DynamicData matches 6.. if entity @s[tag=!found_key_12] run function statues:ingame/maps/facade/on_collect_key with storage statues:map_tick inventory[{custom_data:{item_objective_id:12}}].components
 
 #> Armory keycard pickup detection
 tag @s[tag=!found_key_8,tag=!found_key_9,tag=!found_key_10,tag=!found_key_11,tag=!found_key_12] add not_found_key_armory_post
