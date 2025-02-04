@@ -1,3 +1,4 @@
+execute if score $MonsterKind.000 Statues.GameEventEnum = $MonsterKind Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"selector":"@s"},{"text":" picked the 000 monster"}]'}
 execute if score $MonsterKind.001 Statues.GameEventEnum = $MonsterKind Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"selector":"@s"},{"text":" picked the 001 monster"}]'}
 execute if score $MonsterKind.002 Statues.GameEventEnum = $MonsterKind Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"selector":"@s"},{"text":" picked the 002 monster"}]'}
 execute if score $MonsterKind.003 Statues.GameEventEnum = $MonsterKind Statues.GameEventData run function statues:game_events/logging/broadcast_event {message:'[{"selector":"@s"},{"text":" picked the 003 monster"}]'}

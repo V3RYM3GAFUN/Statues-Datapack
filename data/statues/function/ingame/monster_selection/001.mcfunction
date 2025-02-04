@@ -14,7 +14,7 @@ attribute @s fall_damage_multiplier base set 0
 
 #> Stats specific to 001
 attribute @s movement_speed base set 0.075
-attribute @s entity_interaction_range modifier add extra_reach 2 add_value
+attribute @s entity_interaction_range modifier add extra_reach 1 add_value
 effect give @s strength infinite 0 true 
 
 #> General armour

@@ -14,7 +14,7 @@ attribute @s fall_damage_multiplier base set 0
 
 #> Stats specific to 000
 attribute @s movement_speed modifier add statues:super_quick 1.5 add_multiplied_base
-attribute @s entity_interaction_range modifier add extra_reach 1 add_value
+attribute @s entity_interaction_range modifier add extra_reach 0.5 add_value
 effect give @s strength infinite 2 true 
 
 #> General armour

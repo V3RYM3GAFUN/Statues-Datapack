@@ -12,4 +12,5 @@ execute as @a[team=Monster,x=0] at @s if entity @n[tag=trap,type=marker,distance
 execute as @e[tag=trap_display,type=item_display,limit=4] at @s unless entity @e[tag=trap,type=marker,distance=..1] run kill @s
 
 #> Detect if a player is looking at 000 ?
-execute if entity @s facing entity @p[scores={Statues.Monsters=0}] eyes as @s run function statues:ingame/mechanics/monsters/000_freeze
+# execute as @a[team=!Monster,gamemode=!spectator] if entity @s facing entity @p[scores={Statues.Monsters=0}] eyes as @s run function statues:ingame/mechanics/monsters/000_freeze
+execute at @a[team=!Monster,gamemode=!spectator] anchored eyes facing entity @p[scores={Statues.Monsters=0}] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.1] run function statues:ingame/mechanics/monsters/000_freeze
