@@ -3,7 +3,7 @@ execute store result score $SlotN2SIn Statues.TempData store success score $Dyna
 execute if score $DynamicMapExists Statues.TempData matches 0 run return 0
 
 # Indexing with a compound again because otherwise, a macro and copying the slot to storage would be required
-execute store result score $DynamicMapOld Statues.TempData run data get entity @s Inventory[{id:"minecraft:filled_map"}].tag.map
+execute store result score $DynamicMapOld Statues.TempData run data get entity @s Inventory[{id:"minecraft:filled_map"}].components.minecraft:map_id
 
 scoreboard players set $DynamicMapNew Statues.TempData 4242
 execute if score $Map Statues.DynamicData matches 0 run function statues:mechanics/dynamic_map/maps/facade/get_map_id
