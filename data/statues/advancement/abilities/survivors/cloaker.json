@@ -7,7 +7,11 @@
           "items": "minecraft:blaze_rod",
           "count": 1,
           "components": {
-            "custom_name": "{\"translate\":\"statues.item.cloaker.ability.name\",\"italic\":false,\"color\":\"dark_purple\"}"
+            "minecraft:custom_model_data": {
+              "strings": [
+                "cloak"
+              ]
+            }
           }
         }
       }

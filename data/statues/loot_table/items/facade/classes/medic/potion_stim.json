@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Stim",
+                "translate": "statues.item.stim",
                 "color": "light_purple",
                 "italic": false
               }

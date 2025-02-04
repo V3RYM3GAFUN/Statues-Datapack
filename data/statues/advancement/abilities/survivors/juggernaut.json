@@ -9,7 +9,7 @@
           "components": {
             "minecraft:custom_model_data": {
               "strings": [
-                ""
+                "retractable_shield"
               ]
             }
           }
