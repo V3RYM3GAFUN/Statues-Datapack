@@ -8,7 +8,7 @@ execute as @a[team=Survivor] at @s if entity @e[tag=locker,distance=..2] run fun
 
 #> Tick the trapper trap
 execute at @e[tag=trap,type=marker,x=0,limit=4] unless entity @e[tag=trap_display,type=item_display,distance=..1] align xyz run summon item_display ~.5 ~ ~.5 {item:{id:breeze_rod,components:{custom_model_data:{strings:["trap"]}}},Tags:["trap_display"]} 
-execute as @a[team=Monster] at @s if entity @n[tag=trap,type=marker,distance=..3] run function statues:ingame/mechanics/survivors/abilities/trapper/trigger_trap
+execute as @a[team=Monster,x=0] at @s if entity @n[tag=trap,type=marker,distance=..3] run function statues:ingame/mechanics/survivors/abilities/trapper/trigger_trap
 execute as @e[tag=trap_display,type=item_display,limit=4] at @s unless entity @e[tag=trap,type=marker,distance=..1] run kill @s
 
 #> Detect if a player is looking at 000 ?

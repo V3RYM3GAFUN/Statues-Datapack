@@ -6,4 +6,4 @@ function statues:reset
 
 title @a title {"translate": "statues.game.survivor.victory","color": "aqua"}
 
-execute as @a at @s run playsound ui.toast.challenge_complete master @a ~ ~ ~ 0.5 0.75
+execute as @a at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~ 0.5 0.75

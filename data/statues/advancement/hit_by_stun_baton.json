@@ -3,26 +3,21 @@
     "hit_by_stun_baton": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:damage_source_properties",
-            "predicate": {
-              "source_entity": {
-                "type": "minecraft:player",
-                "equipment": {
-                  "mainhand": {
-                    "items": "minecraft:stick",
-                    "predicates": {
-                      "minecraft:custom_data": {
-                        "is_stun_baton": true
-                      }
-                    }
+        "damage": {
+          "source_entity": {
+            "slots": {
+              "weapon.mainhand": {
+                "items": "stick",
+                "count": 1,
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "is_stun_baton": true
                   }
                 }
               }
             }
           }
-        ]
+        }
       }
     }
   },
