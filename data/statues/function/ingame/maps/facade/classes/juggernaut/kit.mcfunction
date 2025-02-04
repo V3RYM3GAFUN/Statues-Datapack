@@ -5,6 +5,7 @@ scoreboard players set @s Statues.Players 0
 effect give @s health_boost infinite 4 true
 effect give @s slowness infinite 0 true
 effect give @s instant_health 5 10 true
+attribute @s fall_damage_multiplier base reset
 
 loot replace entity @s hotbar.0 loot statues:items/facade/classes/juggernaut/anti_anomaly_rifle
 loot replace entity @s hotbar.1 loot statues:items/facade/classes/juggernaut/strong_anti_anomaly_ammo

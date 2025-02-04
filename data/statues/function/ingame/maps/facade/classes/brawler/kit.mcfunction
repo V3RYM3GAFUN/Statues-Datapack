@@ -4,6 +4,7 @@ scoreboard players set @s Statues.Players 0
 
 effect give @s health_boost infinite 2 true
 effect give @s instant_health 5 10 true
+attribute @s fall_damage_multiplier base reset
 
 loot replace entity @s hotbar.0 loot statues:items/facade/classes/brawler/stun_baton
 

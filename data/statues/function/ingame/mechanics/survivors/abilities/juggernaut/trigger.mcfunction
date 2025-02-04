@@ -1,1 +1,5 @@
-# advancement revoke @s only statues:abilities/survivors/juggernaut
+give @a[tag=juggernaut] shield[unbreakable={show_in_tooltip:0b},custom_name='{"translate":"statues.item.juggernaut.ability.name"}']
+
+schedule function statues:ingame/mechanics/survivors/abilities/juggernaut/reset 10s append
+
+advancement revoke @s only statues:abilities/survivors/juggernaut

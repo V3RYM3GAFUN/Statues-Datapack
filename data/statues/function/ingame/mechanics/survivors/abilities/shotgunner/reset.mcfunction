@@ -1,0 +1,3 @@
+clear @a[tag=shotgunner] crossbow[custom_name='{"translate":"statues.item.shotgunner.ability.name","italic":false}',custom_model_data={strings:["shotgun"]},enchantments={multishot:1,quick_charge:5},use_cooldown={seconds:1}]
+
+give @a[tag=shotgunner] blaze_rod[use_cooldown={seconds:150},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"block.enchantment_table.use"},custom_model_data={strings:["rapid_fire_shotgun"]},custom_name='{"translate":"statues.item.shotgunner.ability.name","italic":false}',lore=['[{"translate":"statues.item.medic.ability.lore.line2","italic":false}]','[{"translate":"statues.item.cooldown","with":[{"translate":"statues.text.2m30s"}]}]']]

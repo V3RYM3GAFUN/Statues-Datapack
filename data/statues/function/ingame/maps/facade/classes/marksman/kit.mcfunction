@@ -3,6 +3,7 @@ tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
 effect give @s night_vision infinite 0 true
+attribute @s fall_damage_multiplier base reset
 
 loot replace entity @s hotbar.0 loot statues:items/facade/classes/marksman/sniper_rifle
 loot replace entity @s hotbar.1 loot statues:items/facade/classes/marksman/sniper_ammo

@@ -2,6 +2,8 @@ tag @s add cloaker
 tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
+attribute @s fall_damage_multiplier base reset
+
 loot replace entity @s hotbar.0 loot statues:items/facade/classes/cloaker/anti_anomaly_gun
 loot replace entity @s hotbar.1 loot statues:items/facade/classes/cloaker/weak_anti_anomaly_ammo
 

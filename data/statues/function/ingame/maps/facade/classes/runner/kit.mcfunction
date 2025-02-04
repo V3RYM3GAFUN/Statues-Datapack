@@ -4,6 +4,7 @@ scoreboard players set @s Statues.Players 0
 
 effect give @s speed infinite 0 true
 effect give @s weakness infinite 100 true
+attribute @s fall_damage_multiplier base reset
 
 loot replace entity @s hotbar.0 loot statues:items/facade/classes/runner/anti_anomaly_gun
 loot replace entity @s hotbar.1 loot statues:items/facade/classes/runner/weak_anti_anomaly_ammo

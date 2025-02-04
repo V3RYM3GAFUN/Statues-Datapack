@@ -2,6 +2,8 @@ tag @s add gunner
 tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
+attribute @s fall_damage_multiplier base reset
+
 loot replace entity @s hotbar.0 loot statues:items/facade/classes/gunner/anti_anomaly_gun
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar
