@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "used_ability": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:blaze_rod",
+          "count": 1,
+          "components": {
+            "minecraft:custom_model_data": {
+              "strings": [
+                "004_ability"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "used_ability"
+    ]
+  ],
+  "rewards": {
+    "function": "statues:ingame/mechanics/monsters/abilities/004"
+  }
+}

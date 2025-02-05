@@ -24,13 +24,13 @@ execute if score $Timer.Seconds Statues.DynamicData matches 301..450 run bossbar
 execute if score $Timer.Seconds Statues.DynamicData matches 151..300 run bossbar set statues:gametimer color yellow
 execute if score $Timer.Seconds Statues.DynamicData matches ..150 run bossbar set statues:gametimer color red
 
-#> Old in-game timer
+#> Old in-game timer (uses actionbar)
 #execute if score $Timer.Minutes Statues.DynamicData matches ..9 if score $Timer.Seconds Statues.DynamicData matches ..9 run title @a actionbar [{"text": "Time left: 0"},{"score":{"name":"$Timer.Minutes","objective":"Statues.DynamicData"}},{"text":":0"},{"score":{"name":"$Timer.Seconds","objective":"Statues.DynamicData"}}]
 #execute if score $Timer.Minutes Statues.DynamicData matches ..9 if score $Timer.Seconds Statues.DynamicData matches 10.. run title @a actionbar [{"text": "Time left: 0"},{"score":{"name":"$Timer.Minutes","objective":"Statues.DynamicData"}},{"text":":"},{"score":{"name":"$Timer.Seconds","objective":"Statues.DynamicData"}}]
 #execute if score $Timer.Minutes Statues.DynamicData matches 10.. if score $Timer.Seconds Statues.DynamicData matches ..9 run title @a actionbar [{"text": "Time left: "},{"score":{"name":"$Timer.Minutes","objective":"Statues.DynamicData"}},{"text":":0"},{"score":{"name":"$Timer.Seconds","objective":"Statues.DynamicData"}}]
 #execute if score $Timer.Minutes Statues.DynamicData matches 10.. if score $Timer.Seconds Statues.DynamicData matches 10.. run title @a actionbar [{"text": "Time left: "},{"score":{"name":"$Timer.Minutes","objective":"Statues.DynamicData"}},{"text":":"},{"score":{"name":"$Timer.Seconds","objective":"Statues.DynamicData"}}]
 
-#> The data still used for the timer
+#> Data used for the timer
 execute if score $Timer.Ticks Statues.DynamicData matches ..-1 run scoreboard players remove $Timer.Seconds Statues.DynamicData 1
 execute if score $Timer.Ticks Statues.DynamicData matches ..-1 run scoreboard players set $Timer.Ticks Statues.DynamicData 19
 #execute if score $Timer.Seconds Statues.DynamicData matches ..-1 run scoreboard players remove $Timer.Minutes Statues.DynamicData 1

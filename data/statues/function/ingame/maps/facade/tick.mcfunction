@@ -48,7 +48,7 @@ execute if score $Objective Statues.DynamicData matches 11 as @e[tag=objective_f
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 5 as @e[type=marker,tag=facade_monster_choice,sort=random,limit=1] at @s if block ~ ~ ~ light_weighted_pressure_plate run tp @r[team=Monster,tag=!monster_chosen] ~ ~ ~
 
 #> Countdown for monster spawn delay (before they can actually chase survivors)
-execute if score $MonsterSpawnDelay Statues.DynamicData matches 1.. run function statues:ingame/maps/facade/warptimer
+execute if score $MonsterSpawnDelay Statues.DynamicData matches 1.. run function statues:ingame/maps/common/warptimer
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 0.. run scoreboard players remove $MonsterSpawnDelay Statues.DynamicData 1
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 0 run function statues:ingame/maps/facade/monsterspawn
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 0 run bossbar set statues:warptimer visible false
