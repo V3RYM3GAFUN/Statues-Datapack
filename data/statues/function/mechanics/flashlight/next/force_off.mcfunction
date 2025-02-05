@@ -4,4 +4,4 @@ execute as @s[advancements={statues:spyglass_use=false}] run scoreboard players 
 advancement revoke @s only statues:spyglass_use
 
 execute if score @s[tag=!marksman] Statues.Flashlight matches ..0 run effect clear @s night_vision
-execute if score @s Statues.Flashlight matches ..0 run attribute @s generic.movement_speed base set 0.1
+execute if score @s Statues.Flashlight matches ..0 run attribute @s movement_speed base set 0.1

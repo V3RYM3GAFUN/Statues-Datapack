@@ -19,4 +19,4 @@ clear @s
 tag @s remove class_tutorial
 tag @s remove class_selected
 
-attribute @s minecraft:generic.knockback_resistance base set 0.1
+attribute @s minecraft:knockback_resistance base reset

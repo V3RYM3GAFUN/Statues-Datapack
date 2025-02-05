@@ -1,4 +1,4 @@
-execute store result score $MaxHealth Statues.TempData run attribute @s minecraft:generic.max_health get
+execute store result score $MaxHealth Statues.TempData run attribute @s max_health get
 execute store result score $Health Statues.TempData run data get entity @s Health 100
 scoreboard players add $Health Statues.TempData 99
 scoreboard players operation $Health Statues.TempData /= $100 Statues.Constants

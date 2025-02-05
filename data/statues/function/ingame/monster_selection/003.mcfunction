@@ -17,7 +17,7 @@ attribute @s step_height modifier add statues:step 0.75 add_value
 #> Stats specific to 003
 effect give @s mining_fatigue infinite 5 true
 attribute @s attack_damage modifier add statues:damage 1 add_value
-attribute @s scale base set 1.15
+attribute @s scale base set 1.111
 
 #> General armour
 item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
