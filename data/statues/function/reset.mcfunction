@@ -9,13 +9,14 @@ team join Lobby @a[team=!Dev]
 
 scoreboard players set $Status Statues.DynamicData 0
 
-kill @e[type=item]
+kill @e[type=item,x=0]
+kill @e[type=marker,tag=trap,x=0]
 
 execute as @a run attribute @s movement_speed base reset
 execute as @a run attribute @s jump_strength base reset
 execute as @a run attribute @s fall_damage_multiplier base set 0
 execute as @a run attribute @s knockback_resistance modifier remove no_knockback
-execute as @a run attribute @s knockback_resistance modifier remove statues:super_quick
+execute as @a run attribute @s movement_speed modifier remove statues:super_quick
 
 effect give @a instant_health 1 100 true
 effect give @a saturation infinite 100 true

@@ -3,7 +3,7 @@ scoreboard players set $Objective Statues.DynamicData 0
 time set 8000
 weather clear
 
-tp @a[team=Monster] -29.5 -56 324.5 -90 0
+tp @a[team=Monster] @e[type=marker,tag=facade_monster_start,limit=1]
 
 scoreboard players set $MonsterSpawnDelay Statues.DynamicData 1800
 tellraw @a {"translate": "statues.game.grace_period","bold": true,"color": "aqua"}
@@ -11,7 +11,7 @@ tellraw @a {"translate": "statues.game.grace_period","bold": true,"color": "aqua
 #> More than enough to fill up potential lost health
 effect give @a[team=Survivor] instant_health 1 5 true
 
-tp @a[team=Survivor] 44.5 -56 322 90 0
+tp @a[team=Survivor] @e[type=marker,tag=facade_survivor_start,limit=1]
 tag @a[team=Survivor] add has_compass_tracker
 
 #> Set the Core heartbeat timer

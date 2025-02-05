@@ -11,7 +11,7 @@ loot replace entity @s hotbar.1 loot statues:items/classes/marksman/sniper_ammo
 loot replace entity @s hotbar.2 loot statues:items/crowbar
 loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 
-item replace entity @s armor.head with player_head[custom_name='{"translate":"statues.item.marksman.helmet"}',profile={id:[I;-21530089,-992393454,-1370318747,1865408282],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM3YzEzZjNhNGM1OWFkNmJlZmE3ZjQzMmViNDBiODAxMDliZDkwZGNmZDI2MGY4ODY0ZmI0MTZjOTY2ZDc4MCJ9fX0="}]}]
+item replace entity @s armor.head with player_head[custom_name='{"translate":"statues.item.marksman.helmet"}',profile={id:[I;315857903,-1002487076,-1177140286,1141970110],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWEwNjNhYTg2YjM1OWJmZTI1YWJiNTdkNGYzNGI5MmQ1NzBhODI0NjA1NjA2Y2ZkYjVjZDBmNGNhMWVhMjQxMCJ9fX0="}]}]
 
 item replace entity @s hotbar.4 with blaze_rod[use_cooldown={seconds:210},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"item.lodestone_compass.lock"},custom_model_data={strings:["x-ray"]},custom_name='{"translate":"statues.item.marksman.ability.name","italic":false,"color":"gray"}',lore=['[{"translate":"statues.item.marksman.ability.lore.line1","italic":false}]','[{"translate":"statues.item.marksman.ability.lore.line2","italic":false}]','[{"translate":"statues.item.medic.ability.lore.line2","italic":false}]','[{"translate":"statues.item.cooldown","with":[{"translate":"statues.text.3m30s"}]}]']]
 

@@ -13,7 +13,7 @@ attribute @s jump_strength base set 0
 attribute @s fall_damage_multiplier base set 0
 
 #> Stats specific to 002
-attribute @s movement_speed base set 0.20
+attribute @s movement_speed modifier add statues:super_quick 2 add_multiplied_base
 effect give @s blindness infinite 0 true 
 
 
@@ -21,6 +21,8 @@ effect give @s blindness infinite 0 true
 item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
 item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
 item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
+
+loot replace entity @s hotbar.8 loot statues:items/dynamic_map_survivor
 
 #> Items specific to 002
 item replace entity @s armor.head with jack_o_lantern[custom_name='{"translate": "statues.item.002.head","bold": true,"italic": false,"color": "gold"}']

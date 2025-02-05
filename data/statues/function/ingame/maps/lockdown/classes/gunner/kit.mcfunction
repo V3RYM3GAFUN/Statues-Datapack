@@ -12,7 +12,7 @@ loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 loot replace entity @s hotbar.6 loot statues:items/classes/gunner/strong_anti_anomaly_ammo
 loot replace entity @s hotbar.7 loot statues:items/classes/gunner/weak_anti_anomaly_ammo
 
-item replace entity @s armor.head with player_head[custom_name='{"translate":"statues.item.gunner.helmet"}',profile={id:[I;441116359,-2100342880,-1745843057,808791889],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNhNThiZWM2NTY2OGI2ODJhYmFiMzYxMzAwYTljNDEzM2JiNmMwNmRiODg0NzIxMGE2MmI4ODRlZTZmYmM3ZCJ9fX0="}]}]
+item replace entity @s armor.head with player_head[custom_name='{"translate":"statues.item.gunner.helmet"}',profile={id:[I;1323198025,-780906790,-1231707086,623294080],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2JiYjA1NTU4N2ZjZjI3ODJkZjUzMjJkZjc2NjNhYWI4NWY4ZGM5NzdlMTI5YTVjNzA1ODc1NTMzNTZmNGZjYiJ9fX0="}]},]
 
 item replace entity @s hotbar.4 with blaze_rod[use_cooldown={seconds:210},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"item.armor.equip_netherite"},custom_model_data={strings:["ammo"]},custom_name='{"translate":"statues.item.ability.name","italic":false,"color":"dark_aqua"}',lore=['[{"translate":"statues.item.medic.ability.lore.line2","italic":false}]','[{"translate":"statues.item.cooldown","with":[{"translate":"statues.text.3m30s"}]}]']]
 

@@ -21,6 +21,8 @@ item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tool
 item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
 item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
 
+loot replace entity @s hotbar.8 loot statues:items/dynamic_map_survivor
+
 #> Items specific to 004
 item replace entity @s armor.head with skeleton_skull[custom_name='{"translate": "statues.item.004.head","bold": true,"italic": false}']
 item replace entity @s weapon.mainhand with crossbow[unbreakable={},enchantments={multishot:1,quick_charge:1},custom_name='[{"translate":"statues.item.004.weapon","italic":false,"color":"white","bold":true}]',custom_model_data={strings:["insect"]}] 1

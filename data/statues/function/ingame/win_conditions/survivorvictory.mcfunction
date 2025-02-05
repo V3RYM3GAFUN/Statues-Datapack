@@ -2,6 +2,10 @@ execute if score $Objective Statues.DynamicData matches 11 run scoreboard player
 execute if score $Objective Statues.DynamicData matches 11 run function #statues:game_events/ingame/complete_objective
 
 scoreboard players operation $EndCause Statues.GameEventData = $GameEndCause.SurvivorsEscaped Statues.GameEventEnum
+
+execute if score $Map Statues.DynamicData matches 0 run advancement grant @a[team=Survivor] only statues:game/maps/facade/win_as_survivor
+execute if score $Map Statues.DynamicData matches 1 run advancement grant @a[team=Survivor] only statues:game/maps/lockdown/win_as_survivor
+
 function statues:reset
 
 title @a title {"translate": "statues.game.survivor.victory","color": "aqua"}

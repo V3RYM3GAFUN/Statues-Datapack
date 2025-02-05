@@ -6,7 +6,7 @@ execute as @e[type=text_display,tag=objective_facade_power] run data modify enti
 #> Announce objective completion
 title @a times 5t 3s 25t
 title @a title ""
-title @a subtitle {"translate": "statues.game.objective.facade.mainpower","color": "aqua"}
+title @a subtitle {"translate": "statues.game.facade.objective.mainpower","color": "aqua"}
 
 #> Detect objective buttons being triggered
 

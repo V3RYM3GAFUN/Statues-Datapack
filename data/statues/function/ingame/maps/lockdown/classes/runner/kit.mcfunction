@@ -12,7 +12,7 @@ loot replace entity @s hotbar.1 loot statues:items/classes/runner/weak_anti_anom
 loot replace entity @s hotbar.2 loot statues:items/crowbar
 loot replace entity @s hotbar.3 loot statues:items/dynamic_map_survivor
 
-item replace entity @s armor.head with player_head[custom_name='{"translate":"statues.item.runner.helmet"}',profile={id:[I;-1925825735,286674216,-1522073039,-1856057337],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQzNzI4NTc5MzEzMWVkNzU1ZjFiMDA5OGYyOWRkNDEzZDY3NjU2YjYyMDg3Mjg5MzU0OTJiNDliMWQwZDRiYSJ9fX0="}]}]
+item replace entity @s armor.head with player_head[custom_name='{"translate":"statues.item.runner.helmet"}',profile={id:[I;1884695747,2089828402,-1981234289,-443642655],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE5YWYwYjhhZDYwNzFkM2I1MTllMTI0NWIxNjQzZmJhNjQ0ZDE5MTc3MTIwM2M0YTA1OTY4ZjE3NmM5YWEwOSJ9fX0="}]}]
 
 item replace entity @s hotbar.4 with blaze_rod[use_cooldown={seconds:300},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"entity.bat.takeoff"},custom_model_data={strings:["dopamine"]},custom_name='{"translate":"statues.item.runner.ability.name","italic":false,"color":"aqua"}',lore=['[{"translate":"statues.item.runner.ability.lore.line1","italic":false}]','[{"translate":"statues.item.runner.ability.lore.line2","italic":false}]','[{"translate":"statues.item.cooldown","with":[{"translate":"statues.text.5min"}]}]']]
 
