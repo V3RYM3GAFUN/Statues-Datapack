@@ -15,7 +15,8 @@ attribute @s movement_speed modifier add statues:super_quick 2 add_multiplied_ba
 
 #> Stats specific to 002
 attribute @s step_height modifier add statues:step 0.75 add_value
-effect give @s blindness infinite 0 true 
+effect give @s blindness infinite 0 true
+attribute @s scale base set 0.85
 
 
 #> General armour

@@ -17,6 +17,7 @@ attribute @s fall_damage_multiplier base set 0
 attribute @s movement_speed modifier add statues:super_quick 1.5 add_multiplied_base
 attribute @s entity_interaction_range modifier add extra_reach 0.5 add_value
 attribute @s attack_damage modifier add statues:damage 2 add_value
+attribute @s scale base set 0.9
 
 #> General armour
 item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']

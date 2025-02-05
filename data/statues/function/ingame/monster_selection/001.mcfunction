@@ -16,6 +16,8 @@ attribute @s step_height modifier add statues:step 0.75 add_value
 #> Stats specific to 001
 attribute @s movement_speed base set 0.075
 attribute @s entity_interaction_range modifier add extra_reach 1 add_value
+attribute @s scale base set 1.3
+
 #> General armour
 item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
 item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']

@@ -19,6 +19,7 @@ execute as @a run attribute @s knockback_resistance modifier remove statues:no_k
 execute as @a run attribute @s movement_speed modifier remove statues:super_quick
 execute as @a run attribute @s step_height modifier remove statues:step
 execute as @a run attribute @s attack_damage modifier remove statues:damage
+execute as @a run attribute @s scale base reset
 
 effect give @a instant_health 1 100 true
 effect give @a saturation infinite 100 true
