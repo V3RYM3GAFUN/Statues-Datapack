@@ -11,11 +11,11 @@ effect give @s saturation infinite 100 true
 attribute @s jump_strength base set 0
 attribute @s knockback_resistance modifier add statues:no_knockback 1 add_value
 attribute @s fall_damage_multiplier base set 0
+attribute @s step_height modifier add statues:step 0.75 add_value
 
 #> Stats specific to 004
 effect give @s darkness infinite 0 true
-effect give @s weakness infinite 4 true 
-
+attribute @s attack_damage modifier add statues:damage -1 add_multiplied_base
 #> General armour
 item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
 item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
