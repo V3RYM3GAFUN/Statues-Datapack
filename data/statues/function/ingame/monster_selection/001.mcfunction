@@ -14,8 +14,8 @@ attribute @s fall_damage_multiplier base set 0
 attribute @s step_height modifier add statues:step 0.75 add_value
 
 #> Stats specific to 001
-attribute @s movement_speed base set 0.075
-attribute @s entity_interaction_range modifier add extra_reach 1 add_value
+attribute @s movement_speed base set 0.09
+attribute @s entity_interaction_range modifier add extra_reach 1.5 add_value
 attribute @s scale base set 1.3
 
 #> General armour

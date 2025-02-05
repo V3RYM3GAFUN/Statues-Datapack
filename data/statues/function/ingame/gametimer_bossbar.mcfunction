@@ -1,2 +1,2 @@
 # $bossbar set statues:gametimer name "Time left: $(remaining_minutes)m $(remaining_seconds)s"
-$bossbar set statues:gametimer name "{\"translate\":\"statues.game.gametimer\",\"with\":[\"$(remaining_minutes)\", \"$(remaining_seconds)\"]}"
+$bossbar set statues:gametimer name {"translate":"statues.game.gametimer","with":["$(remaining_minutes)", "$(remaining_seconds)"]}

@@ -14,7 +14,6 @@ attribute @s fall_damage_multiplier base set 0
 attribute @s step_height modifier add statues:step 0.75 add_value
 
 #> Stats specific to 004
-effect give @s darkness infinite 0 true
 attribute @s attack_damage modifier add statues:damage -1 add_multiplied_base
 #> General armour
 item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']

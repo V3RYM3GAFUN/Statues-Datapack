@@ -13,7 +13,8 @@
               "name": {
                 "translate": "statues.item.strong_ammo",
                 "color": "dark_blue",
-                "italic": false
+                "italic": false,
+                "bold": true
               }
             },
             {
