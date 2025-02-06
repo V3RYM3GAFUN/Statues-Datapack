@@ -10,7 +10,7 @@ scoreboard players set $CompassSelector Statues.DynamicData 2
 
 scoreboard players add $Timer.Seconds Statues.DynamicData 300
 
-clear @a iron_ingot[custom_data={facade_genkey_item:1b}] 1
+clear @a iron_ingot[custom_data~{facade_genkey_item:1b}] 1
 
 time set 10000
 

@@ -11,7 +11,7 @@ scoreboard players set $Objective Statues.DynamicData 9
 
 execute as @a[team=!Monster] at @s run playsound minecraft:block.vault.insert_item master @a ~ ~ ~ 1 1.5
 
-clear @a iron_ingot[custom_data={facade_highclass_item:1b}] 1
+clear @a iron_ingot[custom_data~{facade_highclass_item:1b}] 1
 
 weather thunder
 
