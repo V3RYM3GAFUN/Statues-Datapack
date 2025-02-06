@@ -1,6 +1,6 @@
 tag @s add debug_caller
 function statues:ingame/maps/facade/pool_locations_load
-execute as @e[tag=facade_labkey_pool,type=minecraft:marker] at @s if data block ~ ~ ~ Items[{tag:{facade_labkey_item:1b}}] run tag @s add facade_labkey_haskey
+execute as @e[tag=facade_labkey_pool,type=minecraft:marker] at @s if data block ~ ~ ~ Items[{"components":{"custom_data":{facade_labkey_item:1b}}}] run tag @s add facade_labkey_haskey
 execute as @e[tag=facade_labkey_pool,type=minecraft:marker] at @s if data block ~ ~ ~ {LootTable:"statues:items/facade/objectives/labkey_1"} run tag @s add facade_labkey_haskey
 execute as @e[tag=facade_labkey_pool,type=minecraft:marker] at @s if data block ~ ~ ~ {LootTable:"statues:items/facade/objectives/labkey_2"} run tag @s add facade_labkey_haskey
 execute as @e[tag=facade_labkey_pool,type=minecraft:marker] at @s if data block ~ ~ ~ {LootTable:"statues:items/facade/objectives/labkey_3"} run tag @s add facade_labkey_haskey
