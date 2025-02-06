@@ -3,9 +3,8 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:item",
-    "nbt": "{Item:{tag:{objective_item:1b}}}",
-    "equipment": {
-      "mainhand": {
+    "slots": {
+      "contents": {
         "predicates": {
           "minecraft:custom_data": {
             "objective_item": true
