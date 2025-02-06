@@ -11,7 +11,7 @@ effect give @a[team=Monster] glowing 10 0 true
 effect give @a[team=Monster] weakness infinite 0 true
 
 team join Survivor @a[team=!Monster,tag=queued]
-tag @a[team=Survivor] add vent_always_available
+tag @a[team=Survivor] add can_use_vent
 tag @a remove queued
 
 #> Prevents players from hitting each other after getting role
