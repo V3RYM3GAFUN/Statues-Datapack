@@ -24,11 +24,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_model_data": {
-                  "strings": [
-                    "stun_baton"
-                  ]
-                },
+                "item_model": "statues:weapons/survivors/stun_baton",
                 "custom_data": {
                   "is_stun_baton": true
                 }

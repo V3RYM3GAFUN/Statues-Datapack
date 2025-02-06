@@ -9,13 +9,9 @@
           "value": "statues:items/facade/objectives/templates/highclasskey",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "custom_data": {
-                  "item_objective_id": 6,
-                  "facade_highclass_item": true,
-                  "objective_item": true
-                }
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "item_objective_id": 6
               }
             }
           ]

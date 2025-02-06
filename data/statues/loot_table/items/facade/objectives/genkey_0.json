@@ -9,13 +9,9 @@
           "value": "statues:items/facade/objectives/templates/genkey",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "item_objective_id": 0,
-                  "facade_genkey_item": true,
-                  "objective_item": true
-                }
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "item_objective_id": 0
               }
             }
           ]

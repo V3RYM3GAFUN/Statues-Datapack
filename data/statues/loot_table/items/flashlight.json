@@ -18,11 +18,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_model_data": {
-                  "strings": [
-                    "flashlight"
-                  ]
-                },
+                "item_model": "statues:survivors/flashlight",
                 "minecraft:custom_data": {
                   "is_flashlight": true
                 }

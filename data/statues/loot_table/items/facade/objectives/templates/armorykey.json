@@ -23,11 +23,7 @@
                   "facade_armory_item": true,
                   "objective_item": true
                 },
-                "custom_model_data": {
-                  "strings": [
-                    "keycard_red"
-                  ]
-                }
+                "item_model": "statues:keys/keycard_red"
               }
             }
           ]

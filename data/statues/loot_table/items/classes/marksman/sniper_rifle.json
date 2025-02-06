@@ -30,11 +30,7 @@
                 "use_cooldown": {
                   "seconds": 10
                 },
-                "custom_model_data": {
-                  "strings": [
-                    "sniper"
-                  ]
-                }
+                "item_model": "statues:weapons/survivors/sniper"
               }
             }
           ]

@@ -1,1 +1,0 @@
-# execute as @a[scores={Statues.Monsters=1}] at @s positioned ^ ^ ^1 run tp @p[team=Survivor,distance=..5] ~ ~ ~

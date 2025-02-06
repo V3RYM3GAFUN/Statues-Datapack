@@ -30,11 +30,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_model_data": {
-                  "strings": [
-                    "crowbar"
-                  ]
-                },
+                "item_model": "statues:survivors/crowbar",
                 "minecraft:custom_data": {
                   "is_crowbar": true
                 }

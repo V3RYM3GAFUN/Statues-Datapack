@@ -30,11 +30,7 @@
                 "use_cooldown": {
                   "seconds": 7.5
                 },
-                "custom_model_data": {
-                  "strings": [
-                    "trapper_gun"
-                  ]
-                }
+                "item_model": "statues:weapons/survivors/trapper_gun"
               }
             }
           ]

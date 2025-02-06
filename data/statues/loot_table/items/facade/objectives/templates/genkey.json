@@ -23,11 +23,7 @@
                   "facade_genkey_item": true,
                   "objective_item": true
                 },
-                "custom_model_data": {
-                  "strings": [
-                    "key_v2"
-                  ]
-                }
+                "item_model": "statues:keys/key_v2"
               }
             }
           ]

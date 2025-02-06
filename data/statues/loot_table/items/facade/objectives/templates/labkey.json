@@ -23,11 +23,7 @@
                   "facade_labkey_item": true,
                   "objective_item": true
                 },
-                "custom_model_data": {
-                  "strings": [
-                    "keycard_white"
-                  ]
-                }
+                "item_model": "statues:keys/keycard_white"
               }
             }
           ]

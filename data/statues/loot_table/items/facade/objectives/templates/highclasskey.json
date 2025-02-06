@@ -23,11 +23,7 @@
                   "facade_highclass_item": true,
                   "objective_item": true
                 },
-                "custom_model_data": {
-                  "strings": [
-                    "keycard_blue"
-                  ]
-                }
+                "item_model": "statues:keys/keycard_blue"
               }
             }
           ]
