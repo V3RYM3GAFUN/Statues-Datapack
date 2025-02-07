@@ -1,4 +1,4 @@
-tag @s add first_join
+advancement grant @s only statues:game/root
 
 advancement grant @s only statues:game/root
 title @s title {"translate": "statues.lobby.welcome.title","color": "red","bold": true}

@@ -1,6 +1,6 @@
 effect give @s saturation infinite 0 true
 
-execute if entity @s[tag=!first_join] run function statues:lobby/firstjoin
+execute if entity @s[advancements={statues:game/root=false}] run function statues:lobby/firstjoin
 
 effect give @s[team=Spectator] minecraft:night_vision infinite 0 true
 effect clear @s[team=Lobby] minecraft:night_vision
