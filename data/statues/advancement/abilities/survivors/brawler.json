@@ -6,11 +6,9 @@
         "item": {
           "items": "minecraft:blaze_rod",
           "count": 1,
-          "components": {
-            "minecraft:custom_model_data": {
-              "strings": [
-                "brawler_ability"
-              ]
+          "predicates": {
+            "custom_data": {
+              "brawler_ability": true
             }
           }
         }

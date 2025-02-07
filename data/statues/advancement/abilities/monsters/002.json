@@ -6,11 +6,9 @@
         "item": {
           "items": "minecraft:blaze_rod",
           "count": 1,
-          "components": {
-            "minecraft:custom_model_data": {
-              "strings": [
-                "002_ability"
-              ]
+          "predicates": {
+            "custom_data": {
+              "002_ability": true
             }
           }
         }

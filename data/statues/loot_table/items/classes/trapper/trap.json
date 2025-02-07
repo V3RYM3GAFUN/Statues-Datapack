@@ -25,17 +25,18 @@
                 "use_cooldown": {
                   "seconds": 2.5
                 },
-                "custom_model_data": {
-                  "strings": [
-                    "trap"
-                  ]
-                },
                 "consumable": {
                   "animation": "bow",
                   "consume_seconds": 0.01,
                   "has_consume_particles": false,
                   "sound": "item.spyglass.use"
                 }
+              }
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "trapper_trap":true
               }
             },
             {

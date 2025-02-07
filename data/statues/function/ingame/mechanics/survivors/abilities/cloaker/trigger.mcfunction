@@ -2,7 +2,7 @@ playsound entity.enderman.teleport block @s ~ ~ ~ 1 0.75
 
 effect give @s invisibility 10 0 true
 
-give @s blaze_rod[use_cooldown={seconds:30},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"entity.enderman.teleport"},item_name='{"translate":"statues.item.cloaker.ability.name","italic":false,"color":"dark_purple"}',lore=['[{"translate":"statues.item.cooldown.sec","with":[{"text":"30"}]}]']]
+give @s blaze_rod[use_cooldown={seconds:30},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"entity.enderman.teleport"},item_name='{"translate":"statues.item.cloaker.ability.name","italic":false,"color":"dark_purple"}',lore=['[{"translate":"statues.item.cooldown.sec","with":[{"text":"30"}]}]'],custom_data={"cloaker_ability":true}]
 
 item replace entity @s armor.head with air
 item replace entity @s armor.chest with air
