@@ -14,6 +14,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "entity": "this",
               "name": {
                 "text": "Strong Anti-anomaly Ammo",
@@ -62,6 +63,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "target": "item_name",
               "entity": "this",
               "name": {
                 "text": "Weak Anti-anomaly Ammo",

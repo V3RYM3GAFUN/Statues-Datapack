@@ -20,16 +20,16 @@ attribute @s attack_damage modifier add statues:damage 2 add_value
 attribute @s scale base set 0.9
 
 #> General armour
-item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
-item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
-item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},custom_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
+item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
+item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
+item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
 
 loot replace entity @s hotbar.8 loot statues:items/dynamic_map_survivor
 
 #> Items specific to 001
-item replace entity @s armor.head with wither_skeleton_skull[custom_name='{"translate": "statues.item.000.head","color": "#2e2e2e","bold": true,"italic": false}']
+item replace entity @s armor.head with wither_skeleton_skull[item_name='{"translate": "statues.item.000.head","color": "#2e2e2e","bold": true,"italic": false}']
 
-item replace entity @s hotbar.4 with blaze_rod[custom_name='{"translate": "statues.item.000.ability.name","color": "#2e2e2e","bold": true,"italic": false}',use_cooldown={seconds:90},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"block.anvil.place"},custom_model_data={strings:["000_ability"]},lore=['[{"translate":"statues.item.000.ability.lore.line1","italic":false}]','[{"translate":"statues.item.000.ability.lore.line2","italic":false}]','[{"translate":"statues.item.cooldown.min","with":[{"text":"1"},{"text":"30"}]}]']]
+item replace entity @s hotbar.4 with blaze_rod[item_name='{"translate": "statues.item.000.ability.name","color": "#2e2e2e","bold": true,"italic": false}',use_cooldown={seconds:90},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"block.anvil.place"},custom_model_data={strings:["000_ability"]},lore=['[{"translate":"statues.item.000.ability.lore.line1","italic":false}]','[{"translate":"statues.item.000.ability.lore.line2","italic":false}]','[{"translate":"statues.item.cooldown.min","with":[{"text":"1"},{"text":"30"}]}]']]
 
 execute if entity @s[tag=!monster_tutorial] run scoreboard players operation $MonsterKind Statues.GameEventData = $MonsterKind.000 Statues.GameEventEnum
 execute if entity @s[tag=!monster_tutorial] run function #statues:game_events/ingame/pick_monster
