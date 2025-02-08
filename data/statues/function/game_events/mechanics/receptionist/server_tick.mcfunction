@@ -1,0 +1,1 @@
+execute if score receptionist Statues.FeatureFlags matches 1.. run function statues:mechanics/receptionist/tick

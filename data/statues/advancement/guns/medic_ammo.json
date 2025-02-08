@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "shoot": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "is_gun": true,
+              "ammo_select": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shoot"
+    ]
+  ],
+  "rewards": {
+    "function": "statues:ingame/mechanics/raycasting/shoot_medic_ammo/check_for_ammo"
+  }
+}

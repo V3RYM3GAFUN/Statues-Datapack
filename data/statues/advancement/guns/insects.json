@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "shoot": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "insect_launcher":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shoot"
+    ]
+  ],
+  "rewards": {
+    "function": "statues:ingame/mechanics/raycasting/shoot_insects/start"
+  }
+}

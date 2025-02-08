@@ -5,11 +5,9 @@
       "conditions": {
         "item": {
           "items": "minecraft:breeze_rod",
-          "components": {
-            "minecraft:custom_model_data": {
-              "strings": [
-                "trap"
-              ]
+          "predicates": {
+            "custom_data": {
+              "trapper_trap": true
             }
           }
         }
