@@ -95,6 +95,10 @@ execute if score floors Statues.FeatureFlags matches 0 run scoreboard players di
 execute unless score floors Statues.FeatureFlags matches ..0 run scoreboard players display numberformat floors Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name floors Statues.FeatureFlags {"text":"Floors Feature"}
 
+execute if score game_replay Statues.FeatureFlags matches 0 run scoreboard players display numberformat game_replay Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score game_replay Statues.FeatureFlags matches ..0 run scoreboard players display numberformat game_replay Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name game_replay Statues.FeatureFlags {"text":"Game Replay Feature"}
+
 execute if score hiding Statues.FeatureFlags matches 0 run scoreboard players display numberformat hiding Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score hiding Statues.FeatureFlags matches ..0 run scoreboard players display numberformat hiding Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name hiding Statues.FeatureFlags {"text":"Hiding Spot Feature"}

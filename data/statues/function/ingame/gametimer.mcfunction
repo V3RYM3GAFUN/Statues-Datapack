@@ -14,7 +14,8 @@ bossbar set statues:gametimer players @a[team=!Monster]
 bossbar set statues:gametimer visible true
 
 #> Clock for the timer
-scoreboard players remove $Timer.Ticks Statues.DynamicData 1
+execute unless score $ReplayWatching Statues.DynamicData matches 1 run scoreboard players remove $Timer.Ticks Statues.DynamicData 1
+execute if score $ReplayWatching Statues.DynamicData matches 1 unless score $ReplayFreeze Statues.DynamicData matches 1 run scoreboard players remove $Timer.Ticks Statues.DynamicData 1
 
 #> Cap the timer at its max value
 execute if score $Timer.Seconds Statues.DynamicData matches 602.. run scoreboard players set $Timer.Seconds Statues.DynamicData 600
@@ -40,6 +41,8 @@ execute if score $Timer.Ticks Statues.DynamicData matches ..-1 run scoreboard pl
 
 execute if score $Timer.Seconds Statues.DynamicData matches 300 if score $Timer.Ticks Statues.DynamicData matches 0 run tellraw @a {"translate": "statues.game.warning.5min","color": "gold","bold":true}
 execute if score $Timer.Seconds Statues.DynamicData matches 300 if score $Timer.Ticks Statues.DynamicData matches 0 as @a at @s run playsound block.note_block.bass master @s ~ ~ ~ 1 0.5
+
+execute if score $ReplayWatching Statues.DynamicData matches 1 run return 0
 
 #> Tracks how many survivors are still alive
 execute store result score $Ingame.Alive Statues.TempData if entity @a[team=Survivor]

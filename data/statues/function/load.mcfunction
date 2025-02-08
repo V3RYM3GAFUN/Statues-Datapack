@@ -35,6 +35,7 @@ scoreboard objectives add Statues.DamageTaken minecraft.custom:minecraft.damage_
 scoreboard objectives add Statues.Advancements.IngameNoDamage dummy
 scoreboard objectives add Statues.PrevHealth dummy
 scoreboard objectives add Statues.FeatureFlags dummy
+scoreboard objectives add Statues.ReplayData dummy
 
 function statues:game_events/init
 

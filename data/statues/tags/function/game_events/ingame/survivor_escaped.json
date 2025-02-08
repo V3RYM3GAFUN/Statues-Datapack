@@ -1,5 +1,6 @@
 {
   "values": [
-    "statues:game_events/logging/survivor_escaped"
+    "statues:game_events/logging/survivor_escaped",
+    "statues:game_events/mechanics/game_replay/survivor_escaped"
   ]
 }

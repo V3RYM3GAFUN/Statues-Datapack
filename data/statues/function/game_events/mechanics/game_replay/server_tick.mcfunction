@@ -1,0 +1,1 @@
+execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayWatching Statues.DynamicData matches 1 run function statues:mechanics/game_replay/next_replay_frame

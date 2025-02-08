@@ -49,7 +49,8 @@ execute if score $MonsterSpawnDelay Statues.DynamicData matches 5 as @e[type=mar
 
 #> Countdown for monster spawn delay (before they can actually chase survivors)
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 1.. run function statues:ingame/maps/common/warptimer
-execute if score $MonsterSpawnDelay Statues.DynamicData matches 0.. run scoreboard players remove $MonsterSpawnDelay Statues.DynamicData 1
+execute if score $MonsterSpawnDelay Statues.DynamicData matches 0.. unless score $ReplayWatching Statues.DynamicData matches 1 run scoreboard players remove $MonsterSpawnDelay Statues.DynamicData 1
+execute if score $MonsterSpawnDelay Statues.DynamicData matches 0.. if score $ReplayWatching Statues.DynamicData matches 1 unless score $ReplayFreeze Statues.DynamicData matches 1 run scoreboard players remove $MonsterSpawnDelay Statues.DynamicData 1
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 0 run function statues:ingame/maps/facade/monsterspawn
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 0 run bossbar set statues:warptimer visible false
 

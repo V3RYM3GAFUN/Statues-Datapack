@@ -1,6 +1,7 @@
 {
   "values": [
     "statues:game_events/logging/complete_objective",
-    "statues:game_events/statistics/complete_objective"
+    "statues:game_events/statistics/complete_objective",
+    "statues:game_events/mechanics/game_replay/complete_objective"
   ]
 }

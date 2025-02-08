@@ -1,5 +1,5 @@
 scoreboard players operation $EndCause Statues.GameEventData = $GameEndCause.NoSurvivors Statues.GameEventEnum
-function statues:reset
+execute unless score $ReplayWatching Statues.DynamicData matches 1 run function statues:reset
 
 execute if score $Map Statues.DynamicData matches 0 run advancement grant @a[team=Survivor] only statues:game/maps/facade/win_as_monster
 execute if score $Map Statues.DynamicData matches 1 run advancement grant @a[team=Survivor] only statues:game/maps/lockdown/win_as_monster

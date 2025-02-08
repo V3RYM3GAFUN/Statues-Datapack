@@ -1,7 +1,7 @@
 const feature_flags = require("./feature_flags.json")
 const fs = require("fs")
 const path = require("path")
-const baseDir = "./data/statues/functions/feature_flags"
+const baseDir = "./data/statues/function/feature_flags"
 fs.rmSync(baseDir, { recursive: true })
 fs.mkdirSync(baseDir)
 

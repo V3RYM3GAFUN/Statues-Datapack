@@ -3,6 +3,7 @@
     "statues:game_events/logging/game_end",
     "statues:game_events/statistics/game_end",
     "statues:game_events/advancements/game_end",
-    "statues:game_events/dev_game/game_end"
+    "statues:game_events/dev_game/game_end",
+    "statues:game_events/mechanics/game_replay/game_end"
   ]
 }

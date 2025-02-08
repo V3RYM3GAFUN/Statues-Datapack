@@ -17,6 +17,7 @@
       "statues:game_events/mechanics/doors_3x3/server_tick",
       "statues:game_events/mechanics/flashlight/server_tick",
       "statues:game_events/mechanics/blood_trails/server_tick",
-      "statues:ingame/mechanics/misc"
+      "statues:ingame/mechanics/misc",
+      "statues:game_events/mechanics/game_replay/server_tick"
     ]
   }

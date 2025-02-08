@@ -15,6 +15,7 @@
     "elevator_freight": { "name": "Elevator Freight", "depends": [ "elevator" ] },
     "flashlight": { "name": "Flashlight", "depends": [] },
     "floors": { "name": "Floors", "depends": [] },
+    "game_replay": { "name": "Game Replay", "depends": [] },
     "hiding": { "name": "Hiding Spot", "depends": [] },
     "lights": { "name": "Lights", "depends": [] },
     "map_tick": { "name": "Map Tick", "depends": [] },

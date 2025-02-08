@@ -1,0 +1,2 @@
+execute if score game_replay Statues.FeatureFlags matches 1.. unless score $ReplayWatching Statues.DynamicData matches 1 run function statues:mechanics/game_replay/finish_recording
+execute if score game_replay Statues.FeatureFlags matches 1.. unless score $ReplayWatching Statues.DynamicData matches 1 run function statues:game_events/logging/broadcast_event {message:'[{"text":"Game replay recording finished"}]'}

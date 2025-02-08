@@ -1,0 +1,2 @@
+execute unless function statues:feature_flags/check_game_replay_flags run return fail
+$execute as @n[tag=game_replay_player,scores={Statues.ReplayData=$(player)}] run function statues:mechanics/game_replay/type_handlers/4/$(team)
