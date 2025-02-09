@@ -1,5 +1,4 @@
-#> Not implemented
-# execute unless function statues:feature_flags/check_receptionist_flags run return fail
+execute unless function statues:feature_flags/check_receptionist_flags run return fail
 
 execute as @e[tag=look_at_player,type=armor_stand,x=0] at @s anchored eyes facing entity @p[gamemode=!spectator,distance=..5,tag=!queued] eyes run tp @s ~ ~ ~ ~ ~
 data modify storage statues:temp Head set value [0f,0f,0f]

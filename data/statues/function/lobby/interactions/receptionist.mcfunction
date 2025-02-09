@@ -1,1 +1,0 @@
-execute on target run tellraw @s {"translate":"statues.lobby.receptionist"}

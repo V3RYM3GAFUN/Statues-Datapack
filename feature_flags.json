@@ -21,6 +21,7 @@
     "lights": { "name": "Lights", "depends": [] },
     "map_tick": { "name": "Map Tick", "depends": [] },
     "power_doors": { "name": "Power Doors", "depends": [] },
+    "receptionist": { "name": "Receptionist", "depends": [] },
     "queue": { "name": "Queue", "depends": [] },
     "sas": { "name": "SAS Machines", "depends": [] },
     "spectators_actionbar": { "name": "Spectators ActionBar", "depends": [] },

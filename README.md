@@ -6,7 +6,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 
 - **V3RYM3GAFUN** - Creator, Producer (Programming, Building, Graphics Design, Sound Design)
 - **Java_chan** - Programmer, Animator
-- **RedstoneYay** - Programmer
+- **Yatloaf** - Programmer
 - **Evtema3** - Programmer
 - **TheAtlas29** - Builder
 - **NoodlePandarian** - Builder
@@ -18,7 +18,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 - **Brownie1111** - Modeler/Graphics Designer
 
 ## Developer Player Tags
-dev_see_game_events
+
 | Tag                               | Description                                                          |
 |-----------------------------------|----------------------------------------------------------------------|
 | `dev_allow_item_drop`             | Allows player to drop items out of inventory                         |
@@ -67,11 +67,12 @@ dev_see_game_events
 | `lights`                      | Allows creating and modifying lights and all functions in `statues:mechanics/lights`                                               |
 | `map_tick`                    | Enables map ticking                                                                                                                |
 | `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:mechanics/power_doors`                                 |
+| `receptionist`                | Enables the receptionist in the lobby                                                                                              |
 | `queue`                       | Enables the queue system in the lobby                                                                                              |
 | `sas`                         | Enables SAS machines and all functions in `statues:mechanics/sas`                                                                  |
 | `spectators_actionbar`        | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                            |
 | `survivors_heart_sidebar`     | Enables showing hearts in the survivors scoreboard, shows `<>hp` when disabled instead                                             |
-| `tutorial`                    | Shows actionbar for spectators, and access to all functions in `statues:mechanics/spectators_actionbar`                     |
+| `tutorial`                    | Shows actionbar for spectators, and access to all functions in `statues:mechanics/spectators_actionbar`                            |
 | `vents`                       | Allows interacting with vents and all functions in `statues:mechanics/vents`                                                       |
 
 ### Enabling/Disabling

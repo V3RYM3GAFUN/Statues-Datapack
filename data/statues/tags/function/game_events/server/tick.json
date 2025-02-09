@@ -19,6 +19,6 @@
       "statues:game_events/mechanics/blood_trails/server_tick",
       "statues:ingame/mechanics/misc",
       "statues:game_events/mechanics/game_replay/server_tick",
-      "statues:mechanics/receptionist/tick"
+      "statues:game_events/mechanics/receptionist/server_tick"
     ]
   }
