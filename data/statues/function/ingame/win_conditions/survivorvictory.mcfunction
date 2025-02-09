@@ -3,8 +3,8 @@ execute if score $Objective Statues.DynamicData matches 11 run function #statues
 
 scoreboard players operation $EndCause Statues.GameEventData = $GameEndCause.SurvivorsEscaped Statues.GameEventEnum
 
-execute if score $Map Statues.DynamicData matches 0 run advancement grant @a[team=Survivor] only statues:game/maps/facade/win_as_survivor
-execute if score $Map Statues.DynamicData matches 1 run advancement grant @a[team=Survivor] only statues:game/maps/lockdown/win_as_survivor
+execute if score $Map Statues.DynamicData matches 0 run advancement grant @a[tag=win] only statues:game/maps/facade/win_as_survivor
+execute if score $Map Statues.DynamicData matches 1 run advancement grant @a[tag=win] only statues:game/maps/lockdown/win_as_survivor
 
 execute unless score $ReplayWatching Statues.DynamicData matches 1 run function statues:reset
 
