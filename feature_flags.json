@@ -19,6 +19,7 @@
     "game_replay": { "name": "Game Replay", "depends": [] },
     "hiding": { "name": "Hiding Spot", "depends": [] },
     "lights": { "name": "Lights", "depends": [] },
+    "location_markers": { "name": "Location Markers", "depends": [] },
     "map_tick": { "name": "Map Tick", "depends": [] },
     "power_doors": { "name": "Power Doors", "depends": [] },
     "receptionist": { "name": "Receptionist", "depends": [] },

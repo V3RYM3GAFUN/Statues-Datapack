@@ -64,6 +64,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `floors`                      | Shows the current objective and floor to survivors, allows the use of all functions in `statues:mechanics/floors`                  |
 | `hiding`                      | Enables ticking hiding spots                                                                                                       |
 | `lights`                      | Allows creating and modifying lights and all functions in `statues:mechanics/lights`                                               |
+| `location_markers`            | Handles all location marker data, for example key locations                                                                        |
 | `map_tick`                    | Enables map ticking                                                                                                                |
 | `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:mechanics/power_doors`                                 |
 | `receptionist`                | Enables the receptionist in the lobby                                                                                              |
@@ -93,7 +94,6 @@ To enable a feature flag run `/scoreboard players set <featureflag> Statues.Feat
 | `map_monster_choice`    | Used to force a random monster selection if player doesn't choose after a certain time        |
 | `map_survivor_classes`  | Used to force a random class selection if player doesn't choose after a certain time          |
 | `map_team_tp`           | Marker that will teleport the player from corresponding team to it (ex: facade_monster_tp)    |
-| `map_*`                 | Marker inside barrels for item spawning (ex: facade_genkey)                                   |
 | `objective_map_*`       | Interaction or text display or objective that can be completed (ex: objective_facade_genkey)  |
 | `objective_power`       | Self explanotary. Might rename                                                                |
 | `objective_reset`       | For all objectives that can be reset. (text displays, barrels, interactions)                  |

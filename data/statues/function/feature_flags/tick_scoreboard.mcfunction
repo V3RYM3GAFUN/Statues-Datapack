@@ -109,6 +109,10 @@ execute if score lights Statues.FeatureFlags matches 0 run scoreboard players di
 execute unless score lights Statues.FeatureFlags matches ..0 run scoreboard players display numberformat lights Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name lights Statues.FeatureFlags {"text":"Lights Feature"}
 
+execute if score location_markers Statues.FeatureFlags matches 0 run scoreboard players display numberformat location_markers Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score location_markers Statues.FeatureFlags matches ..0 run scoreboard players display numberformat location_markers Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name location_markers Statues.FeatureFlags {"text":"Location Markers Feature"}
+
 execute if score map_tick Statues.FeatureFlags matches 0 run scoreboard players display numberformat map_tick Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score map_tick Statues.FeatureFlags matches ..0 run scoreboard players display numberformat map_tick Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name map_tick Statues.FeatureFlags {"text":"Map Tick Feature"}

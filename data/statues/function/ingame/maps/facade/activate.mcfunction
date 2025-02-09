@@ -22,41 +22,35 @@ scoreboard players set $CompassSelector Statues.DynamicData 0
 #> ignore setting up stuff, if in a replay
 execute if score $ReplayWatching Statues.DynamicData matches 1 run return 0
 
-#> List of tags for generating objective items:
+#> Write loot tables to barrels
+function statues:ingame/maps/common/pool_locations_load
 
-function statues:ingame/maps/facade/pool_locations_load
+execute at @e[tag=location_marker_i_mapkey] run data modify block ~ ~ ~ LootTable set value "statues:blocks/barrel_default"
 
-execute at @e[tag=facade_genkey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
-execute at @e[tag=facade_labkey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
-execute at @e[tag=facade_highclasskey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
-execute at @e[tag=facade_armorykey_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
-execute at @e[tag=facade_book_pool] run data merge block ~ ~ ~ {LootTable:"statues:blocks/barrel_default"}
+# generator key
+execute at @e[tag=location_marker_ik_mapkey_generator,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/genkey_0"
 
-#facade_genkey
-execute at @e[tag=facade_genkey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/genkey_0"}
+# lab key
+execute at @e[tag=location_marker_ik_mapkey_lab,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/labkey_1"
+execute at @e[tag=location_marker_ik_mapkey_lab,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/labkey_2"
+execute at @e[tag=location_marker_ik_mapkey_lab,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/labkey_3"
 
-#facade_labkey
-execute at @e[tag=facade_labkey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/labkey_1"}
-execute at @e[tag=facade_labkey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/labkey_2"}
-execute at @e[tag=facade_labkey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/labkey_3"}
+# high class key
+execute at @e[tag=location_marker_ik_mapkey_high_class,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/highclasskey_4"
+execute at @e[tag=location_marker_ik_mapkey_high_class,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/highclasskey_5"
+execute at @e[tag=location_marker_ik_mapkey_high_class,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/highclasskey_6"
 
-#facade_highclasskey
-execute at @e[tag=facade_highclasskey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/highclasskey_4"}
-execute at @e[tag=facade_highclasskey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/highclasskey_5"}
-execute at @e[tag=facade_highclasskey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/highclasskey_6"}
+# book
+execute at @e[tag=location_marker_ik_mapkey_book,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/book_7"
 
-#facade_book
-execute at @e[tag=facade_book_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/book_7"}
+# armory key
+execute at @e[tag=location_marker_ik_mapkey_armory,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/armorykey_8"
+execute at @e[tag=location_marker_ik_mapkey_armory,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/armorykey_9"
+execute at @e[tag=location_marker_ik_mapkey_armory,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/armorykey_10"
+execute at @e[tag=location_marker_ik_mapkey_armory,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/armorykey_11"
+execute at @e[tag=location_marker_ik_mapkey_armory,sort=random,limit=1,predicate=statues:is_default_barrel_loot] run data modify block ~ ~ ~ LootTable set value "statues:items/facade/objectives/armorykey_12"
 
-#facade_armory
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/armorykey_8"}
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/armorykey_9"}
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/armorykey_10"}
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/armorykey_11"}
-execute at @e[tag=facade_armorykey_pool,sort=random,limit=1,nbt=!{LootTable:"statues:blocks/barrel_default"}] run data merge block ~ ~ ~ {LootTable:"statues:items/facade/objectives/armorykey_12"}
-
-tag @e[tag=facade_all_pool] add facade_all_pool_has_key
-execute as @e[tag=facade_all_pool] at @s if block ~ ~ ~ barrel{LootTable:"statues:blocks/barrel_default"} run tag @s remove facade_all_pool_has_key
+execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRecording Statues.DynamicData matches 1 run tag @e[tag=location_marker_i_mapkey,predicate=!statues:is_default_barrel_loot] add facade_all_pool_has_key
 execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRecording Statues.DynamicData matches 1 as @e[tag=facade_all_pool_has_key] at @s if block ~ ~ ~ barrel{LootTable:"statues:items/facade/objectives/genkey_0"} run function statues:mechanics/game_replay/mark_key_location {kind:"$KeyKind.Generator"}
 execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRecording Statues.DynamicData matches 1 as @e[tag=facade_all_pool_has_key] at @s if block ~ ~ ~ barrel{LootTable:"statues:items/facade/objectives/labkey_1"} run function statues:mechanics/game_replay/mark_key_location {kind:"$KeyKind.Lab"}
 execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRecording Statues.DynamicData matches 1 as @e[tag=facade_all_pool_has_key] at @s if block ~ ~ ~ barrel{LootTable:"statues:items/facade/objectives/labkey_2"} run function statues:mechanics/game_replay/mark_key_location {kind:"$KeyKind.Lab"}
@@ -70,13 +64,10 @@ execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRe
 execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRecording Statues.DynamicData matches 1 as @e[tag=facade_all_pool_has_key] at @s if block ~ ~ ~ barrel{LootTable:"statues:items/facade/objectives/armorykey_10"} run function statues:mechanics/game_replay/mark_key_location {kind:"$KeyKind.Armory"}
 execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRecording Statues.DynamicData matches 1 as @e[tag=facade_all_pool_has_key] at @s if block ~ ~ ~ barrel{LootTable:"statues:items/facade/objectives/armorykey_11"} run function statues:mechanics/game_replay/mark_key_location {kind:"$KeyKind.Armory"}
 execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRecording Statues.DynamicData matches 1 as @e[tag=facade_all_pool_has_key] at @s if block ~ ~ ~ barrel{LootTable:"statues:items/facade/objectives/armorykey_12"} run function statues:mechanics/game_replay/mark_key_location {kind:"$KeyKind.Armory"}
-execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRecording Statues.DynamicData matches 1 as @e[tag=facade_all_pool_has_key] at @s run function statues:mechanics/game_replay/mark_key_location
-execute if score game_replay Statues.FeatureFlags matches 1.. if score $ReplayRecording Statues.DynamicData matches 1 as @e[tag=facade_all_pool_has_key] at @s run function statues:mechanics/game_replay/mark_key_location
-tag @e[tag=facade_all_pool_has_key] remove facade_all_pool_has_key
 
-function statues:ingame/maps/facade/pool_locations_unload
+function statues:ingame/maps/common/pool_locations_unload
 
-execute at @e[tag=armory_ammo_box] run data merge block ~ ~ ~ {LootTable:"statues:blocks/ammo_crate"}
+execute at @e[tag=armory_ammo_box] run data modify block ~ ~ ~ LootTable set value "statues:blocks/ammo_crate"
 
 #> Stop force loading the chunks once the items have generated
 forceload remove 54 257 -82 394

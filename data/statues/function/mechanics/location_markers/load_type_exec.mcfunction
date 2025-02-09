@@ -1,0 +1,2 @@
+execute unless function statues:feature_flags/check_location_markers_flags run return fail
+$execute positioned $(x) $(y) $(z) align xyz run summon marker ~.5 ~.5 ~.5 {Tags:["location_marker_s_$(source)","location_marker_t_$(type)","location_marker_k_$(kind)","location_marker_tk_$(type)_$(kind)","location_marker_stk_$(source)_$(type)_$(kind)","location_marker_i_$(identifier)","location_marker_ik_$(identifier)_$(kind)"]}

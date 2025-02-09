@@ -1,0 +1,1 @@
+function statues:mechanics/location_markers/type_unload_id {identifier:"mapkey"}
