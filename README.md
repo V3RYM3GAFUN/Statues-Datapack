@@ -19,17 +19,19 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 
 ## Developer Player Tags
 
-| Tag                               | Description                                                          |
-|-----------------------------------|----------------------------------------------------------------------|
-| `dev_allow_item_drop`             | Allows player to drop items out of inventory                         |
-| `dev_always_show_floor_objective` | Shows the current objective and floor when you're not a survivor     |
-| `dev_always_show_nearby_players`  | Shows nearby survivors and monsters on the actionbar                 |
-| `dev_always_update_dynamic_map`   | Always updates the dynamic map, even when not a survivor             |
-| `dev_ignore_forced_gamemode`      | Ignores the correct gamemodes for teams                              |
-| `dev_ignore_vent_requirement`     | Ignores the requirement to go in a vent (normally 002 and survivors) |
-| `dev_not_monster`                 | Makes sure the game won't pick the player as the monster             |
-| `dev_queue_allow`                 | Allows you to join a dev game in the queue area                      |
-| `dev_see_game_events`             | Shows game events when in lobby team or spectator team               |
+| Tag                                | Description                                                                 |
+|------------------------------------|-----------------------------------------------------------------------------|
+| `dev_allow_item_drop`              | Allows player to drop items out of inventory                                |
+| `dev_always_show_floor_objective`  | Shows the current objective and floor when you're not a survivor            |
+| `dev_always_show_nearby_players`   | Shows nearby survivors and monsters on the actionbar                        |
+| `dev_always_update_dynamic_map`    | Always updates the dynamic map, even when not a survivor                    |
+| `dev_ignore_forced_gamemode`       | Ignores the correct gamemodes for teams                                     |
+| `dev_ignore_vent_requirement`      | Ignores the requirement to go in a vent (normally 002 and survivors)        |
+| `dev_not_monster`                  | Makes sure the game won't pick the player as the monster                    |
+| `dev_queue_allow`                  | Allows you to join a dev game in the queue area                             |
+| `dev_see_feature_flag_changes`     | Shows any feature flag changes                                              |
+| `dev_see_feature_flag_failed_uses` | Sends messages to you when a feature flag is used even though it's disabled |
+| `dev_see_game_events`              | Shows game events when in lobby team or spectator team                      |
 
 ## Feature Flags
 

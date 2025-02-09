@@ -8,7 +8,7 @@ fs.mkdirSync(baseDir)
 for(const [k, v] of Object.entries(feature_flags)) {
     fs.writeFileSync(path.resolve(baseDir, `check_${k.toLowerCase()}_flags.mcfunction`), 
 `execute if score ${k} Statues.FeatureFlags matches 1.. run return 1
-tellraw @a {"color":"red","text":"Tried to use ${v.name} specific feature when the feature is disabled."}
+tellraw @a[tag=dev_see_feature_flag_failed_uses] {"color":"red","text":"Tried to use ${v.name} specific feature when the feature is disabled. @s=","extra":[{"selector":"@s"}]}
 return fail`)
 }
 
@@ -19,9 +19,9 @@ function statues:feature_flags/tick_scoreboard
 ${
     !v.is_dev
       ? !v.is_experimental
-          ? `tellraw @a [{"text":"Updated "},{"text":"${v.name} Feature"},{"text":" to "},{"score":{"name":"${k}","objective":"Statues.FeatureFlags"}}]`
-          : `tellraw @a [{"text":"Updated "},{"text":"[Experimental] ","color":"#9542f5"},{"text":"${v.name}","color":"white"},{"text":" to "},{"score":{"name":"${k}","objective":"Statues.FeatureFlags"}}]`
-      : `tellraw @a [{"text":"Updated "},{"text":"[Dev] ","color":"gold"},{"text":"${v.name}","color":"white"},{"text":" to "},{"score":{"name":"${k}","objective":"Statues.FeatureFlags"}}]`
+          ? `tellraw @a[tag=dev_see_feature_flag_changes] [{"text":"Updated "},{"text":"${v.name} Feature"},{"text":" to "},{"score":{"name":"${k}","objective":"Statues.FeatureFlags"}}]`
+          : `tellraw @a[tag=dev_see_feature_flag_changes] [{"text":"Updated "},{"text":"[Experimental] ","color":"#9542f5"},{"text":"${v.name}","color":"white"},{"text":" to "},{"score":{"name":"${k}","objective":"Statues.FeatureFlags"}}]`
+      : `tellraw @a[tag=dev_see_feature_flag_changes] [{"text":"Updated "},{"text":"[Dev] ","color":"gold"},{"text":"${v.name}","color":"white"},{"text":" to "},{"score":{"name":"${k}","objective":"Statues.FeatureFlags"}}]`
 }
 `)
 }
