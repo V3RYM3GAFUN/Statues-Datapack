@@ -30,8 +30,6 @@
     "tutorial": { "name": "Tutorial", "depends": [] },
     "vents": { "name": "Vents", "depends": [] },
 
-    "experimental_flashlight": { "name": "Flashlight (Next)", "is_experimental": true, "depends": [ "flashlight" ] },
-
     "dev_allow_debug_info": { "name": "Allow Debug Info", "is_dev": true, "depends": [] },
     "dev_allow_empty_game": { "name": "Allow Empty Game", "is_dev": true, "depends": [] },
     "dev_auto_convert_lights": { "name": "Auto Convert Lights", "is_dev": true, "depends": [ "lights" ] },

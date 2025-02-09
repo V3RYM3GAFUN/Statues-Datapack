@@ -60,7 +60,6 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `elevator_3x3x3`              | Allows use of 3x3x3 elevators and all functions in `statues:mechanics/elevator_3x3x3` (requires `elevator` feature flag)           |
 | `elevator_buttons`            | Allows use of buttons of elevators and all functions in `statues:mechanics/elevator_buttons`  (requires `elevator` feature flag)   |
 | `elevator_freight`            | Allows use of freight elevators and all functions in `statues:mechanics/elevator_freight`  (requires `elevator` feature flag)      |
-| `experimental_flashlight`     | Updates flashlight to use spyglass+night vision behavior instead and use functions from `statues:mechanics/flashlight/next`        |
 | `flashlight`                  | Enables the flashlight item behavior and functions in `statues:mechanics/flashlight`                                               |
 | `floors`                      | Shows the current objective and floor to survivors, allows the use of all functions in `statues:mechanics/floors`                  |
 | `hiding`                      | Enables ticking hiding spots                                                                                                       |
