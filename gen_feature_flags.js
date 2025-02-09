@@ -42,7 +42,7 @@ fs.writeFileSync(path.resolve(baseDir, "tick_scoreboard.mcfunction"),
 `
 ${Object.entries(feature_flags).filter(e => e[1].depends.length).map(([k, v]) => 
 `${v.depends.map(d => `execute if score ${d} Statues.FeatureFlags matches ..0 run scoreboard players set ${k} Statues.FeatureFlags -1`).join("\n")}
-execute if score ${k} Statues.FeatureFlags matches -1 ${v.depends.map(d => `if score ${d} Statues.FeatureFlags matches 1..`).join(" ")} run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0`
+execute if score ${k} Statues.FeatureFlags matches -1 ${v.depends.map(d => `if score ${d} Statues.FeatureFlags matches 1..`).join(" ")} run scoreboard players set ${k} Statues.FeatureFlags 0`
 ).join("\n")}
 
 ${Object.entries(feature_flags).map(([k, v]) => `
@@ -55,3 +55,7 @@ ${!v.is_dev
         : `scoreboard players display name ${k} Statues.FeatureFlags [{"text":"[Experimental] ","color":"#9542f5"},{"text":"${v.name}","color":"white"}]`
     : `scoreboard players display name ${k} Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"${v.name}","color":"white"}]`}`).join("")}
 `)
+
+fs.writeFileSync(path.resolve(baseDir, "switch_disable_non_dev.mcfunction"), Object.entries(feature_flags).filter(([_, v]) => !v.is_dev).map(([k, v]) => `execute if score ${k} Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_${k} {value:0}`).join("\n"))
+fs.writeFileSync(path.resolve(baseDir, "switch_enable_non_dev.mcfunction"), Object.entries(feature_flags).filter(([_, v]) => !v.is_dev).map(([k, v]) => `execute if score ${k} Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_${k} {value:1}`).join("\n"))
+fs.writeFileSync(path.resolve(baseDir, "switch_default_non_dev.mcfunction"), Object.entries(feature_flags).filter(([_, v]) => !v.is_dev).map(([k, v]) => `execute if score ${k} Statues.FeatureFlags matches ${v.default ? "..0" : "1.."} run function statues:feature_flags/set_${k} {value:${v.default ? "1" : "0"}}`).join("\n"))

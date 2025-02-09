@@ -1,21 +1,21 @@
 
 execute if score abilities Statues.FeatureFlags matches ..0 run scoreboard players set class_preview Statues.FeatureFlags -1
 execute if score tutorial Statues.FeatureFlags matches ..0 run scoreboard players set class_preview Statues.FeatureFlags -1
-execute if score class_preview Statues.FeatureFlags matches -1 if score abilities Statues.FeatureFlags matches 1.. if score tutorial Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score class_preview Statues.FeatureFlags matches -1 if score abilities Statues.FeatureFlags matches 1.. if score tutorial Statues.FeatureFlags matches 1.. run scoreboard players set class_preview Statues.FeatureFlags 0
 execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_1x2 Statues.FeatureFlags -1
-execute if score doors_1x2 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score doors_1x2 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set doors_1x2 Statues.FeatureFlags 0
 execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_2x2 Statues.FeatureFlags -1
-execute if score doors_2x2 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score doors_2x2 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set doors_2x2 Statues.FeatureFlags 0
 execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_3x3 Statues.FeatureFlags -1
-execute if score doors_3x3 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score doors_3x3 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set doors_3x3 Statues.FeatureFlags 0
 execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_2x3x2 Statues.FeatureFlags -1
-execute if score elevator_2x3x2 Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score elevator_2x3x2 Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set elevator_2x3x2 Statues.FeatureFlags 0
 execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_3x3x3 Statues.FeatureFlags -1
-execute if score elevator_3x3x3 Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score elevator_3x3x3 Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set elevator_3x3x3 Statues.FeatureFlags 0
 execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_buttons Statues.FeatureFlags -1
-execute if score elevator_buttons Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score elevator_buttons Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set elevator_buttons Statues.FeatureFlags 0
 execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_freight Statues.FeatureFlags -1
-execute if score elevator_freight Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
+execute if score elevator_freight Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set elevator_freight Statues.FeatureFlags 0
 execute if score lights Statues.FeatureFlags matches ..0 run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags -1
 execute if score dev_auto_convert_lights Statues.FeatureFlags matches -1 if score lights Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 
@@ -172,7 +172,7 @@ scoreboard players display name dev_infinite_game_time Statues.FeatureFlags [{"t
 
 execute if score dev_no_game_reset_on_reload Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_no_game_reset_on_reload Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_no_game_reset_on_reload Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_no_game_reset_on_reload Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
-scoreboard players display name dev_no_game_reset_on_reload Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"No Reload Game On Reload","color":"white"}]
+scoreboard players display name dev_no_game_reset_on_reload Statues.FeatureFlags [{"text":"[Dev] ","color":"gold"},{"text":"No Reset Game On Reload","color":"white"}]
 
 execute if score dev_no_start_requirement Statues.FeatureFlags matches 0 run scoreboard players display numberformat dev_no_start_requirement Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score dev_no_start_requirement Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dev_no_start_requirement Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
