@@ -1,0 +1,11 @@
+{
+  "function": "set_components",
+  "components": {
+    "item_model": "statues:weapons/survivors/default_pistol",
+    "item_name": "[{\"color\": \"black\",\"translate\": \"statues.item.gun\",\"bold\": true},{\"text\":\" : \"},{\"translate\": \"statues.item.sniper_ammo\",\"bold\": false}]",
+    "custom_data": {
+      "ammo_select": 3,
+      "is_gun": true
+    }
+  }
+}

@@ -27,8 +27,9 @@ loot replace entity @s hotbar.8 loot statues:items/dynamic_map_survivor
 
 #> Items specific to 001
 item replace entity @s armor.head with stick[item_model="statues:monsters/elephant",item_name='{"translate": "statues.item.001.head","color": "dark_gray","bold": true,"italic": false}']
-item replace entity @s hotbar.0 with trident[unbreakable={show_in_tooltip:0b},enchantments={levels:{loyalty:3},show_in_tooltip:0b},item_name='[{"translate":"statues.item.001.weapon","italic":false,"color":"dark_red","bold":true}]',item_model="statues:weapons/monsters/tentacle"] 1
-item replace entity @s weapon.offhand with trident[unbreakable={show_in_tooltip:0b},enchantments={levels:{loyalty:3},show_in_tooltip:0b},item_name='[{"translate":"statues.item.001.weapon","italic":false,"color":"dark_red","bold":true}]',item_model="statues:weapons/monsters/tentacle"]
+
+loot replace entity @s weapon.offhand loot statues:items/monsters/001
+loot replace entity @s hotbar.0 loot statues:items/monsters/001
 
 item replace entity @s hotbar.4 with blaze_rod[item_name='{"translate": "statues.item.001.ability.name","color": "dark_gray","bold": true,"italic": false}',use_cooldown={seconds:180},consumable={animation:bow,consume_seconds:0.01,has_consume_particles:false,sound:"block.anvil.place"},lore=['[{"translate":"statues.item.brawler.ability.lore.line1","italic":false}]','[{"translate":"statues.item.001.ability.lore.line2","italic":false}]','[{"translate":"statues.item.cooldown.min","with":[{"text":"3"},{"text":"0"}]}]'],custom_data={"001_ability":true}]
 

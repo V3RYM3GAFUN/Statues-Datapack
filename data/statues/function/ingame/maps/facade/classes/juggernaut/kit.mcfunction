@@ -7,7 +7,7 @@ effect give @s slowness infinite 0 true
 effect give @s instant_health 5 10 true
 attribute @s fall_damage_multiplier base reset
 
-loot replace entity @s hotbar.0 loot statues:items/classes/juggernaut/anti_anomaly_rifle
+loot replace entity @s hotbar.0 loot statues:items/classes/juggernaut/rifle_raycast
 loot replace entity @s hotbar.1 loot statues:items/classes/juggernaut/strong_anti_anomaly_ammo
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar

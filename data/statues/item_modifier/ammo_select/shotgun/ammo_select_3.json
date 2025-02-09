@@ -1,0 +1,11 @@
+{
+  "function": "set_components",
+  "components": {
+    "item_model": "statues:weapons/survivors/shotgun",
+    "item_name": "[{\"color\": \"black\",\"translate\": \"statues.item.shotgun\",\"bold\": true},{\"text\":\" : \"},{\"translate\": \"statues.item.shotgun_ammo\",\"bold\": false}]",
+    "custom_data": {
+      "ammo_select": 3,
+      "is_shotgun": true
+    }
+  }
+}

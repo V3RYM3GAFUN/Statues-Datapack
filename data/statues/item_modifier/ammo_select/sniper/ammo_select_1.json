@@ -1,0 +1,11 @@
+{
+  "function": "set_components",
+  "components": {
+    "item_model": "statues:weapons/survivors/sniper",
+    "item_name": "[{\"color\": \"blue\",\"translate\": \"statues.item.sniper\",\"bold\": true},{\"text\":\" : \"},{\"translate\": \"statues.item.strong_ammo\",\"bold\": false}]",
+    "custom_data": {
+      "ammo_select": 1,
+      "is_sniper": true
+    }
+  }
+}

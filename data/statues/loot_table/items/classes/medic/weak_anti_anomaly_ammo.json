@@ -42,6 +42,9 @@
                       "show_icon": false
                     }
                   ]
+                },
+                "custom_data": {
+                  "weak_ammo":true
                 }
               }
             }

@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_sword",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "item_model": "statues:weapons/monsters/blade",
+                "item_name": "[{\"translate\":\"statues.item.002.weapon\",\"italic\":false,\"color\":\"gold\",\"bold\":true}]",
+                "unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "item_model": "statues:weapons/monsters/tentacle",
+                "item_name": "[{\"translate\":\"statues.item.001.weapon\",\"italic\":false,\"color\":\"dark_red\",\"bold\":true}]",
+                "unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "enchantments": {
+                  "loyalty": 3,
+                  "show_in_tooltip": 0
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

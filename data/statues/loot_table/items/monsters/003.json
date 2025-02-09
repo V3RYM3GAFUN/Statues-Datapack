@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_dye",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "item_model": "statues:weapons/monsters/boxing_glove",
+                "item_name": "[{\"translate\":\"statues.item.003.weapon\",\"italic\":false,\"color\":\"red\",\"bold\":true}]",
+                "unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

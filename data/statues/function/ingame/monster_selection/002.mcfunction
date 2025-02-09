@@ -29,8 +29,9 @@ loot replace entity @s hotbar.8 loot statues:items/dynamic_map_survivor
 
 #> Items specific to 002
 item replace entity @s armor.head with jack_o_lantern[item_name='{"translate": "statues.item.002.head","bold": true,"italic": false,"color": "gold"}']
-item replace entity @s weapon.offhand with iron_sword[unbreakable={},item_name='[{"translate":"statues.item.002.weapon","italic":false,"color":"gold","bold":true}]',item_model="statues:weapons/monsters/blade"]
-give @s iron_sword[unbreakable={},item_name='[{"translate":"statues.item.002.weapon","italic":false,"color":"gold","bold":true}]',item_model="statues:weapons/monsters/blade"]
+
+loot replace entity @s hotbar.0 loot statues:items/monsters/002
+loot replace entity @s weapon.offhand loot statues:items/monsters/002
 
 execute if entity @s[tag=!monster_tutorial] run scoreboard players operation $MonsterKind Statues.GameEventData = $MonsterKind.002 Statues.GameEventEnum
 execute if entity @s[tag=!monster_tutorial] run function #statues:game_events/ingame/pick_monster

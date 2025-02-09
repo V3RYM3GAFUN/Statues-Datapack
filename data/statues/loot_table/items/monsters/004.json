@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "item_model": "statues:weapons/monsters/insect",
+                "item_name": "[{\"translate\":\"statues.item.004.weapon\",\"italic\":false,\"color\":\"white\",\"bold\":true}]",
+                "unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "custom_data": {
+                  "insect_launcher":true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

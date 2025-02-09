@@ -50,6 +50,9 @@
                       "duration": 100
                     }
                   ]
+                },
+                "custom_data": {
+                  "medic_ammo":true
                 }
               }
             }

@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "ammo_select":{
+      "trigger": "thrown_item_picked_up_by_player",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "is_medic_gun":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ammo_select"
+    ]
+  ],
+  "rewards": {
+    "function": "statues:ingame/mechanics/raycasting/switch_ammo_medic"
+  }
+}

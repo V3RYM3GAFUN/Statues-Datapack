@@ -6,7 +6,7 @@ effect give @s health_boost infinite 1 true
 effect give @s instant_health 5 10 true
 attribute @s fall_damage_multiplier base reset
 
-loot replace entity @s hotbar.0 loot statues:items/classes/medic/medic_pistol
+loot replace entity @s hotbar.0 loot statues:items/classes/medic/medic_gun_raycast
 loot replace entity @s hotbar.1 loot statues:items/classes/medic/adrenaline_injected_dart
 loot replace entity @s hotbar.2 loot statues:items/classes/medic/weak_anti_anomaly_ammo
 

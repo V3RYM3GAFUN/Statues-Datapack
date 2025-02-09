@@ -1,9 +1,0 @@
-{
-  "function": "set_name",
-  "target": "item_name",
-  "name": {
-    "color": "dark_aqua",
-    "translate": "statues.item.gun",
-    "bold": true
-  }
-}

@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "shoot": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "is_trapper_gun": true,
+              "ammo_select": 3
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shoot"
+    ]
+  ],
+  "rewards": {
+    "function": "statues:ingame/mechanics/raycasting/shoot_sniper_ammo/ammo_check_trapper"
+  }
+}

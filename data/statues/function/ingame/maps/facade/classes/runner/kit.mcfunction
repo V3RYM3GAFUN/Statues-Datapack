@@ -6,7 +6,7 @@ effect give @s speed infinite 0 true
 effect give @s weakness infinite 100 true
 attribute @s fall_damage_multiplier base reset
 
-loot replace entity @s hotbar.0 loot statues:items/classes/runner/anti_anomaly_gun
+loot replace entity @s hotbar.0 loot statues:items/classes/runner/anti_anomaly_gun_raycast
 loot replace entity @s hotbar.1 loot statues:items/classes/runner/weak_anti_anomaly_ammo
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar
