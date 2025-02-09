@@ -1,4 +1,4 @@
-execute unless function statues:feature_flags/check_dynamic_maps_flags run return fail
+execute unless function statues:feature_flags/check_dynamic_map_flags run return fail
 $scoreboard players add $DynamicMapNew Statues.TempData $(floor)
 
 $execute if block ~ $(floor_y) ~ redstone_block run return 0

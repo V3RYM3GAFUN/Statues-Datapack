@@ -54,7 +54,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `doors_1x2`                   | Allows use of 1x2 doors and all functions in `statues:mechanics/doors_1x2` (requires `doors` feature flag)                         |
 | `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:mechanics/doors_2x2` (requires `doors` feature flag)                         |
 | `doors_3x3`                   | Allows use of 3x3 doors and all functions in `statues:mechanics/doors_3x3`  (requires `doors` feature flag)                        |
-| `dynamic_maps`                | Enables dynamic maps in gameplay                                                                                                   |
+| `dynamic_map`                 | Enables dynamic maps in gameplay                                                                                                   |
 | `elevator`                    | Allows use of elevators and the `elevator_2x3x2`,  `elevator_3x3x3`, `elevator_buttons`, and `elevator_freight` feature flags      |
 | `elevator_2x3x2`              | Allows use of 2x3x2 elevators and all functions in `statues:mechanics/elevator_2x3x2` (requires `elevator` feature flag)           |
 | `elevator_3x3x3`              | Allows use of 3x3x3 elevators and all functions in `statues:mechanics/elevator_3x3x3` (requires `elevator` feature flag)           |

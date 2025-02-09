@@ -16,7 +16,7 @@
 # S = 0-10: OBJECTIVE
 # S = 99: MONSTER
 #
-execute unless function statues:feature_flags/check_dynamic_maps_flags run return fail
+execute unless function statues:feature_flags/check_dynamic_map_flags run return fail
 
 scoreboard players set $DynamicMapNew Statues.TempData 7420000
 

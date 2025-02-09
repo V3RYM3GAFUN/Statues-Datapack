@@ -8,7 +8,7 @@
     "doors_1x2": { "name": "Doors 1x2", "depends": [ "doors" ] },
     "doors_2x2": { "name": "Doors 2x2", "depends": [ "doors" ] },
     "doors_3x3": { "name": "Doors 3x3", "depends": [ "doors" ] },
-    "dynamic_maps": { "name": "Dynamic Maps", "depends": [] },
+    "dynamic_map": { "name": "Dynamic Map", "depends": [] },
     "elevator": { "name": "Elevator", "depends": [] },
     "elevator_2x3x2": { "name": "Elevator 2x3x2", "depends": [ "elevator" ] },
     "elevator_3x3x3": { "name": "Elevator 3x3x3", "depends": [ "elevator" ] },

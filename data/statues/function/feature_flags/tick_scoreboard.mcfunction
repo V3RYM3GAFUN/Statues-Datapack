@@ -63,9 +63,9 @@ execute if score doors_3x3 Statues.FeatureFlags matches 0 run scoreboard players
 execute unless score doors_3x3 Statues.FeatureFlags matches ..0 run scoreboard players display numberformat doors_3x3 Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name doors_3x3 Statues.FeatureFlags {"text":"Doors 3x3 Feature"}
 
-execute if score dynamic_maps Statues.FeatureFlags matches 0 run scoreboard players display numberformat dynamic_maps Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
-execute unless score dynamic_maps Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dynamic_maps Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
-scoreboard players display name dynamic_maps Statues.FeatureFlags {"text":"Dynamic Maps Feature"}
+execute if score dynamic_map Statues.FeatureFlags matches 0 run scoreboard players display numberformat dynamic_map Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score dynamic_map Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dynamic_map Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name dynamic_map Statues.FeatureFlags {"text":"Dynamic Map Feature"}
 
 execute if score elevator Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score elevator Statues.FeatureFlags matches ..0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
