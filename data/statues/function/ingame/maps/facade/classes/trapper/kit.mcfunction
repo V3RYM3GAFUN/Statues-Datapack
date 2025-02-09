@@ -2,6 +2,8 @@ tag @s add trapper
 tag @s add class_selected
 scoreboard players set @s Statues.Players 0
 
+attribute @s fall_damage_multiplier base reset
+
 loot replace entity @s hotbar.0 loot statues:items/classes/trapper/trapper_gun_raycast
 
 loot replace entity @s hotbar.1 loot statues:items/classes/trapper/strong_anti_anomaly_ammo
