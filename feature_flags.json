@@ -8,6 +8,7 @@
     "doors_1x2": { "name": "Doors 1x2", "depends": [ "doors" ] },
     "doors_2x2": { "name": "Doors 2x2", "depends": [ "doors" ] },
     "doors_3x3": { "name": "Doors 3x3", "depends": [ "doors" ] },
+    "dynamic_maps": { "name": "Dynamic Maps", "depends": [] },
     "elevator": { "name": "Elevator", "depends": [] },
     "elevator_2x3x2": { "name": "Elevator 2x3x2", "depends": [ "elevator" ] },
     "elevator_3x3x3": { "name": "Elevator 3x3x3", "depends": [ "elevator" ] },
@@ -28,7 +29,6 @@
     "tutorial": { "name": "Tutorial", "depends": [] },
     "vents": { "name": "Vents", "depends": [] },
 
-    "dynamic_maps": { "name": "Dynamic Maps", "is_experimental": true, "depends": [] },
     "experimental_flashlight": { "name": "Flashlight (Next)", "is_experimental": true, "depends": [ "flashlight" ] },
 
     "dev_allow_debug_info": { "name": "Allow Debug Info", "is_dev": true, "depends": [] },

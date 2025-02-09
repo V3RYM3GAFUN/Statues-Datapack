@@ -63,6 +63,10 @@ execute if score doors_3x3 Statues.FeatureFlags matches 0 run scoreboard players
 execute unless score doors_3x3 Statues.FeatureFlags matches ..0 run scoreboard players display numberformat doors_3x3 Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name doors_3x3 Statues.FeatureFlags {"text":"Doors 3x3 Feature"}
 
+execute if score dynamic_maps Statues.FeatureFlags matches 0 run scoreboard players display numberformat dynamic_maps Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score dynamic_maps Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dynamic_maps Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name dynamic_maps Statues.FeatureFlags {"text":"Dynamic Maps Feature"}
+
 execute if score elevator Statues.FeatureFlags matches 0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score elevator Statues.FeatureFlags matches ..0 run scoreboard players display numberformat elevator Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name elevator Statues.FeatureFlags {"text":"Elevator Feature"}
@@ -142,10 +146,6 @@ scoreboard players display name tutorial Statues.FeatureFlags {"text":"Tutorial 
 execute if score vents Statues.FeatureFlags matches 0 run scoreboard players display numberformat vents Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score vents Statues.FeatureFlags matches ..0 run scoreboard players display numberformat vents Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name vents Statues.FeatureFlags {"text":"Vents Feature"}
-
-execute if score dynamic_maps Statues.FeatureFlags matches 0 run scoreboard players display numberformat dynamic_maps Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
-execute unless score dynamic_maps Statues.FeatureFlags matches ..0 run scoreboard players display numberformat dynamic_maps Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
-scoreboard players display name dynamic_maps Statues.FeatureFlags [{"text":"[Experimental] ","color":"#9542f5"},{"text":"Dynamic Maps","color":"white"}]
 
 execute if score experimental_flashlight Statues.FeatureFlags matches -1 run scoreboard players display numberformat experimental_flashlight Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
 execute if score experimental_flashlight Statues.FeatureFlags matches 0 run scoreboard players display numberformat experimental_flashlight Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
