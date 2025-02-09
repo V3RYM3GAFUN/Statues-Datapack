@@ -1,1 +1,1 @@
-$bossbar set statues:gametimer name {"translate":"statues.game.warptimer","with":["$(remaining_seconds)"]}
+$bossbar set statues:warptimer name {"translate":"statues.game.warptimer","with":["$(remaining_seconds)"]}

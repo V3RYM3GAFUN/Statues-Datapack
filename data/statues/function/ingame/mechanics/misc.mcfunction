@@ -14,4 +14,4 @@ execute as @e[tag=trap_display,type=item_display,limit=4,x=0] at @s unless entit
 execute as @a[team=!Monster,gamemode=!spectator] at @s anchored eyes facing entity @a[scores={Statues.Monsters=0},advancements={statues:abilities/monsters/000=false}] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.1] run function statues:ingame/mechanics/monsters/000_freeze
 
 #> If 000 is close, survivors get darkness
-execute as @a[team=Survivor] at @s if entity @p[scores={Statues.Monsters=0},distance=..10] run effect give @s darkness 2 0 true
+execute as @a[scores={Statues.Monsters=0}] at @s positioned ~-5.5 ~ ~-5.5 run effect give @a[dx=10,dy=3,dz=10,team=Survivor] darkness 2 0 true

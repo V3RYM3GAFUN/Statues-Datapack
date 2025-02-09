@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "target": "item_name",
+              "target": "custom_name",
               "entity": "this",
               "name": {
                 "translate": "statues.item.strong_ammo",
@@ -20,7 +20,7 @@
             },
             {
               "function": "minecraft:set_count",
-              "count": 8
+              "count": 16
             },
             {
               "function": "minecraft:set_components",

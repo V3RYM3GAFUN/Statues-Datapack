@@ -17,6 +17,15 @@
                 },
                 "custom_data": {
                   "insect_launcher":true
+                },
+                "consumable": {
+                  "animation": "bow",
+                  "consume_seconds": 0.01,
+                  "has_consume_particles": false,
+                  "sound": "ui.button.click"
+                },
+                "use_cooldown": {
+                  "seconds": 5
                 }
               }
             }
