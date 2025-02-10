@@ -25,7 +25,7 @@
                   "sound": "ui.button.click"
                 },
                 "use_cooldown": {
-                  "seconds": 2.5
+                  "seconds": 1
                 }
               }
             }

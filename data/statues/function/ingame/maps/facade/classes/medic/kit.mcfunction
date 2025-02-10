@@ -14,8 +14,8 @@ loot replace entity @s hotbar.3 loot statues:items/crowbar
 loot replace entity @s hotbar.8 loot statues:items/dynamic_map_survivor
 
 loot replace entity @s hotbar.5 loot statues:items/classes/medic/potion_stim_food
-loot replace entity @s inventory.0 loot statues:items/classes/medic/potion_stim
-loot replace entity @s inventory.1 loot statues:items/classes/medic/potion_stim
+# loot replace entity @s inventory.0 loot statues:items/classes/medic/potion_stim
+# loot replace entity @s inventory.1 loot statues:items/classes/medic/potion_stim
 
 item replace entity @s armor.head with minecraft:player_head[item_name='{"translate":"statues.item.medic.helmet","italic": false,"bold":true}',profile={id:[I;-235476552,-1627697789,-1277141513,389390304],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQwYjBkZjA4ZjgwYjdlZGUwNWYxMjgzMmIyNmQ4ZGI3MWI2NGU5MjcyNTBiOWZiZDc1Y2UxOTFmODgxYTY5OSJ9fX0="}]}]
 
