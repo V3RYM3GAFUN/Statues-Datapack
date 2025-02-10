@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "target": "custom_name",
+              "target": "item_name",
               "entity": "this",
               "name": {
                 "translate": "statues.item.sniper",
