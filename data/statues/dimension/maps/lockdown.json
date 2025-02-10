@@ -1,0 +1,13 @@
+{
+  "type": "statues:game_map",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [],
+      "biome": "minecraft:snowy_slopes",
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}

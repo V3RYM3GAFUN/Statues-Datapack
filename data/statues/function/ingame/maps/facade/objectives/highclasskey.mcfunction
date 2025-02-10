@@ -1,6 +1,6 @@
 execute at @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run fill ~ ~ ~ ~ ~1 ~ air
-fill -20 135 345 -20 136 345 glass_pane
-fill 22 135 345 22 136 345 glass_pane
+fill -21 108 15 -21 109 15 glass_pane
+fill 21 108 15 21 109 15 glass_pane
 
 execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run data merge entity @s {height:0}
 

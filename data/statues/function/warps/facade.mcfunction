@@ -1,1 +1,1 @@
-execute in overworld run tp @s 0.5 135.00 402.5 180 0
+execute in statues:maps/facade run tp @s 0.5 108.00 72.5 180 0

@@ -9,8 +9,8 @@ team join Lobby @a[team=!Dev]
 
 scoreboard players set $Status Statues.DynamicData 0
 
-kill @e[type=item,x=0]
-kill @e[type=marker,tag=trap,x=0]
+kill @e[type=item]
+kill @e[type=marker,tag=trap]
 
 execute as @a run attribute @s movement_speed base reset
 execute as @a run attribute @s jump_strength base reset
@@ -78,8 +78,8 @@ execute at @e[tag=pressure_plates] run setblock ~ ~ ~ minecraft:light_weighted_p
 scoreboard players set $Objective Statues.DynamicData 0 
 
 #> Map specific reset
-function statues:ingame/maps/facade/objectives/reset
-function statues:ingame/maps/facade/blockreset
+execute in statues:maps/facade run function statues:ingame/maps/facade/objectives/reset
+execute in statues:maps/facade run function statues:ingame/maps/facade/blockreset
 
 time set 6000
 weather clear

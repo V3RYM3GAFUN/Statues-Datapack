@@ -2,8 +2,8 @@
 clear @s
 effect clear @s
 tag @s remove queued
-tp @s 0.5 0.5 0.5 0 0
-spawnpoint @s 0 0 0 0
+function statues:warps/newlobby
+execute in minecraft:overworld run spawnpoint @s ~ ~ ~ 180
 #> In case the player left in spectator
 gamemode adventure @s
 
@@ -36,6 +36,3 @@ scoreboard players reset @s Statues.DynamicData
 
 scoreboard players set @s Statues.Dead 0
 scoreboard players set @s Player.Leave 0
-
-# temporary
-function statues:warps/newlobby

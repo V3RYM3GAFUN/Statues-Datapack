@@ -8,4 +8,4 @@ execute as @a[team=!Monster] at @s run playsound minecraft:block.vault.insert_it
 
 clear @a iron_ingot[custom_data~{facade_armory_item:1b}] 1
 
-fill -40 65 344 -40 63 346 air replace
+fill -41 38 14 -41 36 16 air replace

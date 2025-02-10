@@ -8,8 +8,8 @@ scoreboard players set $Objective Statues.DynamicData 6
 
 execute as @a[team=!Monster] at @s run playsound minecraft:block.trial_spawner.spawn_mob master @a ~ ~ ~ 1 2
 
-fill -4 105 378 -4 106 378 air
-fill -4 105 383 -4 106 383 air
+fill -5 78 48 -5 79 48 air
+fill -5 78 53 -5 79 53 air
 
 execute at @e[tag=objective_facade_override] run function statues:utils/button_crimson_to_warped
 

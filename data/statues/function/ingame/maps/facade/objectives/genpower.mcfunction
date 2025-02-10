@@ -7,12 +7,12 @@ execute as @a[team=!Monster] at @s run playsound minecraft:ui.loom.take_result m
 
 #> Unlock the trapdoors in vents
 # South
-setblock 26 114 357 minecraft:redstone_block
-setblock -24 114 357 minecraft:redstone_block
+setblock 25 87 27 minecraft:redstone_block
+setblock -25 87 27 minecraft:redstone_block
 
 # North
-setblock -24 114 307 minecraft:redstone_block
-setblock 26 114 307 minecraft:redstone_block
+setblock -25 87 -23 minecraft:redstone_block
+setblock 25 87 -23 minecraft:redstone_block
 
 execute at @e[tag=objective_facade_genpower] run function statues:utils/button_crimson_to_warped
 execute at @e[tag=elevator_button_facade_genpower] run function statues:utils/button_blackstone_to_crimson

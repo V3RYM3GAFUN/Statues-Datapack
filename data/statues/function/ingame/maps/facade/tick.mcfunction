@@ -37,7 +37,7 @@ execute if score $Objective Statues.DynamicData matches 5 at @e[tag=objective_fa
 #> Power on detection
 execute if score $Objective Statues.DynamicData matches 6 at @e[tag=objective_facade_power,type=minecraft:marker] if block ~ ~ ~ crimson_button[powered=true] run function statues:ingame/maps/facade/objectives/main_power
 execute if score $Objective Statues.DynamicData matches 7.. run scoreboard players remove $Core.Ticks Statues.DynamicData 1
-execute if score $Core.Ticks Statues.DynamicData matches 0 run playsound minecraft:entity.warden.nearby_closer master @a -4 83 322 3 0
+execute if score $Core.Ticks Statues.DynamicData matches 0 run playsound minecraft:entity.warden.nearby_closer master @a -5 56 -8 3 0
 execute if score $Core.Ticks Statues.DynamicData matches ..0 run scoreboard players set $Core.Ticks Statues.DynamicData 120
 
 execute as @a unless entity @s[team=!Monster,team=!Survivor] run function statues:ingame/maps/facade/tick_player
