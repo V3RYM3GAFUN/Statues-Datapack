@@ -1,1 +1,1 @@
-execute on target run function statues:lobby/tutorial-info/start
+execute on target run function statues:mechanics/tutorial/start

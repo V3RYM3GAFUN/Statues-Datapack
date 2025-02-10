@@ -72,9 +72,9 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `receptionist`                | Enables the receptionist in the lobby                                                                                              |
 | `queue`                       | Enables the queue system in the lobby                                                                                              |
 | `sas`                         | Enables SAS machines and all functions in `statues:mechanics/sas`                                                                  |
-| `spectators_actionbar`        | Enables the tutorial and all functions in `statues:lobby/tutorial-info`                                                            |
+| `spectators_actionbar`        | Shows actionbar for spectators, and access to all functions in `statues:mechanics/spectators_actionbar`                            |
 | `survivors_heart_sidebar`     | Enables showing hearts in the survivors scoreboard, shows `<>hp` when disabled instead                                             |
-| `tutorial`                    | Shows actionbar for spectators, and access to all functions in `statues:mechanics/spectators_actionbar`                            |
+| `tutorial`                    | Enables the tutorial and all functions in `statues:mechanics/tutorial`                                                             |
 | `vents`                       | Allows interacting with vents and all functions in `statues:mechanics/vents`                                                       |
 
 ### Enabling/Disabling

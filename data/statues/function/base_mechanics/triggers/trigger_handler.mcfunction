@@ -5,11 +5,11 @@ execute if entity @s[scores={Statues.ActionTrigger=195502}] run function statues
 execute if entity @s[scores={Statues.ActionTrigger=195503}] unless entity @s[team=!Dev,team=!Lobby] run function statues:warps/newlobby
 
 #> Tutorial triggers (scores 195600-159699)
-execute if entity @s[scores={Statues.ActionTrigger=195600}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:lobby/tutorial-info/hiding
-execute if entity @s[scores={Statues.ActionTrigger=195601}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:lobby/tutorial-info/vent-info
-execute if entity @s[scores={Statues.ActionTrigger=195602}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:lobby/tutorial-info/buttons
-execute if entity @s[scores={Statues.ActionTrigger=195603}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:lobby/tutorial-info/doors
-execute if entity @s[scores={Statues.ActionTrigger=195604}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:lobby/tutorial-info/finish
+execute if entity @s[scores={Statues.ActionTrigger=195600}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:mechanics/tutorial/hiding
+execute if entity @s[scores={Statues.ActionTrigger=195601}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:mechanics/tutorial/vent-info
+execute if entity @s[scores={Statues.ActionTrigger=195602}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:mechanics/tutorial/buttons
+execute if entity @s[scores={Statues.ActionTrigger=195603}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:mechanics/tutorial/doors
+execute if entity @s[scores={Statues.ActionTrigger=195604}] if function statues:feature_flags/check_tutorial_flags if entity @s[tag=tutorial] run function statues:mechanics/tutorial/finish
 
 #> Class preview triggers (scores 195700-195799)
 # Class preview tp triggers (scores 195700-195719)
