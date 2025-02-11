@@ -29,6 +29,10 @@ execute if score blood_trails Statues.FeatureFlags matches 0 run scoreboard play
 execute unless score blood_trails Statues.FeatureFlags matches ..0 run scoreboard players display numberformat blood_trails Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name blood_trails Statues.FeatureFlags {"text":"Blood Trails Feature"}
 
+execute if score tutorial Statues.FeatureFlags matches 0 run scoreboard players display numberformat tutorial Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score tutorial Statues.FeatureFlags matches ..0 run scoreboard players display numberformat tutorial Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name tutorial Statues.FeatureFlags {"text":"Tutorial Feature"}
+
 execute if score class_preview Statues.FeatureFlags matches -1 run scoreboard players display numberformat class_preview Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
 execute if score class_preview Statues.FeatureFlags matches 0 run scoreboard players display numberformat class_preview Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score class_preview Statues.FeatureFlags matches ..0 run scoreboard players display numberformat class_preview Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
@@ -144,10 +148,6 @@ scoreboard players display name survivors_heart_sidebar Statues.FeatureFlags {"t
 execute if score survivors_heartbeat Statues.FeatureFlags matches 0 run scoreboard players display numberformat survivors_heartbeat Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score survivors_heartbeat Statues.FeatureFlags matches ..0 run scoreboard players display numberformat survivors_heartbeat Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name survivors_heartbeat Statues.FeatureFlags {"text":"Survivors' Heartbeat Feature"}
-
-execute if score tutorial Statues.FeatureFlags matches 0 run scoreboard players display numberformat tutorial Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
-execute unless score tutorial Statues.FeatureFlags matches ..0 run scoreboard players display numberformat tutorial Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
-scoreboard players display name tutorial Statues.FeatureFlags {"text":"Tutorial Feature"}
 
 execute if score vents Statues.FeatureFlags matches 0 run scoreboard players display numberformat vents Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score vents Statues.FeatureFlags matches ..0 run scoreboard players display numberformat vents Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}

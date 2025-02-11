@@ -1,5 +1,6 @@
 execute if score abilities Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_abilities {value:0}
 execute if score blood_trails Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_blood_trails {value:0}
+execute if score tutorial Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_tutorial {value:0}
 execute if score class_preview Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_class_preview {value:0}
 execute if score compass_tracker Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_compass_tracker {value:0}
 execute if score desk_button Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_desk_button {value:0}
@@ -27,5 +28,4 @@ execute if score sas Statues.FeatureFlags matches 1.. run function statues:featu
 execute if score spectators_actionbar Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_spectators_actionbar {value:0}
 execute if score survivors_heart_sidebar Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_survivors_heart_sidebar {value:0}
 execute if score survivors_heartbeat Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_survivors_heartbeat {value:0}
-execute if score tutorial Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_tutorial {value:0}
 execute if score vents Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_vents {value:0}
