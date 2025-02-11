@@ -1,4 +1,5 @@
 execute unless function statues:feature_flags/check_elevator_flags run return fail
+execute unless entity @a[limit=1,distance=..15] run return fail
 execute if block ~ ~ ~ minecraft:polished_blackstone_button[powered=true] run function statues:utils/button_blackstone_reset_powered
 execute if block ~ ~ ~ minecraft:polished_blackstone_button run return 0
 execute if block ~ ~ ~ minecraft:warped_button run function statues:utils/button_warped_to_crimson

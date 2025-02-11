@@ -1,5 +1,5 @@
 #> Force the map to stay loaded to reset properly
-forceload add 53 230 -412 394
+forceload add 52 26 -403 64
 
 #> Brings back the text for Power objective, as well closes the doors related to it
 execute as @e[tag=objective_facade_power] run data modify entity @s text set value "{\"translate\":\"statues.text.facade.objective.mainpower\",\"color\":\"dark_red\"}"
@@ -49,4 +49,4 @@ clone -41 31 14 -41 29 16 -41 36 14
 execute as @e[tag=objective_reset] at @s run data merge block ~ ~ ~ {Items:[]}
 
 #> Unload the map
-forceload remove 53 230 -412 394
+forceload remove 52 26 -403 64
