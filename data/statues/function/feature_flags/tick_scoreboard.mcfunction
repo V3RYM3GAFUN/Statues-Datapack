@@ -16,6 +16,8 @@ execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard player
 execute if score elevator_buttons Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set elevator_buttons Statues.FeatureFlags 0
 execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_freight Statues.FeatureFlags -1
 execute if score elevator_freight Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set elevator_freight Statues.FeatureFlags 0
+execute if score survivors_healthbar Statues.FeatureFlags matches ..0 run scoreboard players set survivors_heart_sidebar Statues.FeatureFlags -1
+execute if score survivors_heart_sidebar Statues.FeatureFlags matches -1 if score survivors_healthbar Statues.FeatureFlags matches 1.. run scoreboard players set survivors_heart_sidebar Statues.FeatureFlags 0
 execute if score lights Statues.FeatureFlags matches ..0 run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags -1
 execute if score dev_auto_convert_lights Statues.FeatureFlags matches -1 if score lights Statues.FeatureFlags matches 1.. run scoreboard players set dev_auto_convert_lights Statues.FeatureFlags 0
 
@@ -141,6 +143,11 @@ execute if score spectators_actionbar Statues.FeatureFlags matches 0 run scorebo
 execute unless score spectators_actionbar Statues.FeatureFlags matches ..0 run scoreboard players display numberformat spectators_actionbar Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name spectators_actionbar Statues.FeatureFlags {"text":"Spectators ActionBar Feature"}
 
+execute if score survivors_healthbar Statues.FeatureFlags matches 0 run scoreboard players display numberformat survivors_healthbar Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score survivors_healthbar Statues.FeatureFlags matches ..0 run scoreboard players display numberformat survivors_healthbar Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name survivors_healthbar Statues.FeatureFlags {"text":"Survivors Heartbar Feature"}
+
+execute if score survivors_heart_sidebar Statues.FeatureFlags matches -1 run scoreboard players display numberformat survivors_heart_sidebar Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
 execute if score survivors_heart_sidebar Statues.FeatureFlags matches 0 run scoreboard players display numberformat survivors_heart_sidebar Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score survivors_heart_sidebar Statues.FeatureFlags matches ..0 run scoreboard players display numberformat survivors_heart_sidebar Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name survivors_heart_sidebar Statues.FeatureFlags {"text":"Survivors Heart Sidebar Feature"}

@@ -1,1 +1,1 @@
-execute if entity @s[team=Survivor] run function statues:mechanics/survivors_healthbar/player_tick
+execute if score survivors_healthbar Statues.FeatureFlags matches 1 if score survivors_healthbar Statues.FeatureFlags matches 1 if entity @s[team=Survivor] run function statues:mechanics/survivors_healthbar/player_tick

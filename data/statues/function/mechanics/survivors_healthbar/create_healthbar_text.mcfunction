@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_survivors_healthbar_flags run return fail
+
 execute store result score $MaxHealth Statues.TempData run attribute @s max_health get
 execute store result score $Health Statues.TempData run data get entity @s Health 100
 scoreboard players add $Health Statues.TempData 99

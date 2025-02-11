@@ -35,51 +35,53 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 
 ## Feature Flags
 
-| Feature Flag                  | Description                                                                                                                        |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `abilities`                   | Enables abilities of classes, and all the abilities functions                                                                      |
-| `blood_trails`                | Enables survivor blood trails (best if activated/deactivated before the game starts, to make sure there are no leftover entities)  |
+| Feature Flag                  | Description                                                                                                                            |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| `abilities`                   | Enables abilities of classes, and all the abilities functions                                                                          |
+| `blood_trails`                | Enables survivor blood trails (best if activated/deactivated before the game starts, to make sure there are no leftover entities)      |
 | `class_preview`               | Enables tutorial class preview and functions in `statues:mechanics/class_preview` (requires `abilities` and `tutorial` feature flags)  |
-| `compass_tracker`             | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point  |
-| `desk_button`                 | Enables desk buttons. Also enables all functions in `statues:mechanics/desk_button`                                                |
-| `dev_allow_debug_info`        | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                         |
-| `dev_allow_empty_game`        | When turned on, the game won't end even if there are no monsters or survivors                                                      |
-| `dev_auto_convert_lights`     | Automatically converts pink concrete into lights (requires `lights` feature flag)                                                  |
-| `dev_infinite_game_time`      | Makes the game last for eternity until all monsters stop playing, or all survivors die                                             |
-| `dev_no_game_reset_on_reload` | Disables the game resetting when the datapack gets loaded                                                                          |
-| `dev_no_start_requirement`    | Sets the minimum player requirement in queuing to just one player (requires 2+ players for the game to not end instantly)          |
-| `dev_override_dev_loot_pools` | Changes the dev game barrel locations to be dev specific, instead of being the default of a normal game                            |
-| `dev_show_interactions`       | Shows particles at interaction entities when nearby                                                                                |
-| `dev_show_markers`            | Shows block aligned particles at marker entities when nearby                                                                       |
-| `dev_show_markers_accurate`   | Shows particles directly at marker entities when nearby                                                                            |
-| `doors`                       | Allows use of doors and the `doors_1x2`,  `doors_2x2`, and `doors_3x3` feature flags                                               |
-| `doors_1x2`                   | Allows use of 1x2 doors and all functions in `statues:mechanics/doors_1x2` (requires `doors` feature flag)                         |
-| `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:mechanics/doors_2x2` (requires `doors` feature flag)                         |
-| `doors_3x3`                   | Allows use of 3x3 doors and all functions in `statues:mechanics/doors_3x3`  (requires `doors` feature flag)                        |
-| `dynamic_map`                 | Enables dynamic maps in gameplay                                                                                                   |
-| `elevator`                    | Allows use of elevators and the `elevator_2x3x2`,  `elevator_3x3x3`, `elevator_buttons`, and `elevator_freight` feature flags      |
-| `elevator_2x3x2`              | Allows use of 2x3x2 elevators and all functions in `statues:mechanics/elevator_2x3x2` (requires `elevator` feature flag)           |
-| `elevator_3x3x3`              | Allows use of 3x3x3 elevators and all functions in `statues:mechanics/elevator_3x3x3` (requires `elevator` feature flag)           |
-| `elevator_buttons`            | Allows use of buttons of elevators and all functions in `statues:mechanics/elevator_buttons`  (requires `elevator` feature flag)   |
-| `elevator_freight`            | Allows use of freight elevators and all functions in `statues:mechanics/elevator_freight`  (requires `elevator` feature flag)      |
-| `flashlight`                  | Enables the flashlight item behavior and functions in `statues:mechanics/flashlight`                                               |
-| `floors`                      | Shows the current objective and floor to survivors, allows the use of all functions in `statues:mechanics/floors`                  |
-| `hiding`                      | Enables ticking hiding spots                                                                                                       |
-| `lights`                      | Allows creating and modifying lights and all functions in `statues:mechanics/lights`                                               |
-| `location_markers`            | Handles all location marker data, for example key locations                                                                        |
-| `map_tick`                    | Enables map ticking                                                                                                                |
-| `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:mechanics/power_doors`                                 |
-| `receptionist`                | Enables the receptionist in the lobby                                                                                              |
-| `queue`                       | Enables the queue system in the lobby                                                                                              |
-| `sas`                         | Enables SAS machines and all functions in `statues:mechanics/sas`                                                                  |
-| `spectators_actionbar`        | Shows actionbar for spectators, and access to all functions in `statues:mechanics/spectators_actionbar`                            |
-| `survivors_heart_sidebar`     | Enables showing hearts in the survivors scoreboard, shows `<>hp` when disabled instead                                             |
-| `tutorial`                    | Enables the tutorial and all functions in `statues:mechanics/tutorial`                                                             |
-| `vents`                       | Allows interacting with vents and all functions in `statues:mechanics/vents`                                                       |
+| `compass_tracker`             | Sets a compass for all players with the `has_compass_tracker` tag which points in the direction the nearest current tracker point      |
+| `desk_button`                 | Enables desk buttons. Also enables all functions in `statues:mechanics/desk_button`                                                    |
+| `dev_allow_debug_info`        | Turns off/on the `reducedDebugInfo` gamerule while in game                                                                             |
+| `dev_allow_empty_game`        | When turned on, the game won't end even if there are no monsters or survivors                                                          |
+| `dev_auto_convert_lights`     | Automatically converts pink concrete into lights (requires `lights` feature flag)                                                      |
+| `dev_infinite_game_time`      | Makes the game last for eternity until all monsters stop playing, or all survivors die                                                 |
+| `dev_no_game_reset_on_reload` | Disables the game resetting when the datapack gets loaded                                                                              |
+| `dev_no_start_requirement`    | Sets the minimum player requirement in queuing to just one player (requires 2+ players for the game to not end instantly)              |
+| `dev_override_dev_loot_pools` | Changes the dev game barrel locations to be dev specific, instead of being the default of a normal game                                |
+| `dev_show_interactions`       | Shows particles at interaction entities when nearby                                                                                    |
+| `dev_show_markers`            | Shows block aligned particles at marker entities when nearby                                                                           |
+| `dev_show_markers_accurate`   | Shows particles directly at marker entities when nearby                                                                                |
+| `doors`                       | Allows use of doors and the `doors_1x2`,  `doors_2x2`, and `doors_3x3` feature flags                                                   |
+| `doors_1x2`                   | Allows use of 1x2 doors and all functions in `statues:mechanics/doors_1x2` (requires `doors` feature flag)                             |
+| `doors_2x2`                   | Allows use of 2x2 doors and all functions in `statues:mechanics/doors_2x2` (requires `doors` feature flag)                             |
+| `doors_3x3`                   | Allows use of 3x3 doors and all functions in `statues:mechanics/doors_3x3`  (requires `doors` feature flag)                            |
+| `dynamic_map`                 | Enables dynamic maps in gameplay                                                                                                       |
+| `elevator`                    | Allows use of elevators and the `elevator_2x3x2`,  `elevator_3x3x3`, `elevator_buttons`, and `elevator_freight` feature flags          |
+| `elevator_2x3x2`              | Allows use of 2x3x2 elevators and all functions in `statues:mechanics/elevator_2x3x2` (requires `elevator` feature flag)               |
+| `elevator_3x3x3`              | Allows use of 3x3x3 elevators and all functions in `statues:mechanics/elevator_3x3x3` (requires `elevator` feature flag)               |
+| `elevator_buttons`            | Allows use of buttons of elevators and all functions in `statues:mechanics/elevator_buttons`  (requires `elevator` feature flag)       |
+| `elevator_freight`            | Allows use of freight elevators and all functions in `statues:mechanics/elevator_freight`  (requires `elevator` feature flag)          |
+| `flashlight`                  | Enables the flashlight item behavior and functions in `statues:mechanics/flashlight`                                                   |
+| `floors`                      | Shows the current objective and floor to survivors, allows the use of all functions in `statues:mechanics/floors`                      |
+| `hiding`                      | Enables ticking hiding spots                                                                                                           |
+| `lights`                      | Allows creating and modifying lights and all functions in `statues:mechanics/lights`                                                   |
+| `location_markers`            | Handles all location marker data, for example key locations                                                                            |
+| `map_tick`                    | Enables map ticking                                                                                                                    |
+| `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:mechanics/power_doors`                                     |
+| `receptionist`                | Enables the receptionist in the lobby                                                                                                  |
+| `queue`                       | Enables the queue system in the lobby                                                                                                  |
+| `sas`                         | Enables SAS machines and all functions in `statues:mechanics/sas`                                                                      |
+| `spectators_actionbar`        | Shows actionbar for spectators, and access to all functions in `statues:mechanics/spectators_actionbar`                                |
+| `survivors_healthbar`         | Enables updating the healthbar on the sidebar for survivors                                                                            |
+| `survivors_heart_sidebar`     | Enables showing hearts in the survivors scoreboard, shows `<>hp` when disabled instead (requires `survivors_healthbar` feature flag)   |
+| `survivors_heartbeat`         | Enables survivors heartbeat                                                                                                            |
+| `tutorial`                    | Enables the tutorial and all functions in `statues:mechanics/tutorial`                                                                 |
+| `vents`                       | Allows interacting with vents and all functions in `statues:mechanics/vents`                                                           |
 
 ### Enabling/Disabling
 
-To enable a feature flag run `/scoreboard players set <featureflag> Statues.FeatureFlags 1`, and to turn it off `/scoreboard players set <featureflag> Statues.FeatureFlags 0`. Replace `<featureflag>` with the feature you want to enable/disable.
+To enable a feature flag run `/function statues:feature_flags/set_<feature_flag> {value:1}`, and to turn it off `/function statues:feature_flags/set_<feature_flag> {value:0}`. Replace `<feature_flag>` with the feature you want to enable/disable. You can also view a list of all feature flags with a toggle by using `/function statues:feature_flags/_print`
 
 ## Entity tags
 

@@ -26,6 +26,7 @@ execute if score receptionist Statues.FeatureFlags matches ..0 run function stat
 execute if score queue Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_queue {value:1}
 execute if score sas Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_sas {value:1}
 execute if score spectators_actionbar Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_spectators_actionbar {value:1}
+execute if score survivors_healthbar Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_survivors_healthbar {value:1}
 execute if score survivors_heart_sidebar Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_survivors_heart_sidebar {value:1}
 execute if score survivors_heartbeat Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_survivors_heartbeat {value:1}
 execute if score vents Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_vents {value:1}
