@@ -11,7 +11,7 @@
               "function": "set_components",
               "components": {
                 "item_model": "statues:weapons/survivors/shotgun_alt",
-                "item_name": "[{\"color\": \"dark_aqua\",\"translate\": \"statues.item.trapper_gun\",\"bold\": true},{\"text\":\" : \"},{\"translate\": \"statues.item.weak_ammo\",\"bold\": false}]",
+                "item_name": "[{\"color\": \"dark_aqua\",\"translate\": \"statues.item.shotgun\",\"bold\": true},{\"text\":\" : \"},{\"translate\": \"statues.item.weak_ammo\",\"bold\": false}]",
                 "custom_data": {
                   "ammo_select": 0,
                   "is_shotgun": true
