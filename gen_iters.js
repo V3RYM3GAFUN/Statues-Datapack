@@ -29,7 +29,7 @@ execute if score $IterationsRemaining Statues.TempData matches 1.. run function 
 if(`statues:${i.iter_prefix}_iter_exec` !== i.execute) {
 fs.writeFileSync(path.resolve(baseDir, `${i.iter_prefix}_iter_exec.mcfunction`), `execute unless function statues:feature_flags/check_${i.feature_flag}_flags run return fail
 $data modify storage statues:temp iter_exec_per set from storage ${i.nbt_storage} ${i.nbt_path}[-$(index)]
-${i.inputs.length !== 0 ? `$data merge storage statues:temp iter_exec_per {${i.inputs.map(x => `"${x}":"$(${x})"`).join(",")}}` : ""}
+${i.inputs.length !== 0 ? `$data merge storage statues:temp {iter_exec_per:{${i.inputs.map(x => `"${x}":"$(${x})"`).join(",")}}}` : ""}
 function ${i.execute} with storage statues:temp iter_exec_per
 `);
 }
