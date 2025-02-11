@@ -4,7 +4,7 @@ scoreboard players set @s Statues.Players 0
 
 attribute @s fall_damage_multiplier base reset
 
-loot replace entity @s hotbar.0 loot statues:items/weapons/shotgun_raycast
+loot replace entity @s hotbar.0 loot statues:items/weapons/shotgun/weak_ammo
 loot replace entity @s hotbar.1 loot statues:items/classes/shotgunner/weak_anti_anomaly_ammo
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar

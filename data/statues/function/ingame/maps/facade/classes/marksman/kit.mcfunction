@@ -5,7 +5,7 @@ scoreboard players set @s Statues.Players 0
 effect give @s night_vision infinite 0 true
 attribute @s fall_damage_multiplier base reset
 
-loot replace entity @s hotbar.0 loot statues:items/weapons/sniper_raycast
+loot replace entity @s hotbar.0 loot statues:items/weapons/sniper/sniper_ammo
 loot replace entity @s hotbar.1 loot statues:items/classes/marksman/sniper_ammo
 
 loot replace entity @s hotbar.2 loot statues:items/crowbar
