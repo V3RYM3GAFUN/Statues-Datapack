@@ -2,7 +2,7 @@ execute if score abilities Statues.FeatureFlags matches ..0 run function statues
 execute if score blood_trails Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_blood_trails {value:1}
 execute if score tutorial Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_tutorial {value:1}
 execute if score class_preview Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_class_preview {value:1}
-execute if score compass_tracker Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_compass_tracker {value:1}
+execute if score compass_tracker Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_compass_tracker {value:0}
 execute if score desk_button Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_desk_button {value:1}
 execute if score doors Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_doors {value:1}
 execute if score doors_1x2 Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_doors_1x2 {value:1}

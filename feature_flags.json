@@ -2,7 +2,7 @@
     "abilities": { "name": "Abilities", "depends": [], "default": true },
     "blood_trails": { "name": "Blood Trails", "depends": [], "default": true },
     "class_preview": { "name": "Class Preview", "depends": [ "abilities", "tutorial" ], "default": true },
-    "compass_tracker": { "name": "Compass Tracker", "depends": [], "default": true },
+    "compass_tracker": { "name": "Compass Tracker", "depends": [], "default": false },
     "desk_button": { "name": "Desk Button", "depends": [], "default": true },
     "doors": { "name": "Doors", "depends": [], "default": true },
     "doors_1x2": { "name": "Doors 1x2", "depends": [ "doors" ], "default": true },
