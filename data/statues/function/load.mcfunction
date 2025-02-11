@@ -18,9 +18,6 @@ scoreboard objectives modify Statues.MapVote displayname {"text":"Map Vote","col
 scoreboard players display name facade Statues.MapVote {"text":"Façade","color":"#D2B4A2"}
 scoreboard players display name lockdown Statues.MapVote {"text":"Lockdown","color":"#AEAEAE"}
 scoreboard players display name origins Statues.MapVote {"text":"Origins","color":"#24737F"}
-function statues:mechanics/mapvoting/vote_display_macro {map_name:"facade",votes:0}
-function statues:mechanics/mapvoting/vote_display_macro {map_name:"lockdown",votes:0}
-function statues:mechanics/mapvoting/vote_display_macro {map_name:"origins",votes:0}
 scoreboard objectives add Player.Leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add Statues.Abilities minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Statues.Players dummy

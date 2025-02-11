@@ -123,6 +123,10 @@ execute if score map_tick Statues.FeatureFlags matches 0 run scoreboard players 
 execute unless score map_tick Statues.FeatureFlags matches ..0 run scoreboard players display numberformat map_tick Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name map_tick Statues.FeatureFlags {"text":"Map Tick Feature"}
 
+execute if score map_vote Statues.FeatureFlags matches 0 run scoreboard players display numberformat map_vote Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
+execute unless score map_vote Statues.FeatureFlags matches ..0 run scoreboard players display numberformat map_vote Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
+scoreboard players display name map_vote Statues.FeatureFlags {"text":"Map Vote Feature"}
+
 execute if score power_doors Statues.FeatureFlags matches 0 run scoreboard players display numberformat power_doors Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score power_doors Statues.FeatureFlags matches ..0 run scoreboard players display numberformat power_doors Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
 scoreboard players display name power_doors Statues.FeatureFlags {"text":"Power Doors Feature"}
@@ -145,7 +149,7 @@ scoreboard players display name spectators_actionbar Statues.FeatureFlags {"text
 
 execute if score survivors_healthbar Statues.FeatureFlags matches 0 run scoreboard players display numberformat survivors_healthbar Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}
 execute unless score survivors_healthbar Statues.FeatureFlags matches ..0 run scoreboard players display numberformat survivors_healthbar Statues.FeatureFlags fixed {"text":"Enabled","color":"green"}
-scoreboard players display name survivors_healthbar Statues.FeatureFlags {"text":"Survivors Heartbar Feature"}
+scoreboard players display name survivors_healthbar Statues.FeatureFlags {"text":"Survivors Healthbar Feature"}
 
 execute if score survivors_heart_sidebar Statues.FeatureFlags matches -1 run scoreboard players display numberformat survivors_heart_sidebar Statues.FeatureFlags fixed {"text":"Disabled","color":"gray"}
 execute if score survivors_heart_sidebar Statues.FeatureFlags matches 0 run scoreboard players display numberformat survivors_heart_sidebar Statues.FeatureFlags fixed {"text":"Disabled","color":"red"}

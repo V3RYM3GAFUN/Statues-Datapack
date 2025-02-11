@@ -68,6 +68,7 @@ A Minecraft minigame by V3RYM3GAFUN Studios
 | `lights`                      | Allows creating and modifying lights and all functions in `statues:mechanics/lights`                                                   |
 | `location_markers`            | Handles all location marker data, for example key locations                                                                            |
 | `map_tick`                    | Enables map ticking                                                                                                                    |
+| `map_vote`                    | Enables map voting                                                                                                                     |
 | `power_doors`                 | Allows opening/closing power doors, and access to all functions in `statues:mechanics/power_doors`                                     |
 | `receptionist`                | Enables the receptionist in the lobby                                                                                                  |
 | `queue`                       | Enables the queue system in the lobby                                                                                                  |

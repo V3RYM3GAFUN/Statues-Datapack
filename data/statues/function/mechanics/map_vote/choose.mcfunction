@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_map_vote_flags run return fail
+
 summon marker 0 0 0 {Tags:["mapvote", "mapvote_facade"],CustomName:'[{"text":"Façade"}]'}
 summon marker 0 1 0 {Tags:["mapvote", "mapvote_lockdown"],CustomName:'[{"text":"Lockdown"}]'}
 summon marker 0 2 0 {Tags:["mapvote", "mapvote_origins"],CustomName:'[{"text":"Origins"}]'}

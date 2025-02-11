@@ -1,1 +1,0 @@
-function statues:mechanics/mapvoting/tick

@@ -21,6 +21,7 @@ execute if score hiding Statues.FeatureFlags matches ..0 run function statues:fe
 execute if score lights Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_lights {value:1}
 execute if score location_markers Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_location_markers {value:1}
 execute if score map_tick Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_map_tick {value:1}
+execute if score map_vote Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_map_vote {value:1}
 execute if score power_doors Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_power_doors {value:1}
 execute if score receptionist Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_receptionist {value:1}
 execute if score queue Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_queue {value:1}

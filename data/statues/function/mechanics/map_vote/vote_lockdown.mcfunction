@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_map_vote_flags run return fail
+
 execute if entity @s[tag=vote_lockdown] run tellraw @s {"text":"You have already voted for this map!","color":"red"}
 execute if entity @s[tag=vote_lockdown] run playsound entity.villager.no master @s ~ ~ ~ 1 1
 

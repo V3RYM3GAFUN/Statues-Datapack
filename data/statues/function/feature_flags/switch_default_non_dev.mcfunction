@@ -21,12 +21,13 @@ execute if score hiding Statues.FeatureFlags matches ..0 run function statues:fe
 execute if score lights Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_lights {value:1}
 execute if score location_markers Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_location_markers {value:1}
 execute if score map_tick Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_map_tick {value:1}
+execute if score map_vote Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_map_vote {value:1}
 execute if score power_doors Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_power_doors {value:1}
 execute if score receptionist Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_receptionist {value:1}
 execute if score queue Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_queue {value:1}
 execute if score sas Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_sas {value:1}
 execute if score spectators_actionbar Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_spectators_actionbar {value:1}
-execute if score survivors_healthbar Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_survivors_healthbar {value:0}
+execute if score survivors_healthbar Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_survivors_healthbar {value:1}
 execute if score survivors_heart_sidebar Statues.FeatureFlags matches 1.. run function statues:feature_flags/set_survivors_heart_sidebar {value:0}
 execute if score survivors_heartbeat Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_survivors_heartbeat {value:1}
 execute if score vents Statues.FeatureFlags matches ..0 run function statues:feature_flags/set_vents {value:1}
