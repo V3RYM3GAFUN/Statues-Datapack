@@ -7,6 +7,7 @@ execute if score $ReplayRecording Statues.DynamicData matches 1 run tellraw @s {
 execute if score $ReplayRecording Statues.DynamicData matches 1 run return fail
 
 data modify storage statues:game_replay playing_replay set from storage statues:game_replay replays[-1]
+execute store result score $IterationsRemaining Statues.TempData run data get storage statues:game_replay playing_replay.player_data
 function statues:mechanics/game_replay/start_replay_create_fake_player_iter
 scoreboard players set $ReplayFrame Statues.DynamicData 0
 scoreboard players set $ReplayWatching Statues.DynamicData 1

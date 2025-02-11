@@ -70,6 +70,6 @@ function statues:ingame/maps/common/pool_locations_unload
 execute at @e[tag=armory_ammo_box] run data modify block ~ ~ ~ LootTable set value "statues:blocks/ammo_crate"
 
 #> Stop force loading the chunks once the items have generated
-forceload remove 63 -73 -83 64
+forceload remove 95 79 -112 -80
 
 advancement grant @a[team=!Lobby,team=!Dev] only statues:game/maps/facade/play_once

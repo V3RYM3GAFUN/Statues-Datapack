@@ -28,6 +28,6 @@
     "inputs": [],
     "nbt_storage": "statues:game_replay",
     "nbt_path": "playing_replay.player_data",
-    "execute": "statues:mechanics/location_markers/move_positions_iter_exec"
+    "execute": "statues:mechanics/game_replay/start_replay_create_fake_player_exec"
   }
 ]

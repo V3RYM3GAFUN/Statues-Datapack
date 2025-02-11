@@ -18,5 +18,5 @@ execute if score $QueuedCount Statues.DynamicData matches 7.. run function statu
 
 effect clear @a[tag=queued] glowing
 bossbar set statues:countdown visible false
-execute in statues:maps/facade run forceload add 63 -73 -83 64
-schedule function statues:debug/start_game_internal 10t
+execute in statues:maps/facade run forceload add 95 79 -112 -80
+schedule function statues:debug/start_game_internal 20t
