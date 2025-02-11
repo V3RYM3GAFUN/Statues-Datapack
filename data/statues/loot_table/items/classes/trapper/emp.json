@@ -1,0 +1,31 @@
+{
+  "functions": [
+    {
+      "function": "set_item",
+      "item": "stick"
+    },
+    {
+      "function": "set_components",
+      "components": {
+        "custom_data": {
+          "trapper_ability": true
+        },
+        "item_name": "[{\"translate\":\"statues.item.trapper.ability.name\",\"italic\":false,\"color\":\"gray\"}]",
+        "lore": [
+          "{\"translate\":\"statues.item.trapper.ability.lore.line1\",\"italic\":false}",
+          "{\"translate\":\"statues.item.trapper.ability.lore.line2\",\"italic\":false}",
+          "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"5\",\"italic\": false},{\"text\":\"0\",\"italic\": false}]}]"
+        ],
+        "consumable": {
+          "animation": "bow",
+          "consume_seconds": 0.01,
+          "has_consume_particles": false,
+          "sound": "block.conduit.deactivate"
+        },
+        "use_cooldown": {
+          "seconds": 300
+        }
+      }
+    }
+  ]
+}
