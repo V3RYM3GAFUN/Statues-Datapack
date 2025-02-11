@@ -1,0 +1,33 @@
+[
+  {
+    "iter_prefix": "mechanics/location_markers/load_type",
+    "entry_path": "mechanics/location_markers/type_load",
+    "max_iter_per_exec": 100,
+    "feature_flag": "location_markers",
+    "inputs": ["source", "type", "identifier"],
+    "nbt_storage": "statues:location_markers/$(source)",
+    "nbt_path": "$(type)",
+    "execute": "statues:mechanics/location_markers/load_type_exec"
+  },
+  {
+    "iter_prefix": "mechanics/location_markers/move_positions",
+    "entry_path": "mechanics/location_markers/move_positions",
+    "max_iter_per_exec": 100,
+    "feature_flag": "location_markers",
+    "inputs": ["source", "type"],
+    "write_scoreboard": { "x": "$LocationMarkersMoveX", "y": "$LocationMarkersMoveY", "z": "$LocationMarkersMoveZ" },
+    "nbt_storage": "statues:location_markers/$(source)",
+    "nbt_path": "$(type)",
+    "execute": "statues:mechanics/location_markers/move_positions_iter_exec"
+  },
+  {
+    "iter_prefix": "mechanics/game_replay/start_replay_create_fake_player",
+    "entry_path": "mechanics/game_replay/start_replay_create_fake_player",
+    "max_iter_per_exec": 10,
+    "feature_flag": "game_replay",
+    "inputs": [],
+    "nbt_storage": "statues:game_replay",
+    "nbt_path": "playing_replay.player_data",
+    "execute": "statues:mechanics/location_markers/move_positions_iter_exec"
+  }
+]

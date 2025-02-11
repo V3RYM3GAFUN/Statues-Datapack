@@ -1,0 +1,5 @@
+execute unless function statues:feature_flags/check_game_replay_flags run return fail
+$summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Tags:["game_replay_player","game_replay_entity","game_replay_new_entity"],CustomName:"{\"text\":\"Replay:$(username)\"}",ArmorItems:[{},{},{},{id:"minecraft:player_head",components:{"minecraft:profile":"$(username)"}}],active_effects:[{duration:-1,show_icon:0b,id:"minecraft:glowing",show_particles:0b}],attributes:[{id:"minecraft:scale",modifiers:[{amount:-0.1d,id:"statues:game_replay/make_player_scale",operation:"add_multiplied_total"}],base:1.0d}],ShowArms:1b,NoBasePlate:1b}
+$summon minecraft:text_display ~ ~ ~ {Tags:["game_replay_player_name","game_replay_entity","game_replay_new_entity"],text:"$(username)",brightness:{block:15,sky:15},see_through:1b,billboard:"center",teleport_duration:3}
+$scoreboard players set @e[tag=game_replay_new_entity] Statues.ReplayData $(index)
+tag @e[tag=game_replay_new_entity] remove game_replay_new_entity
