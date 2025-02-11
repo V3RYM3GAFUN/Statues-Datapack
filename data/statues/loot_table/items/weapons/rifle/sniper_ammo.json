@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "item_model": "statues:weapons/survivors/rifle",
+                "item_name": "[{\"color\": \"black\",\"translate\": \"statues.item.rifle\",\"bold\": true},{\"text\":\" : \"},{\"translate\": \"statues.item.sniper_ammo\",\"bold\": false}]",
+                "custom_data": {
+                  "ammo_select": 3,
+                  "is_rifle": true
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "use_cooldown": {
+                  "seconds": 0.25,
+                  "cooldown_group": "bow"
+                },
+                "consumable": {
+                  "animation": "bow",
+                  "consume_seconds": 0.01,
+                  "has_consume_particles": false,
+                  "sound": "ui.button.click"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

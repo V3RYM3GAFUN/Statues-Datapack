@@ -1,31 +1,39 @@
 {
-  "functions": [
+  "pools": [
     {
-      "function": "set_item",
-      "item": "stick"
-    },
-    {
-      "function": "set_components",
-      "components": {
-        "custom_data": {
-          "001_ability": true
-        },
-        "item_name": "[{\"translate\":\"statues.item.001.ability.name\",\"italic\":false,\"color\":\"dark_gray\",\"bold\": true}]",
-        "lore": [
-          "{\"translate\":\"statues.item.001.ability.lore.line1\",\"italic\":false}",
-          "{\"translate\":\"statues.item.001.ability.lore.line2\",\"italic\":false}",
-          "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"3\",\"italic\": false},{\"text\":\"0\",\"italic\": false}]}]"
-        ],
-        "consumable": {
-          "animation": "bow",
-          "consume_seconds": 0.01,
-          "has_consume_particles": false,
-          "sound": "entity.puffer_fish.flop"
-        },
-        "use_cooldown": {
-          "seconds": 180
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": {
+                  "001_ability": true
+                },
+                "item_name": "[{\"translate\":\"statues.item.001.ability.name\",\"italic\":false,\"color\":\"dark_gray\",\"bold\": true}]",
+                "lore": [
+                  "{\"translate\":\"statues.item.001.ability.lore.line1\",\"italic\":false}",
+                  "{\"translate\":\"statues.item.001.ability.lore.line2\",\"italic\":false}",
+                  "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"3\",\"italic\": false},{\"text\":\"0\",\"italic\": false}]}]"
+                ],
+                "consumable": {
+                  "animation": "bow",
+                  "consume_seconds": 0.01,
+                  "has_consume_particles": false,
+                  "sound": "entity.puffer_fish.flop"
+                },
+                "use_cooldown": {
+                  "seconds": 180,
+                  "cooldown_group": "ability"
+                }
+              }
+            }
+          ]
         }
-      }
+      ]
     }
   ]
 }

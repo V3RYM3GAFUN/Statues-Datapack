@@ -1,32 +1,40 @@
 {
-  "functions": [
+  "pools": [
     {
-      "function": "set_item",
-      "item": "stick"
-    },
-    {
-      "function": "set_components",
-      "components": {
-        "custom_data": {
-          "runner_ability": true
-        },
-        "item_name": "[{\"translate\":\"statues.item.runner.ability.name\",\"italic\":false,\"color\":\"blue\"}]",
-        "lore": [
-          "{\"translate\":\"statues.item.runner.ability.lore.line1\",\"italic\":false}",
-          "{\"translate\":\"statues.item.runner.ability.lore.line2\",\"italic\":false}",
-          "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"5\",\"italic\": false},{\"text\":\"0\",\"italic\": false}]}]"
-        ],
-        "consumable": {
-          "animation": "bow",
-          "consume_seconds": 0.01,
-          "has_consume_particles": false,
-          "sound": "entity.bat.takeoff"
-        },
-        "use_cooldown": {
-          "seconds": 300
-        },
-        "item_model": "statues:survivors/abilities/dopamine"
-      }
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": {
+                  "runner_ability": true
+                },
+                "item_name": "[{\"translate\":\"statues.item.runner.ability.name\",\"italic\":false,\"color\":\"blue\"}]",
+                "lore": [
+                  "{\"translate\":\"statues.item.runner.ability.lore.line1\",\"italic\":false}",
+                  "{\"translate\":\"statues.item.runner.ability.lore.line2\",\"italic\":false}",
+                  "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"5\",\"italic\": false},{\"text\":\"0\",\"italic\": false}]}]"
+                ],
+                "consumable": {
+                  "animation": "bow",
+                  "consume_seconds": 0.01,
+                  "has_consume_particles": false,
+                  "sound": "entity.bat.takeoff"
+                },
+                "use_cooldown": {
+                  "seconds": 300,
+                  "cooldown_group": "ability"
+                },
+                "item_model": "statues:survivors/abilities/dopamine"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

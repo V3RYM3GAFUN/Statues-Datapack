@@ -1,31 +1,39 @@
 {
-  "functions": [
+  "pools": [
     {
-      "function": "set_item",
-      "item": "stick"
-    },
-    {
-      "function": "set_components",
-      "components": {
-        "custom_data": {
-          "brawler_ability": true
-        },
-        "item_name": "[{\"translate\":\"statues.item.brawler.ability.name\",\"italic\":false,\"color\":\"red\"}]",
-        "lore": [
-          "{\"translate\":\"statues.item.brawler.ability.lore.line1\",\"italic\":false}",
-          "{\"translate\":\"statues.item.brawler.ability.lore.line2\",\"italic\":false}",
-          "[{\"translate\":\"statues.item.cooldown.sec\",\"with\":[{\"text\":\"90\",\"italic\": false}]}]"
-        ],
-        "consumable": {
-          "animation": "bow",
-          "consume_seconds": 0.01,
-          "has_consume_particles": false,
-          "sound": "block.anvil.place"
-        },
-        "use_cooldown": {
-          "seconds": 90
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": {
+                  "brawler_ability": true
+                },
+                "item_name": "[{\"translate\":\"statues.item.brawler.ability.name\",\"italic\":false,\"color\":\"red\"}]",
+                "lore": [
+                  "{\"translate\":\"statues.item.brawler.ability.lore.line1\",\"italic\":false}",
+                  "{\"translate\":\"statues.item.brawler.ability.lore.line2\",\"italic\":false}",
+                  "[{\"translate\":\"statues.item.cooldown.sec\",\"with\":[{\"text\":\"90\",\"italic\": false}]}]"
+                ],
+                "consumable": {
+                  "animation": "bow",
+                  "consume_seconds": 0.01,
+                  "has_consume_particles": false,
+                  "sound": "block.anvil.place"
+                },
+                "use_cooldown": {
+                  "seconds": 90,
+                  "cooldown_group": "ability"
+                }
+              }
+            }
+          ]
         }
-      }
+      ]
     }
   ]
 }

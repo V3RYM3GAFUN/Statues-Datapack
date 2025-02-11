@@ -1,32 +1,40 @@
 {
-  "functions": [
+  "pools": [
     {
-      "function": "set_item",
-      "item": "stick"
-    },
-    {
-      "function": "set_components",
-      "components": {
-        "custom_data": {
-          "marksman_ability": true
-        },
-        "item_name": "[{\"translate\":\"statues.item.marksman.ability.name\",\"italic\":false,\"color\":\"dark_gray\"}]",
-        "lore": [
-          "{\"translate\":\"statues.item.marksman.ability.lore.line1\",\"italic\":false}",
-          "{\"translate\":\"statues.item.marksman.ability.lore.line2\",\"italic\":false}",
-          "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"3\",\"italic\": false},{\"text\":\"30\",\"italic\": false}]}]"
-        ],
-        "consumable": {
-          "animation": "bow",
-          "consume_seconds": 0.01,
-          "has_consume_particles": false,
-          "sound": "item.lodestone_compass.lock"
-        },
-        "use_cooldown": {
-          "seconds": 210
-        },
-        "item_model": "statues:survivors/abilities/xray"
-      }
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": {
+                  "marksman_ability": true
+                },
+                "item_name": "[{\"translate\":\"statues.item.marksman.ability.name\",\"italic\":false,\"color\":\"dark_gray\"}]",
+                "lore": [
+                  "{\"translate\":\"statues.item.marksman.ability.lore.line1\",\"italic\":false}",
+                  "{\"translate\":\"statues.item.marksman.ability.lore.line2\",\"italic\":false}",
+                  "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"3\",\"italic\": false},{\"text\":\"30\",\"italic\": false}]}]"
+                ],
+                "consumable": {
+                  "animation": "bow",
+                  "consume_seconds": 0.01,
+                  "has_consume_particles": false,
+                  "sound": "item.lodestone_compass.lock"
+                },
+                "use_cooldown": {
+                  "seconds": 210,
+                  "cooldown_group": "ability"
+                },
+                "item_model": "statues:survivors/abilities/xray"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
