@@ -7,7 +7,7 @@
     "minecraft:area_effect_cloud",
     "minecraft:armor_stand",
     "minecraft:arrow",
-    "minecraft:boat",
+    "#boat",
     "minecraft:dragon_fireball",
     "minecraft:egg",
     "minecraft:evoker_fangs",
