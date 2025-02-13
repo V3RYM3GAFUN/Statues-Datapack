@@ -1,3 +1,5 @@
+execute unless function statues:feature_flags/check_survivors_heartbeat_flags run return fail
+
 scoreboard players remove @s Statues.Heartbeat 1
 
 execute positioned ~-3.5 ~.75 ~-3.5 if entity @p[team=Survivor,dx=6,dy=2,dz=6,limit=1] run return run function statues:mechanics/survivors_heartbeat/monsters/close
