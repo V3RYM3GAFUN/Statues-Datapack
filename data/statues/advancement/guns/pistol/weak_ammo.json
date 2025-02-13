@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/raycasting/shoot_weak_ammo/ammo_check_pistol"
+    "function": "statues:ingame/mechanics/raycasting/shoot_weak_ammo/ammo_check/pistol"
   }
 }

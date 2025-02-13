@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/raycasting/shotgun/shoot_weak_ammo/ammo_check_shotgun"
+    "function": "statues:ingame/mechanics/raycasting/shotgun/shoot_weak_ammo/ammo_check"
   }
 }
