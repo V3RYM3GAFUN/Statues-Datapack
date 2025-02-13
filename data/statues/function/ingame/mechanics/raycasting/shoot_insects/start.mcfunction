@@ -1,10 +1,11 @@
+advancement revoke @s only statues:guns/insects
 tag @s add raycaster
 
+playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
 execute anchored eyes positioned ^ ^ ^ run function statues:ingame/mechanics/raycasting/shoot_insects/tick
-
-loot give @s loot statues:items/monsters/004
 
 tag @s remove raycaster
 scoreboard players reset $RaycastDistance Statues.Raycast
 
-advancement revoke @s only statues:guns/insects
+execute if items entity @s weapon *[custom_data~{insect_launcher:true}] run return run function statues:ingame/mechanics/raycasting/shoot_insects/reset {hand:"mainhand"}
+function statues:ingame/mechanics/raycasting/shoot_insects/reset {hand:"offhand"}

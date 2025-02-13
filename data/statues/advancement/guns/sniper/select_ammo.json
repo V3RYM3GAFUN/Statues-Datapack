@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/raycasting/switch_ammo_sniper"
+    "function": "statues:ingame/mechanics/raycasting/switch_ammo/sniper"
   }
 }
