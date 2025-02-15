@@ -36,6 +36,8 @@ scoreboard objectives add Statues.ReplayData dummy
 scoreboard objectives add Statues.Raycast dummy
 scoreboard objectives add Statues.AmmoSelect custom:drop
 
+scoreboard objectives add Statues.SongSelect dummy
+scoreboard objectives add Statues.SongTimer dummy
 
 function statues:game_events/init
 
@@ -86,7 +88,7 @@ team modify Monster friendlyFire false
 team modify Survivor color aqua
 team modify Survivor collisionRule pushOwnTeam
 team modify Survivor nametagVisibility hideForOtherTeams
-team modify Survivor friendlyFire true
+team modify Survivor friendlyFire false
 team modify Lobby color gray
 team modify Lobby friendlyFire false
 team modify Lobby nametagVisibility always

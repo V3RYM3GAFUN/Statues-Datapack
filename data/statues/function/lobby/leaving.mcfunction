@@ -36,3 +36,7 @@ scoreboard players reset @s Statues.DynamicData
 
 scoreboard players set @s Statues.Dead 0
 scoreboard players set @s Player.Leave 0
+
+#> Resets the music handler for that player
+scoreboard players set @s Statues.SongSelect 1
+scoreboard players set @s Statues.SongTimer -1

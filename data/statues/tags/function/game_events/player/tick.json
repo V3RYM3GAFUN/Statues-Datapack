@@ -10,6 +10,7 @@
     "statues:game_events/mechanics/blood_trails/player_tick",
     "statues:game_events/mechanics/survivors_heartbeat/player_tick",
     "statues:game_events/mechanics/survivors_healthbar/player_tick",
-    "statues:game_events/mechanics/game_replay/player_tick"
+    "statues:game_events/mechanics/game_replay/player_tick",
+    "statues:mechanics/music_handler/player_tick"
   ]
 }
