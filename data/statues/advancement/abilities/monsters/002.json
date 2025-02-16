@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/monsters/abilities/002"
+    "function": "statues:ingame/mechanics/monsters/abilities/002/trigger"
   }
 }

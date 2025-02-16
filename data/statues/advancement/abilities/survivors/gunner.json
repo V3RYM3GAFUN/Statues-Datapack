@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/survivors/abilities/gunner"
+    "function": "statues:ingame/mechanics/survivors/abilities/gunner/trigger"
   }
 }

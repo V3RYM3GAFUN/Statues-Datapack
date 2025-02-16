@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/survivors/abilities/medic"
+    "function": "statues:ingame/mechanics/survivors/abilities/medic/trigger"
   }
 }

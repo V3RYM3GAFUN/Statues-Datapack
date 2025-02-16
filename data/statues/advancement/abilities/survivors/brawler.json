@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/survivors/abilities/brawler"
+    "function": "statues:ingame/mechanics/survivors/abilities/brawler/trigger"
   }
 }

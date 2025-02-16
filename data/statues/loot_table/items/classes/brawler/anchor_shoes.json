@@ -21,7 +21,7 @@
                 ],
                 "consumable": {
                   "animation": "bow",
-                  "consume_seconds": 0.01,
+                  "consume_seconds": 0.05,
                   "has_consume_particles": false,
                   "sound": "block.anvil.place"
                 },

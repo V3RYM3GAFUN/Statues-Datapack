@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/survivors/abilities/marksman"
+    "function": "statues:ingame/mechanics/survivors/abilities/marksman/trigger"
   }
 }

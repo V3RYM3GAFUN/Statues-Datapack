@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/survivors/abilities/runner"
+    "function": "statues:ingame/mechanics/survivors/abilities/runner/trigger"
   }
 }
