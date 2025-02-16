@@ -59,6 +59,9 @@
     "glass",
     "glass_pane",
     "#candles",
-    "#banners"
+    "#banners",
+    "#doors",
+    "#trapdoors",
+    "light"
   ]
 }
