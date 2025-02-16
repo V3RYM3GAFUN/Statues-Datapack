@@ -14,7 +14,7 @@ attribute @s fall_damage_multiplier base set 0
 
 
 #> Stats specific to 002
-attribute @s movement_speed modifier add statues:super_quick 1.05 add_multiplied_base
+attribute @s movement_speed modifier add statues:super_quick 0.35 add_value
 attribute @s step_height modifier add statues:step 0.75 add_value
 effect give @s darkness infinite 0 true
 attribute @s scale base set 0.85

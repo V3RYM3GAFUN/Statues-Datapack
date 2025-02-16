@@ -14,7 +14,7 @@ attribute @s fall_damage_multiplier base set 0
 attribute @s step_height modifier add statues:step 0.75 add_value
 
 #> Stats specific to 000
-attribute @s movement_speed modifier add statues:super_quick 1.2 add_multiplied_base
+attribute @s movement_speed modifier add statues:super_quick 0.4 add_value
 attribute @s entity_interaction_range modifier add extra_reach 0.5 add_value
 attribute @s attack_damage modifier add statues:damage 2 add_value
 attribute @s scale base set 0.9

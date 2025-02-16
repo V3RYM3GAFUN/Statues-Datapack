@@ -15,6 +15,7 @@ attribute @s fall_damage_multiplier base set 0
 attribute @s step_height modifier add statues:step 0.75 add_value
 
 #> Stats specific to 003
+attribute @s movement_speed modifier add statues:super_quick 0.05 add_value
 effect give @s mining_fatigue infinite 5 true
 attribute @s attack_damage modifier add statues:damage 1 add_value
 attribute @s scale base set 1.111

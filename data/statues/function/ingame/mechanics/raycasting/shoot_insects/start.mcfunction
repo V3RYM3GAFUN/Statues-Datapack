@@ -1,7 +1,7 @@
 advancement revoke @s only statues:guns/insects
 tag @s add raycaster
 
-playsound entity.bee.hurt hostile @a ~ ~ ~ 5 1
+playsound entity.bee.hurt hostile @a ~ ~ ~ 2 1
 execute anchored eyes positioned ^ ^ ^ run function statues:ingame/mechanics/raycasting/shoot_insects/tick
 
 tag @s remove raycaster
