@@ -4,4 +4,4 @@ execute if entity @s[y_rotation=90] align xyz run execute align xyz positioned ~
 
 tag @e[tag=doord_init_close] add doord_init
 
-playsound minecraft:block.trial_spawner.spawn_mob master @a ~ ~ ~ .5 1.5
+playsound statues:game.door.small.close master @a ~ ~ ~ 1 1

@@ -16,4 +16,4 @@ tag @e[tag=doord_init_open_left_dx] add doord_init
 tag @e[tag=doord_init_open_right_dz] add doord_init
 tag @e[tag=doord_init_open_left_dz] add doord_init
 
-playsound minecraft:block.trial_spawner.spawn_mob master @a ~ ~ ~ .5 2
+playsound statues:game.door.small.open master @a ~ ~ ~ 1 1
