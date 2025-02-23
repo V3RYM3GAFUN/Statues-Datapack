@@ -8,6 +8,7 @@ execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players s
 execute if score doors_2x2 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set doors_2x2 Statues.FeatureFlags 0
 execute if score doors Statues.FeatureFlags matches ..0 run scoreboard players set doors_3x3 Statues.FeatureFlags -1
 execute if score doors_3x3 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set doors_3x3 Statues.FeatureFlags 0
+execute if score doors_5x3 Statues.FeatureFlags matches -1 if score doors Statues.FeatureFlags matches 1.. run scoreboard players set doors_5x3 Statues.FeatureFlags 0
 execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_2x3x2 Statues.FeatureFlags -1
 execute if score elevator_2x3x2 Statues.FeatureFlags matches -1 if score elevator Statues.FeatureFlags matches 1.. run scoreboard players set elevator_2x3x2 Statues.FeatureFlags 0
 execute if score elevator Statues.FeatureFlags matches ..0 run scoreboard players set elevator_3x3x3 Statues.FeatureFlags -1
