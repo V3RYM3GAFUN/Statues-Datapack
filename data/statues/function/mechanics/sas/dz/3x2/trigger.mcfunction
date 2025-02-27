@@ -1,4 +1,4 @@
-scoreboard players set @s Statues.Sas 50
+scoreboard players set @s Statues.Sas 60
 tag @s add triggered
 
-execute at @s positioned ~-6 ~-1 ~ as @e[dx=12,dy=1,dz=0,type=marker,tag=machine_sas_doordz] at @s run function statues:mechanics/sas/dz/3x2/close
+execute at @s positioned ~-3 ~-1 ~ as @e[dx=6,dy=1,dz=0,type=marker,tag=machine_sas_doordz] at @s run function statues:mechanics/sas/dz/3x2/close

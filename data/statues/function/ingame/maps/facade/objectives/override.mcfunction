@@ -8,8 +8,7 @@ scoreboard players set $Objective Statues.DynamicData 6
 
 execute as @a[team=!Monster] at @s run playsound minecraft:block.trial_spawner.spawn_mob master @a ~ ~ ~ 1 2
 
-fill -5 78 48 -5 79 48 air
-fill -5 78 53 -5 79 53 air
+execute as @n[tag=machine_sas,tag=sas_1x2,type=marker] at @s positioned ~ ~-1 ~-3 as @e[dx=0,dy=1,dz=6,type=marker,tag=machine_sas_doordx] at @s run function statues:mechanics/sas/dx/1x2/open
 
 execute at @e[tag=objective_facade_override] run function statues:utils/button_crimson_to_warped
 

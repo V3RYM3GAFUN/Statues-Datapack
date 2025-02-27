@@ -16,8 +16,7 @@ execute as @e[tag=objective_facade_labkey,type=text_display] run data modify ent
 
 #> Override doors
 execute as @e[tag=objective_facade_override,type=text_display] run data modify entity @s text set value "{\"translate\":\"statues.text.facade.objective.override\",\"color\":\"dark_red\"}"
-fill -5 78 48 -5 79 48 iron_block
-fill -5 78 53 -5 79 53 iron_block
+execute as @e[tag=machine_sas,tag=sas_1x2,type=marker] at @s positioned ~ ~-1 ~-3 as @e[dx=0,dy=1,dz=6,type=marker,tag=machine_sas_doordx] at @s run function statues:mechanics/sas/dx/1x2/close
 
 #> Remove the background of Main Power text
 execute as @e[tag=objective_facade_power,type=text_display] run data modify entity @s background set value 0
@@ -46,7 +45,10 @@ execute as @e[tag=facade_armory,type=interaction] run tag @s remove opened
 clone -41 31 14 -41 29 16 -41 36 14
 
 #> Clears every container that had an item in it
-execute as @e[tag=objective_reset] at @s run data merge block ~ ~ ~ {Items:[]}
+execute as @e[tag=objective_reset,type=marker,x=0] at @s run data merge block ~ ~ ~ {Items:[]}
+
+#> Resets monster spawn text
+execute as @e[tag=monster_text,type=text_display] run data modify entity @s text set value '{"translate": "statues.text.monster.spawn","bold": true,"color": "red"}'
 
 #> Unload the map
 forceload remove 95 79 -112 -80
