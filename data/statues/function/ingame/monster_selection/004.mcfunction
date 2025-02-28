@@ -16,14 +16,14 @@ attribute @s step_height modifier add statues:step 0.75 add_value
 #> Stats specific to 004
 attribute @s attack_damage modifier add statues:damage -1 add_multiplied_base
 #> General armour
-item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
-item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
-item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
+item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true,"color": "white"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
+item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true,"color": "white"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
+item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true,"color": "white"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 
 loot replace entity @s hotbar.8 loot statues:items/dynamic_map_survivor
 
 #> Items specific to 004
-item replace entity @s armor.head with skeleton_skull[item_name='{"translate": "statues.item.004.head","bold": true,"italic": false}']
+item replace entity @s armor.head with stick[item_name='{"translate": "statues.item.004.head","bold": true,"italic": false,"color": "white"}',item_model="statues:monsters/skeleton",enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 
 loot replace entity @s weapon.mainhand loot statues:items/monsters/004
 

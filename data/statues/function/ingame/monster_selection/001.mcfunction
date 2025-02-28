@@ -19,14 +19,14 @@ attribute @s entity_interaction_range modifier add extra_reach 1.5 add_value
 attribute @s scale base set 1.3
 
 #> General armour
-item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
-item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
-item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
+item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true,"color": "white"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
+item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true,"color": "white"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
+item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true,"color": "white"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 
 loot replace entity @s hotbar.8 loot statues:items/dynamic_map_survivor
 
 #> Items specific to 001
-item replace entity @s armor.head with stick[item_model="statues:monsters/elephant",item_name='{"translate": "statues.item.001.head","color": "dark_gray","bold": true,"italic": false}']
+item replace entity @s armor.head with stick[item_model="statues:monsters/elephant",item_name='{"translate": "statues.item.001.head","color": "dark_gray","bold": true,"italic": false}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 
 loot replace entity @s weapon.offhand loot statues:items/monsters/001
 loot replace entity @s hotbar.0 loot statues:items/monsters/001

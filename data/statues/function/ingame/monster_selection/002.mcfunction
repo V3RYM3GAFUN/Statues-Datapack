@@ -21,14 +21,14 @@ attribute @s scale base set 0.85
 
 
 #> General armour
-item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
-item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
-item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true}']
+item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true,"color": "white"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
+item replace entity @s armor.legs with netherite_leggings[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true,"color": "white"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
+item replace entity @s armor.chest with netherite_chestplate[unbreakable={show_in_tooltip:0b},item_name='{"translate": "statues.item.statue.armor","italic": false,"bold": true,"color": "white"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 
 loot replace entity @s hotbar.8 loot statues:items/dynamic_map_survivor
 
 #> Items specific to 002
-item replace entity @s armor.head with jack_o_lantern[item_name='{"translate": "statues.item.002.head","bold": true,"italic": false,"color": "gold"}']
+item replace entity @s armor.head with jack_o_lantern[item_name='{"translate": "statues.item.002.head","bold": true,"italic": false,"color": "gold"}',enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 
 loot replace entity @s hotbar.0 loot statues:items/monsters/002
 loot replace entity @s weapon.offhand loot statues:items/monsters/002

@@ -13,13 +13,13 @@ loot replace entity @s hotbar.5 loot statues:items/dynamic_map_survivor
 
 loot replace entity @s hotbar.3 loot statues:items/classes/trapper/trap
 
-item replace entity @s armor.head with player_head[item_name='{"translate":"statues.item.trapper.helmet"}',profile={id:[I;183527404,-589148335,-2024239231,1720157330],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZGVjMDRkMjM4MGNkNzcwMjdmOWQ0NDQ1NWM5OGI3ZWRjNWY2NjRjYTBkZDMwYTYxMDY5MDM5MTUzOTFkYiJ9fX0="}]}]
+item replace entity @s armor.head with player_head[item_name='{"translate":"statues.item.trapper.helmet"}',profile={id:[I;183527404,-589148335,-2024239231,1720157330],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZGVjMDRkMjM4MGNkNzcwMjdmOWQ0NDQ1NWM5OGI3ZWRjNWY2NjRjYTBkZDMwYTYxMDY5MDM5MTUzOTFkYiJ9fX0="}]},enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 
 loot replace entity @s hotbar.4 loot statues:items/classes/trapper/emp
 
-item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:0b},item_name='[{"translate":"statues.item.trapper.outfit","italic":false,"color":"#993300","bold":true}]',dyed_color={rgb:8606770,show_in_tooltip:0b}]
-item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:0b},item_name='[{"translate":"statues.item.trapper.outfit","italic":false,"color":"#993300","bold":true}]',dyed_color={rgb:8606770,show_in_tooltip:0b}]
-item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:0b},item_name='[{"translate":"statues.item.trapper.outfit","italic":false,"color":"#993300","bold":true}]',dyed_color={rgb:8606770,show_in_tooltip:0b}]
+item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:0b},item_name='[{"translate":"statues.item.trapper.outfit","italic":false,"color":"#993300","bold":true}]',dyed_color={rgb:8606770,show_in_tooltip:0b},enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
+item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:0b},item_name='[{"translate":"statues.item.trapper.outfit","italic":false,"color":"#993300","bold":true}]',dyed_color={rgb:8606770,show_in_tooltip:0b},enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
+item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:0b},item_name='[{"translate":"statues.item.trapper.outfit","italic":false,"color":"#993300","bold":true}]',dyed_color={rgb:8606770,show_in_tooltip:0b},enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 
 loot replace entity @s weapon.offhand loot statues:items/flashlight
 
