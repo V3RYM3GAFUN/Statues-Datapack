@@ -5,6 +5,8 @@ execute as @e[type=text_display,tag=objective_facade_genpower] run data modify e
 
 execute as @a[team=!Monster] at @s run playsound minecraft:ui.loom.take_result master @s ~ ~ ~ 1 0
 
+function statues:ingame/maps/common/major_objective
+
 #> Unlock the trapdoors in vents
 # South
 setblock 25 87 27 minecraft:redstone_block

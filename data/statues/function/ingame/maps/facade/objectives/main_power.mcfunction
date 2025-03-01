@@ -14,6 +14,7 @@ execute at @e[tag=objective_facade_power] run function statues:utils/button_crim
 execute at @e[tag=elevator_button_facade_power] run function statues:utils/button_blackstone_to_crimson
 execute as @e[tag=objective_reset,tag=elevator_room_freight] at @s run data merge entity @s {brightness:{block:15,sky:0}}
 
+function statues:ingame/maps/common/major_objective
 function statues:mechanics/power_doors/open
 function statues:mechanics/lights/lights_on
 
