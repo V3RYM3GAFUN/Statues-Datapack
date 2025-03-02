@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/monsters/abilities/001/trigger"
+    "function": "statues:ingame/mechanics/raycasting/grab/start"
   }
 }

@@ -11,12 +11,11 @@ effect give @s saturation infinite 100 true
 attribute @s knockback_resistance modifier add statues:no_knockback 1 add_value
 attribute @s jump_strength base set 0
 attribute @s fall_damage_multiplier base set 0
-
+attribute @s step_height modifier add statues:step 0.75 add_value
 
 #> Stats specific to 002
-attribute @s movement_speed modifier add statues:super_quick 0.2 add_value
-attribute @s step_height modifier add statues:step 0.75 add_value
-effect give @s darkness infinite 0 true
+attribute @s movement_speed modifier add statues:super_quick 0.1 add_value
+effect give @s blindness infinite 0 true
 attribute @s scale base set 0.85
 
 

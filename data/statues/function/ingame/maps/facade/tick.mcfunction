@@ -53,5 +53,3 @@ execute if score $MonsterSpawnDelay Statues.DynamicData matches 0.. unless score
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 0.. if score $ReplayWatching Statues.DynamicData matches 1 unless score $ReplayFreeze Statues.DynamicData matches 1 run scoreboard players remove $MonsterSpawnDelay Statues.DynamicData 1
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 0 run function statues:ingame/maps/facade/monsterspawn
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 0 run bossbar set statues:warptimer visible false
-
-

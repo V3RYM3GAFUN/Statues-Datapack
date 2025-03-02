@@ -14,6 +14,8 @@ team join Survivor @a[team=!Monster,tag=queued]
 tag @a[team=Survivor] add can_use_vent
 tag @a remove queued
 
+execute as @a[team=Survivor] run attribute @s armor modifier add statues:extra_armor 10 add_value
+
 #> Prevents players from hitting each other after getting role
 effect give @a weakness 16 100 true
 

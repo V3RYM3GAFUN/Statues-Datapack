@@ -11,7 +11,7 @@ tellraw @a {"translate": "statues.game.grace_period","bold": true,"color": "aqua
 #> More than enough to fill up potential lost health
 effect give @a[team=Survivor] instant_health 1 5 true
 
-tp @a[team=Survivor] @e[type=marker,tag=facade_survivor_start,limit=1]
+tp @a[team=Survivor] @n[type=marker,tag=facade_survivor_start]
 tag @a[team=Survivor] add has_compass_tracker
 
 #> Set the Core heartbeat timer
