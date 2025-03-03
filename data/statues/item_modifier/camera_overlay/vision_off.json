@@ -4,7 +4,7 @@
     "equippable": {
       "slot": "head",
       "camera_overlay": "statues:misc/empty",
-      "equip_sound": "statues:item.flashlight"
+      "equip_sound": {"sound_id": "statues:item.flashlight"}
     }
   }
 }
