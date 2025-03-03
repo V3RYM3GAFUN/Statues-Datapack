@@ -3,7 +3,8 @@
   "components": {
     "equippable": {
       "slot": "head",
-      "camera_overlay": "statues:misc/flashlight_overlay"
+      "camera_overlay": "statues:misc/flashlight_overlay",
+      "equip_sound": "statues:item.flashlight"
     }
   }
 }

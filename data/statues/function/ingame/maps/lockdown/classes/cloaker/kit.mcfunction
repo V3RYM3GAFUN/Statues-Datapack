@@ -18,7 +18,7 @@ item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_
 item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:0b},item_name='[{"translate":"statues.item.cloaker.outfit","italic":false,"color":"dark_purple","bold":true}]',dyed_color={rgb:8991416,show_in_tooltip:0b},enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:0b},item_name='[{"translate":"statues.item.cloaker.outfit","italic":false,"color":"dark_purple","bold":true}]',dyed_color={rgb:8991416,show_in_tooltip:0b},enchantments={show_in_tooltip:false,levels:{binding_curse:1}},enchantment_glint_override=0b]
 
-# loot replace entity @s weapon.offhand loot statues:items/flashlight
+loot replace entity @s weapon.offhand loot statues:items/flashlight
 
 execute if entity @s[tag=!class_tutorial] run scoreboard players operation $ClassKind Statues.GameEventData = $ClassKind.Cloaker Statues.GameEventEnum
 execute if entity @s[tag=!class_tutorial] run function #statues:game_events/ingame/pick_class_survivor

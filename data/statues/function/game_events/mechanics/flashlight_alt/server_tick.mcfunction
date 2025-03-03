@@ -1,0 +1,1 @@
+execute if score flashlight_alt Statues.FeatureFlags matches 1 run function statues:mechanics/flashlight_alt/tick
