@@ -17,7 +17,7 @@
                 "lore": [
                   "{\"translate\":\"statues.item.000.ability.lore.line1\",\"italic\":false}",
                   "{\"translate\":\"statues.item.000.ability.lore.line2\",\"italic\":false}",
-                  "[{\"translate\":\"statues.item.cooldown.sec\",\"with\":[{\"text\":\"90\",\"italic\": false}]}]"
+                  "[{\"translate\":\"statues.item.cooldown.sec\",\"with\":[{\"text\":\"90\",\"italic\": false}],\"italic\": false}]"
                 ],
                 "consumable": {
                   "animation": "bow",

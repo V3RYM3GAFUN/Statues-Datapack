@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/raycasting/shoot_strong_ammo/ammo_check/pistol"
+    "function": "statues:ingame/mechanics/raycasting/pistol/strong_ammo/ammo_check"
   }
 }

@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/raycasting/shoot_sniper_ammo/ammo_check/rifle"
+    "function": "statues:ingame/mechanics/raycasting/rifle/sniper_ammo/ammo_check"
   }
 }

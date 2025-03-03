@@ -17,7 +17,7 @@
                 "lore": [
                   "{\"translate\":\"statues.item.001.ability.lore.line1\",\"italic\":false}",
                   "{\"translate\":\"statues.item.001.ability.lore.line2\",\"italic\":false}",
-                  "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"3\",\"italic\": false},{\"text\":\"0\",\"italic\": false}]}]"
+                  "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"3\",\"italic\": false},{\"text\":\"0\",\"italic\": false}],\"italic\": false}]"
                 ],
                 "consumable": {
                   "animation": "bow",

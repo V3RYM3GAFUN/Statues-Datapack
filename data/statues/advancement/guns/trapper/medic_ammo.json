@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/raycasting/shoot_medic_ammo/ammo_check/trapper"
+    "function": "statues:ingame/mechanics/raycasting/trapper/medic_ammo/ammo_check"
   }
 }

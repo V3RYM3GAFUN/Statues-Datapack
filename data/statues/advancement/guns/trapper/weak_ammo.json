@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/raycasting/shoot_weak_ammo/ammo_check/trapper"
+    "function": "statues:ingame/mechanics/raycasting/trapper/weak_ammo/ammo_check"
   }
 }

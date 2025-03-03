@@ -15,7 +15,7 @@
                 },
                 "item_name": "[{\"translate\":\"statues.item.shotgunner.ability.name\",\"italic\":false,\"color\":\"yellow\"}]",
                 "lore": [
-                  "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"2\",\"italic\": false},{\"text\":\"30\",\"italic\": false}]}]"
+                  "[{\"translate\":\"statues.item.cooldown.min\",\"with\":[{\"text\":\"2\",\"italic\": false},{\"text\":\"30\",\"italic\": false}],\"italic\": false}]"
                 ],
                 "consumable": {
                   "animation": "bow",

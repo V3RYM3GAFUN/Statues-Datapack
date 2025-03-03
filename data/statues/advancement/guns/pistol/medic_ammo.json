@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/raycasting/shoot_medic_ammo/ammo_check/pistol"
+    "function": "statues:ingame/mechanics/raycasting/pistol/medic_ammo/ammo_check"
   }
 }

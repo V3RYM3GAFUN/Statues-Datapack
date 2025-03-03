@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "shoot": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "is_shotgun": true,
+              "ammo_select": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shoot"
+    ]
+  ],
+  "rewards": {
+    "function": "statues:ingame/mechanics/raycasting/rapid_fire_shotgun/shoot_strong_ammo/ammo_check"
+  }
+}

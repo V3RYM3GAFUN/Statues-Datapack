@@ -20,6 +20,6 @@
     ]
   ],
   "rewards": {
-    "function": "statues:ingame/mechanics/raycasting/shoot_strong_ammo/ammo_check/sniper"
+    "function": "statues:ingame/mechanics/raycasting/sniper/strong_ammo/ammo_check"
   }
 }
