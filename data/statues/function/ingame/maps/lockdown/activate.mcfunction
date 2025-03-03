@@ -14,6 +14,8 @@ effect give @a[team=Survivor] instant_health 1 5 true
 tp @a[team=Survivor] @n[type=marker,tag=lockdown_survivor_start]
 tag @a[team=Survivor] add has_compass_tracker
 
+function statues:mechanics/lights/lights_on
+
 #> Set the Core heartbeat timer
 scoreboard players set $Core.Ticks Statues.DynamicData 20
 

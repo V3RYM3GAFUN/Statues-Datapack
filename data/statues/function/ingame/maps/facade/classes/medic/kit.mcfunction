@@ -1,3 +1,8 @@
+# Teleports the player to the survivor spawn
+setblock ~ ~ ~ air
+execute at @n[type=minecraft:marker,tag=facade_survivor_tp] run spreadplayers ~ ~ 0 2.5 false @s
+rotate @s -90 0
+
 tag @s add medic
 tag @s add class_selected
 scoreboard players set @s Statues.Players 0

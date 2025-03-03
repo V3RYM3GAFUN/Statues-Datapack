@@ -1,3 +1,8 @@
+# Teleports the player to the survivor spawn
+setblock ~ ~ ~ air
+execute at @n[type=minecraft:marker,tag=lockdown_survivor_tp] run spreadplayers ~ ~ 0 2.5 under 60 false @s
+rotate @s -90 0
+
 tag @s add marksman
 tag @s add class_selected
 scoreboard players set @s Statues.Players 0
