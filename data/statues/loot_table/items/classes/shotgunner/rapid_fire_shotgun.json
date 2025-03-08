@@ -27,7 +27,7 @@
                   "seconds": 150,
                   "cooldown_group": "ability"
                 },
-                "item_model": "statues:weapons/survivors/shotgun"
+                "item_model": "statues:weapons/survivors/rapid_fire_shotgun"
               }
             }
           ]
