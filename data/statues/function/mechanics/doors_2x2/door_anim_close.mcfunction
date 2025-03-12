@@ -4,4 +4,4 @@ execute if entity @s[y_rotation=90] align xyz run execute align xyz positioned ~
 
 tag @e[tag=doord_init_close] add doord_init
 
-playsound statues:game.door.small.close master @a ~ ~ ~ 1 1
+playsound statues:game.door.small.close block @a ~ ~ ~ 1 1

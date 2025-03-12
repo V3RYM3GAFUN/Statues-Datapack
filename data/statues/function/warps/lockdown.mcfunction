@@ -1,1 +1,1 @@
-execute in overworld run tp @s -54.5 -1 -490.5 90 0
+execute in statues:maps/lockdown run tp @s 65 105 0 90 0
