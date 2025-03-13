@@ -6,14 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_ingot",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_name",
               "target": "item_name",
               "entity": "this",
               "name": {
-                "translate": "statues.item.armorykey",
+                "translate": "statues.item.lockdown.code",
                 "italic": false
               }
             },
@@ -21,10 +21,9 @@
               "function": "minecraft:set_components",
               "components": {
                 "custom_data": {
-                  "facade_armory_item": true,
+                  "lockdown_code_item": true,
                   "objective_item": true
-                },
-                "item_model": "statues:keys/keycard_red"
+                }
               }
             }
           ]

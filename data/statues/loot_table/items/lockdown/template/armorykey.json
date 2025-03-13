@@ -21,10 +21,10 @@
               "function": "minecraft:set_components",
               "components": {
                 "custom_data": {
-                  "facade_armory_item": true,
+                  "lockdown_armory_item": true,
                   "objective_item": true
                 },
-                "item_model": "statues:keys/keycard_red"
+                "item_model": "statues:keys/keycard_blue"
               }
             }
           ]

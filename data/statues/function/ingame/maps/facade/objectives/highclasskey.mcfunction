@@ -4,7 +4,7 @@ fill 21 108 15 21 109 15 glass_pane
 
 execute as @e[type=minecraft:interaction,tag=objective_facade_highclasskey] run data merge entity @s {height:0}
 
-execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value "{\"text\":\"\"}"
+execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s text set value '{"text":""}'
 execute as @e[type=text_display,tag=objective_facade_highclasskey] run data modify entity @s background set value 0
 
 scoreboard players set $Objective Statues.DynamicData 9

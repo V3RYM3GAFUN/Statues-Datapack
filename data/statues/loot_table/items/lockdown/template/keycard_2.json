@@ -13,7 +13,7 @@
               "target": "item_name",
               "entity": "this",
               "name": {
-                "translate": "statues.item.armorykey",
+                "translate": "statues.item.lockdown.keycard2",
                 "italic": false
               }
             },
@@ -21,7 +21,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "custom_data": {
-                  "facade_armory_item": true,
+                  "lockdown_keycard_2_item": true,
                   "objective_item": true
                 },
                 "item_model": "statues:keys/keycard_red"
