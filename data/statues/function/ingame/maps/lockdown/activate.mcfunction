@@ -68,3 +68,6 @@ execute at @e[tag=armory_ammo_box] run data modify block ~ ~ ~ LootTable set val
 
 #> Stop force loading the chunks once the items have generated
 forceload remove 97 81 -115 -110
+
+#> Timer for the intro cutscene
+scoreboard players set $Timer.Ticks Statues.TempData 380

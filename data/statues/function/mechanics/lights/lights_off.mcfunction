@@ -13,5 +13,7 @@ execute as @e[tag=tlampcx] at @s run setblock ~0.5 ~ ~ light[level=0]
 execute as @e[tag=tlampcz] at @s run setblock ~ ~ ~-0.5 light[level=0]
 execute as @e[tag=tlampcz] at @s run setblock ~ ~ ~0.5 light[level=0]
 
-execute as @e[tag=game_lamp] run data merge entity @s {block_state:{Properties:{lit:"false"}}}
+execute as @e[tag=game_lamp_custom] at @s run setblock ~ ~-1 ~ light[level=0]
 
+execute as @e[tag=game_lamp] run data merge entity @s {block_state:{Properties:{lit:"false"}}}
+execute as @e[tag=game_lamp_custom] run data merge entity @s {item:{components:{item_model:"statues:misc/parking_light_off"}}}

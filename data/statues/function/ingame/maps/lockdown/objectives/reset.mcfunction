@@ -38,12 +38,18 @@ execute as @e[tag=objective_lockdown_keycard2,type=marker] run tag @s remove 1x2
 
 # Lift-off doors
 execute as @e[tag=objective_lockdown_code,type=text_display] run data merge entity @s {text:'{"translate":"statues.text.lockdown.objective.code","color":"red"}',shadow:true,background:0}
+
 execute as @e[tag=objective_lockdown_code,type=text_display,tag=door] run data merge entity @s {text:'{"translate":"statues.text.lockdown.objective.liftoff","color":"red"}',shadow:true,background:0}
 
 execute as @e[type=marker,tag=objective_lockdown_code,tag=big_door] at @s run fill ~ ~ ~ ~ ~5 ~10 minecraft:andesite
 execute as @e[type=marker,tag=objective_lockdown_code,tag=small_door] at @s run fill ~ ~ ~ ~12 ~2 ~ minecraft:andesite
 
 data modify entity @n[tag=monster_text,type=text_display] text set value '{"translate":"statues.text.monster.spawn","color":"red","bold":true}'
+
+# Armory
+execute as @e[tag=lockdown_armory,type=text_display] run data modify entity @s text set value '{"translate":"statues.text.lockdown.objective.armorykey","color":"red"}'
+execute as @e[tag=lockdown_armory,type=interaction] run tag @s remove opened
+clone 67 55 9 67 53 7 67 58 7
 
 #> Unload the map
 forceload remove 95 79 -112 -80

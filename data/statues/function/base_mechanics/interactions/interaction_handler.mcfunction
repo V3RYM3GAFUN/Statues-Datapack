@@ -23,4 +23,4 @@ execute if entity @s[tag=objective_lockdown_fuel] run function statues:ingame/ma
 execute if entity @s[tag=objective_lockdown_keycard1] run function statues:ingame/maps/lockdown/interactions/objective_keycard_1
 execute if entity @s[tag=objective_lockdown_keycard2] run function statues:ingame/maps/lockdown/interactions/objective_keycard_2
 execute if entity @s[tag=objective_lockdown_code] run function statues:ingame/maps/lockdown/interactions/objective_code
-execute if entity @s[tag=lockdown_armory] run function statues:ingame/maps/facade/interactions/armory
+execute if entity @s[tag=lockdown_armory] run function statues:ingame/maps/lockdown/interactions/armory
