@@ -25,3 +25,5 @@ execute as @e[tag=game_lamp_custom] at @s run setblock ~ ~-1 ~ light[level=15]
 
 execute as @e[tag=game_lamp] run data modify entity @s block_state.Properties.lit set value "true"
 execute as @e[tag=game_lamp_custom] run data modify entity @s item.components."minecraft:item_model" set value "statues:misc/parking_light_on"
+
+scoreboard players set $Lights Statues.DynamicData 1

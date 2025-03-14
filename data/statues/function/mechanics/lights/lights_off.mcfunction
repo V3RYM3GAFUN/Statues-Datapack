@@ -17,3 +17,5 @@ execute as @e[tag=game_lamp_custom] at @s run setblock ~ ~-1 ~ light[level=0]
 
 execute as @e[tag=game_lamp] run data modify entity @s block_state.Properties.lit set value "false"
 execute as @e[tag=game_lamp_custom] run data modify entity @s item.components."minecraft:item_model" set value "statues:misc/parking_light_off"
+
+scoreboard players set $Lights Statues.DynamicData 1
