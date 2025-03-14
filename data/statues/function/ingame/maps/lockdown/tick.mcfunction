@@ -1,9 +1,10 @@
 execute unless function statues:feature_flags/check_map_tick_flags run return fail
 
 #> Intro "cutscene" - 19 sec (380 ticks)
-execute as @a at @s run playsound statues:game.lockdown.intro neutral @a ~ ~ ~ 1 1
+execute if score $Timer.Ticks Statues.TempData matches 379 as @a at @s run playsound statues:game.lockdown.intro neutral @a ~ ~ ~ 1 1
 execute if score $Timer.Ticks Statues.TempData matches 1.. run scoreboard players remove $Timer.Ticks Statues.TempData 1
 execute if score $Timer.Ticks Statues.TempData matches 20.. run effect give @a[team=Survivor,tag=class_selected] slowness 1 5 true
+execute if score $Timer.Ticks Statues.TempData matches 20 run function statues:mechanics/lights/lights_off
 
 #> Objective tracking
 # Fuel Objective

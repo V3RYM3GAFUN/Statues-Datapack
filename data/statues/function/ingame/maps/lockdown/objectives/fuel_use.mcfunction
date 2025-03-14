@@ -4,11 +4,8 @@ execute as @a if predicate statues:lockdown/holding_fuel run data merge entity @
 # Put interaction out of the way
 execute as @a if predicate statues:lockdown/holding_fuel run data modify entity @n[tag=objective_lockdown_fuel,type=interaction] height set value 0
 
-# Remove the item
-clear @a iron_ingot[custom_data~{lockdown_fuel_item:1b}] 1
-
 # Sound cue
-execute as @a[team=!Monster] run playsound minecraft:block.brewing_stand.brew neutral @a ~ ~ ~ 1 .8
+execute as @a[team=!Monster] run playsound minecraft:block.brewing_stand.brew neutral @s ~ ~ ~ 1 .8
 
 # Progress the Objective
 scoreboard players add $Objective Statues.DynamicData 1
