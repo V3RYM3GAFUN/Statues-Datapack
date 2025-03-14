@@ -66,8 +66,8 @@ execute if score $Objective Statues.DynamicData matches 14 as @e[tag=objective_l
 execute if score $Objective Statues.DynamicData matches 14 as @e[tag=objective_lockdown_escape,type=marker,x=0] at @s positioned ~-1 ~ ~-1 if entity @a[team=Survivor,dx=2,dy=1,dz=2] run function statues:ingame/maps/lockdown/objectives/escape
 
 # Prevent Monsters from exiting the map
-execute if score $Objective Statues.DynamicData matches 14 at @e[tag=big_door,tag=objective_lockdown_escape,limit=2] as @a[team=Monster,dx=0,dy=3,dz=10] run tp @s ~-1.5 ~ ~
-execute if score $Objective Statues.DynamicData matches 14 at @e[tag=small_door,tag=objective_lockdown_escape,limit=2] as @a[team=Monster,dx=12,dy=3,dz=0] run tp @s ~ ~ ~-1.5
+execute if score $Objective Statues.DynamicData matches 14 at @e[tag=big_door,tag=objective_lockdown_code,limit=2,type=marker,x=0] as @a[team=Monster,dx=0,dy=3,dz=10] at @s run tp @s ~-1.5 ~ ~
+execute if score $Objective Statues.DynamicData matches 14 at @e[tag=small_door,tag=objective_lockdown_code,limit=1,type=marker,x=0] as @a[team=Monster,dx=12,dy=3,dz=0] at @s run tp @s ~ ~ ~-1.5
 
 #> Countdown for monster spawn delay (before they can actually chase survivors)
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 1.. run function statues:ingame/maps/common/warptimer
