@@ -23,7 +23,8 @@
                 "custom_data": {
                   "lockdown_code_item": true,
                   "objective_item": true
-                }
+                },
+                "enchantment_glint_override": true
               }
             }
           ]

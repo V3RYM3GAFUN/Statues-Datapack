@@ -3,11 +3,7 @@
     "icon": {
       "id": "minecraft:iron_ingot",
       "components": {
-        "custom_model_data": {
-          "strings": [
-            "key_v2"
-          ]
-        }
+        "item_model": "statues:keys/key_v2"
       }
     },
     "title": {

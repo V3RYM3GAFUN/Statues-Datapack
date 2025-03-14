@@ -4,4 +4,4 @@ execute unless function statues:feature_flags/check_doors_2x2_flags run return f
 #execute if score $rundoors Statues.TempData matches 1 run function statues:mechanics/doors_2x2/door_tick
 #scoreboard players set $rundoors Statues.TempData 0
 
-execute at @a[gamemode=!spectator] as @n[type=marker,tag=door,distance=..5] run function statues:mechanics/doors_2x2/door_tick
+execute at @a[gamemode=!spectator] as @e[type=marker,tag=door,distance=..5,limit=2,sort=nearest] run function statues:mechanics/doors_2x2/door_tick

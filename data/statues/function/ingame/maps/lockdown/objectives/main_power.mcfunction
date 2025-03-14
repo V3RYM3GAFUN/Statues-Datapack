@@ -17,8 +17,8 @@ function statues:ingame/maps/common/major_objective
 function statues:mechanics/power_doors/open
 function statues:mechanics/lights/lights_on
 
-scoreboard players set $Objective Statues.DynamicData 7
-scoreboard players set $CompassSelector Statues.DynamicData 7
+scoreboard players set $Objective Statues.DynamicData 10
+scoreboard players set $CompassSelector Statues.DynamicData 10
 
 scoreboard players add $Timer.Seconds Statues.DynamicData 300
 

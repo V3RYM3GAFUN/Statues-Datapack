@@ -82,6 +82,9 @@ scoreboard players set $Objective Statues.DynamicData 0
 execute in statues:maps/facade run function statues:ingame/maps/facade/objectives/reset
 execute in statues:maps/facade run function statues:ingame/maps/facade/blockreset
 
+execute in statues:maps/lockdown run function statues:ingame/maps/lockdown/objectives/reset
+execute in statues:maps/lockdown run function statues:ingame/maps/lockdown/blockreset
+
 time set 6000
 weather clear
 

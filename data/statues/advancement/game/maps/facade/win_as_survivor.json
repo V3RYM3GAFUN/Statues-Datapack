@@ -3,11 +3,7 @@
     "icon": {
       "id": "minecraft:stick",
       "components": {
-        "custom_model_data": {
-          "strings": [
-            "crowbar"
-          ]
-        }
+        "item_model":"statues:survivors/crowbar"
       }
     },
     "title": {

@@ -1,6 +1,6 @@
 # Teleports the player to the survivor spawn
 setblock ~ ~ ~ air replace
-execute at @n[type=minecraft:marker,tag=lockdown_survivor_tp] run spreadplayers ~ ~ 3 2 under 60 true @s
+execute at @n[type=minecraft:marker,tag=lockdown_survivor_tp] run spreadplayers ~ ~ 3 2 under 86 true @s
 rotate @s -90 0
 
 tag @s add trapper

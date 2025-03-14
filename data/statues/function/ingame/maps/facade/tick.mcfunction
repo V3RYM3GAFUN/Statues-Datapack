@@ -42,7 +42,9 @@ execute if score $Core.Ticks Statues.DynamicData matches ..0 run scoreboard play
 
 execute as @a unless entity @s[team=!Monster,team=!Survivor] run function statues:ingame/maps/facade/tick_player
 
-execute if score $Objective Statues.DynamicData matches 11 as @e[tag=objective_facade_book] at @s run function statues:ingame/maps/facade/objectives/escape
+# Escape detection
+execute if score $Objective Statues.DynamicData matches 11 as @e[tag=objective_facade_book,type=marker] at @s run particle minecraft:totem_of_undying ~ ~1 ~ 1 0.1 1 0 10 normal
+execute if score $Objective Statues.DynamicData matches 11 as @e[tag=objective_facade_book,type=marker] at @s positioned ~-1 ~ ~-1 if entity @a[team=Survivor,dx=2,dy=1,dz=2] run function statues:ingame/maps/facade/objectives/escape
 
 #> Force monsters who haven't chosen a monster to spawn with a random choice
 execute if score $MonsterSpawnDelay Statues.DynamicData matches 5 as @e[type=marker,tag=facade_monster_choice,sort=random,limit=1] at @s if block ~ ~ ~ light_weighted_pressure_plate run tp @r[team=Monster,tag=!monster_chosen] ~ ~ ~

@@ -14,8 +14,10 @@ scoreboard players operation $MapVote.Max Statues.TempData > @e[tag=mapvote] Sta
 execute as @e[tag=mapvote] if score @s Statues.DynamicData = $MapVote.Max Statues.TempData run tag @s add mapvote_wincandidate
 
 #> Force Façade to be chosen, as it is the only map currently available
-tag @e[tag=mapvote_facade,limit=1] add mapvote_winner
-#tag @e[tag=mapvote_wincandidate,limit=1,sort=random] add mapvote_winner
+# tag @e[tag=mapvote_facade,limit=1] add mapvote_winner
+
+#> Choose a random winner
+tag @e[tag=mapvote_wincandidate,limit=1,sort=random] add mapvote_winner
 
 execute store result score $Map Statues.DynamicData run data get entity @e[tag=mapvote_winner,limit=1] Pos[1]
 

@@ -35,4 +35,4 @@ execute if score $Objective Statues.DynamicData matches 7 unless entity @s[tag=!
 execute if score $Objective Statues.DynamicData matches 9 if entity @s[tag=found_key_7] run function statues:ingame/maps/facade/objectives/bookpickup
 
 #> Detect when a player brought the book back to the van
-execute if score $Objective Statues.DynamicData matches 10.. at @e[tag=objective_facade_book] if entity @s[distance=..2.5] if entity @s[tag=found_key_7] run scoreboard players set $Objective Statues.DynamicData 11
+execute if score $Objective Statues.DynamicData matches 10.. at @e[tag=objective_facade_book] positioned ~-1 ~ ~-1 if entity @s[dx=2,dy=1,dz=2] if entity @s[tag=found_key_7] run scoreboard players set $Objective Statues.DynamicData 11

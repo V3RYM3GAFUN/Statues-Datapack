@@ -1,6 +1,6 @@
 # Teleports the player to the survivor spawn
 setblock ~ ~ ~ air
-execute at @n[type=minecraft:marker,tag=lockdown_survivor_tp] run spreadplayers ~ ~ 0 2.5 under 60 false @s
+execute at @n[type=minecraft:marker,tag=lockdown_survivor_tp] run spreadplayers ~ ~ 0 2.5 under 86 false @s
 rotate @s -90 0
 
 tag @s add marksman

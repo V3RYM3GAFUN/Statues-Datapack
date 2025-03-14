@@ -46,5 +46,6 @@ execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map St
 execute if score $Countdown.Ticks Statues.DynamicData matches 200 if score $Map Statues.DynamicData matches 0 in statues:maps/facade run forceload add 95 79 -112 -80
 
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 1 in statues:maps/lockdown run function statues:ingame/maps/lockdown/activate
+execute if score $Countdown.Ticks Statues.DynamicData matches 200 if score $Map Statues.DynamicData matches 1 in statues:maps/lockdown run forceload add 97 81 -115 -110
 
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 2 in statues:maps/origins run function statues:ingame/maps/origins/activate

@@ -3,11 +3,7 @@
     "icon": {
       "id": "minecraft:stick",
       "components": {
-        "custom_model_data": {
-          "strings": [
-            "elephant"
-          ]
-        }
+        "item_model": "statues:monsters/elephant"
       }
     },
     "title": {
