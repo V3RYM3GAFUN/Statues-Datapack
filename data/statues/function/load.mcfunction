@@ -38,6 +38,8 @@ scoreboard objectives add Statues.AmmoSelect custom:drop
 
 scoreboard objectives add Statues.SongSelect dummy
 scoreboard objectives add Statues.SongTimer dummy
+scoreboard objectives add skip_song trigger "Skip Song"
+scoreboard objectives add previous_song trigger "Previous Song"
 
 function statues:game_events/init
 

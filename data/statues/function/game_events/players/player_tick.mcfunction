@@ -11,3 +11,9 @@ execute if entity @s[team=Survivor,scores={Statues.Dead=1..}] run function statu
 scoreboard players set @s[team=!Survivor] Statues.Dead 0
 
 execute if score @s Player.Leave matches 1.. run function statues:lobby/leaving
+
+execute if score @s skip_song matches 1 run function statues:mechanics/music_handler/control/skip_song
+execute if score @s previous_song matches 1 run function statues:mechanics/music_handler/control/previous_song
+
+scoreboard players enable @s[team=Lobby] previous_song
+scoreboard players enable @s[team=Lobby] skip_song

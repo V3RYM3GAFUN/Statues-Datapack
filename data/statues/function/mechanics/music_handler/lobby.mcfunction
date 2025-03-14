@@ -1,7 +1,7 @@
 # Choose next song when time reaches 0
 execute if score @s Statues.SongTimer matches 0 run scoreboard players add @s Statues.SongSelect 1
 # Go back to first song after last song
-execute if score @s Statues.SongSelect matches 4 run scoreboard players set @s Statues.SongSelect 1
+execute if score @s Statues.SongSelect matches 6 run scoreboard players set @s Statues.SongSelect 1
 # Make timer go down
 execute if score @s Statues.SongTimer matches 0.. run scoreboard players remove @s Statues.SongTimer 1
 
@@ -20,8 +20,22 @@ execute if score @s Statues.SongSelect matches 2 if score @s Statues.SongTimer m
 execute if score @s Statues.SongSelect matches 2 if score @s Statues.SongTimer matches -1 run scoreboard players set @s Statues.SongTimer 5160
 
 #> Song Title: Avery Alexander - Foundation
-# Song time:  7:39 (9180 ticks) + 30
+# Song time:  7:39 (9180 ticks) + 30s
 execute if score @s Statues.SongSelect matches 3 if score @s Statues.SongTimer matches -1 run playsound statues:music.lobby.foundation record @s ~ ~ ~ 1 1
 execute if score @s Statues.SongSelect matches 3 if score @s Statues.SongTimer matches -1 run title @s actionbar [{"translate": "statues.now_playing"},{"text": " - "},{"text": "Avery Alexander: Foundation"}]
 execute if score @s Statues.SongSelect matches 3 if score @s Statues.SongTimer matches -1 run title @s times 0 5s 5t
 execute if score @s Statues.SongSelect matches 3 if score @s Statues.SongTimer matches -1 run scoreboard players set @s Statues.SongTimer 9780
+
+#> Song Title: Avery Alexander - Security Clearance
+# Song time:  5:07 (6140 ticks) + 30s
+execute if score @s Statues.SongSelect matches 4 if score @s Statues.SongTimer matches -1 run playsound statues:music.lobby.security_clearance record @s ~ ~ ~ 1 1
+execute if score @s Statues.SongSelect matches 4 if score @s Statues.SongTimer matches -1 run title @s actionbar [{"translate": "statues.now_playing"},{"text": " - "},{"text": "Avery Alexander: Security Clearance"}]
+execute if score @s Statues.SongSelect matches 4 if score @s Statues.SongTimer matches -1 run title @s times 0 5s 5t
+execute if score @s Statues.SongSelect matches 4 if score @s Statues.SongTimer matches -1 run scoreboard players set @s Statues.SongTimer 6740
+
+#> Song Title: Avery Alexander - Guise
+# Song time:  4:51 (5820 ticks) + 30s
+execute if score @s Statues.SongSelect matches 5 if score @s Statues.SongTimer matches -1 run playsound statues:music.lobby.guise record @s ~ ~ ~ 1 1
+execute if score @s Statues.SongSelect matches 5 if score @s Statues.SongTimer matches -1 run title @s actionbar [{"translate": "statues.now_playing"},{"text": " - "},{"text": "Avery Alexander: Guise"}]
+execute if score @s Statues.SongSelect matches 5 if score @s Statues.SongTimer matches -1 run title @s times 0 5s 5t
+execute if score @s Statues.SongSelect matches 5 if score @s Statues.SongTimer matches -1 run scoreboard players set @s Statues.SongTimer 6420
