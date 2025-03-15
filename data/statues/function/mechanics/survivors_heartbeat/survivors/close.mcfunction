@@ -1,2 +1,2 @@
-execute if score @s Statues.Heartbeat matches 0 at @s run playsound block.note_block.basedrum master @s ~ ~ ~ 1 1.85
+execute if score @s Statues.Heartbeat matches 0 at @s run playsound block.note_block.basedrum master @s ~ ~ ~ 1 1.9
 execute if score @s Statues.Heartbeat matches ..-1 run return run scoreboard players set @s Statues.Heartbeat 10
