@@ -43,6 +43,9 @@
                       "show_icon": false
                     }
                   ]
+                },
+                "custom_data": {
+                  "strong_ammo":true
                 }
               }
             }
@@ -92,6 +95,9 @@
                       "show_icon": false
                     }
                   ]
+                },
+                "custom_data": {
+                  "weak_ammo":true
                 }
               }
             }
