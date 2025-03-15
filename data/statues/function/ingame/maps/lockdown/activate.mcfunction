@@ -4,6 +4,8 @@ time set 18000
 weather rain
 
 tp @a[team=Monster] @e[type=marker,tag=lockdown_monster_start,limit=1]
+tp @a[team=Survivor] @n[type=marker,tag=lockdown_survivor_start]
+tag @a[team=Survivor] add has_compass_tracker
 
 scoreboard players set $MonsterSpawnDelay Statues.DynamicData 1800
 tellraw @a {"translate": "statues.game.grace_period","bold": true,"color": "aqua"}
@@ -11,9 +13,7 @@ tellraw @a {"translate": "statues.game.grace_period","bold": true,"color": "aqua
 #> More than enough to fill up potential lost health
 effect give @a[team=Survivor] instant_health 1 5 true
 
-tp @a[team=Survivor] @n[type=marker,tag=lockdown_survivor_start]
-tag @a[team=Survivor] add has_compass_tracker
-
+#> Turn on Lights for the cutscene
 function statues:mechanics/lights/lights_on
 
 #> Set the Core heartbeat timer
@@ -70,4 +70,4 @@ execute at @e[tag=armory_ammo_box] run data modify block ~ ~ ~ LootTable set val
 forceload remove 97 81 -115 -110
 
 #> Timer for the intro cutscene
-scoreboard players set $Timer.Ticks Statues.TempData 380
+scoreboard players set $Timer.Ticks Statues.TempData 460
