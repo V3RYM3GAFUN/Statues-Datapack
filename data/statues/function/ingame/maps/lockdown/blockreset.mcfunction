@@ -29,3 +29,8 @@ setblock 11 94 67 air
 setblock 11 94 67 minecraft:jungle_door[facing=west,open=false,hinge=right,half=lower,powered=false]
 setblock 11 95 67 air
 setblock 11 95 67 minecraft:jungle_door[facing=west,open=false,hinge=right,half=upper,powered=false]
+
+setblock 20 94 67 air
+setblock 20 94 67 minecraft:crimson_door[powered=false,open=false,facing=east,hinge=right,half=lower]
+setblock 20 95 67 air
+setblock 20 95 67 minecraft:crimson_door[powered=false,open=false,facing=east,hinge=right,half=upper]
