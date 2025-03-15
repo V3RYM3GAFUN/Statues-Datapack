@@ -42,10 +42,10 @@ execute if score $Countdown.Ticks Statues.DynamicData matches 100 run kill @e[ta
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 run scoreboard players set $Status Statues.DynamicData 3
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 run function #statues:game_events/ingame/game_start
 
-execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 0 in statues:maps/facade run function statues:ingame/maps/facade/activate
 execute if score $Countdown.Ticks Statues.DynamicData matches 200 if score $Map Statues.DynamicData matches 0 in statues:maps/facade run forceload add 95 79 -112 -80
+execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 0 in statues:maps/facade run function statues:ingame/maps/facade/activate
 
+execute if score $Countdown.Ticks Statues.DynamicData matches 20 if score $Map Statues.DynamicData matches 1 in statues:maps/lockdown run forceload add 97 81 -115 -110
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 1 in statues:maps/lockdown run function statues:ingame/maps/lockdown/activate
-execute if score $Countdown.Ticks Statues.DynamicData matches 200 if score $Map Statues.DynamicData matches 1 in statues:maps/lockdown run forceload add 97 81 -115 -110
 
 execute if score $Countdown.Ticks Statues.DynamicData matches 0 if score $Map Statues.DynamicData matches 2 in statues:maps/origins run function statues:ingame/maps/origins/activate
