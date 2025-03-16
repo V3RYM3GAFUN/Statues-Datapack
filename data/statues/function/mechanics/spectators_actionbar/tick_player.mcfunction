@@ -1,12 +1,16 @@
 execute unless function statues:feature_flags/check_spectators_actionbar_flags run return fail
 tag @p[team=!Spectator,team=!Dev,team=!Lobby,gamemode=!spectator] add spectator_tracker
+
 execute unless entity @a[tag=spectator_tracker] run return fail
-execute store result score $PythagorasX Statues.TempData run data get entity @s Pos[0] 10
-execute store result score $PythagorasY Statues.TempData run data get entity @s Pos[1] 10
-execute store result score $PythagorasZ Statues.TempData run data get entity @s Pos[2] 10
-execute store result score $SpectatorXTo Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Pos[0] 10
-execute store result score $SpectatorYTo Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Pos[1] 10
-execute store result score $SpectatorZTo Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Pos[2] 10
+
+execute at @s summon marker run function statues:mechanics/spectators_actionbar/get_spectator_location
+#execute store result score $PythagorasX Statues.TempData run data get entity @s Pos[0] 10
+#execute store result score $PythagorasY Statues.TempData run data get entity @s Pos[1] 10
+#execute store result score $PythagorasZ Statues.TempData run data get entity @s Pos[2] 10
+execute at @a[tag=spectator_tracker,limit=1] summon marker run function statues:mechanics/spectators_actionbar/get_player_location
+#execute store result score $SpectatorXTo Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Pos[0] 10
+#execute store result score $SpectatorYTo Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Pos[1] 10
+#execute store result score $SpectatorZTo Statues.TempData run data get entity @a[tag=spectator_tracker,limit=1] Pos[2] 10
 scoreboard players operation $PythagorasX Statues.TempData -= $SpectatorXTo Statues.TempData
 scoreboard players operation $PythagorasY Statues.TempData -= $SpectatorYTo Statues.TempData
 scoreboard players operation $PythagorasZ Statues.TempData -= $SpectatorZTo Statues.TempData
