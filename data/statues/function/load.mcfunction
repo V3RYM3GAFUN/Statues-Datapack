@@ -36,6 +36,7 @@ scoreboard objectives add Statues.ReplayData dummy
 scoreboard objectives add Statues.Raycast dummy
 scoreboard objectives add Statues.AmmoSelect custom:drop
 scoreboard objectives add Statues.Chase dummy
+scoreboard objectives add Statues.DynamicMapId dummy
 
 scoreboard objectives add Statues.SongSelect dummy
 scoreboard objectives add Statues.SongTimer dummy
