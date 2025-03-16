@@ -70,4 +70,4 @@ execute at @e[tag=armory_ammo_box] run data modify block ~ ~ ~ LootTable set val
 forceload remove 97 81 -115 -110
 
 #> Timer for the intro cutscene
-scoreboard players set $Timer.Ticks Statues.TempData 460
+scoreboard players set $Timer.Ticks Statues.TempData 400
