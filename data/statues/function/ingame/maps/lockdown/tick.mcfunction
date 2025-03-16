@@ -51,7 +51,8 @@ execute if score $Core.Ticks Statues.DynamicData matches ..0 run scoreboard play
 
 #> Escape detection
 execute if score $Objective Statues.DynamicData matches 14 as @e[tag=objective_lockdown_escape,type=marker,x=0] at @s run particle minecraft:totem_of_undying ~ ~1 ~ 1 0.1 1 0 10 normal
-execute if score $Objective Statues.DynamicData matches 14 as @e[tag=objective_lockdown_escape,type=marker,x=0] at @s run setblock ~ ~-1 ~ light[level=15]
+# Hard-coded coordinates to avoid ticking an entity constantly
+execute if score $Objective Statues.DynamicData matches 14 run setblock 55 93 1 light[level=15]
 execute if score $Objective Statues.DynamicData matches 14 as @e[tag=objective_lockdown_escape,type=marker,x=0] at @s positioned ~-1 ~ ~-1 if entity @a[team=Survivor,dx=2,dy=1,dz=2] run function statues:ingame/maps/lockdown/objectives/escape
 
 # Prevent Monsters from exiting the map

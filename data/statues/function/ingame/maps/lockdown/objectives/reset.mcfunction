@@ -46,6 +46,9 @@ execute as @e[type=marker,tag=objective_lockdown_code,tag=small_door] at @s run 
 
 data modify entity @n[tag=monster_text,type=text_display] text set value '{"translate":"statues.text.monster.spawn","color":"red","bold":true}'
 
+# Escape Light
+setblock 55 93 1 air
+
 # Armory
 execute as @e[tag=lockdown_armory,type=text_display] run data modify entity @s text set value '{"translate":"statues.text.lockdown.objective.armorykey","color":"red"}'
 execute as @e[tag=lockdown_armory,type=interaction] run tag @s remove opened
