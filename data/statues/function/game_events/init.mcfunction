@@ -57,3 +57,17 @@ scoreboard players set $ObjectiveKind.Facade.FindConfidentialBook Statues.GameEv
 scoreboard players set $ObjectiveKind.Facade.Escape Statues.GameEventEnum 10
 scoreboard players operation $ObjectiveKind.Facade._Max Statues.GameEventEnum = $ObjectiveKind.Facade.Escape Statues.GameEventEnum
 scoreboard players operation $ObjectiveKind._Max Statues.GameEventEnum = $ObjectiveKind.Facade.Escape Statues.GameEventEnum
+
+scoreboard players set $ObjectiveKind.Lockdown.FindFuel Statues.GameEventEnum 0
+scoreboard players set $ObjectiveKind.Lockdown.UseFuel Statues.GameEventEnum 1
+scoreboard players set $ObjectiveKind.Lockdown.StartBackupGenerator Statues.GameEventEnum 2
+scoreboard players set $ObjectiveKind.Lockdown.FindKeycard1 Statues.GameEventEnum 3
+scoreboard players set $ObjectiveKind.Lockdown.PressEmergencyOverride Statues.GameEventEnum 4
+scoreboard players set $ObjectiveKind.Lockdown.TurnOnPower Statues.GameEventEnum 5
+scoreboard players set $ObjectiveKind.Lockdown.FindKeycard2 Statues.GameEventEnum 6
+scoreboard players set $ObjectiveKind.Lockdown.UnlockContainment Statues.GameEventEnum 7
+scoreboard players set $ObjectiveKind.Lockdown.FindCode Statues.GameEventEnum 8
+scoreboard players set $ObjectiveKind.Lockdown.UseCode Statues.GameEventEnum 9
+scoreboard players set $ObjectiveKind.Lockdown.Escape Statues.GameEventEnum 10
+scoreboard players operation $ObjectiveKind.Lockdown._Max Statues.GameEventEnum = $ObjectiveKind.Lockdown.Escape Statues.GameEventEnum
+scoreboard players operation $ObjectiveKind._Max Statues.GameEventEnum = $ObjectiveKind.Lockdown.Escape Statues.GameEventEnum
