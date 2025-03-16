@@ -1,10 +1,10 @@
 execute unless function statues:feature_flags/check_map_vote_flags run return fail
 
-execute if entity @s[tag=vote_origins] run tellraw @s {"text":"You have already voted for this map!","color":"red"}
-execute if entity @s[tag=vote_origins] run playsound entity.villager.no master @s ~ ~ ~ 1 1
+execute if entity @s[tag=vote_origins] run tellraw @s {"translate":"statues.lobby.vote.fail","color":"red","with": [{"translate": "statues.map.origins","color": "#8e51df"}]}
+execute if entity @s[tag=vote_origins] run playsound block.note_block.didgeridoo master @s ~ ~ ~ 1 1
 
-execute if entity @s[tag=!vote_origins] run tellraw @s {"text":"You have voted for [Origins]","color":"green"}
-execute if entity @s[tag=!vote_origins] run playsound entity.villager.celebrate master @s ~ ~ ~ 1 1
+execute if entity @s[tag=!vote_origins] run tellraw @s {"translate":"statues.lobby.vote.success","color":"green","with": [{"translate": "statues.map.origins","color": "#8e51df"}]}
+execute if entity @s[tag=!vote_origins] run playsound block.note_block.bell master @s ~ ~ ~ 1 1
 
 tag @s add vote_origins
 tag @s remove vote_facade
