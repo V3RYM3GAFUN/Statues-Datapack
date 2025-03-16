@@ -1,2 +1,0 @@
-execute store result storage statues:temp SlotN2S.Temp int 1 run scoreboard players get $SlotN2SIn Statues.TempData
-function statues:utils/internal/slot_number_to_string_hotbar_macro with storage statues:temp SlotN2S

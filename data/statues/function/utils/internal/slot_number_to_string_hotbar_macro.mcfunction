@@ -1,1 +1,0 @@
-$data modify storage statues:temp SlotN2S.Out set value "hotbar.$(Temp)"
