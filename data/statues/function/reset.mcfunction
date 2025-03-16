@@ -50,6 +50,7 @@ scoreboard players reset * Statues.SurvivorTrail
 scoreboard players reset * Statues.GameStatistics
 scoreboard players reset * Statues.Advancements.IngameNoDamage
 scoreboard players reset * Statues.DynamicMapId
+scoreboard players reset * Statues.DynamicMapIdGiven
 
 #> Turn off power
 function statues:mechanics/lights/lights_off
