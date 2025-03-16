@@ -1,1 +1,1 @@
-execute if score receptionist Statues.FeatureFlags matches 1.. run function statues:mechanics/receptionist/tick
+execute if score receptionist Statues.FeatureFlags matches 1.. as a237e214-b760-4cd8-9a1b-005694727ed6 run function statues:mechanics/receptionist/tick

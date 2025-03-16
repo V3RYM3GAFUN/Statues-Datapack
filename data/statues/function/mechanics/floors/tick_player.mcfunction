@@ -1,5 +1,5 @@
 execute unless function statues:feature_flags/check_floors_flags run return fail
-execute store result score @s Statues.Floor run data get entity @e[tag=floor_marker,sort=nearest,limit=1] data.floor
+execute store result score @s Statues.Floor run data get entity @e[tag=floor_marker,sort=nearest,limit=1,type=marker,x=0] data.floor
 execute store result score $FloorObj Statues.TempData run data get storage statues:data objective_floor
 scoreboard players operation $FloorDiff Statues.TempData = $FloorObj Statues.TempData
 scoreboard players operation $FloorDiff Statues.TempData -= @s Statues.Floor
