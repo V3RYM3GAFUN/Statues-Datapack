@@ -16,25 +16,25 @@ execute as @a if score $Objective Statues.DynamicData matches 4 unless entity @s
 execute as @a if score $Objective Statues.DynamicData matches 5 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.0","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true},{"text":"5/6","color": "gold"}]}
 
 # Keycard 1 Objective
-execute as @a if score $Objective Statues.DynamicData matches 6 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.2","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
-execute as @a if score $Objective Statues.DynamicData matches 7 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.3","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
+execute as @a if score $Objective Statues.DynamicData matches 6 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.1","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
+execute as @a if score $Objective Statues.DynamicData matches 7 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.2","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
 
 # Override
-execute as @a if score $Objective Statues.DynamicData matches 8 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.4","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
+execute as @a if score $Objective Statues.DynamicData matches 8 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.3","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
 
 # Main Power
-execute as @a if score $Objective Statues.DynamicData matches 9 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.5","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
+execute as @a if score $Objective Statues.DynamicData matches 9 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.4","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
 
 # Keycard 2
-execute as @a if score $Objective Statues.DynamicData matches 10 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.6","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
-execute as @a if score $Objective Statues.DynamicData matches 11 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.7","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
+execute as @a if score $Objective Statues.DynamicData matches 10 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.5","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
+execute as @a if score $Objective Statues.DynamicData matches 11 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.6","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
 
 # Code
-execute as @a if score $Objective Statues.DynamicData matches 12 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.8","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
-execute as @a if score $Objective Statues.DynamicData matches 13 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.9","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
+execute as @a if score $Objective Statues.DynamicData matches 12 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.7","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
+execute as @a if score $Objective Statues.DynamicData matches 13 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.8","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
 
 # Escape
-execute as @a if score $Objective Statues.DynamicData matches 14 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.10","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
+execute as @a if score $Objective Statues.DynamicData matches 14 unless entity @s[team=!Survivor,tag=!dev_always_show_floor_objective] run title @s actionbar {"translate":"statues.text.lockdown.objective.actionbar.9","color":"aqua","with": [{"translate":"statues.text.objective","color": "white","bold":true}]}
 
 
 #> Override button detection

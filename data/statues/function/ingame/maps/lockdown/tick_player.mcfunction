@@ -29,12 +29,12 @@ tag @s remove not_found_key_armory_pre
 tag @s remove not_found_key_armory_post
 
 #> Fuel pick up detection
-execute if entity @s[tag=!found_key_0] run function statues:ingame/maps/lockdown/objectives/fuel_found
-execute if entity @s[tag=!found_key_1] run function statues:ingame/maps/lockdown/objectives/fuel_found
-execute if entity @s[tag=!found_key_2] run function statues:ingame/maps/lockdown/objectives/fuel_found
-execute if entity @s[tag=!found_key_3] run function statues:ingame/maps/lockdown/objectives/fuel_found
-execute if entity @s[tag=!found_key_4] run function statues:ingame/maps/lockdown/objectives/fuel_found
-execute if entity @s[tag=!found_key_5] run function statues:ingame/maps/lockdown/objectives/fuel_found
+#execute if entity @s[tag=found_key_0] run function statues:ingame/maps/lockdown/objectives/fuel_found
+#execute if entity @s[tag=found_key_1] run function statues:ingame/maps/lockdown/objectives/fuel_found
+#execute if entity @s[tag=found_key_2] run function statues:ingame/maps/lockdown/objectives/fuel_found
+#execute if entity @s[tag=found_key_3] run function statues:ingame/maps/lockdown/objectives/fuel_found
+#execute if entity @s[tag=found_key_4] run function statues:ingame/maps/lockdown/objectives/fuel_found
+#execute if entity @s[tag=found_key_5] run function statues:ingame/maps/lockdown/objectives/fuel_found
 
 #> Keycard 1 pick up detection
 execute if score $Objective Statues.DynamicData matches 6 unless entity @s[tag=!found_key_6,tag=!found_key_7,tag=!found_key_8] run function statues:ingame/maps/lockdown/objectives/keycard_pickup
